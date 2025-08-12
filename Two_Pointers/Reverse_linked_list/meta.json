@@ -1,0 +1,37 @@
+{
+  "problem": {
+    "id": 206,
+    "title": "Reverse Linked List",
+    "difficulty": "Easy",
+    "category": "In-Place Reversal of LinkedList"
+  },
+  "complexity": {
+    "iterative": {"time": "O(n)", "space": "O(1)"},
+    "recursive": {"time": "O(n)", "space": "O(n)"}
+  },
+  "approaches": [
+    {
+      "name": "Three-Pointer Iterative",
+      "rank": 1,
+      "key_insight": "prev, curr, temp dance while rewiring connections"
+    },
+    {
+      "name": "Recursive",
+      "rank": 2,
+      "key_insight": "Reverse tail first, then flip current connection"
+    }
+  ],
+  "pattern": {
+    "primary": "In-Place Reversal of LinkedList",
+    "core_technique": "Break and rewire connections while maintaining references"
+  },
+  "common_mistakes": [
+    "Forgetting temp storage before breaking links",
+    "Returning curr instead of prev",
+    "Not handling empty list"
+  ],
+  "interview_strategy": {
+    "lead_with": "Iterative for O(1) space",
+    "mention": "Recursive alternative exists but uses O(n) stack space"
+  }
+}

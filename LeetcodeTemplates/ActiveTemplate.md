@@ -1,7 +1,9 @@
-# 🔹 Problem Name: [Title] ([Category], Difficulty)
+# 🔹 Problem Name: [Number]. [Title] ([Category], [Easy|Medium|Hard])
 
-**🔗 Link:** [LeetCode Problem URL]
-**🟢 Status:** ✅ Solved / 🔄 Need Review
+**🔗 Link:** [LeetCode [Number]](https://leetcode.com/problems/[slug]/)
+**🟢 Status:** 🔄 Need Review
+
+<!-- Status is exactly `✅ Solved` or `🔄 Need Review`; `python tools/build_index.py --check` enforces this format. -->
 
 ## 🔹Quick Breakdown
 

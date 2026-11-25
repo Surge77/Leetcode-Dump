@@ -15,6 +15,7 @@ Progress lives in tools/review_state.json — commit it to keep it across machin
 """
 import argparse
 import json
+import os
 import random
 import re
 import sys
@@ -41,12 +42,19 @@ LINK_RE = re.compile(r"https://leetcode\.com/problems/[\w-]+/?")
 def load_state(path=STATE_FILE):
     if not path.exists():
         return {}
-    return json.loads(path.read_text(encoding="utf-8"))
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as err:
+        raise SystemExit(f"{path} is not valid JSON ({err}). Fix it by hand (a git merge conflict?) "
+                         "or restore it with `git checkout -- tools/review_state.json`.")
 
 
 def save_state(state, path=STATE_FILE):
+    """Write atomically: an interrupted save never leaves a truncated state file."""
     ordered = dict(sorted(state.items(), key=lambda kv: int(kv[0])))
-    path.write_text(json.dumps(ordered, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    tmp = path.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(ordered, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    os.replace(tmp, path)
 
 
 def schedule(entry, passed, today):
@@ -71,11 +79,24 @@ def weight(note):
 
 
 def pick(notes, state, today, count, rng):
-    """Due reviews first (most overdue first), then new 🔄 notes drawn by topic weight."""
-    due = sorted((n for n in notes if str(n.number) in state and state[str(n.number)]["due"] <= today.isoformat()),
-                 key=lambda n: (state[str(n.number)]["due"], n.number))
-    picks = due[:count]
-    fresh = [n for n in notes if n.status == "🔄" and str(n.number) not in state]
+    """Due reviews first, then new 🔄 notes drawn by topic weight.
+
+    Both pools are reconstructed as they stood at the START of `today`, so logging a
+    review does not reshuffle the rest of the day's list.
+    """
+    iso = today.isoformat()
+
+    def entry(n):
+        return state.get(str(n.number))
+
+    def first_logged_today(e):
+        return bool(e) and bool(e["history"]) and e["history"][0].startswith(iso)
+
+    def due_this_morning(e):
+        return bool(e) and not first_logged_today(e) and (e["due"] <= iso or logged_on(e, today))
+
+    picks = [n for n in notes if due_this_morning(entry(n))][:count]
+    fresh = [n for n in notes if (entry(n) is None and n.status == "🔄") or first_logged_today(entry(n))]
     while len(picks) < count and fresh:
         chosen = rng.choices(fresh, weights=[weight(n) for n in fresh])[0]
         fresh.remove(chosen)
@@ -112,7 +133,8 @@ def cmd_today(notes, state, today, count):
         return
     print(f"Review for {today} — solve each unaided, then `python tools/review.py log <#> pass|fail`\n")
     for note in picks:
-        tag = "review" if str(note.number) in state else "new"
+        e = state.get(str(note.number))
+        tag = "done" if logged_on(e, today) else "review" if e else "new"
         print(f"  {note.number:>5}  {note.title:<55} {note.difficulty:<6} {tag:<6} {link_of(note)}")
 
 
@@ -152,6 +174,13 @@ def cmd_stats(notes, state, today):
     print("🔄 left by topic: " + ", ".join(f"{f} {c}" for f, c in sorted(by_folder.items(), key=lambda kv: -kv[1])))
 
 
+def utf8_stdout():
+    """Print ✓ ✅ → etc. even when stdout is a pipe on Windows (default cp1252 cannot encode them)."""
+    reconfigure = getattr(sys.stdout, "reconfigure", None)
+    if callable(reconfigure):
+        reconfigure(encoding="utf-8", errors="replace")
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = parser.add_subparsers(dest="cmd")
@@ -164,6 +193,7 @@ def main(argv=None):
     show_cmd.add_argument("number", type=int)
     sub.add_parser("stats", help="progress summary")
     args = parser.parse_args(argv)
+    utf8_stdout()
 
     notes, state, today = checked_notes(), load_state(), date.today()
     if args.cmd in (None, "today"):

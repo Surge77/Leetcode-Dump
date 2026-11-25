@@ -9,7 +9,7 @@
 * **Core Concept:** greedy pairing on a sorted array (exchange argument)
 * **When to Use This Pattern?** "At most two per container, capacity limit, minimise containers" — boats, rickshaws, team pairs.
 * **Mistakes to Avoid:**
-  * Pairing the heaviest with the heaviest that fits — the lightest is always at least as good.
+  * Pairing the heaviest with the heaviest partner that fits is also optimal, but needs a search per passenger; the lightest partner gives the same count with a plain two-pointer walk.
   * Trying all pairings — exponential.
 
 ## 🔹 Optimization Path

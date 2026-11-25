@@ -19,6 +19,13 @@ print(sum(1 for i in range(n) for j in range(i + 1, n) if (a[i] + a[j]) % k == 0
 """
 ALWAYS_ZERO = "print(0)\n"
 CRASHES = "raise ValueError('boom')\n"
+CRASHES_ON_BIG_INPUT = """
+import sys
+d = sys.stdin.read().split()
+if len(d) > 1000:
+    raise RecursionError("maximum recursion depth exceeded")
+print(0)
+"""
 SLOW_ON_BIG_INPUT = """
 import sys, time
 d = sys.stdin.read().split()
@@ -66,6 +73,10 @@ class JudgeTest(unittest.TestCase):
         groups = self.groups(SLOW_ON_BIG_INPUT, tests=0, min_time_limit=0.5)
         self.assertEqual(groups["large"].passed, 0)
         self.assertTrue(self.failure(groups["large"]).startswith("TLE on large test"))
+
+    def test_crash_on_a_large_test_shows_the_error(self):
+        groups = self.groups(CRASHES_ON_BIG_INPUT, tests=0)
+        self.assertIn("RecursionError", self.failure(groups["large"]))
 
     def test_correct_brute_force_earns_half_marks(self):
         groups = self.groups(CORRECT_QUADRATIC, tests=10, min_time_limit=0.5)

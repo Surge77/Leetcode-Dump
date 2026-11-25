@@ -24,7 +24,7 @@
 * **Why This Works?** Union-find maintains exactly the partition into connected components under edge insertions; union by size keeps every tree's height O(log N), and path compression flattens it further.
 * **Edge Cases Considered:**
   * Repeated friendship between the same pair → output unchanged.
-  * `N = 1` → `1 1` after every line.
+  * Once everyone is in one club, every remaining line is `1 N`.
 
 ## 🔹 Pattern Recognition
 

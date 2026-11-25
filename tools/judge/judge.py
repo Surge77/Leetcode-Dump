@@ -35,6 +35,7 @@ SAMPLE_OUT_RE = re.compile(r"\*\*Sample Output[^*]*\*\*\s*```text\n(.*?)```", re
 MIN_TIME_LIMIT = 2.0  # seconds
 TIME_FACTOR = 3.0
 SMALL_TIME_LIMIT = 5.0  # generous: small inputs only catch infinite loops
+REFERENCE_TIME_LIMIT = 120.0  # the reference itself must finish; anything longer is a broken spec
 SHOW = 300  # characters of input/output shown for a failing test
 SMALL_POINTS = 50  # of 100: samples + random small tests; large tests carry the rest
 NL = "\n"
@@ -129,7 +130,8 @@ def check(group, verdict, got, want, stdin_text):
         return
     name = verdict if verdict != "OK" else "WA"
     if group.name == "large":  # a megabyte of input helps nobody: show its first line only
-        group.first_failure = f"{name} on large test {group.total} (first line: {stdin_text.split(NL, 1)[0]})"
+        error = f": {got}" if verdict == "RE" else ""  # e.g. RecursionError on a path-shaped tree
+        group.first_failure = f"{name} on large test {group.total} (first line: {stdin_text.split(NL, 1)[0]}){error}"
         return
     detail = got if verdict == "RE" else "(killed at the time limit)" if verdict == "TLE" else clip(got)
     group.first_failure = f"{name} on input:\n{clip(stdin_text)}\n  expected: {clip(want)}\n  got:      {detail}"
@@ -159,7 +161,9 @@ def judge(key, program, tests=50, seed=None, min_time_limit=MIN_TIME_LIMIT, larg
             ref_file = Path(tmp) / "reference.py"
             ref_file.write_text(ref, encoding="utf-8")
             for stdin_text in spec.large(rng):
-                _, want, ref_time = run(ref_file, stdin_text, None)
+                ref_verdict, want, ref_time = run(ref_file, stdin_text, REFERENCE_TIME_LIMIT)
+                if ref_verdict != "OK":  # never grade against a crashed or hung reference
+                    raise SystemExit(f"{prob.key}: reference solution {ref_verdict} on a large test: {want}")
                 limit = max(min_time_limit, TIME_FACTOR * ref_time)
                 verdict, got, took = run(program, stdin_text, limit)
                 check(groups[2], verdict, got, want, stdin_text)
@@ -216,6 +220,13 @@ def self_test(keys, tests):
     return not failed
 
 
+def utf8_stdout():
+    """Print ✓ ✅ → etc. even when stdout is a pipe on Windows (default cp1252 cannot encode them)."""
+    reconfigure = getattr(sys.stdout, "reconfigure", None)
+    if callable(reconfigure):
+        reconfigure(encoding="utf-8", errors="replace")
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("key", nargs="?", help="problem key, e.g. M1Q2")
@@ -226,6 +237,7 @@ def main(argv=None):
     parser.add_argument("--list", action="store_true", help="list problem keys")
     parser.add_argument("--self-test", nargs="*", metavar="KEY", help="judge the reference solutions (CI)")
     args = parser.parse_args(argv)
+    utf8_stdout()
 
     if args.list:
         for key in all_keys():

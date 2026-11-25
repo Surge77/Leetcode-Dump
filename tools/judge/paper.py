@@ -14,7 +14,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
-from judge import REPO, all_keys, problem  # noqa: E402
+from judge import REPO, all_keys, problem, utf8_stdout  # noqa: E402
 
 EXAM_HOURS = 3
 SLOTS = (("1", "Easy", "20–30 min"), ("2", "Medium", "50–60 min"), ("3", "Hard", "the rest"))
@@ -37,6 +37,7 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--seed", type=int, help="reproduce a paper")
     args = parser.parse_args(argv)
+    utf8_stdout()
     seed = args.seed if args.seed is not None else random.randrange(10**6)
     paper = pick(all_keys(), random.Random(seed))
 

@@ -9,7 +9,7 @@
 * **Core Concept:** contribution technique — sum over windows → sum over elements × number of windows they win
 * **When to Use This Pattern?** "Sum of min / max / range over all subarrays" (907, 2104), "count subarrays where `A[i]` is the max".
 * **Mistakes to Avoid:**
-  * Equal prices counted twice (or zero times): make one side strict (`≥` on the left) and the other non-strict (`>` on the right), so each window is credited to its **leftmost** maximum.
+  * Equal prices counted twice (or zero times): make one boundary non-strict (previous `≥` on the left) and the other strict (next `>` on the right), so each window is credited to its **leftmost** maximum.
   * O(N²) window scanning — `N = 10⁵` gives 5·10⁹ windows.
 
 ## 🔹 Optimization Path

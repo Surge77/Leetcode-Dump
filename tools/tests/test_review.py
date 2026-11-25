@@ -64,10 +64,35 @@ class PickTest(unittest.TestCase):
         state = {"1": {"streak": 2, "due": "2026-12-30", "history": []}}
         self.assertEqual(review.pick(notes, state, TODAY, 3, random.Random(0)), [])
 
+    def test_logging_a_pick_does_not_reshuffle_the_rest_of_the_day(self):
+        notes = [note(i, folder="DP" if i % 2 else "Arrays") for i in range(1, 30)]
+        notes.append(note(99, status="✅"))
+        state = {"99": {"streak": 1, "due": "2026-11-25", "history": ["2026-11-24:pass"]}}
+        before = [n.number for n in review.pick(notes, state, TODAY, 4, random.Random(7))]
+        for number in before:  # log every pick, one at a time
+            state = {**state, str(number): review.schedule(state.get(str(number)), True, TODAY)}
+            after = [n.number for n in review.pick(notes, state, TODAY, 4, random.Random(7))]
+            self.assertEqual(after, before)
+
     def test_exam_topics_are_drawn_more_often(self):
         notes = [note(1, folder="DP_Knapsack"), note(2, folder="Arrays")]
         firsts = [review.pick(notes, {}, TODAY, 1, random.Random(s))[0].number for s in range(400)]
         self.assertGreater(firsts.count(1), 2 * firsts.count(2))
+
+
+class StateFileTest(unittest.TestCase):
+    def test_round_trip_and_corrupt_file_message(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "state.json"
+            self.assertEqual(review.load_state(path), {})
+            state = {"10": review.schedule(None, True, TODAY), "2": review.schedule(None, False, TODAY)}
+            review.save_state(state, path)
+            self.assertEqual(review.load_state(path), state)
+            self.assertEqual(list(review.load_state(path)), ["2", "10"], "saved in numeric order")
+            path.write_text("", encoding="utf-8")
+            with self.assertRaises(SystemExit) as raised:
+                review.load_state(path)
+            self.assertIn("not valid JSON", str(raised.exception))
 
 
 class SetStatusTest(unittest.TestCase):

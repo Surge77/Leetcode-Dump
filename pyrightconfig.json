@@ -1,5 +1,5 @@
 {
   "include": ["tools"],
-  "extraPaths": ["tools/verify", "tools/judge"],
+  "extraPaths": ["tools", "tools/verify", "tools/judge"],
   "pythonVersion": "3.11"
 }

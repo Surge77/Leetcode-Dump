@@ -98,20 +98,31 @@ def render(notes):
     return "\n".join(lines)
 
 
-def main():
+def checked_notes():
+    """All notes, or SystemExit listing every format error."""
     notes, errors = load_notes()
     if errors:
         sys.exit("Note format errors:\n  " + "\n  ".join(errors))
-    target = REPO / "INDEX.md"
-    content = render(notes)
-    if "--check" in sys.argv:
-        current = target.read_text(encoding="utf-8") if target.exists() else ""
-        if current.replace("\r\n", "\n") != content:
-            sys.exit("INDEX.md is stale: run `python tools/build_index.py`")
-        print(f"{len(notes)} notes well-formed; INDEX.md is up to date")
+    return notes
+
+
+def write_index():
+    """Rewrite INDEX.md; return the number of notes."""
+    notes = checked_notes()
+    (REPO / "INDEX.md").write_text(render(notes), encoding="utf-8", newline="\n")
+    return len(notes)
+
+
+def main():
+    if "--check" not in sys.argv:
+        print(f"{write_index()} notes well-formed; wrote INDEX.md")
         return
-    target.write_text(content, encoding="utf-8", newline="\n")
-    print(f"{len(notes)} notes well-formed; wrote {target.name}")
+    notes = checked_notes()
+    target = REPO / "INDEX.md"
+    current = target.read_text(encoding="utf-8") if target.exists() else ""
+    if current.replace("\r\n", "\n") != render(notes):
+        sys.exit("INDEX.md is stale: run `python tools/build_index.py`")
+    print(f"{len(notes)} notes well-formed; INDEX.md is up to date")
 
 
 if __name__ == "__main__":

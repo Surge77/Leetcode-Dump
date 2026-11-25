@@ -43,8 +43,13 @@ def check_spec(key, brute, opt, runs, limit):
 
 
 def timed(opt, inp, limit):
+    timed_call(lambda: run_program(opt, inp), limit)
+
+
+def timed_call(fn, limit):
+    """Run fn once at max constraints; print the time, enforce `limit` only with VERIFY_TIMING=1."""
     t = time.perf_counter()
-    run_program(opt, inp)
+    fn()
     dt = time.perf_counter() - t
     print(f"    max-constraint run: {dt:.2f}s")
     if os.environ.get("VERIFY_TIMING") == "1":

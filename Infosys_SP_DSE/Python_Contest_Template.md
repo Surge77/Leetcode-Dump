@@ -15,6 +15,9 @@ Infosys questions are full programs: you read raw input from **stdin** and print
 | `dijkstra`, `bfs_grid`, `topo_order` | Shortest paths, grids, dependencies | 743, 994, 207, Toll Pass |
 | `iterative_dfs_order` | Tree DP without `RecursionError` | 124, 337, 968 |
 | `Fenwick`, `SegTree` | Range sums / min / max with updates (commutative ops only) | 307, 315 |
+| `SparseTable` | O(1) range min / max / gcd on a static array | Price Spread |
+| `mat_pow` | Linear recurrences mod p with huge `n` | 935, 1220, Stair Climber |
+| `strongly_connected_components` | SCCs + condensation order (Kosaraju, iterative) | Gold Roads |
 | `first_true` | Binary search on the answer | 875, 410, Factory Output |
 | `submasks` | Enumerating submasks (3ⁿ subset-partition DPs) | 1986 (alternative approach) |
 
@@ -234,6 +237,80 @@ class SegTree:
             l //= 2
             r //= 2
         return res
+
+
+class SparseTable:
+    """Static array, O(1) queries for idempotent ops (min, max, gcd)."""
+
+    def __init__(self, values, op):
+        self.op = op
+        self.levels = [list(values)]
+        j = 1
+        while (1 << j) <= len(values):
+            prev, half = self.levels[-1], 1 << (j - 1)
+            self.levels.append([op(prev[i], prev[i + half]) for i in range(len(values) - (1 << j) + 1)])
+            j += 1
+
+    def query(self, l, r):
+        """op over values[l..r] inclusive."""
+        k = (r - l + 1).bit_length() - 1
+        return self.op(self.levels[k][l], self.levels[k][r - (1 << k) + 1])
+
+
+# ---------------- matrices ----------------
+def mat_mult(a, b, m=MOD):
+    size, inner = len(a), len(b)
+    return [[sum(a[i][t] * b[t][j] for t in range(inner)) % m for j in range(len(b[0]))]
+            for i in range(size)]
+
+
+def mat_pow(mat, e, m=MOD):
+    result = [[int(i == j) for j in range(len(mat))] for i in range(len(mat))]
+    while e:
+        if e & 1:
+            result = mat_mult(result, mat, m)
+        mat = mat_mult(mat, mat, m)
+        e >>= 1
+    return result
+
+
+# ---------------- strongly connected components ----------------
+def strongly_connected_components(n, adj):
+    """comp[v] for every node; component ids follow a topological order of the condensation."""
+    radj = [[] for _ in range(n)]
+    for u in range(n):
+        for v in adj[u]:
+            radj[v].append(u)
+    visited, order = [False] * n, []
+    for root in range(n):
+        if visited[root]:
+            continue
+        visited[root] = True
+        stack = [(root, 0)]
+        while stack:
+            u, i = stack[-1]
+            if i < len(adj[u]):
+                stack[-1] = (u, i + 1)
+                if not visited[adj[u][i]]:
+                    visited[adj[u][i]] = True
+                    stack.append((adj[u][i], 0))
+            else:
+                stack.pop()
+                order.append(u)
+    comp, count = [-1] * n, 0
+    for root in reversed(order):
+        if comp[root] != -1:
+            continue
+        comp[root] = count
+        stack = [root]
+        while stack:
+            u = stack.pop()
+            for v in radj[u]:
+                if comp[v] == -1:
+                    comp[v] = count
+                    stack.append(v)
+        count += 1
+    return comp
 
 
 # ---------------- binary search on answer ----------------

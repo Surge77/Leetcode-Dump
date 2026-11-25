@@ -1,0 +1,83 @@
+# 🔹 Infosys SP / DSE — Exam-Structured Practice
+
+This folder organises the repo around the **Infosys Specialist Programmer (SP) / Digital Specialist Engineer (DSE)** online test: 3 full mock tests in the exam's format, a Python contest template, and a map from each exam slot to the problems in this repo.
+
+> The pattern below comes from public 2025–2026 candidate reports and prep guides, **not** an official Infosys document. Patterns change between hiring cycles — confirm against the notice for your drive.
+
+---
+
+## 🔹 Exam Structure
+
+* **3 coding questions in 3 hours** — one Easy, one Medium, one Hard.
+* **Languages:** C, C++, Java, Python (depends on the test portal).
+* **Partial scoring by test cases** — a correct brute force that passes the small tests can earn roughly half the marks of a question.
+* **Sectional cut-off for each question.**
+* **One test, two outcomes:** roughly 2+ questions fully solved → SP interview; 1–1.5 → DSE.
+* **After the test:** a technical interview (2 Easy–Medium DSA problems solved live, OOP, DBMS/SQL, your projects), then HR.
+
+| Slot | Difficulty | What usually appears | Time to budget | Practise with |
+|---|---|---|---|---|
+| **Q1** | Easy | arrays, strings, hashing, counting, basic math | 20–30 min | Hashing, Prefix Sum, Sliding Window, Two Pointers, number-theory basics, Mock Q1s |
+| **Q2** | Medium | DP (1D / knapsack / grid), greedy, BFS/DFS, binary search on answer | 50–60 min | DP folders, Greedy, Graph traversals, Modified Binary Search, Mock Q2s |
+| **Q3** | Hard | 2D / bitmask / digit / tree DP, segment tree & Fenwick, advanced graphs, number theory with mod | rest (~90 min) | DP_Bitmask, DP_Digit, DP_On_Trees, Segment_Tree, Fenwick_Tree, Graph_* folders, Mock Q3s |
+
+---
+
+## 🔹 Mock Tests (original problems, exam format)
+
+Every problem reads **stdin** and prints to **stdout**, has constraints that force the intended complexity, and includes both a **brute force (partial score)** and an **optimized** solution — both verified against each other on random inputs.
+
+| Mock | Q1 — Easy | Q2 — Medium | Q3 — Hard |
+|---|---|---|---|
+| **1** | [Festival Pairs](Mock_Test_1/Q1_Easy_Festival_Pairs.md) — hashing on remainders | [Lucky Subsets](Mock_Test_1/Q2_Medium_Lucky_Subsets.md) — DP over remainders, mod | [Stock Ticker Queries](Mock_Test_1/Q3_Hard_Stock_Ticker_Queries.md) — segment tree, custom merge |
+| **2** | [Server Rack Shuffle](Mock_Test_2/Q1_Easy_Server_Rack_Shuffle.md) — circular sliding window | [Toll Pass](Mock_Test_2/Q2_Medium_Toll_Pass.md) — Dijkstra on states | [Treasure Route](Mock_Test_2/Q3_Hard_Treasure_Route.md) — BFS + bitmask DP |
+| **3** | [Special Numbers](Mock_Test_3/Q1_Easy_Special_Numbers.md) — sieve, divisors | [Factory Output](Mock_Test_3/Q2_Medium_Factory_Output.md) — binary search on answer | [Smooth Numbers](Mock_Test_3/Q3_Hard_Smooth_Numbers.md) — digit DP, mod |
+
+**How to sit a mock:**
+1. Timer on for **3 hours**, no notes. Read only the *Problem Statement* section of each file.
+2. Order: solve Q1 fully → submit a **brute force for Q3** (bank the partial score) → solve Q2 → come back and optimise Q3.
+3. Afterwards compare with the solution sections. Flip **Status** to ✅ only when you can re-code the optimized version unaided.
+
+Keep [Python_Contest_Template.md](Python_Contest_Template.md) memorised — fast input, sieve, nCr mod p, DSU, Dijkstra, Fenwick, segment tree, binary search on answer.
+
+---
+
+## 🔹 Topic Map → Problems in This Repo
+
+| Topic | Slot | Problems |
+|---|---|---|
+| Hashing & prefix sums | Q1 | [1](../Hashing/1.Two%20Sum.md) · [560](../Prefix_Sum/560.Subarray_Sum_Equals_K.md) · [304](../Prefix_Sum/304.Range_Sum_Query_2D_Immutable.md) · [Festival Pairs](Mock_Test_1/Q1_Easy_Festival_Pairs.md) |
+| Sliding window & two pointers | Q1–Q2 | [76](../Sliding_Window/76.Minimum_Window_Substring.md) · [239](../Sliding_Window/239.Sliding_Window_Maximum.md) · [42](../Monotonic_Stack/42.Trapping_Rain_Water.md) · [Server Rack Shuffle](Mock_Test_2/Q1_Easy_Server_Rack_Shuffle.md) |
+| Number theory & modular arithmetic | Q1–Q3 | [204](../Math_Number_Theory/204.Count_Primes.md) · [372](../Math_Number_Theory/372.Super_Pow.md) · [1922](../Math_Number_Theory/1922.Count_Good_Numbers.md) · [2521](../Math_Number_Theory/2521.Distinct_Prime_Factors_of_Product_of_Array.md) · [1359](../Math_Number_Theory/1359.Count_All_Valid_Pickup_and_Delivery_Options.md) · [Special Numbers](Mock_Test_3/Q1_Easy_Special_Numbers.md) |
+| Binary search on the answer | Q2 | [875](../Modified_Binary_search/875.Koko_Eating_Bananas.md) · [1011](../Modified_Binary_search/1011.Capacity_To_Ship_Packages_Within_D_Days.md) · [410](../Modified_Binary_search/410.Split_Array_Largest_Sum.md) · [1201](../Modified_Binary_search/1201.Ugly_Number_III.md) · [Factory Output](Mock_Test_3/Q2_Medium_Factory_Output.md) |
+| Greedy & heaps | Q2 | [55](../Greedy/55.Jump_Game.md) · [45](../Greedy/45.Jump_Game_II.md) · [134](../Greedy/134.Gas_Station.md) · [621](../Greedy/621.Task_Scheduler.md) · [452](../Intervals_Problems/452.Minimum_Number_of_Arrows_to_Burst_Balloons.md) · [502](../Greedy/502.IPO.md) · [630](../Greedy/630.Course_Schedule_III.md) |
+| DP — 1D, knapsack, counting | Q2 | [198](../DP_Fibonacci_numbers/198.House_Robber.md) · [139](../DP/139.Word_Break.md) · [309](../DP/309.Best_Time_to_Buy_and_Sell_Stock_with_Cooldown.md) · [322](../DP_Knapsack/322.Coin_Change.md) · [518](../DP_Knapsack/518.Coin_Change_II.md) · [416](../DP_Knapsack/416.Partition_Equal_Subset_Sum.md) · [494](../DP_Knapsack/494.Target_Sum.md) · [1155](../DP_Knapsack/1155.Number_of_Dice_Rolls_With_Target_Sum.md) · [Lucky Subsets](Mock_Test_1/Q2_Medium_Lucky_Subsets.md) |
+| DP — 2D, strings, LIS | Q2–Q3 | [62](../DP_Grid_and_Strings/62.Unique_Paths.md) · [64](../DP_Grid_and_Strings/64.Minimum_Path_Sum.md) · [1143](../DP_Grid_and_Strings/1143.Longest_Common_Subsequence.md) · [72](../DP_Grid_and_Strings/72.Edit_Distance.md) · [115](../DP_Grid_and_Strings/115.Distinct_Subsequences.md) · [329](../DP_Grid_and_Strings/329.Longest_Increasing_Path_in_a_Matrix.md) · [300](../DP_LIS/300.Longest_Increasing_Subsequence.md) · [354](../DP_LIS/354.Russian_Doll_Envelopes.md) · [1235](../DP/1235.Maximum_Profit_in_Job_Scheduling.md) |
+| DP — interval, bitmask, digit, trees | Q3 | [312](../DP_Interval/312.Burst_Balloons.md) · [516](../DP_Interval/516.Longest_Palindromic_Subsequence.md) · [698](../DP_Bitmask/698.Partition_to_K_Equal_Sum_Subsets.md) · [847](../DP_Bitmask/847.Shortest_Path_Visiting_All_Nodes.md) · [1986](../DP_Bitmask/1986.Minimum_Number_of_Work_Sessions_to_Finish_the_Tasks.md) · [233](../DP_Digit/233.Number_of_Digit_One.md) · [902](../DP_Digit/902.Numbers_At_Most_N_Given_Digit_Set.md) · [337](../DP_On_Trees/337.House_Robber_III.md) · [968](../DP_On_Trees/968.Binary_Tree_Cameras.md) · [124](../Tree__Traversal/124.Binary_Tree_Maximum_Path_Sum.md) · [Treasure Route](Mock_Test_2/Q3_Hard_Treasure_Route.md) · [Smooth Numbers](Mock_Test_3/Q3_Hard_Smooth_Numbers.md) |
+| Graphs — BFS & shortest paths | Q2–Q3 | [200](../Graph_traversals/200.Number_of_Islands.md) · [994](../Graph_traversals/994.Rotting_Oranges.md) · [542](../Graph_traversals/542.01_Matrix.md) · [127](../Graph_traversals/127.Word_Ladder.md) · [743](../Graph_Shortest_Path/743.Network_Delay_Time.md) · [787](../Graph_Shortest_Path/787.Cheapest_Flights_Within_K_Stops.md) · [1631](../Graph_Shortest_Path/1631.Path_With_Minimum_Effort.md) · [1368](../Graph_Shortest_Path/1368.Minimum_Cost_to_Make_at_Least_One_Valid_Path_in_a_Grid.md) · [1334](../Graph_Shortest_Path/1334.Find_the_City_With_the_Smallest_Number_of_Neighbors_at_a_Threshold_Distance.md) · [Toll Pass](Mock_Test_2/Q2_Medium_Toll_Pass.md) |
+| Graphs — topo sort, DSU, MST, bridges | Q2–Q3 | [207](../Graph_Topological_Sort/207.Course_Schedule.md) · [210](../Graph_Topological_Sort/210.Course_Schedule_II.md) · [1857](../Graph_Topological_Sort/1857.Largest_Color_Value_in_a_Directed_Graph.md) · [684](../Union_Find/684.Redundant_Connection.md) · [1319](../Union_Find/1319.Number_of_Operations_to_Make_Network_Connected.md) · [1584](../Union_Find/1584.Min_Cost_to_Connect_All_Points.md) · [1192](../Graph_Advanced/1192.Critical_Connections_in_a_Network.md) |
+| Segment tree & Fenwick tree | Q3 | [307](../Segment_Tree/307.Range_Sum_Query_Mutable.md) · [699](../Segment_Tree/699.Falling_Squares.md) · [2407](../Segment_Tree/2407.Longest_Increasing_Subsequence_II.md) · [315](../Fenwick_Tree/315.Count_of_Smaller_Numbers_After_Self.md) · [493](../Fenwick_Tree/493.Reverse_Pairs.md) · [327](../Fenwick_Tree/327.Count_of_Range_Sum.md) · [1649](../Fenwick_Tree/1649.Create_Sorted_Array_through_Instructions.md) · [Stock Ticker Queries](Mock_Test_1/Q3_Hard_Stock_Ticker_Queries.md) |
+| Trees — LCA & binary lifting | Q2–Q3 | [236](../Tree__Traversal/236.Lowest_Common_Ancestor_of_a_Binary_Tree.md) · [1483](../Tree_Binary_Lifting/1483.Kth_Ancestor_of_a_Tree_Node.md) |
+| Strings (KMP), trie, bits | Q2–Q3 | [28](../String_Matching/28.Find_the_Index_of_the_First_Occurrence_in_a_String.md) · [214](../String_Matching/214.Shortest_Palindrome.md) · [1392](../String_Matching/1392.Longest_Happy_Prefix.md) · [208](../Trie/208.Implement_Trie_Prefix_Tree.md) · [421](../Trie/421.Maximum_XOR_of_Two_Numbers_in_an_Array.md) |
+| Monotonic stack | Q2 | [84](../Monotonic_Stack/84.Largest_Rectangle_in_Histogram.md) · [907](../Monotonic_Stack/907.Sum_of_Subarray_Minimums.md) |
+| Backtracking & geometry | Q1–Q2 | [51](../Backtracking/51.N-Queens.md) · [79](../Backtracking/79.Word_Search.md) · [836](../Geometry/836.Rectangle_Overlap.md) |
+
+---
+
+## 🔹 Python Survival Rules
+
+* **Input:** `data = sys.stdin.buffer.read().split()` once, then walk an index. `input()` in a loop is slow for 10⁵ lines.
+* **Recursion:** the default limit is 1000. Prefer iterative DFS/BFS (see 124, 337, 968, 1192 in this repo) or the threading fallback in the template.
+* **Modulo:** reduce after every `+` / `*`; `pow(a, b, MOD)` for powers; `pow(a, MOD - 2, MOD)` for division.
+* **Built-ins:** `heapq` (min-heap; negate for max), `deque`, `bisect`, `defaultdict`, `Counter`, `lru_cache`, `math.isqrt`, `math.comb`.
+* **Precompute once** (sieve, factorials, BFS distances) outside the query loop.
+* **Output:** collect answers in a list and print once with `"\n".join(...)`.
+
+---
+
+## 🔹 Sources (unofficial)
+
+* [Great Learning — Infosys SP & DSE Interview Guide 2026](https://www.mygreatlearning.com/blog/infosys-sp-dse-interview-guide-2026/)
+* [LeetCode Discuss — Infosys Specialist Programmer L3 experience](https://leetcode.com/discuss/post/8433956/infosys-specialist-programmer-l3-intervi-mes3/)
+* [Medium — HackWithInfy guide: rounds, questions, DSE role](https://medium.com/@pravallikaseshasai/hackwithinfy-guide-rounds-questions-how-i-landed-the-dse-role-bc4f64db465d)
+* [PrepInsta — Infosys SP and DSE placement papers](https://prepinsta.com/?p=975993)

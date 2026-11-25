@@ -13,6 +13,12 @@ This repository is my **personal collection of LeetCode problem solutions**. It 
 
 ---
 
+### **Infosys SP / DSE Prep** 🎯
+
+[`Infosys_SP_DSE/`](Infosys_SP_DSE/README.md) maps this repo onto the Infosys Specialist Programmer / Digital Specialist Engineer online test (3 questions, 3 hours, Easy → Medium → Hard): three original mock tests in the exam's stdin/stdout format, a Python contest template, and a topic map from each exam slot to the problems here.
+
+---
+
 ### **Key Problem-Solving Patterns** 🧩🎓⚡
 
 The solutions in this repository cover common problem-solving patterns like:

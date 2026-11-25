@@ -17,7 +17,20 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+      - name: Note format + INDEX.md is up to date
+        run: python tools/build_index.py --check
       - name: Run every note's code against its checks
         run: python tools/verify/verify.py
-      - name: INDEX.md is up to date
-        run: python tools/build_index.py --check
+      - name: Unit tests for the judge and review tools
+        run: python -m unittest discover -s tools/tests -v
+
+  judge-self-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Every mock's reference solution scores 100 in the judge
+        run: python tools/judge/judge.py --self-test

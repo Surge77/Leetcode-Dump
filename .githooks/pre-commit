@@ -1,0 +1,14 @@
+#!/bin/sh
+# Fast local gate: every note is well-formed and INDEX.md is up to date — the same check
+# CI runs. It checks the STAGED snapshot (not the working tree), so committing a note
+# without its regenerated INDEX.md is caught. Enable once per clone:
+#     git config core.hooksPath .githooks
+PY=python
+command -v "$PY" >/dev/null 2>&1 || PY=python3
+snapshot=$(mktemp -d) || exit 1
+trap 'rm -rf "$snapshot"' EXIT
+git checkout-index -a --prefix="$snapshot/"
+if ! (cd "$snapshot" && "$PY" tools/build_index.py --check); then
+    echo "pre-commit: fix the errors above, run 'python tools/build_index.py', stage INDEX.md, commit again." >&2
+    exit 1
+fi

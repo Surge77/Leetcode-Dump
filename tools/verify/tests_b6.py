@@ -106,8 +106,8 @@ def _(h):
     assert S.findCheapestPrice(3, [[0, 1, 100], [1, 2, 100], [0, 2, 500]], 0, 2, 1) == 200
     for _ in range(300):
         n = R.randint(2, 5)
-        flights = list({(R.randrange(n), R.randrange(n)): R.randint(1, 20) for _ in range(R.randint(1, 10))}.items())
-        flights = [[u, v, w] for (u, v), w in flights if u != v]
+        prices = {(R.randrange(n), R.randrange(n)): R.randint(1, 20) for _ in range(R.randint(1, 10))}
+        flights = [[u, v, w] for (u, v), w in prices.items() if u != v]
         src, dst = R.sample(range(n), 2)
         k = R.randint(0, 3)
         best = INF

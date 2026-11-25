@@ -33,10 +33,11 @@ def rand_tree(n, lo=-9, hi=9, distinct=False):
 def rand_bst(vals):
     root = None
     for v in vals:
-        node, new = root, TreeNode(v)
+        new = TreeNode(v)
         if root is None:
             root = new
             continue
+        node = root
         while True:
             side = "left" if v < node.val else "right"
             if getattr(node, side) is None:
@@ -176,8 +177,8 @@ def _(h):
             vals = R.sample(range(100), R.randint(1, 12))
             root = rand_bst(vals)
             a, b = R.choice(vals), R.choice(vals)
-            node = root
-            while not (min(a, b) <= node.val <= max(a, b)):
+            node = root  # a and b are in the tree, so the walk stops before falling off it
+            while node is not None and not (min(a, b) <= node.val <= max(a, b)):
                 node = node.left if max(a, b) < node.val else node.right
             got = S.lowestCommonAncestor(root, h.find_node(root, a), h.find_node(root, b))
             assert got is node
@@ -427,12 +428,11 @@ def _(h):
             head = build_list(list(range(n)))
             pos = R.randint(-1, n - 1) if n else -1
             if pos >= 0:
-                tail, target = head, head
-                for _ in range(pos):
-                    target = target.next
-                while tail.next:
-                    tail = tail.next
-                tail.next = target
+                nodes, node = [], head
+                while node:
+                    nodes.append(node)
+                    node = node.next
+                nodes[-1].next = nodes[pos]  # tail links back to node `pos`
             assert S.hasCycle(head) == (pos >= 0)
 
 

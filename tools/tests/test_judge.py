@@ -42,6 +42,10 @@ class JudgeTest(unittest.TestCase):
         _, groups = judge.judge("M1Q1", self.program(code), seed=1, **kwargs)
         return {g.name: g for g in groups}
 
+    def failure(self, group):
+        self.assertIsNotNone(group.first_failure, f"{group.name}: expected a failure")
+        return group.first_failure or ""
+
     def test_reference_scores_full_marks(self):
         ref = judge.reference_code(judge.problem("M1Q1"))
         groups = self.groups(ref, tests=5)
@@ -50,18 +54,18 @@ class JudgeTest(unittest.TestCase):
     def test_wrong_answer_is_reported_with_the_failing_input(self):
         groups = self.groups(ALWAYS_ZERO, tests=20, large=False)
         self.assertLess(groups["random"].passed, 20)
-        self.assertTrue(groups["samples"].first_failure.startswith("WA on input"))
+        self.assertTrue(self.failure(groups["samples"]).startswith("WA on input"))
 
     def test_crash_is_a_runtime_error(self):
         groups = self.groups(CRASHES, tests=2, large=False)
         self.assertEqual(groups["random"].passed, 0)
-        self.assertIn("RE", groups["random"].first_failure)
-        self.assertIn("ValueError", groups["random"].first_failure)
+        self.assertIn("RE", self.failure(groups["random"]))
+        self.assertIn("ValueError", self.failure(groups["random"]))
 
     def test_slow_program_gets_time_limit_exceeded_on_large_tests(self):
         groups = self.groups(SLOW_ON_BIG_INPUT, tests=0, min_time_limit=0.5)
         self.assertEqual(groups["large"].passed, 0)
-        self.assertTrue(groups["large"].first_failure.startswith("TLE on large test"))
+        self.assertTrue(self.failure(groups["large"]).startswith("TLE on large test"))
 
     def test_correct_brute_force_earns_half_marks(self):
         groups = self.groups(CORRECT_QUADRATIC, tests=10, min_time_limit=0.5)

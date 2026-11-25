@@ -5,6 +5,7 @@ import re
 import sys
 import time
 from collections import deque
+from typing import Deque, Set, Tuple
 
 from harness import REPO, blocks_of, case, run_program
 
@@ -22,7 +23,9 @@ def mock(test, q):
     statement = next(folder.glob(f"Q{q}_*.md"))
     text = statement.read_text(encoding="utf-8")
     brute, opt = blocks_of(folder / "solutions" / statement.name)
-    sample_in, sample_out = IN_RE.search(text).group(1), OUT_RE.search(text).group(1).strip()
+    found_in, found_out = IN_RE.search(text), OUT_RE.search(text)
+    assert found_in and found_out, f"{statement.name}: no sample input/output block"
+    sample_in, sample_out = found_in.group(1), found_out.group(1).strip()
     assert run_program(opt, sample_in) == sample_out, "optimized fails sample"
     return brute, opt, sample_in, sample_out
 
@@ -125,8 +128,9 @@ def treasure_bfs(grid):
                 tid[(i, j)] = len(tid)
     full = (1 << len(tid)) - 1
     s = next((i, j) for i in range(r) for j in range(c) if grid[i][j] == "S")
-    start = (s[0], s[1], 0)
-    seen, q = {start}, deque([(start, 0)])
+    start: Tuple[int, int, int] = (s[0], s[1], 0)
+    seen: Set[Tuple[int, int, int]] = {start}
+    q: Deque[Tuple[Tuple[int, int, int], int]] = deque([(start, 0)])
     while q:
         (i, j, mask), d = q.popleft()
         if mask == full:

@@ -35,7 +35,7 @@ Short, exam-ready answers. Practice saying each one aloud in under a minute.
 | Serializable | — | — | — |
 
 ### Indexes
-* Usually a **B+ tree**: lookups, range scans and ordered reads in `O(log n)`.
+* Usually a **B+ tree**: point lookups in `O(log n)`; range scans and ordered reads in `O(log n + k)` for `k` rows returned.
 * **Clustered index:** the table rows are stored in index order (one per table, often the primary key). **Non-clustered:** a separate structure pointing to rows (many per table).
 * Cost: extra storage and slower `INSERT`/`UPDATE`/`DELETE`. Don't index small tables or columns with very few distinct values.
 

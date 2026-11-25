@@ -56,6 +56,8 @@ try:
     PaymentMethod()
 except TypeError:
     pass  # abstract classes cannot be instantiated
+else:
+    raise AssertionError("abstract class was instantiated")
 assert Upi().pay(100) == "UPI paid 100"
 ```
 

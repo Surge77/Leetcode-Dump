@@ -1,6 +1,6 @@
 # 🔹 SQL for the Infosys Technical Interview
 
-Every query below runs against the sample schema in the first block. The **Result** under each query is the real output from SQLite, and `tools/verify` re-runs every query on each push, so the results cannot drift. The syntax is standard SQL that also runs on MySQL 8 and PostgreSQL unless a note says otherwise.
+Every query below runs against the sample schema in the first block. The **Result** under each query is the real output from SQLite, and `tools/verify` re-runs every query in CI, so the results cannot drift. The syntax is standard SQL that also runs on MySQL 8 and PostgreSQL unless a note says otherwise.
 
 ## 🔹 Sample Schema
 

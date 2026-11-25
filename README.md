@@ -10,7 +10,7 @@ This repository is my **personal collection of LeetCode problem solutions**. It 
 * **Step-by-step approaches:** From brute force to optimized solutions.
 * **Clear explanations:** Each solution includes **core logic**, **time/space complexity**, and important **edge cases**.
 * **Language:** Every note has a **Python** solution; some older notes also keep their original **Java** version.
-* **Verified code:** `python tools/verify/verify.py` runs the code of every note against brute-force or reference checks; GitHub Actions runs it on every push.
+* **Verified code:** `python tools/verify/verify.py` runs the code of every note against brute-force or reference checks; GitHub Actions runs it on pushes to `master` and on pull requests.
 
 ---
 

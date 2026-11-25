@@ -35,7 +35,10 @@ Every problem reads **stdin** and prints to **stdout** and has constraints that 
 | **4** | [Balanced Segments](Mock_Test_4/Q1_Easy_Balanced_Segments.md) | [Rival Teams](Mock_Test_4/Q2_Medium_Rival_Teams.md) | [Gold Roads](Mock_Test_4/Q3_Hard_Gold_Roads.md) |
 | **5** | [Coin Piles](Mock_Test_5/Q1_Easy_Coin_Piles.md) | [Price Spread](Mock_Test_5/Q2_Medium_Price_Spread.md) | [Critical Routers](Mock_Test_5/Q3_Hard_Critical_Routers.md) |
 | **6** | [Festival Lamps](Mock_Test_6/Q1_Easy_Festival_Lamps.md) | [Stair Climber](Mock_Test_6/Q2_Medium_Stair_Climber.md) | [Rising Streaks](Mock_Test_6/Q3_Hard_Rising_Streaks.md) |
-<!-- MOCK_ROWS_7_10 -->
+| **7** | [Signal Boost](Mock_Test_7/Q1_Easy_Signal_Boost.md) | [Price Volatility](Mock_Test_7/Q2_Medium_Price_Volatility.md) | [Lantern Paths](Mock_Test_7/Q3_Hard_Lantern_Paths.md) |
+| **8** | [Ferry Seats](Mock_Test_8/Q1_Easy_Ferry_Seats.md) | [Island Hopping](Mock_Test_8/Q2_Medium_Island_Hopping.md) | [Office Network](Mock_Test_8/Q3_Hard_Office_Network.md) |
+| **9** | [Even Streak](Mock_Test_9/Q1_Easy_Even_Streak.md) | [Exam Hall](Mock_Test_9/Q2_Medium_Exam_Hall.md) | [Gem Splitter](Mock_Test_9/Q3_Hard_Gem_Splitter.md) |
+| **10** | [Tray Stack](Mock_Test_10/Q1_Easy_Tray_Stack.md) | [Club Merge](Mock_Test_10/Q2_Medium_Club_Merge.md) | [Freight Limits](Mock_Test_10/Q3_Hard_Freight_Limits.md) |
 
 <details>
 <summary>Topic of each question (spoilers: spotting the pattern is part of the test)</summary>
@@ -48,7 +51,10 @@ Every problem reads **stdin** and prints to **stdout** and has constraints that 
 | 4 | prefix sum + hashing | bipartite + subset-sum DP | SCC condensation + DAG DP |
 | 5 | Sprague–Grundy | sparse table | articulation points |
 | 6 | inclusion–exclusion | matrix exponentiation | DP + Fenwick tree |
-<!-- MOCK_TOPICS_7_10 -->
+| 7 | difference array | monotonic stack, contribution technique | nCr mod p + DP over obstacles |
+| 8 | greedy two pointers | 0-1 BFS | rerooting DP on a weighted tree |
+| 9 | sliding window | binary search on answer | meet-in-the-middle knapsack |
+| 10 | stack with running max | union-find with sizes | binary lifting, path maximum |
 
 </details>
 

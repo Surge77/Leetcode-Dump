@@ -1,6 +1,6 @@
 # 🔹 Infosys SP / DSE — Exam-Structured Practice
 
-This folder organises the repo around the **Infosys Specialist Programmer (SP) / Digital Specialist Engineer (DSE)** online test: 6 full mock tests in the exam's format, a Python contest template, and a map from each exam slot to the problems in this repo.
+This folder organises the repo around the **Infosys Specialist Programmer (SP) / Digital Specialist Engineer (DSE)** online test: full mock tests in the exam's format, a judge that scores your own code, a Python contest template, and a map from each exam slot to the problems in this repo.
 
 > The pattern below comes from public 2025–2026 candidate reports and prep guides, **not** an official Infosys document. Patterns change between hiring cycles — confirm against the notice for your drive.
 
@@ -25,21 +25,47 @@ This folder organises the repo around the **Infosys Specialist Programmer (SP) /
 
 ## 🔹 Mock Tests (original problems, exam format)
 
-Every problem reads **stdin** and prints to **stdout**, has constraints that force the intended complexity, and includes both a **brute force (partial score)** and an **optimized** solution — both verified against each other on random inputs.
+Every problem reads **stdin** and prints to **stdout** and has constraints that force the intended complexity. The problem files contain **only the statement**. Each one's brute force (partial score) and optimized solution, checked against each other on random inputs, are in that mock's `solutions/` folder.
 
 | Mock | Q1 — Easy | Q2 — Medium | Q3 — Hard |
 |---|---|---|---|
-| **1** | [Festival Pairs](Mock_Test_1/Q1_Easy_Festival_Pairs.md) — hashing on remainders | [Lucky Subsets](Mock_Test_1/Q2_Medium_Lucky_Subsets.md) — DP over remainders, mod | [Stock Ticker Queries](Mock_Test_1/Q3_Hard_Stock_Ticker_Queries.md) — segment tree, custom merge |
-| **2** | [Server Rack Shuffle](Mock_Test_2/Q1_Easy_Server_Rack_Shuffle.md) — circular sliding window | [Toll Pass](Mock_Test_2/Q2_Medium_Toll_Pass.md) — Dijkstra on states | [Treasure Route](Mock_Test_2/Q3_Hard_Treasure_Route.md) — BFS + bitmask DP |
-| **3** | [Special Numbers](Mock_Test_3/Q1_Easy_Special_Numbers.md) — sieve, divisors | [Factory Output](Mock_Test_3/Q2_Medium_Factory_Output.md) — binary search on answer | [Smooth Numbers](Mock_Test_3/Q3_Hard_Smooth_Numbers.md) — digit DP, mod |
-| **4** | [Balanced Segments](Mock_Test_4/Q1_Easy_Balanced_Segments.md) — prefix sum + hashing | [Rival Teams](Mock_Test_4/Q2_Medium_Rival_Teams.md) — bipartite + subset-sum DP | [Gold Roads](Mock_Test_4/Q3_Hard_Gold_Roads.md) — SCC condensation + DAG DP |
-| **5** | [Coin Piles](Mock_Test_5/Q1_Easy_Coin_Piles.md) — Sprague–Grundy | [Price Spread](Mock_Test_5/Q2_Medium_Price_Spread.md) — sparse table | [Critical Routers](Mock_Test_5/Q3_Hard_Critical_Routers.md) — articulation points |
-| **6** | [Festival Lamps](Mock_Test_6/Q1_Easy_Festival_Lamps.md) — inclusion–exclusion | [Stair Climber](Mock_Test_6/Q2_Medium_Stair_Climber.md) — matrix exponentiation | [Rising Streaks](Mock_Test_6/Q3_Hard_Rising_Streaks.md) — DP + Fenwick tree |
+| **1** | [Festival Pairs](Mock_Test_1/Q1_Easy_Festival_Pairs.md) | [Lucky Subsets](Mock_Test_1/Q2_Medium_Lucky_Subsets.md) | [Stock Ticker Queries](Mock_Test_1/Q3_Hard_Stock_Ticker_Queries.md) |
+| **2** | [Server Rack Shuffle](Mock_Test_2/Q1_Easy_Server_Rack_Shuffle.md) | [Toll Pass](Mock_Test_2/Q2_Medium_Toll_Pass.md) | [Treasure Route](Mock_Test_2/Q3_Hard_Treasure_Route.md) |
+| **3** | [Special Numbers](Mock_Test_3/Q1_Easy_Special_Numbers.md) | [Factory Output](Mock_Test_3/Q2_Medium_Factory_Output.md) | [Smooth Numbers](Mock_Test_3/Q3_Hard_Smooth_Numbers.md) |
+| **4** | [Balanced Segments](Mock_Test_4/Q1_Easy_Balanced_Segments.md) | [Rival Teams](Mock_Test_4/Q2_Medium_Rival_Teams.md) | [Gold Roads](Mock_Test_4/Q3_Hard_Gold_Roads.md) |
+| **5** | [Coin Piles](Mock_Test_5/Q1_Easy_Coin_Piles.md) | [Price Spread](Mock_Test_5/Q2_Medium_Price_Spread.md) | [Critical Routers](Mock_Test_5/Q3_Hard_Critical_Routers.md) |
+| **6** | [Festival Lamps](Mock_Test_6/Q1_Easy_Festival_Lamps.md) | [Stair Climber](Mock_Test_6/Q2_Medium_Stair_Climber.md) | [Rising Streaks](Mock_Test_6/Q3_Hard_Rising_Streaks.md) |
+<!-- MOCK_ROWS_7_10 -->
+
+<details>
+<summary>Topic of each question (spoilers: spotting the pattern is part of the test)</summary>
+
+| Mock | Q1 | Q2 | Q3 |
+|---|---|---|---|
+| 1 | hashing on remainders | DP over remainders, mod | segment tree, custom merge |
+| 2 | circular sliding window | Dijkstra on states | BFS + bitmask DP |
+| 3 | sieve, divisors | binary search on answer | digit DP, mod |
+| 4 | prefix sum + hashing | bipartite + subset-sum DP | SCC condensation + DAG DP |
+| 5 | Sprague–Grundy | sparse table | articulation points |
+| 6 | inclusion–exclusion | matrix exponentiation | DP + Fenwick tree |
+<!-- MOCK_TOPICS_7_10 -->
+
+</details>
+
+### Judge your own code
+
+```bash
+python tools/judge/judge.py M1Q2 my_q2.py   # samples + 50 random tests + max-size tests, scored /100
+python tools/judge/judge.py --list          # every problem key
+python tools/judge/paper.py                 # random paper: one Easy, Medium, Hard from three different mocks
+```
+
+The judge compares your program with the reference solution. Small tests (the samples plus random ones) are worth 50 points and the max-constraint tests 50, so a correct brute force scores about half, as in the real exam. The time limit on large tests is 3× the reference's own time on your machine (at least 2 s), so it adjusts to how fast your computer is. A failing small test prints its input, the expected output and your output. Every run prints its seed; rerun with `--seed N` to reproduce a failure.
 
 **How to sit a mock:**
-1. Timer on for **3 hours**, no notes. Read only the *Problem Statement* section of each file.
-2. Order: solve Q1 fully → submit a **brute force for Q3** (bank the partial score) → solve Q2 → come back and optimise Q3.
-3. Afterwards compare with the solution sections. Flip **Status** to ✅ only when you can re-code the optimized version unaided.
+1. Run `python tools/judge/paper.py`, or pick a mock. Set a timer for **3 hours** and use no notes.
+2. Order: solve Q1 fully, then submit a **brute force for Q3** to bank its partial score, then solve Q2, then come back and optimise Q3.
+3. Judge every answer, then read the `solutions/` file. Flip **Status** to ✅ only when you can re-code the optimized version unaided and it scores 100.
 
 Keep [Python_Contest_Template.md](Python_Contest_Template.md) memorised — fast input, sieve, nCr mod p, DSU, Dijkstra, Fenwick, segment tree, binary search on answer.
 

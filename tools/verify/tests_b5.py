@@ -121,3 +121,26 @@ def _(h):
             r1, c1 = R.randrange(m), R.randrange(n)
             r2, c2 = R.randrange(r1, m), R.randrange(c1, n)
             assert obj.sumRegion(r1, c1, r2, c2) == sum(g[i][j] for i in range(r1, r2 + 1) for j in range(c1, c2 + 1))
+
+
+@case("1649-mod")
+def _(h):
+    S = h.lc(1649)["Solution"]()
+    n, top = 70000, 10**5
+    ins, small, large = [], 1, top
+    for i in range(n):  # alternate extremes so every insert lands in the middle
+        if i % 2 == 0:
+            ins.append(small)
+            small += 1
+        else:
+            ins.append(large)
+            large -= 1
+    cost, a, b = 0, 0, 0  # a smalls and b larges inserted so far
+    for i in range(n):
+        cost += min(a, b)  # less = a, greater = b for either kind of insert
+        if i % 2 == 0:
+            a += 1
+        else:
+            b += 1
+    assert cost > 10**9 + 7
+    assert S.createSortedArray(ins) == cost % (10**9 + 7)

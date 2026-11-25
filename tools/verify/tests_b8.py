@@ -192,3 +192,17 @@ def _(h):
             assert got == ""
         else:
             assert len(got) == min(map(len, valid)) and not need - Counter(got) and got in s, (s, t, got)
+
+
+@case("907-mod")
+def _(h):
+    S = h.lc(907)["Solution"]()
+    a = [R.randint(20000, 30000) for _ in range(1500)]  # within LeetCode limits, total >> 10^9 + 7
+    total = 0
+    for i in range(len(a)):
+        low = a[i]
+        for j in range(i, len(a)):
+            low = min(low, a[j])
+            total += low
+    assert total > 10**9 + 7
+    assert S.sumSubarrayMins(a) == total % (10**9 + 7)

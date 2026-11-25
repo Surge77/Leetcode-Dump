@@ -1141,3 +1141,17 @@ def _(h):
     for S in solvers(9):
         for x in list(range(-20, 2000)) + [R.randint(-2**31, 2**31 - 1) for _ in range(300)]:
             assert S.isPalindrome(x) == (str(x) == str(x)[::-1]), x
+
+
+@case("3335-mod")
+def _(h):
+    # answers far beyond 10^9 + 7, compared with exact big-integer counting
+    for S in solvers(3335):
+        for s, t in (("zzzzz", 5000), ("abcxyz", 3000)):
+            cnt = [0] * 26
+            for c in s:
+                cnt[ord(c) - 97] += 1
+            for _ in range(t):
+                cnt = [cnt[25], cnt[0] + cnt[25]] + cnt[1:25]
+            assert sum(cnt) > 10**9 + 7
+            assert S.lengthAfterTransformations(s, t) == sum(cnt) % (10**9 + 7)

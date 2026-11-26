@@ -80,6 +80,7 @@ def _(h):
         for sol in (brute, opt):
             root = build_tree(good)
             na, nb = find_node(root, a), find_node(root, b)
+            assert na is not None and nb is not None
             na.val, nb.val = nb.val, na.val
             sol.recoverTree(root)
             assert tree_to_list(root) == good, (good, a, b)
@@ -87,6 +88,7 @@ def _(h):
     good = path_list(n)
     root = build_tree(good)
     lo, hi = find_node(root, 0), find_node(root, n - 1)
+    assert lo is not None and hi is not None
     lo.val, hi.val = hi.val, lo.val
     timed_call(lambda: opt.recoverTree(root), 1)
     assert tree_to_list(root) == good

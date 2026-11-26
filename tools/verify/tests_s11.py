@@ -65,9 +65,9 @@ def _(h):
 def _(h):
     brute, opt = both(h, 160)
     a, b, s = y_lists([4, 1], [5, 6, 1], [8, 4, 5])
-    assert opt.getIntersectionNode(a, b) is s and s.val == 8
+    assert s is not None and opt.getIntersectionNode(a, b) is s and s.val == 8
     a, b, s = y_lists([1, 9, 1], [3], [2, 4])
-    assert opt.getIntersectionNode(a, b) is s and s.val == 2
+    assert s is not None and opt.getIntersectionNode(a, b) is s and s.val == 2
     assert opt.getIntersectionNode(build_list([2, 6, 4]), build_list([1, 5])) is None
     for _ in range(300):
         shared_vals = [R.randint(1, 4) for _ in range(R.randint(0, 5))]

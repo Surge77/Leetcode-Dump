@@ -1,75 +1,75 @@
 ## LeetCode-Dump ✨🚀📚
 
-This repository is my **personal collection of LeetCode problem solutions**. It is designed to track my learning journey and serve as a quick reference for revisiting problem-solving techniques. Each solution is written with a focus on **clarity, clean code, and optimal approaches**. 🔍💡📝
+My **personal DSA notebook**: every problem from the major interview sheets, written up as a pattern note with a **brute-force and an optimized Python solution that are checked against each other automatically**. It also includes an exam kit for the **Infosys SP / DSE** online test. 🔍💡📝
+
+| | |
+|---|---|
+| **LeetCode notes** | **463** (Easy 107 · Medium 269 · Hard 87) in 50 pattern folders → [INDEX.md](INDEX.md) |
+| **Sheets covered 100%** | NeetCode 150 · LeetCode Top Interview 150 · Grind 169 · LeetCode 75 · Striver A2Z (its LeetCode problems) → [SHEETS.md](SHEETS.md) |
+| **Infosys mock problems** | 30 original stdin/stdout problems (10 mock tests) with an offline judge → [Infosys_SP_DSE](Infosys_SP_DSE/README.md) |
+| **Interview round** | SQL (verified on SQLite), OOP, DBMS / OS → [Interview_Prep](Interview_Prep/README.md) |
+| **Checks** | 689 automated checks, run in CI on every push to `master` and every pull request (~70 s) |
+
+The live ✅ / 🔄 counts are in [INDEX.md](INDEX.md) and [SHEETS.md](SHEETS.md). Both are regenerated from the notes, so they are always current.
 
 ---
 
-### **What's Inside?** 🎯📂🔑
+### **Start Here** 🎯
 
-* **Organized solutions:** Grouped by pattern folders — browse them all in **[INDEX.md](INDEX.md)** (number, difficulty, status).
-* **Every famous sheet, complete:** all of **NeetCode 150** (incl. Blind 75), **LeetCode Top Interview 150**, **Grind 169**, **LeetCode 75** and the LeetCode problems of **Striver's A2Z sheet** (which covers the SDE sheet) — follow them topic by topic in **[SHEETS.md](SHEETS.md)**.
-* **Step-by-step approaches:** From brute force to optimized solutions.
-* **Clear explanations:** Each solution includes **core logic**, **time/space complexity**, and important **edge cases**.
-* **Language:** Every note has a **Python** solution; some older notes also keep their original **Java** version.
-* **Verified code:** `python tools/verify/verify.py` runs the code of every note against brute-force or reference checks; GitHub Actions runs it on pushes to `master` and on pull requests.
-* **Consistent format:** `python tools/build_index.py --check` rejects a note whose header, status or link line drifts from [the template](LeetcodeTemplates/ActiveTemplate.md).
-
----
-
-### **Infosys SP / DSE Prep** 🎯
-
-[`Infosys_SP_DSE/`](Infosys_SP_DSE/README.md) maps this repo onto the Infosys Specialist Programmer / Digital Specialist Engineer online test (3 questions, 3 hours, Easy → Medium → Hard): ten original mock tests in the exam's stdin/stdout format, an offline **judge** that scores your own solution per test case (`python tools/judge/judge.py M1Q2 my_q2.py`), random 3-question papers (`python tools/judge/paper.py`), a Python contest template, and a topic map from each exam slot to the problems here.
-
-[`Interview_Prep/`](Interview_Prep/README.md) covers the technical interview that follows: SQL queries (each verified against SQLite), OOP with runnable examples, and DBMS / OS essentials.
+| I want to… | Do this |
+|---|---|
+| Follow a sheet topic by topic | Open [SHEETS.md](SHEETS.md), pick a sheet, work down its topics |
+| Revise what I haven't mastered | `python tools/review.py` → solve today's picks unaided → `python tools/review.py log <#> pass` (or `fail`) |
+| Practise for the Infosys test | `python tools/judge/paper.py` for a random 3-hour paper, then `python tools/judge/judge.py M1Q2 my_q2.py` to score each answer |
+| Find a pattern's problems | [INDEX.md](INDEX.md) (by folder) or the [topic map](Infosys_SP_DSE/README.md#-topic-map--problems-in-this-repo) (by exam slot) |
 
 ---
 
-### **Key Problem-Solving Patterns** 🧩🎓⚡
+### **What Every Note Contains** 📂
 
-The solutions in this repository cover common problem-solving patterns like:
+Each note follows [the template](LeetcodeTemplates/ActiveTemplate.md):
 
-* **Two Pointers & Sliding Window**
-* **Binary Search & Divide and Conquer**
-* **Dynamic Programming (DP)**
-* **Dynamic Programming variants** (knapsack, LIS, interval, bitmask, digit, tree DP)
-* **Graph Algorithms (DFS, BFS, Dijkstra, Bellman-Ford, Floyd-Warshall, Topological Sort, Union-Find, Bridges)**
-* **Range Queries (Prefix Sums, Segment Tree, Fenwick Tree)**
-* **Number Theory & Modular Arithmetic**
-* **Tree Traversals, BSTs & Recursion**
-* **Linked Lists & String Processing**
-* **Meet in the Middle & Binary Lifting**
-* **Greedy and Backtracking**
-* **Heap, Stack, and Queue problems**
-* **String Matching (KMP) & Tries**
+* **Header:** `N. Title (Category, Difficulty)`, the LeetCode link, and the status: **✅ Solved** or **🔄 Need Review**.
+* **Quick Breakdown, Optimization Path, Solution Breakdown:** the main idea, when to use the pattern, the mistakes to avoid, and *why* the approach works.
+* **Pattern Recognition:** related problems; "(in this repo)" marks the ones that have a note here.
+* **Complexity Analysis** for both approaches.
+* **Code Snippet (Brute Force)** and **Code Snippet (Optimized)**, both in Python. Some older notes also keep their original Java.
+* LeetCode Premium problems carry a 🔒 line pointing to a free copy (neetcode.io / LintCode).
 
 ---
 
-### **How I Use This Repository** 🛠️📖🚀
+### **Tools** 🛠️
 
-1. **Practice problems:** I use this repository as a log of problems I’ve solved.
-2. **Review patterns:** Revisiting solutions helps me quickly identify and recall patterns.
-3. **Iterative improvement:** I update solutions as I discover better or more efficient approaches.
-4. **Daily review:** `python tools/review.py` picks today's problems from the 🔄 notes (title and link only — spotting the pattern is part of the drill). After solving, run `python tools/review.py log 322 pass` (or `fail`). Reviews are spaced 1 → 3 → 7 → 16 → 35 days apart. Two passes in a row flip the note to ✅ and a fail flips it back. `python tools/review.py stats` shows progress.
-5. **Run the checks:** `python tools/verify/verify.py` (all notes) or `python tools/verify/verify.py 322 704` (selected ones). After adding a note, run `python tools/build_index.py` to refresh the index.
-6. **One-time setup per clone:** `git config core.hooksPath .githooks` enables a pre-commit hook. It runs the format/index check in under a second.
+| Command | What it does |
+|---|---|
+| `python tools/verify/verify.py [N …]` | Runs every note's code (or only the notes you list). Brute force and optimized are compared on random inputs, plus LeetCode's examples and max-size runs. `VERIFY_TIMING=1` also enforces the time limits. |
+| `python tools/build_index.py [--check]` | Lints note format and regenerates `INDEX.md` and `SHEETS.md` (sheet data: `tools/sheets.json`). `--check` fails on drift (used by CI and the hook). |
+| `python tools/review.py [today\|log\|show\|stats]` | Spaced-repetition drill over the 🔄 notes. It shows the title and link only, so spotting the pattern is part of the drill. Reviews are spaced 1 → 3 → 7 → 16 → 35 days apart. Two passes in a row flip a note to ✅; a fail flips it back. Progress: `tools/review_state.json`. |
+| `python tools/judge/judge.py MxQy file.py` | Offline judge for the mock problems. Scores out of 100: small tests are worth 50 and max-size tests 50, with a time limit that adapts to your machine's speed. |
+| `python tools/judge/paper.py` | Random Easy/Medium/Hard paper drawn from three different mocks. |
+| `python -m unittest discover -s tools/tests` | Unit tests for the judge and the review drill. |
+
+**One-time setup per clone:** run `git config core.hooksPath .githooks`. This enables a pre-commit hook that runs the format/index check on the staged files in under a second.
+
+**Adding a note:**
+1. Copy the template into the right pattern folder as `N.Title_With_Underscores.md`.
+2. Write the brute-force and optimized Python blocks. The optimized one must be the **last** Python block.
+3. Add a `@case(N)` in a `tools/verify/tests_*.py` file.
+4. Run `verify.py N`, then `build_index.py`, and commit.
 
 ---
 
-### **Best Practices I Follow** 🧠✔️🔧
+### **Key Problem-Solving Patterns** 🧩
 
-* Documenting **time & space complexity** for every solution.
-* Writing **readable, clean code** with intuitive variable names.
-* Showing **multiple approaches** for comparison.
-* Including **detailed reasoning** for tricky or less obvious solutions.
+Two Pointers & Sliding Window · Binary Search (incl. on the answer) & Divide and Conquer · Prefix Sums & Difference Arrays · Hashing · Stacks, Queues & Monotonic Stack · Linked Lists · Trees, BSTs, Tries & Binary Lifting · Heaps / Top-K · Greedy & Intervals · Backtracking · Graphs (BFS/DFS, Dijkstra, Bellman-Ford, Floyd-Warshall, topological sort, Union-Find, MST, bridges, SCC) · Dynamic Programming (1-D, grid/strings, knapsack, LIS, interval, bitmask, digit, tree / rerooting, matrix exponentiation) · Segment Tree & Fenwick Tree · Number Theory & Modular Arithmetic · Game Theory · Meet in the Middle · String Matching (KMP, Z, rolling hash, Manacher) · Bit Manipulation
 
 ---
 
-### **Personal Roadmap** 🗺️🚧📈
+### **Roadmap** 🗺️
 
-* Clear the **🔄 Need Review** queue with `tools/review.py` (each note needs two spaced, unaided passes).
-* Sit every Infosys mock test under a 3-hour timer, then random papers, and judge every answer.
-* Add **flowcharts or step-by-step breakdowns** for complex problems.
-* Maintain **regular updates** as I practice new problems.
+* Clear the **🔄 Need Review** queue with `tools/review.py`. Each note needs two spaced, unaided passes.
+* Sit all ten Infosys mock tests under a 3-hour timer, then random papers. Judge every answer.
+* Add flowcharts or step-by-step breakdowns for the hardest problems.
 
 ---
 

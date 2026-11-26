@@ -79,6 +79,8 @@ Keep [Python_Contest_Template.md](Python_Contest_Template.md) memorised — fast
 
 ## 🔹 Topic Map → Problems in This Repo
 
+The table below picks the most exam-relevant problems per slot. For the full set (463 notes, five complete sheets), work through [SHEETS.md](../SHEETS.md) topic by topic. Drill the 🔄 ones daily with `python tools/review.py`.
+
 | Topic | Slot | Problems |
 |---|---|---|
 | Hashing & prefix sums | Q1 | [1](../Hashing/1.Two_Sum.md) · [560](../Prefix_Sum/560.Subarray_Sum_Equals_K.md) · [304](../Prefix_Sum/304.Range_Sum_Query_2D_Immutable.md) · [Festival Pairs](Mock_Test_1/Q1_Easy_Festival_Pairs.md) · [Balanced Segments](Mock_Test_4/Q1_Easy_Balanced_Segments.md) |

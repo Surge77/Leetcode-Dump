@@ -46,12 +46,18 @@
 - **Time Complexity:** O(?)
 - **Space Complexity:** O(?)
 
-## **🔹 Code Snippet (Optimized)**
+## 🔹 Code Snippet (Brute Force)
 
+```python
+# the simple / slower approach from "Optimization Path" — same class and method signature
 ```
 
+## 🔹 Code Snippet (Optimized)
+
+```python
+# must be the LAST python block: tools/verify loads it as the reference solution
 ```
 
-```
+<!-- Then add a @case(<number>) in tools/verify/tests_*.py comparing both blocks on random inputs,
+     run `python tools/verify/verify.py <number>` and `python tools/build_index.py`. -->
 
-```

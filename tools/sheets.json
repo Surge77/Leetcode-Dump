@@ -848,5 +848,449 @@
     ]
    }
   ]
+ },
+ "Grind 169": {
+  "source": "https://www.techinterviewhandbook.org/grind75?weeks=16&hours=10",
+  "topics": [
+   {
+    "topic": "Part 1",
+    "problems": [
+     1,
+     20,
+     21,
+     70,
+     110,
+     121,
+     125,
+     141,
+     226,
+     232,
+     242,
+     278,
+     383,
+     409,
+     704,
+     733,
+     235
+    ]
+   },
+   {
+    "topic": "Part 2",
+    "problems": [
+     13,
+     14,
+     67,
+     100,
+     104,
+     136,
+     169,
+     191,
+     206,
+     217,
+     234,
+     252,
+     338,
+     543,
+     844,
+     876
+    ]
+   },
+   {
+    "topic": "Part 3",
+    "problems": [
+     9,
+     101,
+     108,
+     190,
+     268,
+     283,
+     572,
+     977,
+     3,
+     53,
+     57,
+     542,
+     973
+    ]
+   },
+   {
+    "topic": "Part 4",
+    "problems": [
+     15,
+     98,
+     102,
+     133,
+     150,
+     155,
+     200,
+     207,
+     208,
+     238,
+     322
+    ]
+   },
+   {
+    "topic": "Part 5",
+    "problems": [
+     33,
+     39,
+     46,
+     56,
+     75,
+     139,
+     236,
+     721,
+     981,
+     994
+    ]
+   },
+   {
+    "topic": "Part 6",
+    "problems": [
+     5,
+     8,
+     11,
+     17,
+     54,
+     62,
+     78,
+     79,
+     105,
+     199,
+     416
+    ]
+   },
+   {
+    "topic": "Part 7",
+    "problems": [
+     31,
+     36,
+     134,
+     146,
+     198,
+     230,
+     310,
+     438,
+     621,
+     739
+    ]
+   },
+   {
+    "topic": "Part 8",
+    "problems": [
+     19,
+     49,
+     152,
+     211,
+     261,
+     287,
+     300,
+     417,
+     692,
+     1730
+    ]
+   },
+   {
+    "topic": "Part 9",
+    "problems": [
+     24,
+     113,
+     128,
+     189,
+     210,
+     328,
+     394,
+     424,
+     525,
+     658,
+     662
+    ]
+   },
+   {
+    "topic": "Part 10",
+    "problems": [
+     2,
+     22,
+     55,
+     148,
+     285,
+     323,
+     528,
+     560,
+     735,
+     1197
+    ]
+   },
+   {
+    "topic": "Part 11",
+    "problems": [
+     48,
+     50,
+     74,
+     91,
+     103,
+     179,
+     215,
+     221,
+     253,
+     362,
+     437
+    ]
+   },
+   {
+    "topic": "Part 12",
+    "problems": [
+     7,
+     16,
+     61,
+     73,
+     143,
+     153,
+     227,
+     271,
+     787,
+     863
+    ]
+   },
+   {
+    "topic": "Part 13",
+    "problems": [
+     377,
+     380,
+     435,
+     42,
+     76,
+     127,
+     224,
+     295,
+     297
+    ]
+   },
+   {
+    "topic": "Part 14",
+    "problems": [
+     4,
+     23,
+     32,
+     84,
+     124,
+     329,
+     895,
+     1235
+    ]
+   },
+   {
+    "topic": "Part 15",
+    "problems": [
+     212,
+     239,
+     269,
+     336,
+     588,
+     759,
+     815
+    ]
+   },
+   {
+    "topic": "Part 16",
+    "problems": [
+     25,
+     37,
+     41,
+     51,
+     632
+    ]
+   }
+  ]
+ },
+ "LeetCode 75": {
+  "source": "https://leetcode.com/studyplan/leetcode-75/",
+  "topics": [
+   {
+    "topic": "Array / String",
+    "problems": [
+     1768,
+     1071,
+     1431,
+     605,
+     345,
+     151,
+     238,
+     334,
+     443
+    ]
+   },
+   {
+    "topic": "Two Pointers",
+    "problems": [
+     283,
+     392,
+     11,
+     1679
+    ]
+   },
+   {
+    "topic": "Sliding Window",
+    "problems": [
+     643,
+     1456,
+     1004,
+     1493
+    ]
+   },
+   {
+    "topic": "Prefix Sum",
+    "problems": [
+     1732,
+     724
+    ]
+   },
+   {
+    "topic": "Hash Map / Set",
+    "problems": [
+     2215,
+     1207,
+     1657,
+     2352
+    ]
+   },
+   {
+    "topic": "Stack",
+    "problems": [
+     2390,
+     735,
+     394
+    ]
+   },
+   {
+    "topic": "Queue",
+    "problems": [
+     933,
+     649
+    ]
+   },
+   {
+    "topic": "Linked List",
+    "problems": [
+     2095,
+     328,
+     206,
+     2130
+    ]
+   },
+   {
+    "topic": "Binary Tree - DFS",
+    "problems": [
+     104,
+     872,
+     1448,
+     437,
+     1372,
+     236
+    ]
+   },
+   {
+    "topic": "Binary Tree - BFS",
+    "problems": [
+     199,
+     1161
+    ]
+   },
+   {
+    "topic": "Binary Search Tree",
+    "problems": [
+     700,
+     450
+    ]
+   },
+   {
+    "topic": "Graphs - DFS",
+    "problems": [
+     841,
+     547,
+     1466,
+     399
+    ]
+   },
+   {
+    "topic": "Graphs - BFS",
+    "problems": [
+     1926,
+     994
+    ]
+   },
+   {
+    "topic": "Heap / Priority Queue",
+    "problems": [
+     215,
+     2336,
+     2542,
+     2462
+    ]
+   },
+   {
+    "topic": "Binary Search",
+    "problems": [
+     374,
+     2300,
+     162,
+     875
+    ]
+   },
+   {
+    "topic": "Backtracking",
+    "problems": [
+     17,
+     216
+    ]
+   },
+   {
+    "topic": "DP - 1D",
+    "problems": [
+     1137,
+     746,
+     198,
+     790
+    ]
+   },
+   {
+    "topic": "DP - Multidimensional",
+    "problems": [
+     62,
+     1143,
+     714,
+     72
+    ]
+   },
+   {
+    "topic": "Bit Manipulation",
+    "problems": [
+     338,
+     136,
+     1318
+    ]
+   },
+   {
+    "topic": "Trie",
+    "problems": [
+     208,
+     1268
+    ]
+   },
+   {
+    "topic": "Intervals",
+    "problems": [
+     435,
+     452
+    ]
+   },
+   {
+    "topic": "Monotonic Stack",
+    "problems": [
+     739,
+     901
+    ]
+   }
+  ]
  }
 }

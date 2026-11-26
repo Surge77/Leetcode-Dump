@@ -3,17 +3,24 @@
 Notes with several python blocks (brute force + optimized) have every block checked.
 """
 import random
+import re
 from collections import Counter, OrderedDict, deque
 from itertools import combinations, permutations, product
 from math import comb, isqrt
 
-from harness import TreeNode, build_list, build_tree, case, lc_all, list_to_py, tree_to_list
+from harness import TreeNode, build_list, build_tree, case, lc_all, lc_path, list_to_py, tree_to_list
 
 R = random.Random(2024)
+BRUTE_HEADING_RE = re.compile(r"^#+ .*Code Snippet \(Brute Force\)", re.M)
 
 
 def solvers(num, name="Solution"):
-    return [ns[name]() if name == "Solution" else ns[name] for ns in lc_all(num, name)]
+    """Every solution block except the brute force: brute forces are checked on small inputs by the
+    '<num>-brute' cases, and the inputs here (e.g. t = 5000 for 3335) are sized for real solutions."""
+    namespaces = lc_all(num, name)
+    if BRUTE_HEADING_RE.search(lc_path(num).read_text(encoding="utf-8")) and len(namespaces) > 1:
+        namespaces = namespaces[1:]  # the brute-force section always holds the note's first python block
+    return [ns[name]() if name == "Solution" else ns[name] for ns in namespaces]
 
 
 def rand_tree(n, lo=-9, hi=9, distinct=False):

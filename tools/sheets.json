@@ -1,0 +1,852 @@
+{
+ "NeetCode 150": {
+  "source": "https://neetcode.io/practice",
+  "topics": [
+   {
+    "topic": "Arrays & Hashing",
+    "problems": [
+     217,
+     242,
+     1,
+     49,
+     347,
+     238,
+     36,
+     271,
+     128
+    ]
+   },
+   {
+    "topic": "Two Pointers",
+    "problems": [
+     125,
+     167,
+     15,
+     11,
+     42
+    ]
+   },
+   {
+    "topic": "Sliding Window",
+    "problems": [
+     121,
+     3,
+     424,
+     567,
+     76,
+     239
+    ]
+   },
+   {
+    "topic": "Stack",
+    "problems": [
+     20,
+     155,
+     150,
+     22,
+     739,
+     853,
+     84
+    ]
+   },
+   {
+    "topic": "Binary Search",
+    "problems": [
+     704,
+     74,
+     875,
+     153,
+     33,
+     981,
+     4
+    ]
+   },
+   {
+    "topic": "Linked List",
+    "problems": [
+     206,
+     21,
+     143,
+     19,
+     138,
+     2,
+     141,
+     287,
+     146,
+     23,
+     25
+    ]
+   },
+   {
+    "topic": "Trees",
+    "problems": [
+     226,
+     104,
+     543,
+     110,
+     100,
+     572,
+     235,
+     102,
+     199,
+     1448,
+     98,
+     230,
+     105,
+     124,
+     297
+    ]
+   },
+   {
+    "topic": "Tries",
+    "problems": [
+     208,
+     211,
+     212
+    ]
+   },
+   {
+    "topic": "Heap / Priority Queue",
+    "problems": [
+     703,
+     1046,
+     973,
+     215,
+     621,
+     355,
+     295
+    ]
+   },
+   {
+    "topic": "Backtracking",
+    "problems": [
+     78,
+     39,
+     46,
+     90,
+     40,
+     79,
+     131,
+     17,
+     51
+    ]
+   },
+   {
+    "topic": "Graphs",
+    "problems": [
+     200,
+     133,
+     695,
+     417,
+     130,
+     994,
+     286,
+     207,
+     210,
+     684,
+     323,
+     261,
+     127
+    ]
+   },
+   {
+    "topic": "Advanced Graphs",
+    "problems": [
+     332,
+     1584,
+     743,
+     778,
+     269,
+     787
+    ]
+   },
+   {
+    "topic": "1-D Dynamic Programming",
+    "problems": [
+     70,
+     746,
+     198,
+     213,
+     5,
+     647,
+     91,
+     322,
+     152,
+     139,
+     300,
+     416
+    ]
+   },
+   {
+    "topic": "2-D Dynamic Programming",
+    "problems": [
+     62,
+     1143,
+     309,
+     518,
+     494,
+     97,
+     329,
+     115,
+     72,
+     312,
+     10
+    ]
+   },
+   {
+    "topic": "Greedy",
+    "problems": [
+     53,
+     55,
+     45,
+     134,
+     846,
+     1899,
+     763,
+     678
+    ]
+   },
+   {
+    "topic": "Intervals",
+    "problems": [
+     57,
+     56,
+     435,
+     252,
+     253,
+     1851
+    ]
+   },
+   {
+    "topic": "Math & Geometry",
+    "problems": [
+     48,
+     54,
+     73,
+     202,
+     66,
+     50,
+     43,
+     2013
+    ]
+   },
+   {
+    "topic": "Bit Manipulation",
+    "problems": [
+     136,
+     191,
+     338,
+     190,
+     268,
+     371,
+     7
+    ]
+   }
+  ]
+ },
+ "LeetCode Top Interview 150": {
+  "source": "https://leetcode.com/studyplan/top-interview-150/",
+  "topics": [
+   {
+    "topic": "Array / String",
+    "problems": [
+     88,
+     27,
+     26,
+     80,
+     169,
+     189,
+     121,
+     122,
+     55,
+     45,
+     274,
+     380,
+     238,
+     134,
+     135,
+     42,
+     13,
+     12,
+     58,
+     14,
+     151,
+     6,
+     28,
+     68
+    ]
+   },
+   {
+    "topic": "Two Pointers",
+    "problems": [
+     125,
+     392,
+     167,
+     11,
+     15
+    ]
+   },
+   {
+    "topic": "Sliding Window",
+    "problems": [
+     209,
+     3,
+     30,
+     76
+    ]
+   },
+   {
+    "topic": "Matrix",
+    "problems": [
+     36,
+     54,
+     48,
+     73,
+     289
+    ]
+   },
+   {
+    "topic": "Hashmap",
+    "problems": [
+     383,
+     205,
+     290,
+     242,
+     49,
+     1,
+     202,
+     219,
+     128
+    ]
+   },
+   {
+    "topic": "Intervals",
+    "problems": [
+     228,
+     56,
+     57,
+     452
+    ]
+   },
+   {
+    "topic": "Stack",
+    "problems": [
+     20,
+     71,
+     155,
+     150,
+     224
+    ]
+   },
+   {
+    "topic": "Linked List",
+    "problems": [
+     141,
+     2,
+     21,
+     138,
+     92,
+     25,
+     19,
+     82,
+     61,
+     86,
+     146
+    ]
+   },
+   {
+    "topic": "Binary Tree General",
+    "problems": [
+     104,
+     100,
+     226,
+     101,
+     105,
+     106,
+     117,
+     114,
+     112,
+     129,
+     124,
+     173,
+     222,
+     236
+    ]
+   },
+   {
+    "topic": "Binary Tree BFS",
+    "problems": [
+     199,
+     637,
+     102,
+     103
+    ]
+   },
+   {
+    "topic": "Binary Search Tree",
+    "problems": [
+     530,
+     230,
+     98
+    ]
+   },
+   {
+    "topic": "Graph General",
+    "problems": [
+     200,
+     130,
+     133,
+     399,
+     207,
+     210
+    ]
+   },
+   {
+    "topic": "Graph BFS",
+    "problems": [
+     909,
+     433,
+     127
+    ]
+   },
+   {
+    "topic": "Trie",
+    "problems": [
+     208,
+     211,
+     212
+    ]
+   },
+   {
+    "topic": "Backtracking",
+    "problems": [
+     17,
+     77,
+     46,
+     39,
+     52,
+     22,
+     79
+    ]
+   },
+   {
+    "topic": "Divide & Conquer",
+    "problems": [
+     108,
+     148,
+     427,
+     23
+    ]
+   },
+   {
+    "topic": "Kadane's Algorithm",
+    "problems": [
+     53,
+     918
+    ]
+   },
+   {
+    "topic": "Binary Search",
+    "problems": [
+     35,
+     74,
+     162,
+     33,
+     34,
+     153,
+     4
+    ]
+   },
+   {
+    "topic": "Heap",
+    "problems": [
+     215,
+     502,
+     373,
+     295
+    ]
+   },
+   {
+    "topic": "Bit Manipulation",
+    "problems": [
+     67,
+     190,
+     191,
+     136,
+     137,
+     201
+    ]
+   },
+   {
+    "topic": "Math",
+    "problems": [
+     9,
+     66,
+     172,
+     69,
+     50,
+     149
+    ]
+   },
+   {
+    "topic": "1D DP",
+    "problems": [
+     70,
+     198,
+     139,
+     322,
+     300
+    ]
+   },
+   {
+    "topic": "Multidimensional DP",
+    "problems": [
+     120,
+     64,
+     63,
+     5,
+     97,
+     72,
+     123,
+     188,
+     221
+    ]
+   }
+  ]
+ },
+ "Striver A2Z DSA Sheet (LeetCode problems)": {
+  "source": "https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2",
+  "topics": [
+   {
+    "topic": "Learn the Basics",
+    "problems": [
+     9,
+     509
+    ]
+   },
+   {
+    "topic": "Learn Important Sorting Techniques",
+    "problems": [
+     912
+    ]
+   },
+   {
+    "topic": "Solve Problems on Arrays",
+    "problems": [
+     1752,
+     26,
+     189,
+     283,
+     268,
+     485,
+     136,
+     1,
+     75,
+     169,
+     53,
+     121,
+     2149,
+     31,
+     128,
+     73,
+     48,
+     54,
+     560,
+     118,
+     229,
+     15,
+     18,
+     56,
+     493,
+     152
+    ]
+   },
+   {
+    "topic": "Binary Search",
+    "problems": [
+     704,
+     35,
+     34,
+     33,
+     81,
+     153,
+     540,
+     162,
+     69,
+     875,
+     1482,
+     1283,
+     1011,
+     1539,
+     410,
+     4,
+     74,
+     240,
+     1901
+    ]
+   },
+   {
+    "topic": "Strings [Basic and Medium]",
+    "problems": [
+     1021,
+     151,
+     1903,
+     14,
+     205,
+     796,
+     242,
+     451,
+     1614,
+     13,
+     8,
+     5,
+     1781
+    ]
+   },
+   {
+    "topic": "Learn LinkedList",
+    "problems": [
+     876,
+     206,
+     141,
+     142,
+     234,
+     328,
+     19,
+     2095,
+     148,
+     160,
+     2,
+     25,
+     61,
+     138
+    ]
+   },
+   {
+    "topic": "Recursion [PatternWise]",
+    "problems": [
+     8,
+     50,
+     1922,
+     22,
+     78,
+     39,
+     40,
+     90,
+     216,
+     17,
+     131,
+     79,
+     51,
+     139,
+     37,
+     282
+    ]
+   },
+   {
+    "topic": "Bit Manipulation",
+    "problems": [
+     231,
+     191,
+     29,
+     2220,
+     136,
+     78,
+     260,
+     50
+    ]
+   },
+   {
+    "topic": "Stack and Queues",
+    "problems": [
+     225,
+     232,
+     20,
+     155,
+     496,
+     503,
+     42,
+     907,
+     735,
+     2104,
+     402,
+     84,
+     85,
+     239,
+     901,
+     146,
+     460
+    ]
+   },
+   {
+    "topic": "Sliding Window & Two Pointer",
+    "problems": [
+     3,
+     1004,
+     904,
+     424,
+     930,
+     1248,
+     1358,
+     1423,
+     340,
+     992,
+     76,
+     727
+    ]
+   },
+   {
+    "topic": "Heaps",
+    "problems": [
+     215,
+     23,
+     621,
+     846,
+     355,
+     703,
+     295,
+     347
+    ]
+   },
+   {
+    "topic": "Greedy Algorithms",
+    "problems": [
+     455,
+     860,
+     55,
+     45,
+     135,
+     57,
+     56,
+     435
+    ]
+   },
+   {
+    "topic": "Binary Trees",
+    "problems": [
+     144,
+     94,
+     145,
+     102,
+     104,
+     110,
+     543,
+     124,
+     100,
+     103,
+     987,
+     199,
+     101,
+     257,
+     236,
+     662,
+     863,
+     222,
+     105,
+     106,
+     297,
+     114
+    ]
+   },
+   {
+    "topic": "Binary Search Trees",
+    "problems": [
+     700,
+     701,
+     450,
+     230,
+     98,
+     235,
+     1008,
+     653,
+     99
+    ]
+   },
+   {
+    "topic": "Graphs",
+    "problems": [
+     547,
+     994,
+     733,
+     542,
+     130,
+     1020,
+     127,
+     126,
+     200,
+     785,
+     207,
+     210,
+     802,
+     1631,
+     787,
+     743,
+     1976,
+     1334,
+     1319,
+     947,
+     721,
+     827,
+     778
+    ]
+   },
+   {
+    "topic": "Dynamic Programming",
+    "problems": [
+     70,
+     198,
+     213,
+     62,
+     63,
+     64,
+     120,
+     931,
+     416,
+     455,
+     322,
+     494,
+     518,
+     1143,
+     516,
+     1312,
+     1092,
+     115,
+     72,
+     44,
+     121,
+     122,
+     123,
+     188,
+     309,
+     714,
+     300,
+     368,
+     1048,
+     673,
+     1547,
+     312,
+     132,
+     1043,
+     85,
+     1277
+    ]
+   },
+   {
+    "topic": "Tries",
+    "problems": [
+     208,
+     421
+    ]
+   },
+   {
+    "topic": "Strings [Hard]",
+    "problems": [
+     38,
+     28,
+     214,
+     1392
+    ]
+   }
+  ]
+ }
+}

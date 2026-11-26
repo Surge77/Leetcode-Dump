@@ -7,7 +7,7 @@ This repository is my **personal collection of LeetCode problem solutions**. It 
 ### **What's Inside?** 🎯📂🔑
 
 * **Organized solutions:** Grouped by pattern folders — browse them all in **[INDEX.md](INDEX.md)** (number, difficulty, status).
-* **Every famous sheet, complete:** all of **NeetCode 150** (incl. Blind 75), **LeetCode Top Interview 150** and the LeetCode problems of **Striver's A2Z sheet** (which covers the SDE sheet) — follow them topic by topic in **[SHEETS.md](SHEETS.md)**.
+* **Every famous sheet, complete:** all of **NeetCode 150** (incl. Blind 75), **LeetCode Top Interview 150**, **Grind 169**, **LeetCode 75** and the LeetCode problems of **Striver's A2Z sheet** (which covers the SDE sheet) — follow them topic by topic in **[SHEETS.md](SHEETS.md)**.
 * **Step-by-step approaches:** From brute force to optimized solutions.
 * **Clear explanations:** Each solution includes **core logic**, **time/space complexity**, and important **edge cases**.
 * **Language:** Every note has a **Python** solution; some older notes also keep their original **Java** version.

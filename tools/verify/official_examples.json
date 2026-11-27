@@ -1,0 +1,12532 @@
+{
+"1": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,7,11,15]",
+"9"
+],
+"output": "[0,1]"
+},
+{
+"input": [
+"[3,2,4]",
+"6"
+],
+"output": "[1,2]"
+},
+{
+"input": [
+"[3,3]",
+"6"
+],
+"output": "[0,1]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "twoSum",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer[]"
+},
+"2": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,4,3]",
+"[5,6,4]"
+],
+"output": "[7,0,8]"
+},
+{
+"input": [
+"[0]",
+"[0]"
+],
+"output": "[0]"
+},
+{
+"input": [
+"[9,9,9,9,9,9,9]",
+"[9,9,9,9]"
+],
+"output": "[8,9,9,9,0,0,0,1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "addTwoNumbers",
+"params": [
+"ListNode",
+"ListNode"
+],
+"return": "ListNode"
+},
+"3": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"abcabcbb\""
+],
+"output": "3"
+},
+{
+"input": [
+"\"bbbbb\""
+],
+"output": "1"
+},
+{
+"input": [
+"\"pwwkew\""
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "lengthOfLongestSubstring",
+"params": [
+"string"
+],
+"return": "integer"
+},
+"4": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,3]",
+"[2]"
+],
+"output": "2.00000"
+},
+{
+"input": [
+"[1,2]",
+"[3,4]"
+],
+"output": "2.50000"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findMedianSortedArrays",
+"params": [
+"integer[]",
+"integer[]"
+],
+"return": "double"
+},
+"5": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"babad\""
+],
+"output": "\"bab\""
+},
+{
+"input": [
+"\"cbbd\""
+],
+"output": "\"bb\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "longestPalindrome",
+"params": [
+"string"
+],
+"return": "string"
+},
+"6": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"PAYPALISHIRING\"",
+"3"
+],
+"output": "\"PAHNAPLSIIGYIR\""
+},
+{
+"input": [
+"\"PAYPALISHIRING\"",
+"4"
+],
+"output": "\"PINALSIGYAHRPI\""
+},
+{
+"input": [
+"\"A\"",
+"1"
+],
+"output": "\"A\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "convert",
+"params": [
+"string",
+"integer"
+],
+"return": "string"
+},
+"7": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"123"
+],
+"output": "321"
+},
+{
+"input": [
+"-123"
+],
+"output": "-321"
+},
+{
+"input": [
+"120"
+],
+"output": "21"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "reverse",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"8": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"42\""
+],
+"output": "42"
+},
+{
+"input": [
+"\" -042\""
+],
+"output": "-42"
+},
+{
+"input": [
+"\"1337c0d3\""
+],
+"output": "1337"
+},
+{
+"input": [
+"\"0-1\""
+],
+"output": "0"
+},
+{
+"input": [
+"\"words and 987\""
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "myAtoi",
+"params": [
+"string"
+],
+"return": "integer"
+},
+"9": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"121"
+],
+"output": "true"
+},
+{
+"input": [
+"-121"
+],
+"output": "false"
+},
+{
+"input": [
+"10"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isPalindrome",
+"params": [
+"integer"
+],
+"return": "boolean"
+},
+"10": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"aa\"",
+"\"a\""
+],
+"output": "false"
+},
+{
+"input": [
+"\"aa\"",
+"\"a*\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"ab\"",
+"\".*\""
+],
+"output": "true"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isMatch",
+"params": [
+"string",
+"string"
+],
+"return": "boolean"
+},
+"11": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,8,6,2,5,4,8,3,7]"
+],
+"output": "49"
+},
+{
+"input": [
+"[1,1]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxArea",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"12": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"3749"
+],
+"output": "\"MMMDCCXLIX\""
+},
+{
+"input": [
+"58"
+],
+"output": "\"LVIII\""
+},
+{
+"input": [
+"1994"
+],
+"output": "\"MCMXCIV\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "intToRoman",
+"params": [
+"integer"
+],
+"return": "string"
+},
+"13": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"III\""
+],
+"output": "3"
+},
+{
+"input": [
+"\"LVIII\""
+],
+"output": "58"
+},
+{
+"input": [
+"\"MCMXCIV\""
+],
+"output": "1994"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "romanToInt",
+"params": [
+"string"
+],
+"return": "integer"
+},
+"14": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[\"flower\",\"flow\",\"flight\"]"
+],
+"output": "\"fl\""
+},
+{
+"input": [
+"[\"dog\",\"racecar\",\"car\"]"
+],
+"output": "\"\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "longestCommonPrefix",
+"params": [
+"string[]"
+],
+"return": "string"
+},
+"15": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[-1,0,1,2,-1,-4]"
+],
+"output": "[[-1,-1,2],[-1,0,1]]"
+},
+{
+"input": [
+"[0,1,1]"
+],
+"output": "[]"
+},
+{
+"input": [
+"[0,0,0]"
+],
+"output": "[[0,0,0]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "threeSum",
+"params": [
+"integer[]"
+],
+"return": "list<list<integer>>"
+},
+"16": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[-1,2,1,-4]",
+"1"
+],
+"output": "2"
+},
+{
+"input": [
+"[0,0,0]",
+"1"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "threeSumClosest",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"17": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"23\""
+],
+"output": "[\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]"
+},
+{
+"input": [
+"\"2\""
+],
+"output": "[\"a\",\"b\",\"c\"]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "letterCombinations",
+"params": [
+"string"
+],
+"return": "list<string>"
+},
+"18": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,0,-1,0,-2,2]",
+"0"
+],
+"output": "[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]"
+},
+{
+"input": [
+"[2,2,2,2,2]",
+"8"
+],
+"output": "[[2,2,2,2]]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "fourSum",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "list<list<integer>>"
+},
+"19": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4,5]",
+"2"
+],
+"output": "[1,2,3,5]"
+},
+{
+"input": [
+"[1]",
+"1"
+],
+"output": "[]"
+},
+{
+"input": [
+"[1,2]",
+"1"
+],
+"output": "[1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "removeNthFromEnd",
+"params": [
+"ListNode",
+"integer"
+],
+"return": "ListNode"
+},
+"20": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"()\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"()[]{}\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"(]\""
+],
+"output": "false"
+},
+{
+"input": [
+"\"([])\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"([)]\""
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isValid",
+"params": [
+"string"
+],
+"return": "boolean"
+},
+"21": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,4]",
+"[1,3,4]"
+],
+"output": "[1,1,2,3,4,4]"
+},
+{
+"input": [
+"[]",
+"[]"
+],
+"output": "[]"
+},
+{
+"input": [
+"[]",
+"[0]"
+],
+"output": "[0]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "mergeTwoLists",
+"params": [
+"ListNode",
+"ListNode"
+],
+"return": "ListNode"
+},
+"22": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"3"
+],
+"output": "[\"((()))\",\"(()())\",\"(())()\",\"()(())\",\"()()()\"]"
+},
+{
+"input": [
+"1"
+],
+"output": "[\"()\"]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "generateParenthesis",
+"params": [
+"integer"
+],
+"return": "list<string>"
+},
+"23": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,4,5],[1,3,4],[2,6]]"
+],
+"output": "[1,1,2,3,4,4,5,6]"
+},
+{
+"input": [
+"[]"
+],
+"output": "[]"
+},
+{
+"input": [
+"[[]]"
+],
+"output": "[]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "mergeKLists",
+"params": [
+"ListNode[]"
+],
+"return": "ListNode"
+},
+"24": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4]"
+],
+"output": "[2,1,4,3]"
+},
+{
+"input": [
+"[]"
+],
+"output": "[]"
+},
+{
+"input": [
+"[1]"
+],
+"output": "[1]"
+},
+{
+"input": [
+"[1,2,3]"
+],
+"output": "[2,1,3]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "swapPairs",
+"params": [
+"ListNode"
+],
+"return": "ListNode"
+},
+"25": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4,5]",
+"2"
+],
+"output": "[2,1,4,3,5]"
+},
+{
+"input": [
+"[1,2,3,4,5]",
+"3"
+],
+"output": "[3,2,1,4,5]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "reverseKGroup",
+"params": [
+"ListNode",
+"integer"
+],
+"return": "ListNode"
+},
+"28": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"sadbutsad\"",
+"\"sad\""
+],
+"output": "0"
+},
+{
+"input": [
+"\"leetcode\"",
+"\"leeto\""
+],
+"output": "-1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "strStr",
+"params": [
+"string",
+"string"
+],
+"return": "integer"
+},
+"29": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"10",
+"3"
+],
+"output": "3"
+},
+{
+"input": [
+"7",
+"-3"
+],
+"output": "-2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "divide",
+"params": [
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"30": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"barfoothefoobarman\"",
+"[\"foo\",\"bar\"]"
+],
+"output": "[0,9]"
+},
+{
+"input": [
+"\"wordgoodgoodgoodbestword\"",
+"[\"word\",\"good\",\"best\",\"word\"]"
+],
+"output": "[]"
+},
+{
+"input": [
+"\"barfoofoobarthefoobarman\"",
+"[\"bar\",\"foo\",\"the\"]"
+],
+"output": "[6,9,12]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "findSubstring",
+"params": [
+"string",
+"string[]"
+],
+"return": "list<integer>"
+},
+"31": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3]"
+],
+"output": "[1,3,2]"
+},
+{
+"input": [
+"[3,2,1]"
+],
+"output": "[1,2,3]"
+},
+{
+"input": [
+"[1,1,5]"
+],
+"output": "[1,5,1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "nextPermutation",
+"params": [
+"integer[]"
+],
+"return": "void"
+},
+"32": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"(()\""
+],
+"output": "2"
+},
+{
+"input": [
+"\")()())\""
+],
+"output": "4"
+},
+{
+"input": [
+"\"\""
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "longestValidParentheses",
+"params": [
+"string"
+],
+"return": "integer"
+},
+"33": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[4,5,6,7,0,1,2]",
+"0"
+],
+"output": "4"
+},
+{
+"input": [
+"[4,5,6,7,0,1,2]",
+"3"
+],
+"output": "-1"
+},
+{
+"input": [
+"[1]",
+"0"
+],
+"output": "-1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "search",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"34": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[5,7,7,8,8,10]",
+"8"
+],
+"output": "[3,4]"
+},
+{
+"input": [
+"[5,7,7,8,8,10]",
+"6"
+],
+"output": "[-1,-1]"
+},
+{
+"input": [
+"[]",
+"0"
+],
+"output": "[-1,-1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "searchRange",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer[]"
+},
+"35": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,3,5,6]",
+"5"
+],
+"output": "2"
+},
+{
+"input": [
+"[1,3,5,6]",
+"2"
+],
+"output": "1"
+},
+{
+"input": [
+"[1,3,5,6]",
+"7"
+],
+"output": "4"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "searchInsert",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"36": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[\"5\",\"3\",\".\",\".\",\"7\",\".\",\".\",\".\",\".\"] ,[\"6\",\".\",\".\",\"1\",\"9\",\"5\",\".\",\".\",\".\"] ,[\".\",\"9\",\"8\",\".\",\".\",\".\",\".\",\"6\",\".\"] ,[\"8\",\".\",\".\",\".\",\"6\",\".\",\".\",\".\",\"3\"] ,[\"4\",\".\",\".\",\"8\",\".\",\"3\",\".\",\".\",\"1\"] ,[\"7\",\".\",\".\",\".\",\"2\",\".\",\".\",\".\",\"6\"] ,[\".\",\"6\",\".\",\".\",\".\",\".\",\"2\",\"8\",\".\"] ,[\".\",\".\",\".\",\"4\",\"1\",\"9\",\".\",\".\",\"5\"] ,[\".\",\".\",\".\",\".\",\"8\",\".\",\".\",\"7\",\"9\"]]"
+],
+"output": "true"
+},
+{
+"input": [
+"[[\"8\",\"3\",\".\",\".\",\"7\",\".\",\".\",\".\",\".\"] ,[\"6\",\".\",\".\",\"1\",\"9\",\"5\",\".\",\".\",\".\"] ,[\".\",\"9\",\"8\",\".\",\".\",\".\",\".\",\"6\",\".\"] ,[\"8\",\".\",\".\",\".\",\"6\",\".\",\".\",\".\",\"3\"] ,[\"4\",\".\",\".\",\"8\",\".\",\"3\",\".\",\".\",\"1\"] ,[\"7\",\".\",\".\",\".\",\"2\",\".\",\".\",\".\",\"6\"] ,[\".\",\"6\",\".\",\".\",\".\",\".\",\"2\",\"8\",\".\"] ,[\".\",\".\",\".\",\"4\",\"1\",\"9\",\".\",\".\",\"5\"] ,[\".\",\".\",\".\",\".\",\"8\",\".\",\".\",\"7\",\"9\"]]"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isValidSudoku",
+"params": [
+"character[][]"
+],
+"return": "boolean"
+},
+"37": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[\"5\",\"3\",\".\",\".\",\"7\",\".\",\".\",\".\",\".\"],[\"6\",\".\",\".\",\"1\",\"9\",\"5\",\".\",\".\",\".\"],[\".\",\"9\",\"8\",\".\",\".\",\".\",\".\",\"6\",\".\"],[\"8\",\".\",\".\",\".\",\"6\",\".\",\".\",\".\",\"3\"],[\"4\",\".\",\".\",\"8\",\".\",\"3\",\".\",\".\",\"1\"],[\"7\",\".\",\".\",\".\",\"2\",\".\",\".\",\".\",\"6\"],[\".\",\"6\",\".\",\".\",\".\",\".\",\"2\",\"8\",\".\"],[\".\",\".\",\".\",\"4\",\"1\",\"9\",\".\",\".\",\"5\"],[\".\",\".\",\".\",\".\",\"8\",\".\",\".\",\"7\",\"9\"]]"
+],
+"output": "[[\"5\",\"3\",\"4\",\"6\",\"7\",\"8\",\"9\",\"1\",\"2\"],[\"6\",\"7\",\"2\",\"1\",\"9\",\"5\",\"3\",\"4\",\"8\"],[\"1\",\"9\",\"8\",\"3\",\"4\",\"2\",\"5\",\"6\",\"7\"],[\"8\",\"5\",\"9\",\"7\",\"6\",\"1\",\"4\",\"2\",\"3\"],[\"4\",\"2\",\"6\",\"8\",\"5\",\"3\",\"7\",\"9\",\"1\"],[\"7\",\"1\",\"3\",\"9\",\"2\",\"4\",\"8\",\"5\",\"6\"],[\"9\",\"6\",\"1\",\"5\",\"3\",\"7\",\"2\",\"8\",\"4\"],[\"2\",\"8\",\"7\",\"4\",\"1\",\"9\",\"6\",\"3\",\"5\"],[\"3\",\"4\",\"5\",\"2\",\"8\",\"6\",\"1\",\"7\",\"9\"]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "solveSudoku",
+"params": [
+"character[][]"
+],
+"return": "void"
+},
+"38": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"4"
+],
+"output": "\"1211\""
+},
+{
+"input": [
+"1"
+],
+"output": "\"1\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countAndSay",
+"params": [
+"integer"
+],
+"return": "string"
+},
+"39": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,3,6,7]",
+"7"
+],
+"output": "[[2,2,3],[7]]"
+},
+{
+"input": [
+"[2,3,5]",
+"8"
+],
+"output": "[[2,2,2,2],[2,3,3],[3,5]]"
+},
+{
+"input": [
+"[2]",
+"1"
+],
+"output": "[]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "combinationSum",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "list<list<integer>>"
+},
+"40": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[10,1,2,7,6,1,5]",
+"8"
+],
+"output": "[[1,1,6],[1,2,5],[1,7],[2,6]]"
+},
+{
+"input": [
+"[2,5,2,1,2]",
+"5"
+],
+"output": "[[1,2,2],[5]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "combinationSum2",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "list<list<integer>>"
+},
+"41": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,0]"
+],
+"output": "3"
+},
+{
+"input": [
+"[3,4,-1,1]"
+],
+"output": "2"
+},
+{
+"input": [
+"[7,8,9,11,12]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "firstMissingPositive",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"42": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[0,1,0,2,1,0,1,3,2,1,2,1]"
+],
+"output": "6"
+},
+{
+"input": [
+"[4,2,0,3,2,5]"
+],
+"output": "9"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "trap",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"43": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"2\"",
+"\"3\""
+],
+"output": "\"6\""
+},
+{
+"input": [
+"\"123\"",
+"\"456\""
+],
+"output": "\"56088\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "multiply",
+"params": [
+"string",
+"string"
+],
+"return": "string"
+},
+"44": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"aa\"",
+"\"a\""
+],
+"output": "false"
+},
+{
+"input": [
+"\"aa\"",
+"\"*\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"cb\"",
+"\"?a\""
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isMatch",
+"params": [
+"string",
+"string"
+],
+"return": "boolean"
+},
+"45": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,3,1,1,4]"
+],
+"output": "2"
+},
+{
+"input": [
+"[2,3,0,1,4]"
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "jump",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"46": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3]"
+],
+"output": "[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]"
+},
+{
+"input": [
+"[0,1]"
+],
+"output": "[[0,1],[1,0]]"
+},
+{
+"input": [
+"[1]"
+],
+"output": "[[1]]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "permute",
+"params": [
+"integer[]"
+],
+"return": "list<list<integer>>"
+},
+"48": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,2,3],[4,5,6],[7,8,9]]"
+],
+"output": "[[7,4,1],[8,5,2],[9,6,3]]"
+},
+{
+"input": [
+"[[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]"
+],
+"output": "[[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "rotate",
+"params": [
+"integer[][]"
+],
+"return": "void"
+},
+"49": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]"
+],
+"output": "[[\"bat\"],[\"nat\",\"tan\"],[\"ate\",\"eat\",\"tea\"]]"
+},
+{
+"input": [
+"[\"\"]"
+],
+"output": "[[\"\"]]"
+},
+{
+"input": [
+"[\"a\"]"
+],
+"output": "[[\"a\"]]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "groupAnagrams",
+"params": [
+"string[]"
+],
+"return": "list<list<string>>"
+},
+"50": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"2.00000",
+"10"
+],
+"output": "1024.00000"
+},
+{
+"input": [
+"2.10000",
+"3"
+],
+"output": "9.26100"
+},
+{
+"input": [
+"2.00000",
+"-2"
+],
+"output": "0.25000"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "myPow",
+"params": [
+"double",
+"integer"
+],
+"return": "double"
+},
+"51": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"4"
+],
+"output": "[[\".Q..\",\"...Q\",\"Q...\",\"..Q.\"],[\"..Q.\",\"Q...\",\"...Q\",\".Q..\"]]"
+},
+{
+"input": [
+"1"
+],
+"output": "[[\"Q\"]]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "solveNQueens",
+"params": [
+"integer"
+],
+"return": "list<list<string>>"
+},
+"52": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"4"
+],
+"output": "2"
+},
+{
+"input": [
+"1"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "totalNQueens",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"53": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[-2,1,-3,4,-1,2,1,-5,4]"
+],
+"output": "6"
+},
+{
+"input": [
+"[1]"
+],
+"output": "1"
+},
+{
+"input": [
+"[5,4,-1,7,8]"
+],
+"output": "23"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxSubArray",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"54": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,2,3],[4,5,6],[7,8,9]]"
+],
+"output": "[1,2,3,6,9,8,7,4,5]"
+},
+{
+"input": [
+"[[1,2,3,4],[5,6,7,8],[9,10,11,12]]"
+],
+"output": "[1,2,3,4,8,12,11,10,9,5,6,7]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "spiralOrder",
+"params": [
+"integer[][]"
+],
+"return": "list<integer>"
+},
+"55": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,3,1,1,4]"
+],
+"output": "true"
+},
+{
+"input": [
+"[3,2,1,0,4]"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "canJump",
+"params": [
+"integer[]"
+],
+"return": "boolean"
+},
+"56": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,3],[2,6],[8,10],[15,18]]"
+],
+"output": "[[1,6],[8,10],[15,18]]"
+},
+{
+"input": [
+"[[1,4],[4,5]]"
+],
+"output": "[[1,5]]"
+},
+{
+"input": [
+"[[4,7],[1,4]]"
+],
+"output": "[[1,7]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "merge",
+"params": [
+"integer[][]"
+],
+"return": "integer[][]"
+},
+"57": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,3],[6,9]]",
+"[2,5]"
+],
+"output": "[[1,5],[6,9]]"
+},
+{
+"input": [
+"[[1,2],[3,5],[6,7],[8,10],[12,16]]",
+"[4,8]"
+],
+"output": "[[1,2],[3,10],[12,16]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "insert",
+"params": [
+"integer[][]",
+"integer[]"
+],
+"return": "integer[][]"
+},
+"58": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"Hello World\""
+],
+"output": "5"
+},
+{
+"input": [
+"\"   fly me   to   the moon  \""
+],
+"output": "4"
+},
+{
+"input": [
+"\"luffy is still joyboy\""
+],
+"output": "6"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "lengthOfLastWord",
+"params": [
+"string"
+],
+"return": "integer"
+},
+"61": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4,5]",
+"2"
+],
+"output": "[4,5,1,2,3]"
+},
+{
+"input": [
+"[0,1,2]",
+"4"
+],
+"output": "[2,0,1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "rotateRight",
+"params": [
+"ListNode",
+"integer"
+],
+"return": "ListNode"
+},
+"62": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"3",
+"7"
+],
+"output": "28"
+},
+{
+"input": [
+"3",
+"2"
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "uniquePaths",
+"params": [
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"63": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[0,0,0],[0,1,0],[0,0,0]]"
+],
+"output": "2"
+},
+{
+"input": [
+"[[0,1],[0,0]]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "uniquePathsWithObstacles",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"64": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,3,1],[1,5,1],[4,2,1]]"
+],
+"output": "7"
+},
+{
+"input": [
+"[[1,2,3],[4,5,6]]"
+],
+"output": "12"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minPathSum",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"66": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3]"
+],
+"output": "[1,2,4]"
+},
+{
+"input": [
+"[4,3,2,1]"
+],
+"output": "[4,3,2,2]"
+},
+{
+"input": [
+"[9]"
+],
+"output": "[1,0]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "plusOne",
+"params": [
+"integer[]"
+],
+"return": "integer[]"
+},
+"67": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"11\"",
+"\"1\""
+],
+"output": "\"100\""
+},
+{
+"input": [
+"\"1010\"",
+"\"1011\""
+],
+"output": "\"10101\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "addBinary",
+"params": [
+"string",
+"string"
+],
+"return": "string"
+},
+"68": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[\"This\", \"is\", \"an\", \"example\", \"of\", \"text\", \"justification.\"]",
+"16"
+],
+"output": "[\"This    is    an\",\"example  of text\",\"justification.  \"]"
+},
+{
+"input": [
+"[\"What\",\"must\",\"be\",\"acknowledgment\",\"shall\",\"be\"]",
+"16"
+],
+"output": "[\"What   must   be\",\"acknowledgment  \",\"shall be        \"]"
+},
+{
+"input": [
+"[\"Science\",\"is\",\"what\",\"we\",\"understand\",\"well\",\"enough\",\"to\",\"explain\",\"to\",\"a\",\"computer.\",\"Art\",\"is\",\"everything\",\"else\",\"we\",\"do\"]",
+"20"
+],
+"output": "[\"Science  is  what we\",\"understand      well\",\"enough to explain to\",\"a  computer.  Art is\",\"everything  else  we\",\"do                  \"]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "fullJustify",
+"params": [
+"string[]",
+"integer"
+],
+"return": "list<string>"
+},
+"69": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"4"
+],
+"output": "2"
+},
+{
+"input": [
+"8"
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "mySqrt",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"70": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"2"
+],
+"output": "2"
+},
+{
+"input": [
+"3"
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "climbStairs",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"71": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"/home/\""
+],
+"output": "\"/home\""
+},
+{
+"input": [
+"\"/home//foo/\""
+],
+"output": "\"/home/foo\""
+},
+{
+"input": [
+"\"/home/user/Documents/../Pictures\""
+],
+"output": "\"/home/user/Pictures\""
+},
+{
+"input": [
+"\"/../\""
+],
+"output": "\"/\""
+},
+{
+"input": [
+"\"/.../a/../b/c/../d/./\""
+],
+"output": "\"/.../b/d\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "simplifyPath",
+"params": [
+"string"
+],
+"return": "string"
+},
+"72": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"horse\"",
+"\"ros\""
+],
+"output": "3"
+},
+{
+"input": [
+"\"intention\"",
+"\"execution\""
+],
+"output": "5"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minDistance",
+"params": [
+"string",
+"string"
+],
+"return": "integer"
+},
+"73": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,1,1],[1,0,1],[1,1,1]]"
+],
+"output": "[[1,0,1],[0,0,0],[1,0,1]]"
+},
+{
+"input": [
+"[[0,1,2,0],[3,4,5,2],[1,3,1,5]]"
+],
+"output": "[[0,0,0,0],[0,4,5,0],[0,3,1,0]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "setZeroes",
+"params": [
+"integer[][]"
+],
+"return": "void"
+},
+"74": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,3,5,7],[10,11,16,20],[23,30,34,60]]",
+"3"
+],
+"output": "true"
+},
+{
+"input": [
+"[[1,3,5,7],[10,11,16,20],[23,30,34,60]]",
+"13"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "searchMatrix",
+"params": [
+"integer[][]",
+"integer"
+],
+"return": "boolean"
+},
+"75": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,0,2,1,1,0]"
+],
+"output": "[0,0,1,1,2,2]"
+},
+{
+"input": [
+"[2,0,1]"
+],
+"output": "[0,1,2]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "sortColors",
+"params": [
+"integer[]"
+],
+"return": "void"
+},
+"76": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"ADOBECODEBANC\"",
+"\"ABC\""
+],
+"output": "\"BANC\""
+},
+{
+"input": [
+"\"a\"",
+"\"a\""
+],
+"output": "\"a\""
+},
+{
+"input": [
+"\"a\"",
+"\"aa\""
+],
+"output": "\"\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minWindow",
+"params": [
+"string",
+"string"
+],
+"return": "string"
+},
+"77": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"4",
+"2"
+],
+"output": "[[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]"
+},
+{
+"input": [
+"1",
+"1"
+],
+"output": "[[1]]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "combine",
+"params": [
+"integer",
+"integer"
+],
+"return": "list<list<integer>>"
+},
+"78": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3]"
+],
+"output": "[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]"
+},
+{
+"input": [
+"[0]"
+],
+"output": "[[],[0]]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "subsets",
+"params": [
+"integer[]"
+],
+"return": "list<list<integer>>"
+},
+"79": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]",
+"\"ABCCED\""
+],
+"output": "true"
+},
+{
+"input": [
+"[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]",
+"\"SEE\""
+],
+"output": "true"
+},
+{
+"input": [
+"[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]",
+"\"ABCB\""
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "exist",
+"params": [
+"character[][]",
+"string"
+],
+"return": "boolean"
+},
+"81": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,5,6,0,0,1,2]",
+"0"
+],
+"output": "true"
+},
+{
+"input": [
+"[2,5,6,0,0,1,2]",
+"3"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "search",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "boolean"
+},
+"82": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,3,4,4,5]"
+],
+"output": "[1,2,5]"
+},
+{
+"input": [
+"[1,1,1,2,3]"
+],
+"output": "[2,3]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "deleteDuplicates",
+"params": [
+"ListNode"
+],
+"return": "ListNode"
+},
+"84": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,1,5,6,2,3]"
+],
+"output": "10"
+},
+{
+"input": [
+"[2,4]"
+],
+"output": "4"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "largestRectangleArea",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"85": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[\"1\",\"0\",\"1\",\"0\",\"0\"],[\"1\",\"0\",\"1\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\",\"1\"],[\"1\",\"0\",\"0\",\"1\",\"0\"]]"
+],
+"output": "6"
+},
+{
+"input": [
+"[[\"0\"]]"
+],
+"output": "0"
+},
+{
+"input": [
+"[[\"1\"]]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maximalRectangle",
+"params": [
+"character[][]"
+],
+"return": "integer"
+},
+"86": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,4,3,2,5,2]",
+"3"
+],
+"output": "[1,2,2,4,3,5]"
+},
+{
+"input": [
+"[2,1]",
+"2"
+],
+"output": "[1,2]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "partition",
+"params": [
+"ListNode",
+"integer"
+],
+"return": "ListNode"
+},
+"88": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,0,0,0]",
+"3",
+"[2,5,6]",
+"3"
+],
+"output": "[1,2,2,3,5,6]"
+},
+{
+"input": [
+"[1]",
+"1",
+"[]",
+"0"
+],
+"output": "[1]"
+},
+{
+"input": [
+"[0]",
+"0",
+"[1]",
+"1"
+],
+"output": "[1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "merge",
+"params": [
+"integer[]",
+"integer",
+"integer[]",
+"integer"
+],
+"return": "void"
+},
+"90": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,2]"
+],
+"output": "[[],[1],[1,2],[1,2,2],[2],[2,2]]"
+},
+{
+"input": [
+"[0]"
+],
+"output": "[[],[0]]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "subsetsWithDup",
+"params": [
+"integer[]"
+],
+"return": "list<list<integer>>"
+},
+"91": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"12\""
+],
+"output": "2"
+},
+{
+"input": [
+"\"226\""
+],
+"output": "3"
+},
+{
+"input": [
+"\"06\""
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": true,
+"method": "numDecodings",
+"params": [
+"string"
+],
+"return": "integer"
+},
+"92": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4,5]",
+"2",
+"4"
+],
+"output": "[1,4,3,2,5]"
+},
+{
+"input": [
+"[5]",
+"1",
+"1"
+],
+"output": "[5]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "reverseBetween",
+"params": [
+"ListNode",
+"integer",
+"integer"
+],
+"return": "ListNode"
+},
+"94": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,null,2,3]"
+],
+"output": "[1,3,2]"
+},
+{
+"input": [
+"[1,2,3,4,5,null,8,null,null,6,7,9]"
+],
+"output": "[4,2,6,5,7,1,3,9,8]"
+},
+{
+"input": [
+"[]"
+],
+"output": "[]"
+},
+{
+"input": [
+"[1]"
+],
+"output": "[1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "inorderTraversal",
+"params": [
+"TreeNode"
+],
+"return": "list<integer>"
+},
+"96": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"3"
+],
+"output": "5"
+},
+{
+"input": [
+"1"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "numTrees",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"97": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"aabcc\"",
+"\"dbbca\"",
+"\"aadbbcbcac\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"aabcc\"",
+"\"dbbca\"",
+"\"aadbbbaccc\""
+],
+"output": "false"
+},
+{
+"input": [
+"\"\"",
+"\"\"",
+"\"\""
+],
+"output": "true"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isInterleave",
+"params": [
+"string",
+"string",
+"string"
+],
+"return": "boolean"
+},
+"98": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,1,3]"
+],
+"output": "true"
+},
+{
+"input": [
+"[5,1,4,null,null,3,6]"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isValidBST",
+"params": [
+"TreeNode"
+],
+"return": "boolean"
+},
+"99": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,3,null,null,2]"
+],
+"output": "[3,1,null,null,2]"
+},
+{
+"input": [
+"[3,1,4,null,null,2]"
+],
+"output": "[2,1,4,null,null,3]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "recoverTree",
+"params": [
+"TreeNode"
+],
+"return": "void"
+},
+"100": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3]",
+"[1,2,3]"
+],
+"output": "true"
+},
+{
+"input": [
+"[1,2]",
+"[1,null,2]"
+],
+"output": "false"
+},
+{
+"input": [
+"[1,2,1]",
+"[1,1,2]"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isSameTree",
+"params": [
+"TreeNode",
+"TreeNode"
+],
+"return": "boolean"
+},
+"101": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,2,3,4,4,3]"
+],
+"output": "true"
+},
+{
+"input": [
+"[1,2,2,null,3,null,3]"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isSymmetric",
+"params": [
+"TreeNode"
+],
+"return": "boolean"
+},
+"102": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,9,20,null,null,15,7]"
+],
+"output": "[[3],[9,20],[15,7]]"
+},
+{
+"input": [
+"[1]"
+],
+"output": "[[1]]"
+},
+{
+"input": [
+"[]"
+],
+"output": "[]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "levelOrder",
+"params": [
+"TreeNode"
+],
+"return": "list<list<integer>>"
+},
+"103": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,9,20,null,null,15,7]"
+],
+"output": "[[3],[20,9],[15,7]]"
+},
+{
+"input": [
+"[1]"
+],
+"output": "[[1]]"
+},
+{
+"input": [
+"[]"
+],
+"output": "[]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "zigzagLevelOrder",
+"params": [
+"TreeNode"
+],
+"return": "list<list<integer>>"
+},
+"104": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,9,20,null,null,15,7]"
+],
+"output": "3"
+},
+{
+"input": [
+"[1,null,2]"
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxDepth",
+"params": [
+"TreeNode"
+],
+"return": "integer"
+},
+"105": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,9,20,15,7]",
+"[9,3,15,20,7]"
+],
+"output": "[3,9,20,null,null,15,7]"
+},
+{
+"input": [
+"[-1]",
+"[-1]"
+],
+"output": "[-1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "buildTree",
+"params": [
+"integer[]",
+"integer[]"
+],
+"return": "TreeNode"
+},
+"106": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[9,3,15,20,7]",
+"[9,15,7,20,3]"
+],
+"output": "[3,9,20,null,null,15,7]"
+},
+{
+"input": [
+"[-1]",
+"[-1]"
+],
+"output": "[-1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "buildTree",
+"params": [
+"integer[]",
+"integer[]"
+],
+"return": "TreeNode"
+},
+"108": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[-10,-3,0,5,9]"
+],
+"output": "[0,-3,9,-10,null,5]"
+},
+{
+"input": [
+"[1,3]"
+],
+"output": "[3,1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "sortedArrayToBST",
+"params": [
+"integer[]"
+],
+"return": "TreeNode"
+},
+"110": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,9,20,null,null,15,7]"
+],
+"output": "true"
+},
+{
+"input": [
+"[1,2,2,3,3,null,null,4,4]"
+],
+"output": "false"
+},
+{
+"input": [
+"[]"
+],
+"output": "true"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isBalanced",
+"params": [
+"TreeNode"
+],
+"return": "boolean"
+},
+"112": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[5,4,8,11,null,13,4,7,2,null,null,null,1]",
+"22"
+],
+"output": "true"
+},
+{
+"input": [
+"[1,2,3]",
+"5"
+],
+"output": "false"
+},
+{
+"input": [
+"[]",
+"0"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "hasPathSum",
+"params": [
+"TreeNode",
+"integer"
+],
+"return": "boolean"
+},
+"113": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[5,4,8,11,null,13,4,7,2,null,null,5,1]",
+"22"
+],
+"output": "[[5,4,11,2],[5,8,4,5]]"
+},
+{
+"input": [
+"[1,2,3]",
+"5"
+],
+"output": "[]"
+},
+{
+"input": [
+"[1,2]",
+"0"
+],
+"output": "[]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "pathSum",
+"params": [
+"TreeNode",
+"integer"
+],
+"return": "list<list<integer>>"
+},
+"114": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,5,3,4,null,6]"
+],
+"output": "[1,null,2,null,3,null,4,null,5,null,6]"
+},
+{
+"input": [
+"[]"
+],
+"output": "[]"
+},
+{
+"input": [
+"[0]"
+],
+"output": "[0]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "flatten",
+"params": [
+"TreeNode"
+],
+"return": "void"
+},
+"115": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"rabbbit\"",
+"\"rabbit\""
+],
+"output": "3"
+},
+{
+"input": [
+"\"babgbag\"",
+"\"bag\""
+],
+"output": "5"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "numDistinct",
+"params": [
+"string",
+"string"
+],
+"return": "integer"
+},
+"117": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[]"
+],
+"output": "[]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "connect",
+"params": [
+"TreeNode"
+],
+"return": "TreeNode"
+},
+"118": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"5"
+],
+"output": "[[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]"
+},
+{
+"input": [
+"1"
+],
+"output": "[[1]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "generate",
+"params": [
+"integer"
+],
+"return": "list<list<integer>>"
+},
+"120": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[2],[3,4],[6,5,7],[4,1,8,3]]"
+],
+"output": "11"
+},
+{
+"input": [
+"[[-10]]"
+],
+"output": "-10"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minimumTotal",
+"params": [
+"list<list<integer>>"
+],
+"return": "integer"
+},
+"121": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[7,1,5,3,6,4]"
+],
+"output": "5"
+},
+{
+"input": [
+"[7,6,4,3,1]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxProfit",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"122": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[7,1,5,3,6,4]"
+],
+"output": "7"
+},
+{
+"input": [
+"[1,2,3,4,5]"
+],
+"output": "4"
+},
+{
+"input": [
+"[7,6,4,3,1]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxProfit",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"123": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,3,5,0,0,3,1,4]"
+],
+"output": "6"
+},
+{
+"input": [
+"[1,2,3,4,5]"
+],
+"output": "4"
+},
+{
+"input": [
+"[7,6,4,3,1]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxProfit",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"124": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3]"
+],
+"output": "6"
+},
+{
+"input": [
+"[-10,9,20,null,null,15,7]"
+],
+"output": "42"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxPathSum",
+"params": [
+"TreeNode"
+],
+"return": "integer"
+},
+"125": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"A man, a plan, a canal: Panama\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"race a car\""
+],
+"output": "false"
+},
+{
+"input": [
+"\" \""
+],
+"output": "true"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isPalindrome",
+"params": [
+"string"
+],
+"return": "boolean"
+},
+"126": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"hit\"",
+"\"cog\"",
+"[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]"
+],
+"output": "[[\"hit\",\"hot\",\"dot\",\"dog\",\"cog\"],[\"hit\",\"hot\",\"lot\",\"log\",\"cog\"]]"
+},
+{
+"input": [
+"\"hit\"",
+"\"cog\"",
+"[\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]"
+],
+"output": "[]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findLadders",
+"params": [
+"string",
+"string",
+"list<string>"
+],
+"return": "list<list<string>>"
+},
+"127": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"hit\"",
+"\"cog\"",
+"[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]"
+],
+"output": "5"
+},
+{
+"input": [
+"\"hit\"",
+"\"cog\"",
+"[\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "ladderLength",
+"params": [
+"string",
+"string",
+"list<string>"
+],
+"return": "integer"
+},
+"128": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[100,4,200,1,3,2]"
+],
+"output": "4"
+},
+{
+"input": [
+"[0,3,7,2,5,8,4,6,0,1]"
+],
+"output": "9"
+},
+{
+"input": [
+"[1,0,1,2]"
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "longestConsecutive",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"129": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3]"
+],
+"output": "25"
+},
+{
+"input": [
+"[4,9,0,5,1]"
+],
+"output": "1026"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "sumNumbers",
+"params": [
+"TreeNode"
+],
+"return": "integer"
+},
+"130": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"X\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]"
+],
+"output": "[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]"
+},
+{
+"input": [
+"[[\"X\"]]"
+],
+"output": "[[\"X\"]]"
+}
+],
+"any_order": false,
+"any_answer": true,
+"method": "solve",
+"params": [
+"character[][]"
+],
+"return": "void"
+},
+"131": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"aab\""
+],
+"output": "[[\"a\",\"a\",\"b\"],[\"aa\",\"b\"]]"
+},
+{
+"input": [
+"\"a\""
+],
+"output": "[[\"a\"]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "partition",
+"params": [
+"string"
+],
+"return": "list<list<string>>"
+},
+"132": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"aab\""
+],
+"output": "1"
+},
+{
+"input": [
+"\"a\""
+],
+"output": "0"
+},
+{
+"input": [
+"\"ab\""
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minCut",
+"params": [
+"string"
+],
+"return": "integer"
+},
+"134": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4,5]",
+"[3,4,5,1,2]"
+],
+"output": "3"
+},
+{
+"input": [
+"[2,3,4]",
+"[3,4,3]"
+],
+"output": "-1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "canCompleteCircuit",
+"params": [
+"integer[]",
+"integer[]"
+],
+"return": "integer"
+},
+"135": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,0,2]"
+],
+"output": "5"
+},
+{
+"input": [
+"[1,2,2]"
+],
+"output": "4"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "candy",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"136": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,2,1]"
+],
+"output": "1"
+},
+{
+"input": [
+"[4,1,2,1,2]"
+],
+"output": "4"
+},
+{
+"input": [
+"[1]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "singleNumber",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"137": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,2,3,2]"
+],
+"output": "3"
+},
+{
+"input": [
+"[0,1,0,1,0,1,99]"
+],
+"output": "99"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "singleNumber",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"138": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[7,null],[13,0],[11,4],[10,2],[1,0]]"
+],
+"output": "[[7,null],[13,0],[11,4],[10,2],[1,0]]"
+},
+{
+"input": [
+"[[1,1],[2,1]]"
+],
+"output": "[[1,1],[2,1]]"
+},
+{
+"input": [
+"[[3,null],[3,0],[3,null]]"
+],
+"output": "[[3,null],[3,0],[3,null]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "copyRandomList",
+"params": [
+"ListNode"
+],
+"return": "ListNode"
+},
+"139": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"leetcode\"",
+"[\"leet\",\"code\"]"
+],
+"output": "true"
+},
+{
+"input": [
+"\"applepenapple\"",
+"[\"apple\",\"pen\"]"
+],
+"output": "true"
+},
+{
+"input": [
+"\"catsandog\"",
+"[\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "wordBreak",
+"params": [
+"string",
+"list<string>"
+],
+"return": "boolean"
+},
+"141": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,2,0,-4]",
+"1"
+],
+"output": "true"
+},
+{
+"input": [
+"[1,2]",
+"0"
+],
+"output": "true"
+},
+{
+"input": [
+"[1]",
+"-1"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "hasCycle",
+"params": [
+"ListNode",
+"integer"
+],
+"return": "boolean"
+},
+"143": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4]"
+],
+"output": "[1,4,2,3]"
+},
+{
+"input": [
+"[1,2,3,4,5]"
+],
+"output": "[1,5,2,4,3]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "reorderList",
+"params": [
+"ListNode"
+],
+"return": "void"
+},
+"144": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,null,2,3]"
+],
+"output": "[1,2,3]"
+},
+{
+"input": [
+"[1,2,3,4,5,null,8,null,null,6,7,9]"
+],
+"output": "[1,2,4,5,6,7,3,8,9]"
+},
+{
+"input": [
+"[]"
+],
+"output": "[]"
+},
+{
+"input": [
+"[1]"
+],
+"output": "[1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "preorderTraversal",
+"params": [
+"TreeNode"
+],
+"return": "list<integer>"
+},
+"145": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,null,2,3]"
+],
+"output": "[3,2,1]"
+},
+{
+"input": [
+"[1,2,3,4,5,null,8,null,null,6,7,9]"
+],
+"output": "[4,6,7,5,2,9,8,3,1]"
+},
+{
+"input": [
+"[]"
+],
+"output": "[]"
+},
+{
+"input": [
+"[1]"
+],
+"output": "[1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "postorderTraversal",
+"params": [
+"TreeNode"
+],
+"return": "list<integer>"
+},
+"146": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"LRUCache\", \"put\", \"put\", \"get\", \"put\", \"get\", \"put\", \"get\", \"get\", \"get\"]",
+"[[2], [1, 1], [2, 2], [1], [3, 3], [2], [4, 4], [1], [3], [4]]"
+],
+"output": "[null, null, null, 1, null, -1, null, -1, 3, 4]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [
+"integer"
+],
+"methods": {
+"get": [
+"integer"
+],
+"put": [
+"integer",
+"integer"
+]
+}
+},
+"148": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[4,2,1,3]"
+],
+"output": "[1,2,3,4]"
+},
+{
+"input": [
+"[-1,5,3,4,0]"
+],
+"output": "[-1,0,3,4,5]"
+},
+{
+"input": [
+"[]"
+],
+"output": "[]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "sortList",
+"params": [
+"ListNode"
+],
+"return": "ListNode"
+},
+"149": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,1],[2,2],[3,3]]"
+],
+"output": "3"
+},
+{
+"input": [
+"[[1,1],[3,2],[5,3],[4,1],[2,3],[1,4]]"
+],
+"output": "4"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxPoints",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"150": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[\"2\",\"1\",\"+\",\"3\",\"*\"]"
+],
+"output": "9"
+},
+{
+"input": [
+"[\"4\",\"13\",\"5\",\"/\",\"+\"]"
+],
+"output": "6"
+},
+{
+"input": [
+"[\"10\",\"6\",\"9\",\"3\",\"+\",\"-11\",\"*\",\"/\",\"*\",\"17\",\"+\",\"5\",\"+\"]"
+],
+"output": "22"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "evalRPN",
+"params": [
+"string[]"
+],
+"return": "integer"
+},
+"151": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"the sky is blue\""
+],
+"output": "\"blue is sky the\""
+},
+{
+"input": [
+"\"  hello world  \""
+],
+"output": "\"world hello\""
+},
+{
+"input": [
+"\"a good   example\""
+],
+"output": "\"example good a\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "reverseWords",
+"params": [
+"string"
+],
+"return": "string"
+},
+"152": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,3,-2,4]"
+],
+"output": "6"
+},
+{
+"input": [
+"[-2,0,-1]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxProduct",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"153": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,4,5,1,2]"
+],
+"output": "1"
+},
+{
+"input": [
+"[4,5,6,7,0,1,2]"
+],
+"output": "0"
+},
+{
+"input": [
+"[11,13,15,17]"
+],
+"output": "11"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findMin",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"155": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"MinStack\",\"push\",\"push\",\"push\",\"getMin\",\"pop\",\"top\",\"getMin\"]",
+"[[],[-2],[0],[-3],[],[],[],[]]"
+],
+"output": "[null,null,null,null,-3,null,0,-2]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [],
+"methods": {
+"push": [
+"integer"
+],
+"pop": [],
+"top": [],
+"getMin": []
+}
+},
+"162": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,1]"
+],
+"output": "2"
+},
+{
+"input": [
+"[1,2,1,3,5,6,4]"
+],
+"output": "5"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findPeakElement",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"167": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,7,11,15]",
+"9"
+],
+"output": "[1,2]"
+},
+{
+"input": [
+"[2,3,4]",
+"6"
+],
+"output": "[1,3]"
+},
+{
+"input": [
+"[-1,0]",
+"-1"
+],
+"output": "[1,2]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "twoSum",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer[]"
+},
+"169": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,2,3]"
+],
+"output": "3"
+},
+{
+"input": [
+"[2,2,1,1,1,2,2]"
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "majorityElement",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"172": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"3"
+],
+"output": "0"
+},
+{
+"input": [
+"5"
+],
+"output": "1"
+},
+{
+"input": [
+"0"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "trailingZeroes",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"173": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"BSTIterator\", \"next\", \"next\", \"hasNext\", \"next\", \"hasNext\", \"next\", \"hasNext\", \"next\", \"hasNext\"]",
+"[[[7, 3, 15, null, null, 9, 20]], [], [], [], [], [], [], [], [], []]"
+],
+"output": "[null, 3, 7, true, 9, true, 15, true, 20, false]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [
+"TreeNode"
+],
+"methods": {
+"next": [],
+"hasNext": []
+}
+},
+"179": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[10,2]"
+],
+"output": "\"210\""
+},
+{
+"input": [
+"[3,30,34,5,9]"
+],
+"output": "\"9534330\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "largestNumber",
+"params": [
+"integer[]"
+],
+"return": "string"
+},
+"187": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT\""
+],
+"output": "[\"AAAAACCCCC\",\"CCCCCAAAAA\"]"
+},
+{
+"input": [
+"\"AAAAAAAAAAAAA\""
+],
+"output": "[\"AAAAAAAAAA\"]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "findRepeatedDnaSequences",
+"params": [
+"string"
+],
+"return": "list<string>"
+},
+"188": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"2",
+"[2,4,1]"
+],
+"output": "2"
+},
+{
+"input": [
+"2",
+"[3,2,6,5,0,3]"
+],
+"output": "7"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxProfit",
+"params": [
+"integer",
+"integer[]"
+],
+"return": "integer"
+},
+"189": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4,5,6,7]",
+"3"
+],
+"output": "[5,6,7,1,2,3,4]"
+},
+{
+"input": [
+"[-1,-100,3,99]",
+"2"
+],
+"output": "[3,99,-1,-100]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "rotate",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "void"
+},
+"190": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"43261596"
+],
+"output": "964176192"
+},
+{
+"input": [
+"2147483644"
+],
+"output": "1073741822"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "reverseBits",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"191": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"11"
+],
+"output": "3"
+},
+{
+"input": [
+"128"
+],
+"output": "1"
+},
+{
+"input": [
+"2147483645"
+],
+"output": "30"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "hammingWeight",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"198": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,1]"
+],
+"output": "4"
+},
+{
+"input": [
+"[2,7,9,3,1]"
+],
+"output": "12"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "rob",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"199": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,null,5,null,4]"
+],
+"output": "[1,3,4]"
+},
+{
+"input": [
+"[1,2,3,4,null,null,null,5]"
+],
+"output": "[1,3,4,5]"
+},
+{
+"input": [
+"[1,null,3]"
+],
+"output": "[1,3]"
+},
+{
+"input": [
+"[]"
+],
+"output": "[]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "rightSideView",
+"params": [
+"TreeNode"
+],
+"return": "list<integer>"
+},
+"200": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[ [\"1\",\"1\",\"1\",\"1\",\"0\"], [\"1\",\"1\",\"0\",\"1\",\"0\"], [\"1\",\"1\",\"0\",\"0\",\"0\"], [\"0\",\"0\",\"0\",\"0\",\"0\"] ]"
+],
+"output": "1"
+},
+{
+"input": [
+"[ [\"1\",\"1\",\"0\",\"0\",\"0\"], [\"1\",\"1\",\"0\",\"0\",\"0\"], [\"0\",\"0\",\"1\",\"0\",\"0\"], [\"0\",\"0\",\"0\",\"1\",\"1\"] ]"
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "numIslands",
+"params": [
+"character[][]"
+],
+"return": "integer"
+},
+"201": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"5",
+"7"
+],
+"output": "4"
+},
+{
+"input": [
+"0",
+"0"
+],
+"output": "0"
+},
+{
+"input": [
+"1",
+"2147483647"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "rangeBitwiseAnd",
+"params": [
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"202": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"19"
+],
+"output": "true"
+},
+{
+"input": [
+"2"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isHappy",
+"params": [
+"integer"
+],
+"return": "boolean"
+},
+"204": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"10"
+],
+"output": "4"
+},
+{
+"input": [
+"0"
+],
+"output": "0"
+},
+{
+"input": [
+"1"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countPrimes",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"205": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"egg\"",
+"\"add\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"f11\"",
+"\"b23\""
+],
+"output": "false"
+},
+{
+"input": [
+"\"paper\"",
+"\"title\""
+],
+"output": "true"
+}
+],
+"any_order": false,
+"any_answer": true,
+"method": "isIsomorphic",
+"params": [
+"string",
+"string"
+],
+"return": "boolean"
+},
+"206": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4,5]"
+],
+"output": "[5,4,3,2,1]"
+},
+{
+"input": [
+"[1,2]"
+],
+"output": "[2,1]"
+},
+{
+"input": [
+"[]"
+],
+"output": "[]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "reverseList",
+"params": [
+"ListNode"
+],
+"return": "ListNode"
+},
+"207": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"2",
+"[[1,0]]"
+],
+"output": "true"
+},
+{
+"input": [
+"2",
+"[[1,0],[0,1]]"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "canFinish",
+"params": [
+"integer",
+"integer[][]"
+],
+"return": "boolean"
+},
+"208": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"Trie\", \"insert\", \"search\", \"search\", \"startsWith\", \"insert\", \"search\"]",
+"[[], [\"apple\"], [\"apple\"], [\"app\"], [\"app\"], [\"app\"], [\"app\"]]"
+],
+"output": "[null, null, true, false, true, null, true]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [],
+"methods": {
+"insert": [
+"string"
+],
+"search": [
+"string"
+],
+"startsWith": [
+"string"
+]
+}
+},
+"209": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"7",
+"[2,3,1,2,4,3]"
+],
+"output": "2"
+},
+{
+"input": [
+"4",
+"[1,4,4]"
+],
+"output": "1"
+},
+{
+"input": [
+"11",
+"[1,1,1,1,1,1,1,1]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minSubArrayLen",
+"params": [
+"integer",
+"integer[]"
+],
+"return": "integer"
+},
+"210": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"2",
+"[[1,0]]"
+],
+"output": "[0,1]"
+},
+{
+"input": [
+"4",
+"[[1,0],[2,0],[3,1],[3,2]]"
+],
+"output": "[0,2,1,3]"
+},
+{
+"input": [
+"1",
+"[]"
+],
+"output": "[0]"
+}
+],
+"any_order": false,
+"any_answer": true,
+"method": "findOrder",
+"params": [
+"integer",
+"integer[][]"
+],
+"return": "integer[]"
+},
+"211": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"WordDictionary\",\"addWord\",\"addWord\",\"addWord\",\"search\",\"search\",\"search\",\"search\"]",
+"[[],[\"bad\"],[\"dad\"],[\"mad\"],[\"pad\"],[\"bad\"],[\".ad\"],[\"b..\"]]"
+],
+"output": "[null,null,null,null,false,true,true,true]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [],
+"methods": {
+"addWord": [
+"string"
+],
+"search": [
+"string"
+]
+}
+},
+"212": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]]",
+"[\"oath\",\"pea\",\"eat\",\"rain\"]"
+],
+"output": "[\"eat\",\"oath\"]"
+},
+{
+"input": [
+"[[\"a\",\"b\"],[\"c\",\"d\"]]",
+"[\"abcb\"]"
+],
+"output": "[]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findWords",
+"params": [
+"character[][]",
+"string[]"
+],
+"return": "list<string>"
+},
+"213": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,3,2]"
+],
+"output": "3"
+},
+{
+"input": [
+"[1,2,3,1]"
+],
+"output": "4"
+},
+{
+"input": [
+"[1,2,3]"
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "rob",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"214": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"aacecaaa\""
+],
+"output": "\"aaacecaaa\""
+},
+{
+"input": [
+"\"abcd\""
+],
+"output": "\"dcbabcd\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "shortestPalindrome",
+"params": [
+"string"
+],
+"return": "string"
+},
+"215": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,2,1,5,6,4]",
+"2"
+],
+"output": "5"
+},
+{
+"input": [
+"[3,2,3,1,2,4,5,5,6]",
+"4"
+],
+"output": "4"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findKthLargest",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"216": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"3",
+"7"
+],
+"output": "[[1,2,4]]"
+},
+{
+"input": [
+"3",
+"9"
+],
+"output": "[[1,2,6],[1,3,5],[2,3,4]]"
+},
+{
+"input": [
+"4",
+"1"
+],
+"output": "[]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "combinationSum3",
+"params": [
+"integer",
+"integer"
+],
+"return": "list<list<integer>>"
+},
+"217": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,1]"
+],
+"output": "true"
+},
+{
+"input": [
+"[1,2,3,4]"
+],
+"output": "false"
+},
+{
+"input": [
+"[1,1,1,3,3,4,3,2,4,2]"
+],
+"output": "true"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "containsDuplicate",
+"params": [
+"integer[]"
+],
+"return": "boolean"
+},
+"219": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,1]",
+"3"
+],
+"output": "true"
+},
+{
+"input": [
+"[1,0,1,1]",
+"1"
+],
+"output": "true"
+},
+{
+"input": [
+"[1,2,3,1,2,3]",
+"2"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "containsNearbyDuplicate",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "boolean"
+},
+"221": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[\"1\",\"0\",\"1\",\"0\",\"0\"],[\"1\",\"0\",\"1\",\"1\",\"1\"],[\"1\",\"1\",\"1\",\"1\",\"1\"],[\"1\",\"0\",\"0\",\"1\",\"0\"]]"
+],
+"output": "4"
+},
+{
+"input": [
+"[[\"0\",\"1\"],[\"1\",\"0\"]]"
+],
+"output": "1"
+},
+{
+"input": [
+"[[\"0\"]]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maximalSquare",
+"params": [
+"character[][]"
+],
+"return": "integer"
+},
+"222": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4,5,6]"
+],
+"output": "6"
+},
+{
+"input": [
+"[]"
+],
+"output": "0"
+},
+{
+"input": [
+"[1]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countNodes",
+"params": [
+"TreeNode"
+],
+"return": "integer"
+},
+"224": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"1 + 1\""
+],
+"output": "2"
+},
+{
+"input": [
+"\" 2-1 + 2 \""
+],
+"output": "3"
+},
+{
+"input": [
+"\"(1+(4+5+2)-3)+(6+8)\""
+],
+"output": "23"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "calculate",
+"params": [
+"string"
+],
+"return": "integer"
+},
+"225": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"MyStack\", \"push\", \"push\", \"top\", \"pop\", \"empty\"]",
+"[[], [1], [2], [], [], []]"
+],
+"output": "[null, null, null, 2, 2, false]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [],
+"methods": {
+"push": [
+"integer"
+],
+"pop": [],
+"top": [],
+"empty": []
+}
+},
+"226": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[4,2,7,1,3,6,9]"
+],
+"output": "[4,7,2,9,6,3,1]"
+},
+{
+"input": [
+"[2,1,3]"
+],
+"output": "[2,3,1]"
+},
+{
+"input": [
+"[]"
+],
+"output": "[]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "invertTree",
+"params": [
+"TreeNode"
+],
+"return": "TreeNode"
+},
+"227": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"3+2*2\""
+],
+"output": "7"
+},
+{
+"input": [
+"\" 3/2 \""
+],
+"output": "1"
+},
+{
+"input": [
+"\" 3+5 / 2 \""
+],
+"output": "5"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "calculate",
+"params": [
+"string"
+],
+"return": "integer"
+},
+"228": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[0,1,2,4,5,7]"
+],
+"output": "[\"0->2\",\"4->5\",\"7\"]"
+},
+{
+"input": [
+"[0,2,3,4,6,8,9]"
+],
+"output": "[\"0\",\"2->4\",\"6\",\"8->9\"]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "summaryRanges",
+"params": [
+"integer[]"
+],
+"return": "list<string>"
+},
+"229": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,2,3]"
+],
+"output": "[3]"
+},
+{
+"input": [
+"[1]"
+],
+"output": "[1]"
+},
+{
+"input": [
+"[1,2]"
+],
+"output": "[1,2]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "majorityElement",
+"params": [
+"integer[]"
+],
+"return": "list<integer>"
+},
+"230": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,1,4,null,2]",
+"1"
+],
+"output": "1"
+},
+{
+"input": [
+"[5,3,6,2,4,null,null,1]",
+"3"
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "kthSmallest",
+"params": [
+"TreeNode",
+"integer"
+],
+"return": "integer"
+},
+"231": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"1"
+],
+"output": "true"
+},
+{
+"input": [
+"16"
+],
+"output": "true"
+},
+{
+"input": [
+"3"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isPowerOfTwo",
+"params": [
+"integer"
+],
+"return": "boolean"
+},
+"232": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"MyQueue\", \"push\", \"push\", \"peek\", \"pop\", \"empty\"]",
+"[[], [1], [2], [], [], []]"
+],
+"output": "[null, null, null, 1, 1, false]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [],
+"methods": {
+"push": [
+"integer"
+],
+"pop": [],
+"peek": [],
+"empty": []
+}
+},
+"233": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"13"
+],
+"output": "6"
+},
+{
+"input": [
+"0"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countDigitOne",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"234": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,2,1]"
+],
+"output": "true"
+},
+{
+"input": [
+"[1,2]"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isPalindrome",
+"params": [
+"ListNode"
+],
+"return": "boolean"
+},
+"235": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[6,2,8,0,4,7,9,null,null,3,5]",
+"2",
+"8"
+],
+"output": "6"
+},
+{
+"input": [
+"[6,2,8,0,4,7,9,null,null,3,5]",
+"2",
+"4"
+],
+"output": "2"
+},
+{
+"input": [
+"[2,1]",
+"2",
+"1"
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "lowestCommonAncestor",
+"params": [
+"TreeNode",
+"integer",
+"integer"
+],
+"return": "TreeNode"
+},
+"236": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,5,1,6,2,0,8,null,null,7,4]",
+"5",
+"1"
+],
+"output": "3"
+},
+{
+"input": [
+"[3,5,1,6,2,0,8,null,null,7,4]",
+"5",
+"4"
+],
+"output": "5"
+},
+{
+"input": [
+"[1,2]",
+"1",
+"2"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "lowestCommonAncestor",
+"params": [
+"TreeNode",
+"integer",
+"integer"
+],
+"return": "TreeNode"
+},
+"238": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4]"
+],
+"output": "[24,12,8,6]"
+},
+{
+"input": [
+"[-1,1,0,-3,3]"
+],
+"output": "[0,0,9,0,0]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "productExceptSelf",
+"params": [
+"integer[]"
+],
+"return": "integer[]"
+},
+"239": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,3,-1,-3,5,3,6,7]",
+"3"
+],
+"output": "[3,3,5,5,6,7]"
+},
+{
+"input": [
+"[1]",
+"1"
+],
+"output": "[1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxSlidingWindow",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer[]"
+},
+"240": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]]",
+"5"
+],
+"output": "true"
+},
+{
+"input": [
+"[[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]]",
+"20"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "searchMatrix",
+"params": [
+"integer[][]",
+"integer"
+],
+"return": "boolean"
+},
+"242": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"anagram\"",
+"\"nagaram\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"rat\"",
+"\"car\""
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isAnagram",
+"params": [
+"string",
+"string"
+],
+"return": "boolean"
+},
+"257": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,null,5]"
+],
+"output": "[\"1->2->5\",\"1->3\"]"
+},
+{
+"input": [
+"[1]"
+],
+"output": "[\"1\"]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "binaryTreePaths",
+"params": [
+"TreeNode"
+],
+"return": "list<string>"
+},
+"260": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,1,3,2,5]"
+],
+"output": "[3,5]"
+},
+{
+"input": [
+"[-1,0]"
+],
+"output": "[-1,0]"
+},
+{
+"input": [
+"[0,1]"
+],
+"output": "[1,0]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "singleNumber",
+"params": [
+"integer[]"
+],
+"return": "integer[]"
+},
+"268": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,0,1]"
+],
+"output": "2"
+},
+{
+"input": [
+"[0,1]"
+],
+"output": "2"
+},
+{
+"input": [
+"[9,6,4,2,3,5,7,0,1]"
+],
+"output": "8"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "missingNumber",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"274": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,0,6,1,5]"
+],
+"output": "3"
+},
+{
+"input": [
+"[1,3,1]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "hIndex",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"278": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"5",
+"4"
+],
+"output": "4"
+},
+{
+"input": [
+"1",
+"1"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "firstBadVersion",
+"params": [
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"282": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"123\"",
+"6"
+],
+"output": "[\"1*2*3\",\"1+2+3\"]"
+},
+{
+"input": [
+"\"232\"",
+"8"
+],
+"output": "[\"2*3+2\",\"2+3*2\"]"
+},
+{
+"input": [
+"\"3456237490\"",
+"9191"
+],
+"output": "[]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "addOperators",
+"params": [
+"string",
+"integer"
+],
+"return": "list<string>"
+},
+"283": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[0,1,0,3,12]"
+],
+"output": "[1,3,12,0,0]"
+},
+{
+"input": [
+"[0]"
+],
+"output": "[0]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "moveZeroes",
+"params": [
+"integer[]"
+],
+"return": "void"
+},
+"287": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,3,4,2,2]"
+],
+"output": "2"
+},
+{
+"input": [
+"[3,1,3,4,2]"
+],
+"output": "3"
+},
+{
+"input": [
+"[3,3,3,3,3]"
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findDuplicate",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"289": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[0,1,0],[0,0,1],[1,1,1],[0,0,0]]"
+],
+"output": "[[0,0,0],[1,0,1],[0,1,1],[0,1,0]]"
+},
+{
+"input": [
+"[[1,1],[1,0]]"
+],
+"output": "[[1,1],[1,1]]"
+}
+],
+"any_order": false,
+"any_answer": true,
+"method": "gameOfLife",
+"params": [
+"integer[][]"
+],
+"return": "void"
+},
+"290": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"abba\"",
+"\"dog cat cat dog\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"abba\"",
+"\"dog cat cat fish\""
+],
+"output": "false"
+},
+{
+"input": [
+"\"aaaa\"",
+"\"dog cat cat dog\""
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "wordPattern",
+"params": [
+"string",
+"string"
+],
+"return": "boolean"
+},
+"292": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"4"
+],
+"output": "false"
+},
+{
+"input": [
+"1"
+],
+"output": "true"
+},
+{
+"input": [
+"2"
+],
+"output": "true"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "canWinNim",
+"params": [
+"integer"
+],
+"return": "boolean"
+},
+"295": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"MedianFinder\", \"addNum\", \"addNum\", \"findMedian\", \"addNum\", \"findMedian\"]",
+"[[], [1], [2], [], [3], []]"
+],
+"output": "[null, null, null, 1.5, null, 2.0]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [],
+"methods": {
+"addNum": [
+"integer"
+],
+"findMedian": []
+}
+},
+"297": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,null,null,4,5]"
+],
+"output": "[1,2,3,null,null,4,5]"
+},
+{
+"input": [
+"[]"
+],
+"output": "[]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "Codec",
+"params": [
+"TreeNode"
+],
+"return": "string"
+},
+"300": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[10,9,2,5,3,7,101,18]"
+],
+"output": "4"
+},
+{
+"input": [
+"[0,1,0,3,2,3]"
+],
+"output": "4"
+},
+{
+"input": [
+"[7,7,7,7,7,7,7]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "lengthOfLIS",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"304": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"NumMatrix\", \"sumRegion\", \"sumRegion\", \"sumRegion\"]",
+"[[[[3, 0, 1, 4, 2], [5, 6, 3, 2, 1], [1, 2, 0, 1, 5], [4, 1, 0, 1, 7], [1, 0, 3, 0, 5]]], [2, 1, 4, 3], [1, 1, 2, 2], [1, 2, 2, 4]]"
+],
+"output": "[null, 8, 11, 12]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [
+"integer[][]",
+"integer",
+"integer"
+],
+"methods": {
+"sumRegion": [
+"integer",
+"integer",
+"integer",
+"integer"
+]
+}
+},
+"307": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"NumArray\", \"sumRange\", \"update\", \"sumRange\"]",
+"[[[1, 3, 5]], [0, 2], [1, 2], [0, 2]]"
+],
+"output": "[null, 9, null, 8]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [
+"integer[]"
+],
+"methods": {
+"update": [
+"integer",
+"integer"
+],
+"sumRange": [
+"integer",
+"integer"
+]
+}
+},
+"309": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,0,2]"
+],
+"output": "3"
+},
+{
+"input": [
+"[1]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxProfit",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"310": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"4",
+"[[1,0],[1,2],[1,3]]"
+],
+"output": "[1]"
+},
+{
+"input": [
+"6",
+"[[3,0],[3,1],[3,2],[3,4],[5,4]]"
+],
+"output": "[3,4]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "findMinHeightTrees",
+"params": [
+"integer",
+"integer[][]"
+],
+"return": "list<integer>"
+},
+"312": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,1,5,8]"
+],
+"output": "167"
+},
+{
+"input": [
+"[1,5]"
+],
+"output": "10"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxCoins",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"315": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[5,2,6,1]"
+],
+"output": "[2,1,1,0]"
+},
+{
+"input": [
+"[-1]"
+],
+"output": "[0]"
+},
+{
+"input": [
+"[-1,-1]"
+],
+"output": "[0,0]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countSmaller",
+"params": [
+"integer[]"
+],
+"return": "list<integer>"
+},
+"322": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,5]",
+"11"
+],
+"output": "3"
+},
+{
+"input": [
+"[2]",
+"3"
+],
+"output": "-1"
+},
+{
+"input": [
+"[1]",
+"0"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "coinChange",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"327": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[-2,5,-1]",
+"-2",
+"2"
+],
+"output": "3"
+},
+{
+"input": [
+"[0]",
+"0",
+"0"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countRangeSum",
+"params": [
+"integer[]",
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"328": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4,5]"
+],
+"output": "[1,3,5,2,4]"
+},
+{
+"input": [
+"[2,1,3,5,6,4,7]"
+],
+"output": "[2,3,6,7,1,5,4]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "oddEvenList",
+"params": [
+"ListNode"
+],
+"return": "ListNode"
+},
+"329": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[9,9,4],[6,6,8],[2,1,1]]"
+],
+"output": "4"
+},
+{
+"input": [
+"[[3,4,5],[3,2,6],[2,2,1]]"
+],
+"output": "4"
+},
+{
+"input": [
+"[[1]]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "longestIncreasingPath",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"332": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[\"MUC\",\"LHR\"],[\"JFK\",\"MUC\"],[\"SFO\",\"SJC\"],[\"LHR\",\"SFO\"]]"
+],
+"output": "[\"JFK\",\"MUC\",\"LHR\",\"SFO\",\"SJC\"]"
+},
+{
+"input": [
+"[[\"JFK\",\"SFO\"],[\"JFK\",\"ATL\"],[\"SFO\",\"ATL\"],[\"ATL\",\"JFK\"],[\"ATL\",\"SFO\"]]"
+],
+"output": "[\"JFK\",\"ATL\",\"JFK\",\"SFO\",\"ATL\",\"SFO\"]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findItinerary",
+"params": [
+"list<list<string>>"
+],
+"return": "list<string>"
+},
+"334": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4,5]"
+],
+"output": "true"
+},
+{
+"input": [
+"[5,4,3,2,1]"
+],
+"output": "false"
+},
+{
+"input": [
+"[2,1,5,0,4,6]"
+],
+"output": "true"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "increasingTriplet",
+"params": [
+"integer[]"
+],
+"return": "boolean"
+},
+"336": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[\"abcd\",\"dcba\",\"lls\",\"s\",\"sssll\"]"
+],
+"output": "[[0,1],[1,0],[3,2],[2,4]]"
+},
+{
+"input": [
+"[\"bat\",\"tab\",\"cat\"]"
+],
+"output": "[[0,1],[1,0]]"
+},
+{
+"input": [
+"[\"a\",\"\"]"
+],
+"output": "[[0,1],[1,0]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "palindromePairs",
+"params": [
+"string[]"
+],
+"return": "list<list<integer>>"
+},
+"337": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,2,3,null,3,null,1]"
+],
+"output": "7"
+},
+{
+"input": [
+"[3,4,5,1,3,null,1]"
+],
+"output": "9"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "rob",
+"params": [
+"TreeNode"
+],
+"return": "integer"
+},
+"338": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"2"
+],
+"output": "[0,1,1]"
+},
+{
+"input": [
+"5"
+],
+"output": "[0,1,1,2,1,2]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countBits",
+"params": [
+"integer"
+],
+"return": "integer[]"
+},
+"345": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"IceCreAm\""
+],
+"output": "\"AceCreIm\""
+},
+{
+"input": [
+"\"leetcode\""
+],
+"output": "\"leotcede\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "reverseVowels",
+"params": [
+"string"
+],
+"return": "string"
+},
+"347": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,1,1,2,2,3]",
+"2"
+],
+"output": "[1,2]"
+},
+{
+"input": [
+"[1]",
+"1"
+],
+"output": "[1]"
+},
+{
+"input": [
+"[1,2,1,2,1,2,3,1,3,2]",
+"2"
+],
+"output": "[1,2]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "topKFrequent",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer[]"
+},
+"354": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[5,4],[6,4],[6,7],[2,3]]"
+],
+"output": "3"
+},
+{
+"input": [
+"[[1,1],[1,1],[1,1]]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxEnvelopes",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"355": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"Twitter\", \"postTweet\", \"getNewsFeed\", \"follow\", \"postTweet\", \"getNewsFeed\", \"unfollow\", \"getNewsFeed\"]",
+"[[], [1, 5], [1], [1, 2], [2, 6], [1], [1, 2], [1]]"
+],
+"output": "[null, null, [5], null, null, [6, 5], null, [5]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [],
+"methods": {
+"postTweet": [
+"integer",
+"integer"
+],
+"getNewsFeed": [
+"integer"
+],
+"follow": [
+"integer",
+"integer"
+],
+"unfollow": [
+"integer",
+"integer"
+]
+}
+},
+"368": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3]"
+],
+"output": "[1,2]"
+},
+{
+"input": [
+"[1,2,4,8]"
+],
+"output": "[1,2,4,8]"
+}
+],
+"any_order": false,
+"any_answer": true,
+"method": "largestDivisibleSubset",
+"params": [
+"integer[]"
+],
+"return": "list<integer>"
+},
+"371": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"1",
+"2"
+],
+"output": "3"
+},
+{
+"input": [
+"2",
+"3"
+],
+"output": "5"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "getSum",
+"params": [
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"372": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"2",
+"[3]"
+],
+"output": "8"
+},
+{
+"input": [
+"2",
+"[1,0]"
+],
+"output": "1024"
+},
+{
+"input": [
+"1",
+"[4,3,3,8,5,2]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "superPow",
+"params": [
+"integer",
+"integer[]"
+],
+"return": "integer"
+},
+"373": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,7,11]",
+"[2,4,6]",
+"3"
+],
+"output": "[[1,2],[1,4],[1,6]]"
+},
+{
+"input": [
+"[1,1,2]",
+"[1,2,3]",
+"2"
+],
+"output": "[[1,1],[1,1]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "kSmallestPairs",
+"params": [
+"integer[]",
+"integer[]",
+"integer"
+],
+"return": "list<list<integer>>"
+},
+"374": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"10",
+"6"
+],
+"output": "6"
+},
+{
+"input": [
+"1",
+"1"
+],
+"output": "1"
+},
+{
+"input": [
+"2",
+"1"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "guessNumber",
+"params": [
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"377": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3]",
+"4"
+],
+"output": "7"
+},
+{
+"input": [
+"[9]",
+"3"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "combinationSum4",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"380": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"RandomizedSet\", \"insert\", \"remove\", \"insert\", \"getRandom\", \"remove\", \"insert\", \"getRandom\"]",
+"[[], [1], [2], [2], [], [1], [2], []]"
+],
+"output": "[null, true, false, true, 2, true, false, 2]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [],
+"methods": {
+"insert": [
+"integer"
+],
+"remove": [
+"integer"
+],
+"getRandom": []
+}
+},
+"383": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"a\"",
+"\"b\""
+],
+"output": "false"
+},
+{
+"input": [
+"\"aa\"",
+"\"ab\""
+],
+"output": "false"
+},
+{
+"input": [
+"\"aa\"",
+"\"aab\""
+],
+"output": "true"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "canConstruct",
+"params": [
+"string",
+"string"
+],
+"return": "boolean"
+},
+"392": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"abc\"",
+"\"ahbgdc\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"axc\"",
+"\"ahbgdc\""
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isSubsequence",
+"params": [
+"string",
+"string"
+],
+"return": "boolean"
+},
+"394": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"3[a]2[bc]\""
+],
+"output": "\"aaabcbc\""
+},
+{
+"input": [
+"\"3[a2[c]]\""
+],
+"output": "\"accaccacc\""
+},
+{
+"input": [
+"\"2[abc]3[cd]ef\""
+],
+"output": "\"abcabccdcdcdef\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "decodeString",
+"params": [
+"string"
+],
+"return": "string"
+},
+"399": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[\"a\",\"b\"],[\"b\",\"c\"]]",
+"[2.0,3.0]",
+"[[\"a\",\"c\"],[\"b\",\"a\"],[\"a\",\"e\"],[\"a\",\"a\"],[\"x\",\"x\"]]"
+],
+"output": "[6.00000,0.50000,-1.00000,1.00000,-1.00000]"
+},
+{
+"input": [
+"[[\"a\",\"b\"],[\"b\",\"c\"],[\"bc\",\"cd\"]]",
+"[1.5,2.5,5.0]",
+"[[\"a\",\"c\"],[\"c\",\"b\"],[\"bc\",\"cd\"],[\"cd\",\"bc\"]]"
+],
+"output": "[3.75000,0.40000,5.00000,0.20000]"
+},
+{
+"input": [
+"[[\"a\",\"b\"]]",
+"[0.5]",
+"[[\"a\",\"b\"],[\"b\",\"a\"],[\"a\",\"c\"],[\"x\",\"y\"]]"
+],
+"output": "[0.50000,2.00000,-1.00000,-1.00000]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "calcEquation",
+"params": [
+"list<list<string>>",
+"double[]",
+"list<list<string>>"
+],
+"return": "double[]"
+},
+"402": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"1432219\"",
+"3"
+],
+"output": "\"1219\""
+},
+{
+"input": [
+"\"10200\"",
+"1"
+],
+"output": "\"200\""
+},
+{
+"input": [
+"\"10\"",
+"2"
+],
+"output": "\"0\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "removeKdigits",
+"params": [
+"string",
+"integer"
+],
+"return": "string"
+},
+"409": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"abccccdd\""
+],
+"output": "7"
+},
+{
+"input": [
+"\"a\""
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "longestPalindrome",
+"params": [
+"string"
+],
+"return": "integer"
+},
+"410": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[7,2,5,10,8]",
+"2"
+],
+"output": "18"
+},
+{
+"input": [
+"[1,2,3,4,5]",
+"2"
+],
+"output": "9"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "splitArray",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"416": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,5,11,5]"
+],
+"output": "true"
+},
+{
+"input": [
+"[1,2,3,5]"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "canPartition",
+"params": [
+"integer[]"
+],
+"return": "boolean"
+},
+"417": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]"
+],
+"output": "[[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]"
+},
+{
+"input": [
+"[[1]]"
+],
+"output": "[[0,0]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "pacificAtlantic",
+"params": [
+"integer[][]"
+],
+"return": "list<list<integer>>"
+},
+"421": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,10,5,25,2,8]"
+],
+"output": "28"
+},
+{
+"input": [
+"[14,70,53,83,49,91,36,80,92,51,66,70]"
+],
+"output": "127"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findMaximumXOR",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"424": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"ABAB\"",
+"2"
+],
+"output": "4"
+},
+{
+"input": [
+"\"AABABBA\"",
+"1"
+],
+"output": "4"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "characterReplacement",
+"params": [
+"string",
+"integer"
+],
+"return": "integer"
+},
+"427": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[0,1],[1,0]]"
+],
+"output": "[[0,1],[1,0],[1,1],[1,1],[1,0]]"
+},
+{
+"input": [
+"[[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0],[1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1],[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0]]"
+],
+"output": "[[0,1],[1,1],[0,1],[1,1],[1,0],null,null,null,null,[1,0],[1,0],[1,1],[1,1]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "construct",
+"params": [
+"integer[][]"
+],
+"return": "list<list<integer>>"
+},
+"433": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"AACCGGTT\"",
+"\"AACCGGTA\"",
+"[\"AACCGGTA\"]"
+],
+"output": "1"
+},
+{
+"input": [
+"\"AACCGGTT\"",
+"\"AAACGGTA\"",
+"[\"AACCGGTA\",\"AACCGCTA\",\"AAACGGTA\"]"
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minMutation",
+"params": [
+"string",
+"string",
+"string[]"
+],
+"return": "integer"
+},
+"435": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,2],[2,3],[3,4],[1,3]]"
+],
+"output": "1"
+},
+{
+"input": [
+"[[1,2],[1,2],[1,2]]"
+],
+"output": "2"
+},
+{
+"input": [
+"[[1,2],[2,3]]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "eraseOverlapIntervals",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"437": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[10,5,-3,3,2,null,11,3,-2,null,1]",
+"8"
+],
+"output": "3"
+},
+{
+"input": [
+"[5,4,8,11,null,13,4,7,2,null,null,5,1]",
+"22"
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "pathSum",
+"params": [
+"TreeNode",
+"integer"
+],
+"return": "integer"
+},
+"438": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"cbaebabacd\"",
+"\"abc\""
+],
+"output": "[0,6]"
+},
+{
+"input": [
+"\"abab\"",
+"\"ab\""
+],
+"output": "[0,1,2]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "findAnagrams",
+"params": [
+"string",
+"string"
+],
+"return": "list<integer>"
+},
+"443": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[\"a\",\"a\",\"b\",\"b\",\"c\",\"c\",\"c\"]"
+],
+"output": "6"
+},
+{
+"input": [
+"[\"a\"]"
+],
+"output": "1"
+},
+{
+"input": [
+"[\"a\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\",\"b\"]"
+],
+"output": "4"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "compress",
+"params": [
+"character[]"
+],
+"return": "integer"
+},
+"450": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[5,3,6,2,4,null,7]",
+"3"
+],
+"output": "[5,4,6,2,null,null,7]"
+},
+{
+"input": [
+"[5,3,6,2,4,null,7]",
+"0"
+],
+"output": "[5,3,6,2,4,null,7]"
+},
+{
+"input": [
+"[]",
+"0"
+],
+"output": "[]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "deleteNode",
+"params": [
+"TreeNode",
+"integer"
+],
+"return": "TreeNode"
+},
+"451": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"tree\""
+],
+"output": "\"eert\""
+},
+{
+"input": [
+"\"cccaaa\""
+],
+"output": "\"aaaccc\""
+},
+{
+"input": [
+"\"Aabb\""
+],
+"output": "\"bbAa\""
+}
+],
+"any_order": false,
+"any_answer": true,
+"method": "frequencySort",
+"params": [
+"string"
+],
+"return": "string"
+},
+"452": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[10,16],[2,8],[1,6],[7,12]]"
+],
+"output": "2"
+},
+{
+"input": [
+"[[1,2],[3,4],[5,6],[7,8]]"
+],
+"output": "4"
+},
+{
+"input": [
+"[[1,2],[2,3],[3,4],[4,5]]"
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findMinArrowShots",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"455": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3]",
+"[1,1]"
+],
+"output": "1"
+},
+{
+"input": [
+"[1,2]",
+"[1,2,3]"
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findContentChildren",
+"params": [
+"integer[]",
+"integer[]"
+],
+"return": "integer"
+},
+"460": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"LFUCache\", \"put\", \"put\", \"get\", \"put\", \"get\", \"get\", \"put\", \"get\", \"get\", \"get\"]",
+"[[2], [1, 1], [2, 2], [1], [3, 3], [2], [3], [4, 4], [1], [3], [4]]"
+],
+"output": "[null, null, null, 1, null, -1, 3, null, -1, 3, 4]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [
+"integer"
+],
+"methods": {
+"get": [
+"integer"
+],
+"put": [
+"integer",
+"integer"
+]
+}
+},
+"485": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,1,0,1,1,1]"
+],
+"output": "3"
+},
+{
+"input": [
+"[1,0,1,1,0,1]"
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findMaxConsecutiveOnes",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"493": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,3,2,3,1]"
+],
+"output": "2"
+},
+{
+"input": [
+"[2,4,3,5,1]"
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "reversePairs",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"494": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,1,1,1,1]",
+"3"
+],
+"output": "5"
+},
+{
+"input": [
+"[1]",
+"1"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findTargetSumWays",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"496": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[4,1,2]",
+"[1,3,4,2]"
+],
+"output": "[-1,3,-1]"
+},
+{
+"input": [
+"[2,4]",
+"[1,2,3,4]"
+],
+"output": "[3,-1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "nextGreaterElement",
+"params": [
+"integer[]",
+"integer[]"
+],
+"return": "integer[]"
+},
+"502": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"2",
+"0",
+"[1,2,3]",
+"[0,1,1]"
+],
+"output": "4"
+},
+{
+"input": [
+"3",
+"0",
+"[1,2,3]",
+"[0,1,2]"
+],
+"output": "6"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findMaximizedCapital",
+"params": [
+"integer",
+"integer",
+"integer[]",
+"integer[]"
+],
+"return": "integer"
+},
+"503": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,1]"
+],
+"output": "[2,-1,2]"
+},
+{
+"input": [
+"[1,2,3,4,3]"
+],
+"output": "[2,3,4,-1,4]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "nextGreaterElements",
+"params": [
+"integer[]"
+],
+"return": "integer[]"
+},
+"509": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"2"
+],
+"output": "1"
+},
+{
+"input": [
+"3"
+],
+"output": "2"
+},
+{
+"input": [
+"4"
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "fib",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"516": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"bbbab\""
+],
+"output": "4"
+},
+{
+"input": [
+"\"cbbd\""
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "longestPalindromeSubseq",
+"params": [
+"string"
+],
+"return": "integer"
+},
+"518": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"5",
+"[1,2,5]"
+],
+"output": "4"
+},
+{
+"input": [
+"3",
+"[2]"
+],
+"output": "0"
+},
+{
+"input": [
+"10",
+"[10]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "change",
+"params": [
+"integer",
+"integer[]"
+],
+"return": "integer"
+},
+"525": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[0,1]"
+],
+"output": "2"
+},
+{
+"input": [
+"[0,1,0]"
+],
+"output": "2"
+},
+{
+"input": [
+"[0,1,1,1,1,1,0,0,0]"
+],
+"output": "6"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findMaxLength",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"528": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"Solution\",\"pickIndex\"]",
+"[[[1]],[]]"
+],
+"output": "[null,0]"
+},
+{
+"input": [
+"[\"Solution\",\"pickIndex\",\"pickIndex\",\"pickIndex\",\"pickIndex\",\"pickIndex\"]",
+"[[[1,3]],[],[],[],[],[]]"
+],
+"output": "[null,1,1,1,1,0]"
+}
+],
+"any_order": false,
+"any_answer": true,
+"constructor": [
+"integer[]",
+"integer"
+],
+"methods": {
+"pickIndex": []
+}
+},
+"530": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[4,2,6,1,3]"
+],
+"output": "1"
+},
+{
+"input": [
+"[1,0,48,null,null,12,49]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "getMinimumDifference",
+"params": [
+"TreeNode"
+],
+"return": "integer"
+},
+"540": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,1,2,3,3,4,4,8,8]"
+],
+"output": "2"
+},
+{
+"input": [
+"[3,3,7,7,10,11,11]"
+],
+"output": "10"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "singleNonDuplicate",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"542": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[0,0,0],[0,1,0],[0,0,0]]"
+],
+"output": "[[0,0,0],[0,1,0],[0,0,0]]"
+},
+{
+"input": [
+"[[0,0,0],[0,1,0],[1,1,1]]"
+],
+"output": "[[0,0,0],[0,1,0],[1,2,1]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "updateMatrix",
+"params": [
+"integer[][]"
+],
+"return": "integer[][]"
+},
+"543": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4,5]"
+],
+"output": "3"
+},
+{
+"input": [
+"[1,2]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "diameterOfBinaryTree",
+"params": [
+"TreeNode"
+],
+"return": "integer"
+},
+"547": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,1,0],[1,1,0],[0,0,1]]"
+],
+"output": "2"
+},
+{
+"input": [
+"[[1,0,0],[0,1,0],[0,0,1]]"
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findCircleNum",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"560": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,1,1]",
+"2"
+],
+"output": "2"
+},
+{
+"input": [
+"[1,2,3]",
+"3"
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "subarraySum",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"567": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"ab\"",
+"\"eidbaooo\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"ab\"",
+"\"eidboaoo\""
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "checkInclusion",
+"params": [
+"string",
+"string"
+],
+"return": "boolean"
+},
+"572": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,4,5,1,2]",
+"[4,1,2]"
+],
+"output": "true"
+},
+{
+"input": [
+"[3,4,5,1,2,null,null,null,null,0]",
+"[4,1,2]"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isSubtree",
+"params": [
+"TreeNode",
+"TreeNode"
+],
+"return": "boolean"
+},
+"605": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,0,0,0,1]",
+"1"
+],
+"output": "true"
+},
+{
+"input": [
+"[1,0,0,0,1]",
+"2"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "canPlaceFlowers",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "boolean"
+},
+"621": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"]",
+"2"
+],
+"output": "8"
+},
+{
+"input": [
+"[\"A\",\"C\",\"A\",\"B\",\"D\",\"B\"]",
+"1"
+],
+"output": "6"
+},
+{
+"input": [
+"[\"A\",\"A\",\"A\", \"B\",\"B\",\"B\"]",
+"3"
+],
+"output": "10"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "leastInterval",
+"params": [
+"character[]",
+"integer"
+],
+"return": "integer"
+},
+"622": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"MyCircularQueue\", \"enQueue\", \"enQueue\", \"enQueue\", \"enQueue\", \"Rear\", \"isFull\", \"deQueue\", \"enQueue\", \"Rear\"]",
+"[[3], [1], [2], [3], [4], [], [], [], [4], []]"
+],
+"output": "[null, true, true, true, false, 3, true, true, true, 4]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [
+"integer"
+],
+"methods": {
+"enQueue": [
+"integer"
+],
+"deQueue": [],
+"Front": [],
+"Rear": [],
+"isEmpty": [],
+"isFull": []
+}
+},
+"630": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[100,200],[200,1300],[1000,1250],[2000,3200]]"
+],
+"output": "3"
+},
+{
+"input": [
+"[[1,2]]"
+],
+"output": "1"
+},
+{
+"input": [
+"[[3,2],[4,3]]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "scheduleCourse",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"632": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[4,10,15,24,26],[0,9,12,20],[5,18,22,30]]"
+],
+"output": "[20,24]"
+},
+{
+"input": [
+"[[1,2,3],[1,2,3],[1,2,3]]"
+],
+"output": "[1,1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "smallestRange",
+"params": [
+"list<list<integer>>"
+],
+"return": "integer[]"
+},
+"637": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,9,20,null,null,15,7]"
+],
+"output": "[3.00000,14.50000,11.00000]"
+},
+{
+"input": [
+"[3,9,20,15,7]"
+],
+"output": "[3.00000,14.50000,11.00000]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "averageOfLevels",
+"params": [
+"TreeNode"
+],
+"return": "list<double>"
+},
+"643": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,12,-5,-6,50,3]",
+"4"
+],
+"output": "12.75000"
+},
+{
+"input": [
+"[5]",
+"1"
+],
+"output": "5.00000"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findMaxAverage",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "double"
+},
+"647": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"abc\""
+],
+"output": "3"
+},
+{
+"input": [
+"\"aaa\""
+],
+"output": "6"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countSubstrings",
+"params": [
+"string"
+],
+"return": "integer"
+},
+"649": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"RD\""
+],
+"output": "\"Radiant\""
+},
+{
+"input": [
+"\"RDD\""
+],
+"output": "\"Dire\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "predictPartyVictory",
+"params": [
+"string"
+],
+"return": "string"
+},
+"653": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[5,3,6,2,4,null,7]",
+"9"
+],
+"output": "true"
+},
+{
+"input": [
+"[5,3,6,2,4,null,7]",
+"28"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findTarget",
+"params": [
+"TreeNode",
+"integer"
+],
+"return": "boolean"
+},
+"658": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4,5]",
+"4",
+"3"
+],
+"output": "[1,2,3,4]"
+},
+{
+"input": [
+"[1,1,2,3,4,5]",
+"4",
+"-1"
+],
+"output": "[1,1,2,3]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findClosestElements",
+"params": [
+"integer[]",
+"integer",
+"integer"
+],
+"return": "list<integer>"
+},
+"662": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,3,2,5,3,null,9]"
+],
+"output": "4"
+},
+{
+"input": [
+"[1,3,2,5,null,null,9,6,null,7]"
+],
+"output": "7"
+},
+{
+"input": [
+"[1,3,2,5]"
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "widthOfBinaryTree",
+"params": [
+"TreeNode"
+],
+"return": "integer"
+},
+"673": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,3,5,4,7]"
+],
+"output": "2"
+},
+{
+"input": [
+"[2,2,2,2,2]"
+],
+"output": "5"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findNumberOfLIS",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"678": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"()\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"(*)\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"(*))\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"(\""
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "checkValidString",
+"params": [
+"string"
+],
+"return": "boolean"
+},
+"684": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,2],[1,3],[2,3]]"
+],
+"output": "[2,3]"
+},
+{
+"input": [
+"[[1,2],[2,3],[3,4],[1,4],[1,5]]"
+],
+"output": "[1,4]"
+}
+],
+"any_order": false,
+"any_answer": true,
+"method": "findRedundantConnection",
+"params": [
+"integer[][]"
+],
+"return": "integer[]"
+},
+"692": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[\"i\",\"love\",\"leetcode\",\"i\",\"love\",\"coding\"]",
+"2"
+],
+"output": "[\"i\",\"love\"]"
+},
+{
+"input": [
+"[\"the\",\"day\",\"is\",\"sunny\",\"the\",\"the\",\"the\",\"sunny\",\"is\",\"is\"]",
+"4"
+],
+"output": "[\"the\",\"is\",\"sunny\",\"day\"]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "topKFrequent",
+"params": [
+"string[]",
+"integer"
+],
+"return": "list<string>"
+},
+"695": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[0,0,1,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,1,1,0,1,0,0,0,0,0,0,0,0],[0,1,0,0,1,1,0,0,1,0,1,0,0],[0,1,0,0,1,1,0,0,1,1,1,0,0],[0,0,0,0,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,1,1,0,0,0,0]]"
+],
+"output": "6"
+},
+{
+"input": [
+"[[0,0,0,0,0,0,0,0]]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxAreaOfIsland",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"698": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[4,3,2,3,5,2,1]",
+"4"
+],
+"output": "true"
+},
+{
+"input": [
+"[1,2,3,4]",
+"3"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "canPartitionKSubsets",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "boolean"
+},
+"699": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,2],[2,3],[6,1]]"
+],
+"output": "[2,5,5]"
+},
+{
+"input": [
+"[[100,100],[200,100]]"
+],
+"output": "[100,100]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "fallingSquares",
+"params": [
+"integer[][]"
+],
+"return": "list<integer>"
+},
+"700": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[4,2,7,1,3]",
+"2"
+],
+"output": "[2,1,3]"
+},
+{
+"input": [
+"[4,2,7,1,3]",
+"5"
+],
+"output": "[]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "searchBST",
+"params": [
+"TreeNode",
+"integer"
+],
+"return": "TreeNode"
+},
+"701": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[4,2,7,1,3]",
+"5"
+],
+"output": "[4,2,7,1,3,5]"
+},
+{
+"input": [
+"[40,20,60,10,30,50,70]",
+"25"
+],
+"output": "[40,20,60,10,30,50,70,null,null,25]"
+},
+{
+"input": [
+"[4,2,7,1,3,null,null,null,null,null,null]",
+"5"
+],
+"output": "[4,2,7,1,3,5]"
+}
+],
+"any_order": false,
+"any_answer": true,
+"method": "insertIntoBST",
+"params": [
+"TreeNode",
+"integer"
+],
+"return": "TreeNode"
+},
+"703": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"KthLargest\", \"add\", \"add\", \"add\", \"add\", \"add\"]",
+"[[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]]"
+],
+"output": "[null, 4, 5, 5, 8, 8]"
+},
+{
+"input": [
+"[\"KthLargest\", \"add\", \"add\", \"add\", \"add\"]",
+"[[4, [7, 7, 7, 7, 8, 3]], [2], [10], [9], [9]]"
+],
+"output": "[null, 7, 7, 7, 8]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [
+"integer",
+"integer[]",
+"integer"
+],
+"methods": {
+"add": [
+"integer"
+]
+}
+},
+"704": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[-1,0,3,5,9,12]",
+"9"
+],
+"output": "4"
+},
+{
+"input": [
+"[-1,0,3,5,9,12]",
+"2"
+],
+"output": "-1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "search",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"714": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,3,2,8,4,9]",
+"2"
+],
+"output": "8"
+},
+{
+"input": [
+"[1,3,7,5,10,3]",
+"3"
+],
+"output": "6"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxProfit",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"721": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[\"John\",\"johnsmith@mail.com\",\"john_newyork@mail.com\"],[\"John\",\"johnsmith@mail.com\",\"john00@mail.com\"],[\"Mary\",\"mary@mail.com\"],[\"John\",\"johnnybravo@mail.com\"]]"
+],
+"output": "[[\"John\",\"john00@mail.com\",\"john_newyork@mail.com\",\"johnsmith@mail.com\"],[\"Mary\",\"mary@mail.com\"],[\"John\",\"johnnybravo@mail.com\"]]"
+},
+{
+"input": [
+"[[\"Gabe\",\"Gabe0@m.co\",\"Gabe3@m.co\",\"Gabe1@m.co\"],[\"Kevin\",\"Kevin3@m.co\",\"Kevin5@m.co\",\"Kevin0@m.co\"],[\"Ethan\",\"Ethan5@m.co\",\"Ethan4@m.co\",\"Ethan0@m.co\"],[\"Hanzo\",\"Hanzo3@m.co\",\"Hanzo1@m.co\",\"Hanzo0@m.co\"],[\"Fern\",\"Fern5@m.co\",\"Fern1@m.co\",\"Fern0@m.co\"]]"
+],
+"output": "[[\"Ethan\",\"Ethan0@m.co\",\"Ethan4@m.co\",\"Ethan5@m.co\"],[\"Gabe\",\"Gabe0@m.co\",\"Gabe1@m.co\",\"Gabe3@m.co\"],[\"Hanzo\",\"Hanzo0@m.co\",\"Hanzo1@m.co\",\"Hanzo3@m.co\"],[\"Kevin\",\"Kevin0@m.co\",\"Kevin3@m.co\",\"Kevin5@m.co\"],[\"Fern\",\"Fern0@m.co\",\"Fern1@m.co\",\"Fern5@m.co\"]]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "accountsMerge",
+"params": [
+"list<list<string>>"
+],
+"return": "list<list<string>>"
+},
+"724": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,7,3,6,5,6]"
+],
+"output": "3"
+},
+{
+"input": [
+"[1,2,3]"
+],
+"output": "-1"
+},
+{
+"input": [
+"[2,1,-1]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "pivotIndex",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"733": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,1,1],[1,1,0],[1,0,1]]",
+"1",
+"1",
+"2"
+],
+"output": "[[2,2,2],[2,2,0],[2,0,1]]"
+},
+{
+"input": [
+"[[0,0,0],[0,0,0]]",
+"0",
+"0",
+"0"
+],
+"output": "[[0,0,0],[0,0,0]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "floodFill",
+"params": [
+"integer[][]",
+"integer",
+"integer",
+"integer"
+],
+"return": "integer[][]"
+},
+"735": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[5,10,-5]"
+],
+"output": "[5,10]"
+},
+{
+"input": [
+"[8,-8]"
+],
+"output": "[]"
+},
+{
+"input": [
+"[10,2,-5]"
+],
+"output": "[10]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "asteroidCollision",
+"params": [
+"integer[]"
+],
+"return": "integer[]"
+},
+"739": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[73,74,75,71,69,72,76,73]"
+],
+"output": "[1,1,4,2,1,1,0,0]"
+},
+{
+"input": [
+"[30,40,50,60]"
+],
+"output": "[1,1,1,0]"
+},
+{
+"input": [
+"[30,60,90]"
+],
+"output": "[1,1,0]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "dailyTemperatures",
+"params": [
+"integer[]"
+],
+"return": "integer[]"
+},
+"743": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[2,1,1],[2,3,1],[3,4,1]]",
+"4",
+"2"
+],
+"output": "2"
+},
+{
+"input": [
+"[[1,2,1]]",
+"2",
+"1"
+],
+"output": "1"
+},
+{
+"input": [
+"[[1,2,1]]",
+"2",
+"2"
+],
+"output": "-1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "networkDelayTime",
+"params": [
+"integer[][]",
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"746": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[10,15,20]"
+],
+"output": "15"
+},
+{
+"input": [
+"[1,100,1,1,1,100,1,1,100,1]"
+],
+"output": "6"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minCostClimbingStairs",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"763": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"ababcbacadefegdehijhklij\""
+],
+"output": "[9,7,8]"
+},
+{
+"input": [
+"\"eccbbbbdec\""
+],
+"output": "[10]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "partitionLabels",
+"params": [
+"string"
+],
+"return": "list<integer>"
+},
+"778": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[0,2],[1,3]]"
+],
+"output": "3"
+},
+{
+"input": [
+"[[0,1,2,3,4],[24,23,22,21,5],[12,13,14,15,16],[11,17,18,19,20],[10,9,8,7,6]]"
+],
+"output": "16"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "swimInWater",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"785": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,2,3],[0,2],[0,1,3],[0,2]]"
+],
+"output": "false"
+},
+{
+"input": [
+"[[1,3],[0,2],[1,3],[0,2]]"
+],
+"output": "true"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isBipartite",
+"params": [
+"integer[][]"
+],
+"return": "boolean"
+},
+"787": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"4",
+"[[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]]",
+"0",
+"3",
+"1"
+],
+"output": "700"
+},
+{
+"input": [
+"3",
+"[[0,1,100],[1,2,100],[0,2,500]]",
+"0",
+"2",
+"1"
+],
+"output": "200"
+},
+{
+"input": [
+"3",
+"[[0,1,100],[1,2,100],[0,2,500]]",
+"0",
+"2",
+"0"
+],
+"output": "500"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findCheapestPrice",
+"params": [
+"integer",
+"integer[][]",
+"integer",
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"790": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"3"
+],
+"output": "5"
+},
+{
+"input": [
+"1"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "numTilings",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"796": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"abcde\"",
+"\"cdeab\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"abcde\"",
+"\"abced\""
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "rotateString",
+"params": [
+"string",
+"string"
+],
+"return": "boolean"
+},
+"802": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,2],[2,3],[5],[0],[5],[],[]]"
+],
+"output": "[2,4,5,6]"
+},
+{
+"input": [
+"[[1,2,3,4],[1,2],[3,4],[0,4],[]]"
+],
+"output": "[4]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "eventualSafeNodes",
+"params": [
+"integer[][]"
+],
+"return": "list<integer>"
+},
+"815": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,2,7],[3,6,7]]",
+"1",
+"6"
+],
+"output": "2"
+},
+{
+"input": [
+"[[7,12],[4,5,15],[6],[15,19],[9,12,13]]",
+"15",
+"12"
+],
+"output": "-1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "numBusesToDestination",
+"params": [
+"integer[][]",
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"827": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,0],[0,1]]"
+],
+"output": "3"
+},
+{
+"input": [
+"[[1,1],[1,0]]"
+],
+"output": "4"
+},
+{
+"input": [
+"[[1,1],[1,1]]"
+],
+"output": "4"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "largestIsland",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"834": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"6",
+"[[0,1],[0,2],[2,3],[2,4],[2,5]]"
+],
+"output": "[8,12,6,10,10,10]"
+},
+{
+"input": [
+"1",
+"[]"
+],
+"output": "[0]"
+},
+{
+"input": [
+"2",
+"[[1,0]]"
+],
+"output": "[1,1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "sumOfDistancesInTree",
+"params": [
+"integer",
+"integer[][]"
+],
+"return": "integer[]"
+},
+"836": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[0,0,2,2]",
+"[1,1,3,3]"
+],
+"output": "true"
+},
+{
+"input": [
+"[0,0,1,1]",
+"[1,0,2,1]"
+],
+"output": "false"
+},
+{
+"input": [
+"[0,0,1,1]",
+"[2,2,3,3]"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isRectangleOverlap",
+"params": [
+"integer[]",
+"integer[]"
+],
+"return": "boolean"
+},
+"841": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1],[2],[3],[]]"
+],
+"output": "true"
+},
+{
+"input": [
+"[[1,3],[3,0,1],[2],[0]]"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "canVisitAllRooms",
+"params": [
+"list<list<integer>>"
+],
+"return": "boolean"
+},
+"844": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"ab#c\"",
+"\"ad#c\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"ab##\"",
+"\"c#d#\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"a#c\"",
+"\"b\""
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "backspaceCompare",
+"params": [
+"string",
+"string"
+],
+"return": "boolean"
+},
+"846": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,6,2,3,4,7,8]",
+"3"
+],
+"output": "true"
+},
+{
+"input": [
+"[1,2,3,4,5]",
+"4"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "isNStraightHand",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "boolean"
+},
+"847": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,2,3],[0],[0],[0]]"
+],
+"output": "4"
+},
+{
+"input": [
+"[[1],[0,2,4],[1,3,4],[2],[1,2]]"
+],
+"output": "4"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "shortestPathLength",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"853": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"12",
+"[10,8,0,5,3]",
+"[2,4,1,1,3]"
+],
+"output": "3"
+},
+{
+"input": [
+"10",
+"[3]",
+"[3]"
+],
+"output": "1"
+},
+{
+"input": [
+"100",
+"[0,2,4]",
+"[4,2,1]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "carFleet",
+"params": [
+"integer",
+"integer[]",
+"integer[]"
+],
+"return": "integer"
+},
+"860": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[5,5,5,10,20]"
+],
+"output": "true"
+},
+{
+"input": [
+"[5,5,10,10,20]"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "lemonadeChange",
+"params": [
+"integer[]"
+],
+"return": "boolean"
+},
+"863": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,5,1,6,2,0,8,null,null,7,4]",
+"5",
+"2"
+],
+"output": "[7,4,1]"
+},
+{
+"input": [
+"[1]",
+"1",
+"3"
+],
+"output": "[]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "distanceK",
+"params": [
+"TreeNode",
+"integer",
+"integer"
+],
+"return": "list<integer>"
+},
+"872": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,5,1,6,2,9,8,null,null,7,4]",
+"[3,5,1,6,7,4,2,null,null,null,null,null,null,9,8]"
+],
+"output": "true"
+},
+{
+"input": [
+"[1,2,3]",
+"[1,3,2]"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "leafSimilar",
+"params": [
+"TreeNode",
+"TreeNode"
+],
+"return": "boolean"
+},
+"875": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,6,7,11]",
+"8"
+],
+"output": "4"
+},
+{
+"input": [
+"[30,11,23,4,20]",
+"5"
+],
+"output": "30"
+},
+{
+"input": [
+"[30,11,23,4,20]",
+"6"
+],
+"output": "23"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minEatingSpeed",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"876": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4,5]"
+],
+"output": "[3,4,5]"
+},
+{
+"input": [
+"[1,2,3,4,5,6]"
+],
+"output": "[4,5,6]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "middleNode",
+"params": [
+"ListNode"
+],
+"return": "ListNode"
+},
+"878": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"1",
+"2",
+"3"
+],
+"output": "2"
+},
+{
+"input": [
+"4",
+"2",
+"3"
+],
+"output": "6"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "nthMagicalNumber",
+"params": [
+"integer",
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"886": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"4",
+"[[1,2],[1,3],[2,4]]"
+],
+"output": "true"
+},
+{
+"input": [
+"3",
+"[[1,2],[1,3],[2,3]]"
+],
+"output": "false"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "possibleBipartition",
+"params": [
+"integer",
+"integer[][]"
+],
+"return": "boolean"
+},
+"895": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"FreqStack\", \"push\", \"push\", \"push\", \"push\", \"push\", \"push\", \"pop\", \"pop\", \"pop\", \"pop\"]",
+"[[], [5], [7], [5], [7], [4], [5], [], [], [], []]"
+],
+"output": "[null, null, null, null, null, null, null, 5, 7, 5, 4]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [],
+"methods": {
+"push": [
+"integer"
+],
+"pop": []
+}
+},
+"901": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"StockSpanner\", \"next\", \"next\", \"next\", \"next\", \"next\", \"next\", \"next\"]",
+"[[], [100], [80], [60], [70], [60], [75], [85]]"
+],
+"output": "[null, 1, 1, 1, 2, 1, 4, 6]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [],
+"methods": {
+"next": [
+"integer"
+]
+}
+},
+"902": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[\"1\",\"3\",\"5\",\"7\"]",
+"100"
+],
+"output": "20"
+},
+{
+"input": [
+"[\"1\",\"4\",\"9\"]",
+"1000000000"
+],
+"output": "29523"
+},
+{
+"input": [
+"[\"7\"]",
+"8"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "atMostNGivenDigitSet",
+"params": [
+"string[]",
+"integer"
+],
+"return": "integer"
+},
+"904": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,1]"
+],
+"output": "3"
+},
+{
+"input": [
+"[0,1,2,2]"
+],
+"output": "3"
+},
+{
+"input": [
+"[1,2,3,2,2]"
+],
+"output": "4"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "totalFruit",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"907": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,1,2,4]"
+],
+"output": "17"
+},
+{
+"input": [
+"[11,81,94,43,3]"
+],
+"output": "444"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "sumSubarrayMins",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"909": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,35,-1,-1,13,-1],[-1,-1,-1,-1,-1,-1],[-1,15,-1,-1,-1,-1]]"
+],
+"output": "4"
+},
+{
+"input": [
+"[[-1,-1],[-1,3]]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "snakesAndLadders",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"912": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[5,2,3,1]"
+],
+"output": "[1,2,3,5]"
+},
+{
+"input": [
+"[5,1,1,2,0,0]"
+],
+"output": "[0,0,1,1,2,5]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "sortArray",
+"params": [
+"integer[]"
+],
+"return": "integer[]"
+},
+"918": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,-2,3,-2]"
+],
+"output": "3"
+},
+{
+"input": [
+"[5,-3,5]"
+],
+"output": "10"
+},
+{
+"input": [
+"[-3,-2,-3]"
+],
+"output": "-2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxSubarraySumCircular",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"930": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,0,1,0,1]",
+"2"
+],
+"output": "4"
+},
+{
+"input": [
+"[0,0,0,0,0]",
+"0"
+],
+"output": "15"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "numSubarraysWithSum",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"931": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[2,1,3],[6,5,4],[7,8,9]]"
+],
+"output": "13"
+},
+{
+"input": [
+"[[-19,57],[-40,-5]]"
+],
+"output": "-59"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minFallingPathSum",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"933": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"RecentCounter\", \"ping\", \"ping\", \"ping\", \"ping\"]",
+"[[], [1], [100], [3001], [3002]]"
+],
+"output": "[null, 1, 2, 3, 3]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [],
+"methods": {
+"ping": [
+"integer"
+]
+}
+},
+"935": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"1"
+],
+"output": "10"
+},
+{
+"input": [
+"2"
+],
+"output": "20"
+},
+{
+"input": [
+"3131"
+],
+"output": "136006598"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "knightDialer",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"947": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[0,0],[0,1],[1,0],[1,2],[2,1],[2,2]]"
+],
+"output": "5"
+},
+{
+"input": [
+"[[0,0],[0,2],[1,1],[2,0],[2,2]]"
+],
+"output": "3"
+},
+{
+"input": [
+"[[0,0]]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "removeStones",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"968": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[0,0,null,0,0]"
+],
+"output": "1"
+},
+{
+"input": [
+"[0,0,null,0,null,0,null,null,0]"
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minCameraCover",
+"params": [
+"TreeNode"
+],
+"return": "integer"
+},
+"973": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,3],[-2,2]]",
+"1"
+],
+"output": "[[-2,2]]"
+},
+{
+"input": [
+"[[3,3],[5,-1],[-2,4]]",
+"2"
+],
+"output": "[[3,3],[-2,4]]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "kClosest",
+"params": [
+"integer[][]",
+"integer"
+],
+"return": "integer[][]"
+},
+"977": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[-4,-1,0,3,10]"
+],
+"output": "[0,1,9,16,100]"
+},
+{
+"input": [
+"[-7,-3,2,3,11]"
+],
+"output": "[4,9,9,49,121]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "sortedSquares",
+"params": [
+"integer[]"
+],
+"return": "integer[]"
+},
+"981": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"TimeMap\", \"set\", \"get\", \"get\", \"set\", \"get\", \"get\"]",
+"[[], [\"foo\", \"bar\", 1], [\"foo\", 1], [\"foo\", 3], [\"foo\", \"bar2\", 4], [\"foo\", 4], [\"foo\", 5]]"
+],
+"output": "[null, null, \"bar\", \"bar\", null, \"bar2\", \"bar2\"]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [],
+"methods": {
+"set": [
+"string",
+"string",
+"integer"
+],
+"get": [
+"string",
+"integer"
+]
+}
+},
+"987": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,9,20,null,null,15,7]"
+],
+"output": "[[9],[3,15],[20],[7]]"
+},
+{
+"input": [
+"[1,2,3,4,5,6,7]"
+],
+"output": "[[4],[2],[1,5,6],[3],[7]]"
+},
+{
+"input": [
+"[1,2,3,4,6,5,7]"
+],
+"output": "[[4],[2],[1,5,6],[3],[7]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "verticalTraversal",
+"params": [
+"TreeNode"
+],
+"return": "list<list<integer>>"
+},
+"992": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,1,2,3]",
+"2"
+],
+"output": "7"
+},
+{
+"input": [
+"[1,2,1,3,4]",
+"3"
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "subarraysWithKDistinct",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"994": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[2,1,1],[1,1,0],[0,1,1]]"
+],
+"output": "4"
+},
+{
+"input": [
+"[[2,1,1],[0,1,1],[1,0,1]]"
+],
+"output": "-1"
+},
+{
+"input": [
+"[[0,2]]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "orangesRotting",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"1004": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,1,1,0,0,0,1,1,1,1,0]",
+"2"
+],
+"output": "6"
+},
+{
+"input": [
+"[0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1]",
+"3"
+],
+"output": "10"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "longestOnes",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"1008": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[8,5,1,7,10,12]"
+],
+"output": "[8,5,10,1,7,null,12]"
+},
+{
+"input": [
+"[1,3]"
+],
+"output": "[1,null,3]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "bstFromPreorder",
+"params": [
+"integer[]"
+],
+"return": "TreeNode"
+},
+"1011": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4,5,6,7,8,9,10]",
+"5"
+],
+"output": "15"
+},
+{
+"input": [
+"[3,2,2,4,1,4]",
+"3"
+],
+"output": "6"
+},
+{
+"input": [
+"[1,2,3,1,1]",
+"4"
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "shipWithinDays",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"1020": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]"
+],
+"output": "3"
+},
+{
+"input": [
+"[[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "numEnclaves",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"1021": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"(()())(())\""
+],
+"output": "\"()()()\""
+},
+{
+"input": [
+"\"(()())(())(()(()))\""
+],
+"output": "\"()()()()(())\""
+},
+{
+"input": [
+"\"()()\""
+],
+"output": "\"\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "removeOuterParentheses",
+"params": [
+"string"
+],
+"return": "string"
+},
+"1043": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,15,7,9,2,5,10]",
+"3"
+],
+"output": "84"
+},
+{
+"input": [
+"[1,4,1,5,7,3,6,1,9,9,3]",
+"4"
+],
+"output": "83"
+},
+{
+"input": [
+"[1]",
+"1"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxSumAfterPartitioning",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"1044": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"banana\""
+],
+"output": "\"ana\""
+},
+{
+"input": [
+"\"abcd\""
+],
+"output": "\"\""
+}
+],
+"any_order": false,
+"any_answer": true,
+"method": "longestDupSubstring",
+"params": [
+"string"
+],
+"return": "string"
+},
+"1046": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,7,4,1,8,1]"
+],
+"output": "1"
+},
+{
+"input": [
+"[1]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "lastStoneWeight",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"1048": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[\"a\",\"b\",\"ba\",\"bca\",\"bda\",\"bdca\"]"
+],
+"output": "4"
+},
+{
+"input": [
+"[\"xbc\",\"pcxbcf\",\"xb\",\"cxbc\",\"pcxbc\"]"
+],
+"output": "5"
+},
+{
+"input": [
+"[\"abcd\",\"dbqca\"]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "longestStrChain",
+"params": [
+"string[]"
+],
+"return": "integer"
+},
+"1071": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"ABCABC\"",
+"\"ABC\""
+],
+"output": "\"ABC\""
+},
+{
+"input": [
+"\"ABABAB\"",
+"\"ABAB\""
+],
+"output": "\"AB\""
+},
+{
+"input": [
+"\"LEET\"",
+"\"CODE\""
+],
+"output": "\"\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "gcdOfStrings",
+"params": [
+"string",
+"string"
+],
+"return": "string"
+},
+"1092": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"abac\"",
+"\"cab\""
+],
+"output": "\"cabac\""
+},
+{
+"input": [
+"\"aaaaaaaa\"",
+"\"aaaaaaaa\""
+],
+"output": "\"aaaaaaaa\""
+}
+],
+"any_order": false,
+"any_answer": true,
+"method": "shortestCommonSupersequence",
+"params": [
+"string",
+"string"
+],
+"return": "string"
+},
+"1094": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[2,1,5],[3,3,7]]",
+"4"
+],
+"output": "false"
+},
+{
+"input": [
+"[[2,1,5],[3,3,7]]",
+"5"
+],
+"output": "true"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "carPooling",
+"params": [
+"integer[][]",
+"integer"
+],
+"return": "boolean"
+},
+"1137": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"4"
+],
+"output": "4"
+},
+{
+"input": [
+"25"
+],
+"output": "1389537"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "tribonacci",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"1143": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"abcde\"",
+"\"ace\""
+],
+"output": "3"
+},
+{
+"input": [
+"\"abc\"",
+"\"abc\""
+],
+"output": "3"
+},
+{
+"input": [
+"\"abc\"",
+"\"def\""
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "longestCommonSubsequence",
+"params": [
+"string",
+"string"
+],
+"return": "integer"
+},
+"1155": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"1",
+"6",
+"3"
+],
+"output": "1"
+},
+{
+"input": [
+"2",
+"6",
+"7"
+],
+"output": "6"
+},
+{
+"input": [
+"30",
+"30",
+"500"
+],
+"output": "222616187"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "numRollsToTarget",
+"params": [
+"integer",
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"1161": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,7,0,7,-8,null,null]"
+],
+"output": "2"
+},
+{
+"input": [
+"[989,null,10250,98693,-89388,null,null,null,-32127]"
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxLevelSum",
+"params": [
+"TreeNode"
+],
+"return": "integer"
+},
+"1192": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"4",
+"[[0,1],[1,2],[2,0],[1,3]]"
+],
+"output": "[[1,3]]"
+},
+{
+"input": [
+"2",
+"[[0,1]]"
+],
+"output": "[[0,1]]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "criticalConnections",
+"params": [
+"integer",
+"list<list<integer>>"
+],
+"return": "list<list<integer>>"
+},
+"1201": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"3",
+"2",
+"3",
+"5"
+],
+"output": "4"
+},
+{
+"input": [
+"4",
+"2",
+"3",
+"4"
+],
+"output": "6"
+},
+{
+"input": [
+"5",
+"2",
+"11",
+"13"
+],
+"output": "10"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "nthUglyNumber",
+"params": [
+"integer",
+"integer",
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"1207": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,2,1,1,3]"
+],
+"output": "true"
+},
+{
+"input": [
+"[1,2]"
+],
+"output": "false"
+},
+{
+"input": [
+"[-3,0,1,-3,1,1,1,-3,10,0]"
+],
+"output": "true"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "uniqueOccurrences",
+"params": [
+"integer[]"
+],
+"return": "boolean"
+},
+"1220": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"1"
+],
+"output": "5"
+},
+{
+"input": [
+"2"
+],
+"output": "10"
+},
+{
+"input": [
+"5"
+],
+"output": "68"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countVowelPermutation",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"1235": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,3]",
+"[3,4,5,6]",
+"[50,10,40,70]"
+],
+"output": "120"
+},
+{
+"input": [
+"[1,2,3,4,6]",
+"[3,5,10,6,9]",
+"[20,20,100,70,60]"
+],
+"output": "150"
+},
+{
+"input": [
+"[1,1,1]",
+"[2,3,4]",
+"[5,6,4]"
+],
+"output": "6"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "jobScheduling",
+"params": [
+"integer[]",
+"integer[]",
+"integer[]"
+],
+"return": "integer"
+},
+"1248": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,1,2,1,1]",
+"3"
+],
+"output": "2"
+},
+{
+"input": [
+"[2,4,6]",
+"1"
+],
+"output": "0"
+},
+{
+"input": [
+"[2,2,2,1,2,2,1,2,2,2]",
+"2"
+],
+"output": "16"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "numberOfSubarrays",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"1268": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[\"mobile\",\"mouse\",\"moneypot\",\"monitor\",\"mousepad\"]",
+"\"mouse\""
+],
+"output": "[[\"mobile\",\"moneypot\",\"monitor\"],[\"mobile\",\"moneypot\",\"monitor\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"]]"
+},
+{
+"input": [
+"[\"havana\"]",
+"\"havana\""
+],
+"output": "[[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"]]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "suggestedProducts",
+"params": [
+"string[]",
+"string"
+],
+"return": "list<list<string>>"
+},
+"1277": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[ [0,1,1,1], [1,1,1,1], [0,1,1,1] ]"
+],
+"output": "15"
+},
+{
+"input": [
+"[ [1,0,1], [1,1,0], [1,1,0] ]"
+],
+"output": "7"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countSquares",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"1283": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,5,9]",
+"6"
+],
+"output": "5"
+},
+{
+"input": [
+"[44,22,33,11,1]",
+"5"
+],
+"output": "44"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "smallestDivisor",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"1312": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"zzazz\""
+],
+"output": "0"
+},
+{
+"input": [
+"\"mbadm\""
+],
+"output": "2"
+},
+{
+"input": [
+"\"leetcode\""
+],
+"output": "5"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minInsertions",
+"params": [
+"string"
+],
+"return": "integer"
+},
+"1318": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"2",
+"6",
+"5"
+],
+"output": "3"
+},
+{
+"input": [
+"4",
+"2",
+"7"
+],
+"output": "1"
+},
+{
+"input": [
+"1",
+"2",
+"3"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minFlips",
+"params": [
+"integer",
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"1319": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"4",
+"[[0,1],[0,2],[1,2]]"
+],
+"output": "1"
+},
+{
+"input": [
+"6",
+"[[0,1],[0,2],[0,3],[1,2],[1,3]]"
+],
+"output": "2"
+},
+{
+"input": [
+"6",
+"[[0,1],[0,2],[0,3],[1,2]]"
+],
+"output": "-1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "makeConnected",
+"params": [
+"integer",
+"integer[][]"
+],
+"return": "integer"
+},
+"1334": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"4",
+"[[0,1,3],[1,2,1],[1,3,4],[2,3,1]]",
+"4"
+],
+"output": "3"
+},
+{
+"input": [
+"5",
+"[[0,1,2],[0,4,8],[1,2,3],[1,4,2],[2,3,1],[3,4,1]]",
+"2"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findTheCity",
+"params": [
+"integer",
+"integer[][]",
+"integer"
+],
+"return": "integer"
+},
+"1358": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"abcabc\""
+],
+"output": "10"
+},
+{
+"input": [
+"\"aaacb\""
+],
+"output": "3"
+},
+{
+"input": [
+"\"abc\""
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "numberOfSubstrings",
+"params": [
+"string"
+],
+"return": "integer"
+},
+"1359": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"1"
+],
+"output": "1"
+},
+{
+"input": [
+"2"
+],
+"output": "6"
+},
+{
+"input": [
+"3"
+],
+"output": "90"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countOrders",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"1368": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,1,1,1],[2,2,2,2],[1,1,1,1],[2,2,2,2]]"
+],
+"output": "3"
+},
+{
+"input": [
+"[[1,1,3],[3,2,2],[1,1,4]]"
+],
+"output": "0"
+},
+{
+"input": [
+"[[1,2],[4,3]]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minCost",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"1372": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,null,1,1,1,null,null,1,1,null,1,null,null,null,1]"
+],
+"output": "3"
+},
+{
+"input": [
+"[1,1,1,null,1,null,null,1,1,null,1]"
+],
+"output": "4"
+},
+{
+"input": [
+"[1]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "longestZigZag",
+"params": [
+"TreeNode"
+],
+"return": "integer"
+},
+"1392": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"level\""
+],
+"output": "\"l\""
+},
+{
+"input": [
+"\"ababab\""
+],
+"output": "\"abab\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "longestPrefix",
+"params": [
+"string"
+],
+"return": "string"
+},
+"1394": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,2,3,4]"
+],
+"output": "2"
+},
+{
+"input": [
+"[1,2,2,3,3,3]"
+],
+"output": "3"
+},
+{
+"input": [
+"[2,2,2,3,3]"
+],
+"output": "-1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findLucky",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"1399": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"13"
+],
+"output": "4"
+},
+{
+"input": [
+"2"
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countLargestGroup",
+"params": [
+"integer"
+],
+"return": "integer"
+},
+"1406": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,7]"
+],
+"output": "\"Bob\""
+},
+{
+"input": [
+"[1,2,3,-9]"
+],
+"output": "\"Alice\""
+},
+{
+"input": [
+"[1,2,3,6]"
+],
+"output": "\"Tie\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "stoneGameIII",
+"params": [
+"integer[]"
+],
+"return": "string"
+},
+"1423": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4,5,6,1]",
+"3"
+],
+"output": "12"
+},
+{
+"input": [
+"[2,2,2]",
+"2"
+],
+"output": "4"
+},
+{
+"input": [
+"[9,7,7,9,7,7,9]",
+"7"
+],
+"output": "55"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxScore",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"1431": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,3,5,1,3]",
+"3"
+],
+"output": "[true,true,true,false,true]"
+},
+{
+"input": [
+"[4,2,1,1,2]",
+"1"
+],
+"output": "[true,false,false,false,false]"
+},
+{
+"input": [
+"[12,1,12]",
+"10"
+],
+"output": "[true,false,true]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "kidsWithCandies",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "list<boolean>"
+},
+"1448": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,1,4,3,null,1,5]"
+],
+"output": "4"
+},
+{
+"input": [
+"[3,3,null,4,2]"
+],
+"output": "3"
+},
+{
+"input": [
+"[1]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "goodNodes",
+"params": [
+"TreeNode"
+],
+"return": "integer"
+},
+"1456": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"abciiidef\"",
+"3"
+],
+"output": "3"
+},
+{
+"input": [
+"\"aeiou\"",
+"2"
+],
+"output": "2"
+},
+{
+"input": [
+"\"leetcode\"",
+"3"
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxVowels",
+"params": [
+"string",
+"integer"
+],
+"return": "integer"
+},
+"1466": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"6",
+"[[0,1],[1,3],[2,3],[4,0],[4,5]]"
+],
+"output": "3"
+},
+{
+"input": [
+"5",
+"[[1,0],[1,2],[3,2],[3,4]]"
+],
+"output": "2"
+},
+{
+"input": [
+"3",
+"[[1,0],[2,0]]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minReorder",
+"params": [
+"integer",
+"integer[][]"
+],
+"return": "integer"
+},
+"1482": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,10,3,10,2]",
+"3",
+"1"
+],
+"output": "3"
+},
+{
+"input": [
+"[1,10,3,10,2]",
+"3",
+"2"
+],
+"output": "-1"
+},
+{
+"input": [
+"[7,7,7,7,12,7,7]",
+"2",
+"3"
+],
+"output": "12"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minDays",
+"params": [
+"integer[]",
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"1483": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"TreeAncestor\", \"getKthAncestor\", \"getKthAncestor\", \"getKthAncestor\"]",
+"[[7, [-1, 0, 0, 1, 1, 2, 2]], [3, 1], [5, 2], [6, 3]]"
+],
+"output": "[null, 1, 0, -1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [
+"integer",
+"integer[]"
+],
+"methods": {
+"getKthAncestor": [
+"integer",
+"integer"
+]
+}
+},
+"1493": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,1,0,1]"
+],
+"output": "3"
+},
+{
+"input": [
+"[0,1,1,1,0,1,1,0,1]"
+],
+"output": "5"
+},
+{
+"input": [
+"[1,1,1]"
+],
+"output": "2"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "longestSubarray",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"1539": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,3,4,7,11]",
+"5"
+],
+"output": "9"
+},
+{
+"input": [
+"[1,2,3,4]",
+"2"
+],
+"output": "6"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findKthPositive",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"1547": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"7",
+"[1,3,4,5]"
+],
+"output": "16"
+},
+{
+"input": [
+"9",
+"[5,6,1,4,2]"
+],
+"output": "22"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minCost",
+"params": [
+"integer",
+"integer[]"
+],
+"return": "integer"
+},
+"1550": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,6,4,1]"
+],
+"output": "false"
+},
+{
+"input": [
+"[1,2,34,3,4,5,7,23,12]"
+],
+"output": "true"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "threeConsecutiveOdds",
+"params": [
+"integer[]"
+],
+"return": "boolean"
+},
+"1569": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,1,3]"
+],
+"output": "1"
+},
+{
+"input": [
+"[3,4,5,1,2]"
+],
+"output": "5"
+},
+{
+"input": [
+"[1,2,3]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "numOfWays",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"1584": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[0,0],[2,2],[3,10],[5,2],[7,0]]"
+],
+"output": "20"
+},
+{
+"input": [
+"[[3,12],[-2,5],[-4,1]]"
+],
+"output": "18"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minCostConnectPoints",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"1614": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"(1+(2*3)+((8)/4))+1\""
+],
+"output": "3"
+},
+{
+"input": [
+"\"(1)+((2))+(((3)))\""
+],
+"output": "3"
+},
+{
+"input": [
+"\"()(())((()()))\""
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxDepth",
+"params": [
+"string"
+],
+"return": "integer"
+},
+"1631": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,2,2],[3,8,2],[5,3,5]]"
+],
+"output": "2"
+},
+{
+"input": [
+"[[1,2,3],[3,8,4],[5,3,5]]"
+],
+"output": "1"
+},
+{
+"input": [
+"[[1,2,1,1,1],[1,2,1,2,1],[1,2,1,2,1],[1,2,1,2,1],[1,1,1,2,1]]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minimumEffortPath",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"1649": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,5,6,2]"
+],
+"output": "1"
+},
+{
+"input": [
+"[1,2,3,6,5,4]"
+],
+"output": "3"
+},
+{
+"input": [
+"[1,3,3,3,2,4,2,1,2]"
+],
+"output": "4"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "createSortedArray",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"1657": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"abc\"",
+"\"bca\""
+],
+"output": "true"
+},
+{
+"input": [
+"\"a\"",
+"\"aa\""
+],
+"output": "false"
+},
+{
+"input": [
+"\"cabbba\"",
+"\"abbccc\""
+],
+"output": "true"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "closeStrings",
+"params": [
+"string",
+"string"
+],
+"return": "boolean"
+},
+"1679": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3,4]",
+"5"
+],
+"output": "2"
+},
+{
+"input": [
+"[3,1,3,4,3]",
+"6"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxOperations",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"1732": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[-5,1,5,0,-7]"
+],
+"output": "1"
+},
+{
+"input": [
+"[-4,-3,-2,-1,4,3,2]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "largestAltitude",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"1752": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,4,5,1,2]"
+],
+"output": "true"
+},
+{
+"input": [
+"[2,1,3,4]"
+],
+"output": "false"
+},
+{
+"input": [
+"[1,2,3]"
+],
+"output": "true"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "check",
+"params": [
+"integer[]"
+],
+"return": "boolean"
+},
+"1755": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[5,-7,3,5]",
+"6"
+],
+"output": "0"
+},
+{
+"input": [
+"[7,-9,15,-2]",
+"-5"
+],
+"output": "1"
+},
+{
+"input": [
+"[1,2,3]",
+"-7"
+],
+"output": "7"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minAbsDifference",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"1768": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"abc\"",
+"\"pqr\""
+],
+"output": "\"apbqcr\""
+},
+{
+"input": [
+"\"ab\"",
+"\"pqrs\""
+],
+"output": "\"apbqrs\""
+},
+{
+"input": [
+"\"abcd\"",
+"\"pq\""
+],
+"output": "\"apbqcd\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "mergeAlternately",
+"params": [
+"string",
+"string"
+],
+"return": "string"
+},
+"1781": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"aabcb\""
+],
+"output": "5"
+},
+{
+"input": [
+"\"aabcbaa\""
+],
+"output": "17"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "beautySum",
+"params": [
+"string"
+],
+"return": "integer"
+},
+"1851": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,4],[2,4],[3,6],[4,4]]",
+"[2,3,4,5]"
+],
+"output": "[3,3,1,4]"
+},
+{
+"input": [
+"[[2,3],[2,5],[1,8],[20,25]]",
+"[2,19,5,22]"
+],
+"output": "[2,-1,4,6]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minInterval",
+"params": [
+"integer[][]",
+"integer[]"
+],
+"return": "integer[]"
+},
+"1857": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"abaca\"",
+"[[0,1],[0,2],[2,3],[3,4]]"
+],
+"output": "3"
+},
+{
+"input": [
+"\"a\"",
+"[[0,0]]"
+],
+"output": "-1"
+}
+],
+"any_order": false,
+"any_answer": true,
+"method": "largestPathValue",
+"params": [
+"string",
+"integer[][]"
+],
+"return": "integer"
+},
+"1899": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[2,5,3],[1,8,4],[1,7,5]]",
+"[2,7,5]"
+],
+"output": "true"
+},
+{
+"input": [
+"[[3,4,5],[4,5,6]]",
+"[3,2,5]"
+],
+"output": "false"
+},
+{
+"input": [
+"[[2,5,3],[2,3,4],[1,2,5],[5,2,3]]",
+"[5,5,5]"
+],
+"output": "true"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "mergeTriplets",
+"params": [
+"integer[][]",
+"integer[]"
+],
+"return": "boolean"
+},
+"1901": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,4],[3,2]]"
+],
+"output": "[0,1]"
+},
+{
+"input": [
+"[[10,20,15],[21,30,14],[7,16,32]]"
+],
+"output": "[1,1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findPeakGrid",
+"params": [
+"integer[][]"
+],
+"return": "integer[]"
+},
+"1903": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"52\""
+],
+"output": "\"5\""
+},
+{
+"input": [
+"\"4206\""
+],
+"output": "\"\""
+},
+{
+"input": [
+"\"35427\""
+],
+"output": "\"35427\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "largestOddNumber",
+"params": [
+"string"
+],
+"return": "string"
+},
+"1920": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[0,2,1,5,3,4]"
+],
+"output": "[0,1,2,4,5,3]"
+},
+{
+"input": [
+"[5,0,1,2,3,4]"
+],
+"output": "[4,5,0,1,2,3]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "buildArray",
+"params": [
+"integer[]"
+],
+"return": "integer[]"
+},
+"1922": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"1"
+],
+"output": "5"
+},
+{
+"input": [
+"4"
+],
+"output": "400"
+},
+{
+"input": [
+"50"
+],
+"output": "564908303"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countGoodNumbers",
+"params": [
+"long"
+],
+"return": "integer"
+},
+"1926": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[\"+\",\"+\",\".\",\"+\"],[\".\",\".\",\".\",\"+\"],[\"+\",\"+\",\"+\",\".\"]]",
+"[1,2]"
+],
+"output": "1"
+},
+{
+"input": [
+"[[\"+\",\"+\",\"+\"],[\".\",\".\",\".\"],[\"+\",\"+\",\"+\"]]",
+"[1,0]"
+],
+"output": "2"
+},
+{
+"input": [
+"[[\".\",\"+\"]]",
+"[0,0]"
+],
+"output": "-1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "nearestExit",
+"params": [
+"character[][]",
+"integer[]"
+],
+"return": "integer"
+},
+"1976": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"7",
+"[[0,6,7],[0,1,2],[1,2,3],[1,3,3],[6,3,3],[3,5,1],[6,5,1],[2,5,1],[0,4,5],[4,6,2]]"
+],
+"output": "4"
+},
+{
+"input": [
+"2",
+"[[1,0,10]]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countPaths",
+"params": [
+"integer",
+"integer[][]"
+],
+"return": "integer"
+},
+"1986": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3]",
+"3"
+],
+"output": "2"
+},
+{
+"input": [
+"[3,1,3,1,1]",
+"8"
+],
+"output": "2"
+},
+{
+"input": [
+"[1,2,3,4,5]",
+"15"
+],
+"output": "1"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "minSessions",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"2013": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"DetectSquares\", \"add\", \"add\", \"add\", \"count\", \"count\", \"add\", \"count\"]",
+"[[], [[3, 10]], [[11, 2]], [[3, 2]], [[11, 10]], [[14, 8]], [[11, 2]], [[11, 10]]]"
+],
+"output": "[null, null, null, null, 1, 0, null, 2]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [],
+"methods": {
+"add": [
+"integer[]"
+],
+"count": [
+"integer[]"
+]
+}
+},
+"2035": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,9,7,3]"
+],
+"output": "2"
+},
+{
+"input": [
+"[-36,36]"
+],
+"output": "72"
+},
+{
+"input": [
+"[2,-1,0,4,-2,-9]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minimumDifference",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"2094": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,1,3,0]"
+],
+"output": "[102,120,130,132,210,230,302,310,312,320]"
+},
+{
+"input": [
+"[2,2,8,8,2]"
+],
+"output": "[222,228,282,288,822,828,882]"
+},
+{
+"input": [
+"[3,7,5]"
+],
+"output": "[]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "findEvenNumbers",
+"params": [
+"integer[]"
+],
+"return": "integer[]"
+},
+"2095": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,3,4,7,1,2,6]"
+],
+"output": "[1,3,4,1,2,6]"
+},
+{
+"input": [
+"[1,2,3,4]"
+],
+"output": "[1,2,4]"
+},
+{
+"input": [
+"[2,1]"
+],
+"output": "[2]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "deleteMiddle",
+"params": [
+"ListNode"
+],
+"return": "ListNode"
+},
+"2104": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3]"
+],
+"output": "4"
+},
+{
+"input": [
+"[1,3,3]"
+],
+"output": "4"
+},
+{
+"input": [
+"[4,-2,-3,4,1]"
+],
+"output": "59"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "subArrayRanges",
+"params": [
+"integer[]"
+],
+"return": "long"
+},
+"2130": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[5,4,2,1]"
+],
+"output": "6"
+},
+{
+"input": [
+"[4,2,2,3]"
+],
+"output": "7"
+},
+{
+"input": [
+"[1,100000]"
+],
+"output": "100001"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "pairSum",
+"params": [
+"ListNode"
+],
+"return": "integer"
+},
+"2149": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,1,-2,-5,2,-4]"
+],
+"output": "[3,-2,1,-5,2,-4]"
+},
+{
+"input": [
+"[-1,1]"
+],
+"output": "[1,-1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "rearrangeArray",
+"params": [
+"integer[]"
+],
+"return": "integer[]"
+},
+"2176": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,1,2,2,2,1,3]",
+"2"
+],
+"output": "4"
+},
+{
+"input": [
+"[1,2,3,4]",
+"1"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countPairs",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"2215": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,3]",
+"[2,4,6]"
+],
+"output": "[[1,3],[4,6]]"
+},
+{
+"input": [
+"[1,2,3,3]",
+"[1,1,2,2]"
+],
+"output": "[[3],[]]"
+}
+],
+"any_order": true,
+"any_answer": false,
+"method": "findDifference",
+"params": [
+"integer[]",
+"integer[]"
+],
+"return": "list<list<integer>>"
+},
+"2220": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"10",
+"7"
+],
+"output": "3"
+},
+{
+"input": [
+"3",
+"4"
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minBitFlips",
+"params": [
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"2223": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"babab\""
+],
+"output": "9"
+},
+{
+"input": [
+"\"azbazbzaz\""
+],
+"output": "14"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "sumScores",
+"params": [
+"string"
+],
+"return": "long"
+},
+"2251": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[1,6],[3,7],[9,12],[4,13]]",
+"[2,3,7,11]"
+],
+"output": "[1,2,2,2]"
+},
+{
+"input": [
+"[[1,10],[3,3]]",
+"[3,3,2]"
+],
+"output": "[2,2,1]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "fullBloomFlowers",
+"params": [
+"integer[][]",
+"integer[]"
+],
+"return": "integer[]"
+},
+"2300": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[5,1,3]",
+"[1,2,3,4,5]",
+"7"
+],
+"output": "[4,0,3]"
+},
+{
+"input": [
+"[3,1,2]",
+"[8,5,8]",
+"16"
+],
+"output": "[2,0,2]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "successfulPairs",
+"params": [
+"integer[]",
+"integer[]",
+"long"
+],
+"return": "integer[]"
+},
+"2336": {
+"kind": "design",
+"cases": [
+{
+"input": [
+"[\"SmallestInfiniteSet\", \"addBack\", \"popSmallest\", \"popSmallest\", \"popSmallest\", \"addBack\", \"popSmallest\", \"popSmallest\", \"popSmallest\"]",
+"[[], [2], [], [], [], [1], [], [], []]"
+],
+"output": "[null, null, 1, 2, 3, null, 1, 4, 5]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"constructor": [],
+"methods": {
+"popSmallest": [],
+"addBack": [
+"integer"
+]
+}
+},
+"2352": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[3,2,1],[1,7,6],[2,7,7]]"
+],
+"output": "1"
+},
+{
+"input": [
+"[[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]"
+],
+"output": "3"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "equalPairs",
+"params": [
+"integer[][]"
+],
+"return": "integer"
+},
+"2381": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"abc\"",
+"[[0,1,0],[1,2,1],[0,2,1]]"
+],
+"output": "\"ace\""
+},
+{
+"input": [
+"\"dztz\"",
+"[[0,0,0],[1,1,1]]"
+],
+"output": "\"catz\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "shiftingLetters",
+"params": [
+"string",
+"integer[][]"
+],
+"return": "string"
+},
+"2390": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"leet**cod*e\""
+],
+"output": "\"lecoe\""
+},
+{
+"input": [
+"\"erase*****\""
+],
+"output": "\"\""
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "removeStars",
+"params": [
+"string"
+],
+"return": "string"
+},
+"2400": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"1",
+"2",
+"3"
+],
+"output": "3"
+},
+{
+"input": [
+"2",
+"5",
+"10"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "numberOfWays",
+"params": [
+"integer",
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"2407": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[4,2,1,4,3,4,5,8,15]",
+"3"
+],
+"output": "5"
+},
+{
+"input": [
+"[7,4,5,1,8,12,4,7]",
+"5"
+],
+"output": "4"
+},
+{
+"input": [
+"[1,5]",
+"1"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "lengthOfLIS",
+"params": [
+"integer[]",
+"integer"
+],
+"return": "integer"
+},
+"2444": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,3,5,2,7,5]",
+"1",
+"5"
+],
+"output": "2"
+},
+{
+"input": [
+"[1,1,1,1]",
+"1",
+"1"
+],
+"output": "10"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countSubarrays",
+"params": [
+"integer[]",
+"integer",
+"integer"
+],
+"return": "long"
+},
+"2462": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[17,12,10,2,7,2,11,20,8]",
+"3",
+"4"
+],
+"output": "11"
+},
+{
+"input": [
+"[1,2,4,1]",
+"3",
+"3"
+],
+"output": "4"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "totalCost",
+"params": [
+"integer[]",
+"integer",
+"integer"
+],
+"return": "long"
+},
+"2521": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,4,3,7,10,6]"
+],
+"output": "4"
+},
+{
+"input": [
+"[2,4,8,16]"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "distinctPrimeFactors",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"2542": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,3,3,2]",
+"[2,1,3,4]",
+"3"
+],
+"output": "12"
+},
+{
+"input": [
+"[4,2,3,1,1]",
+"[7,5,10,9,6]",
+"1"
+],
+"output": "30"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxScore",
+"params": [
+"integer[]",
+"integer[]",
+"integer"
+],
+"return": "long"
+},
+"2563": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[0,1,7,4,4,5]",
+"3",
+"6"
+],
+"output": "6"
+},
+{
+"input": [
+"[1,7,9,2,5]",
+"11",
+"11"
+],
+"output": "1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countFairPairs",
+"params": [
+"integer[]",
+"integer",
+"integer"
+],
+"return": "long"
+},
+"2581": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[[0,1],[1,2],[1,3],[4,2]]",
+"[[1,3],[0,1],[1,0],[2,4]]",
+"3"
+],
+"output": "3"
+},
+{
+"input": [
+"[[0,1],[1,2],[2,3],[3,4]]",
+"[[1,0],[3,4],[2,1],[3,2]]",
+"1"
+],
+"output": "5"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "rootCount",
+"params": [
+"integer[][]",
+"integer[][]",
+"integer"
+],
+"return": "integer"
+},
+"2799": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,3,1,2,2]"
+],
+"output": "4"
+},
+{
+"input": [
+"[5,5,5,5]"
+],
+"output": "10"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countCompleteSubarrays",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"2836": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[2,0,1]",
+"4"
+],
+"output": "6"
+},
+{
+"input": [
+"[1,1,1,2,3]",
+"3"
+],
+"output": "10"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "getMaxFunctionValue",
+"params": [
+"list<integer>",
+"long"
+],
+"return": "long"
+},
+"2846": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"7",
+"[[0,1,1],[1,2,1],[2,3,1],[3,4,2],[4,5,2],[5,6,2]]",
+"[[0,3],[3,6],[2,6],[0,6]]"
+],
+"output": "[0,0,1,3]"
+},
+{
+"input": [
+"8",
+"[[1,2,6],[1,3,4],[2,4,6],[2,5,3],[3,6,6],[3,0,8],[7,0,2]]",
+"[[4,6],[0,4],[6,5],[7,4]]"
+],
+"output": "[1,2,2,3]"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minOperationsQueries",
+"params": [
+"integer",
+"integer[][]",
+"integer[][]"
+],
+"return": "integer[]"
+},
+"2894": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"10",
+"3"
+],
+"output": "19"
+},
+{
+"input": [
+"5",
+"6"
+],
+"output": "15"
+},
+{
+"input": [
+"5",
+"1"
+],
+"output": "-15"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "differenceOfSums",
+"params": [
+"integer",
+"integer"
+],
+"return": "integer"
+},
+"2900": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[\"e\",\"a\",\"b\"]",
+"[0,0,1]"
+],
+"output": "[\"e\",\"b\"]"
+},
+{
+"input": [
+"[\"a\",\"b\",\"c\",\"d\"]",
+"[1,0,1,1]"
+],
+"output": "[\"a\",\"b\",\"c\"]"
+}
+],
+"any_order": false,
+"any_answer": true,
+"method": "getLongestSubsequence",
+"params": [
+"string[]",
+"integer[]"
+],
+"return": "list<string>"
+},
+"2918": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[3,2,0,1,0]",
+"[6,5,0]"
+],
+"output": "12"
+},
+{
+"input": [
+"[2,0,2,0]",
+"[1,4]"
+],
+"output": "-1"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "minSum",
+"params": [
+"integer[]",
+"integer[]"
+],
+"return": "long"
+},
+"3335": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"\"abcyy\"",
+"2"
+],
+"output": "7"
+},
+{
+"input": [
+"\"azbk\"",
+"1"
+],
+"output": "5"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "lengthAfterTransformations",
+"params": [
+"string",
+"integer"
+],
+"return": "integer"
+},
+"3392": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,1,4,1]"
+],
+"output": "1"
+},
+{
+"input": [
+"[1,1,1]"
+],
+"output": "0"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "countSubarrays",
+"params": [
+"integer[]"
+],
+"return": "integer"
+},
+"3423": {
+"kind": "function",
+"cases": [
+{
+"input": [
+"[1,2,4]"
+],
+"output": "3"
+},
+{
+"input": [
+"[-5,-10,-5]"
+],
+"output": "5"
+}
+],
+"any_order": false,
+"any_answer": false,
+"method": "maxAdjacentDistance",
+"params": [
+"integer[]"
+],
+"return": "integer"
+}
+}

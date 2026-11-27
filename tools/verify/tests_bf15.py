@@ -58,11 +58,11 @@ def _(h):
 def _(h):
     brute, opt = brute_opt(3423)
     s = brute["Solution"]()
-    assert s.maxDiff([1, 2, 4]) == 3
-    assert s.maxDiff([-5, -10, -5]) == 5
+    assert s.maxAdjacentDistance([1, 2, 4]) == 3
+    assert s.maxAdjacentDistance([-5, -10, -5]) == 5
     for _ in range(200):
         nums = [R.randint(-20, 20) for _ in range(R.randint(2, 10))]
-        assert s.maxDiff(nums) == opt["Solution"]().maxDiff(nums), nums
+        assert s.maxAdjacentDistance(nums) == opt["Solution"]().maxAdjacentDistance(nums), nums
 
 
 @case("424-brute")

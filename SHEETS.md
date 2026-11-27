@@ -670,7 +670,7 @@ Source: https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course
 
 | # | Problem | Difficulty | Status |
 |---|---|---|---|
-| 225 | [Implement Stack using Queues](Data_Structure_Simulation/225.Implement_Stack_using_Queues.md) | Medium | ✅ |
+| 225 | [Implement Stack using Queues](Data_Structure_Simulation/225.Implement_Stack_using_Queues.md) | Easy | ✅ |
 | 232 | [Implement Queue using Stacks](Data_Structure_Simulation/232.Implement_Queue_using_Stacks.md) | Easy | 🔄 |
 | 20 | [Valid Parentheses](Stack/20.Valid_Parentheses.md) | Easy | ✅ |
 | 155 | [Min Stack](Design/155.Min_Stack.md) | Medium | ✅ |

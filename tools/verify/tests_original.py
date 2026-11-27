@@ -728,7 +728,7 @@ def _(h):
     for S in solvers(3423):
         for _ in range(300):
             a = [R.randint(-20, 20) for _ in range(R.randint(2, 10))]
-            assert S.maxDiff(a) == max(abs(a[i] - a[(i + 1) % len(a)]) for i in range(len(a)))
+            assert S.maxAdjacentDistance(a) == max(abs(a[i] - a[(i + 1) % len(a)]) for i in range(len(a)))
 
 
 @case(424)

@@ -31,7 +31,7 @@
 * **Belongs To:** DP — Matrix Exponentiation
 * **Common Problems Using This:**
   * 70. Climbing Stairs (in this repo — steps 1, 2 with small N)
-  * 935. Knight Dialer (in this repo)
+  * [935. Knight Dialer](../../../DP_Advanced/935.Knight_Dialer.md)
   * 1137. N-th Tribonacci Number
 
 ## 🔹 Tricks & Patterns Used

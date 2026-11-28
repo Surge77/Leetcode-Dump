@@ -29,8 +29,8 @@
 
 * **Belongs To:** Prefix Sum — difference array
 * **Common Problems Using This:**
-  * 1094. Car Pooling (in this repo)
-  * 2381. Shifting Letters II (in this repo)
+  * [1094. Car Pooling](../../../Prefix_Sum/1094.Car_Pooling.md)
+  * [2381. Shifting Letters II](../../../Prefix_Sum/2381.Shifting_Letters_II.md)
   * 1109. Corporate Flight Bookings
 
 ## 🔹 Tricks & Patterns Used

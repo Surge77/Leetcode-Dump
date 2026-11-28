@@ -30,7 +30,7 @@
 
 * **Belongs To:** Stack — design
 * **Common Problems Using This:**
-  * 155. Min Stack (in this repo)
+  * [155. Min Stack](../../../Design/155.Min_Stack.md)
   * 716. Max Stack
   * 232. Implement Queue using Stacks (in this repo — two stacks make a queue with the same trick)
 

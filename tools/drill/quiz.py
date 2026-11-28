@@ -31,7 +31,8 @@ def draw(pool, count, rng):
 
 
 def answer(note, sig):
-    lines = [f"→ #{note.number} {note.title} ({note.difficulty}) · pattern: {folder_of(note).replace('_', ' ')}"]
+    tags = f" · tags: {', '.join(note.tags)}" if getattr(note, "tags", ()) else ""
+    lines = [f"→ #{note.number} {note.title} ({note.difficulty}) · pattern: {folder_of(note).replace('_', ' ')}{tags}"]
     if sig:
         lines.append(textwrap.fill(f"  signal: {sig}", width=100, subsequent_indent="          "))
     return "\n".join(lines)

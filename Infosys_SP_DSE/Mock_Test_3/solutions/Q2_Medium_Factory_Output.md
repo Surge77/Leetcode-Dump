@@ -32,9 +32,9 @@
 
 * **Belongs To:** Modified Binary Search — search on answer
 * **Common Problems Using This:**
-  * 875. Koko Eating Bananas (in this repo)
+  * [875. Koko Eating Bananas](../../../Binary_Search/875.Koko_Eating_Bananas.md)
   * 2187. Minimum Time to Complete Trips
-  * 1011. Capacity To Ship Packages Within D Days (in this repo)
+  * [1011. Capacity To Ship Packages Within D Days](../../../Binary_Search/1011.Capacity_To_Ship_Packages_Within_D_Days.md)
 
 ## 🔹 Tricks & Patterns Used
 

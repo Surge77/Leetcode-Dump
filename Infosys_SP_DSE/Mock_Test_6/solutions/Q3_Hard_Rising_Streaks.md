@@ -34,7 +34,7 @@
 * **Common Problems Using This:**
   * 1395. Count Number of Teams (K = 3)
   * 673. Number of Longest Increasing Subsequence
-  * 315. Count of Smaller Numbers After Self (in this repo)
+  * [315. Count of Smaller Numbers After Self](../../../Range_Queries/315.Count_of_Smaller_Numbers_After_Self.md)
 
 ## 🔹 Tricks & Patterns Used
 

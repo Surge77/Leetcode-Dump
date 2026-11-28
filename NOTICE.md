@@ -11,6 +11,9 @@ It does **not** cover material that belongs to others:
   each solution reproduces them.
 * **Sheet lists** in `tools/sheets.json` record which problems appear on NeetCode 150, LeetCode Top Interview 150,
   Grind 169, LeetCode 75 and Striver's A2Z sheet. Each sheet's source is linked in [SHEETS.md](SHEETS.md).
+* **Company lists** in `tools/companies.json` (problem slugs and titles only) are derived from the
+  community-maintained [liquidslr/leetcode-company-wise-problems](https://github.com/liquidslr/leetcode-company-wise-problems);
+  the snapshot date is in the file and in [COMPANIES.md](COMPANIES.md).
 * **Premium problems**: the 🔒 lines point to free copies hosted by their owners (neetcode.io, LintCode).
 
 If you own any of this material and want something changed or removed, open an issue.

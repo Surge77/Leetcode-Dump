@@ -29,8 +29,8 @@
 
 * **Belongs To:** Meet in the Middle
 * **Common Problems Using This:**
-  * 1755. Closest Subsequence Sum (in this repo)
-  * 2035. Partition Array Into Two Arrays to Minimize Sum Difference (in this repo)
+  * [1755. Closest Subsequence Sum](../../../Divide_and_Conquer/1755.Closest_Subsequence_Sum.md)
+  * [2035. Partition Array Into Two Arrays to Minimize Sum Difference](../../../Divide_and_Conquer/2035.Partition_Array_Into_Two_Arrays_to_Minimize_Sum_Difference.md)
   * 416. Partition Equal Subset Sum (in this repo — small-sum DP version)
 
 ## 🔹 Tricks & Patterns Used

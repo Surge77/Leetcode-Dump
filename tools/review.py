@@ -3,7 +3,8 @@
     python tools/review.py                        # today's problems (same picks all day)
     python tools/review.py today -n 5 --sheet neetcode   # more picks, only from one sheet
     python tools/review.py log 322 ok --mins 24   # graded fail | hard | ok | easy ("pass" = ok)
-    python tools/review.py log 322 fail --why edge --mins 31
+    python tools/review.py log 322 fail --why edge --mins 31 --note "forgot the empty-amount base case"
+    python tools/review.py today --company google      # only problems asked at a company (COMPANIES.md)
     python tools/review.py check 322 my_322.py --log --mins 24   # judge your file, then log the result
     python tools/review.py show 322               # reveal the note
     python tools/review.py quiz -n 10             # statement only: name the pattern
@@ -38,6 +39,7 @@ from drill.state import load_state, save_state  # noqa: E402
 DEFAULT_PICKS = 3
 PRACTICE_DIR = REPO / "practice"  # gitignored scratch space for attempts and debug drills
 STATUS_LINE_RE = re.compile(r"^(\*\*🟢 Status:\*\* ).*$", re.M)
+ATTEMPTS_RE = re.compile(r"(^## 🔹 My Attempts\n)(.*?)(?=^## |\Z)", re.M | re.S)
 
 
 def set_status(path, status):
@@ -47,6 +49,26 @@ def set_status(path, status):
     if new != text:
         path.write_text(new, encoding="utf-8", newline="\n")
     return new != text
+
+
+def add_attempt(path, line):
+    """Append one line to the note's '## 🔹 My Attempts' section (dropping the italic placeholder)."""
+    text = path.read_text(encoding="utf-8").replace("\r\n", "\n")
+    match = ATTEMPTS_RE.search(text)
+    if not match:
+        return False
+    kept = [ln for ln in match.group(2).strip("\n").split("\n") if ln.strip() and not ln.startswith("*One line per attempt")]
+    body = "\n".join(kept + [f"- {line}"]) + "\n"
+    rest = text[match.end():]
+    new = text[:match.start(2)] + "\n" + body + ("\n" + rest if rest else "")
+    path.write_text(new, encoding="utf-8", newline="\n")
+    return True
+
+
+def attempt_line(today, grade, mins=None, why=None, note=None):
+    parts = [today.isoformat()] + ([f"{mins} min"] if mins is not None else []) + [grade]
+    detail = ": ".join(p for p in (why, note) if p)
+    return " · ".join(parts + ([detail] if detail else []))
 
 
 def find(notes, number):
@@ -74,7 +96,7 @@ def cmd_today(notes, state, today, count):
         print(f"  {note.number:>5}  {note.title:<55} {note.difficulty:<6} {tag:<8} {link_of(note)}")
 
 
-def log_review(notes, state, today, number, grade, mins=None, why=None):
+def log_review(notes, state, today, number, grade, mins=None, why=None, note_text=None):
     note = find(notes, number)
     entries = state["notes"]
     if logged_on(entries.get(str(number)), today):
@@ -85,6 +107,7 @@ def log_review(notes, state, today, number, grade, mins=None, why=None):
     save_state(state)
     new_status = new_status_after(grade, entry["streak"])
     changed = new_status is not None and set_status(note.path, new_status)
+    add_attempt(note.path, attempt_line(today, grade, mins, why, note_text))
     if changed:
         write_index()
     message = f"#{number}: {grade} → streak {entry['streak']}, next review {entry['due']}"
@@ -100,7 +123,7 @@ def cmd_check(notes, state, today, args):
     if args.log:
         grade = args.grade if verdict.passed else "fail"
         why = None if verdict.passed else ("tle" if verdict.tle else args.why or "bug")
-        log_review(notes, state, today, args.number, grade, args.mins, why)
+        log_review(notes, state, today, args.number, grade, args.mins, why, args.note)
     return 0 if verdict.passed else 1
 
 
@@ -147,7 +170,8 @@ def parser():
     def scoped(cmd, help_text):
         s = sub.add_parser(cmd, help=help_text)
         s.add_argument("--sheet", help="only problems of this sheet (e.g. neetcode, grind, 'top interview')")
-        s.add_argument("--topic", help="only folders containing this text (e.g. dp, graph)")
+        s.add_argument("--topic", help="only folders or tags containing this text (e.g. dp, graph, monotonic)")
+        s.add_argument("--company", help="only problems asked at this company (see COMPANIES.md)")
         return s
 
     scoped("today", "today's problems").add_argument("-n", type=int, default=DEFAULT_PICKS)
@@ -156,6 +180,7 @@ def parser():
     log.add_argument("grade", choices=GRADES + ("pass",))
     log.add_argument("--mins", type=int, help="minutes it took")
     log.add_argument("--why", choices=REASONS, help="; ".join(f"{k}: {v}" for k, v in REASON_HELP.items()))
+    log.add_argument("--note", help="what tripped you up; added to the note's My Attempts section")
     sub.add_parser("show", help="reveal a note's path").add_argument("number", type=int)
     sub.add_parser("stats", help="progress, weak topics, timing")
     pl = scoped("plan", "daily load needed to finish by a date")
@@ -172,6 +197,7 @@ def parser():
     ck.add_argument("--mins", type=int)
     ck.add_argument("--why", choices=REASONS, help="reason logged if rejected (default: bug, or tle)")
     ck.add_argument("--no-timing", action="store_true", help="do not enforce the max-size time limit")
+    ck.add_argument("--note", help="what tripped you up; added to the note's My Attempts section")
     ck.add_argument("--deadline", type=int, default=attempt.DEFAULT_DEADLINE,
                     help="seconds before a run counts as an infinite loop (default %(default)s)")
     db = sub.add_parser("debug", help="find a planted bug in a verified solution")
@@ -200,11 +226,11 @@ def main(argv=None):
     notes, state, today = checked_notes(), load_state(), date.today()
     cmd = args.cmd or "today"
     if cmd in ("today", "plan", "quiz"):
-        notes = scope(notes, getattr(args, "sheet", None), getattr(args, "topic", None))
+        notes = scope(notes, args.sheet, args.topic, company=args.company)
     if cmd == "today":
         cmd_today(notes, state, today, getattr(args, "n", DEFAULT_PICKS))
     elif cmd == "log":
-        log_review(notes, state, today, args.number, args.grade, args.mins, args.why)
+        log_review(notes, state, today, args.number, args.grade, args.mins, args.why, args.note)
     elif cmd == "show":
         print(find(notes, args.number).path.relative_to(REPO).as_posix())
     elif cmd == "stats":

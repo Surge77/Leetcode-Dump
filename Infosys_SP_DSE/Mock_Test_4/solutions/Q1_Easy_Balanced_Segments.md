@@ -30,7 +30,7 @@
 
 * **Belongs To:** Prefix Sum + Hashing
 * **Common Problems Using This:**
-  * 560. Subarray Sum Equals K (in this repo)
+  * [560. Subarray Sum Equals K](../../../Prefix_Sum/560.Subarray_Sum_Equals_K.md)
   * 525. Contiguous Array (longest instead of count)
 
 ## 🔹 Tricks & Patterns Used

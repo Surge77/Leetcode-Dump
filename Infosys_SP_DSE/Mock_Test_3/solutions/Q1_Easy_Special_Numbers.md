@@ -31,9 +31,9 @@
 
 * **Belongs To:** Math — Number Theory
 * **Common Problems Using This:**
-  * 204. Count Primes (in this repo)
+  * [204. Count Primes](../../../Math/204.Count_Primes.md)
   * 1952. Three Divisors
-  * 2521. Distinct Prime Factors of Product of Array (in this repo)
+  * [2521. Distinct Prime Factors of Product of Array](../../../Math/2521.Distinct_Prime_Factors_of_Product_of_Array.md)
 
 ## 🔹 Tricks & Patterns Used
 

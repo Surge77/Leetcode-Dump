@@ -31,8 +31,8 @@
 
 * **Belongs To:** Trees — binary lifting / LCA
 * **Common Problems Using This:**
-  * 2846. Minimum Edge Weight Equilibrium Queries in a Tree (in this repo)
-  * 1483. Kth Ancestor of a Tree Node (in this repo)
+  * [2846. Minimum Edge Weight Equilibrium Queries in a Tree](../../../Trees/2846.Minimum_Edge_Weight_Equilibrium_Queries_in_a_Tree.md)
+  * [1483. Kth Ancestor of a Tree Node](../../../Trees/1483.Kth_Ancestor_of_a_Tree_Node.md)
   * 1697. Checking Existence of Edge Length Limited Paths (offline DSU alternative)
 
 ## 🔹 Tricks & Patterns Used

@@ -31,7 +31,7 @@
 
 * **Belongs To:** Hashing / Frequency count
 * **Common Problems Using This:**
-  * 1. Two Sum (in this repo)
+  * [1. Two Sum](../../../Arrays_and_Hashing/1.Two_Sum.md)
   * 1010. Pairs of Songs With Total Durations Divisible by 60
   * 974. Subarray Sums Divisible by K
 

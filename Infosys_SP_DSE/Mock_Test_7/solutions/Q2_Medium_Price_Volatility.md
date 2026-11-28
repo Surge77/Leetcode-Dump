@@ -29,7 +29,7 @@
 
 * **Belongs To:** Monotonic Stack
 * **Common Problems Using This:**
-  * 907. Sum of Subarray Minimums (in this repo)
+  * [907. Sum of Subarray Minimums](../../../Stack/907.Sum_of_Subarray_Minimums.md)
   * 2104. Sum of Subarray Ranges
   * 84. Largest Rectangle in Histogram (in this repo — same previous/next smaller boundaries)
 

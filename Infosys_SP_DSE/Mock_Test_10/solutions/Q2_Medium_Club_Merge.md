@@ -30,8 +30,8 @@
 
 * **Belongs To:** Union-Find
 * **Common Problems Using This:**
-  * 1319. Number of Operations to Make Network Connected (in this repo)
-  * 684. Redundant Connection (in this repo)
+  * [1319. Number of Operations to Make Network Connected](../../../Graph_Advanced/1319.Number_of_Operations_to_Make_Network_Connected.md)
+  * [684. Redundant Connection](../../../Graph_Advanced/684.Redundant_Connection.md)
   * 305. Number of Islands II
 
 ## 🔹 Tricks & Patterns Used

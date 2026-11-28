@@ -18,6 +18,7 @@ SWAPS = {"<": "<=", "<=": "<", ">": ">=", ">=": ">", "==": "!=", "!=": "==",
 SIGN_SWAPS = {"+": "-", "-": "+"}  # only directly before a number: the classic off-by-one
 SKIP_LINE_STARTS = ("def ", "class ", "import ", "from ", "@")
 MAX_TRIES = 40
+MUTANT_DEADLINE = 15  # seconds: a mutant can loop forever (e.g. a flipped loop condition)
 
 
 def candidates(code):
@@ -46,7 +47,11 @@ def apply(code, row, col, old, new):
     return "".join(lines)
 
 
-def plant(number, code, rng, judge=check, max_tries=MAX_TRIES):
+def default_judge(number, code, timing):
+    return check(number, code, timing=timing, deadline=MUTANT_DEADLINE)
+
+
+def plant(number, code, rng, judge=default_judge, max_tries=MAX_TRIES):
     """Return (mutant code, row, original line, mutated line) for a mutant the checks catch, or None."""
     options = candidates(code)
     rng.shuffle(options)

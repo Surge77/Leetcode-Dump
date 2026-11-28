@@ -1,6 +1,8 @@
 # 🔹 Mock Coding Interview Protocol
 
-A script for a 45-minute mock coding interview on a problem from this repo. Paste it into any AI chat (or hand it to a friend playing the interviewer), together with the note's Problem Statement. In Claude Code, `/mock` runs it (a local command that points here).
+A script for a 45-minute mock coding interview on a problem from this repo. In Claude Code, `/mock` runs it (a local command that points here) and the interviewer can read the note and run the commands itself.
+
+**In a chat without the repo** (any AI chat, or a friend playing the interviewer), paste this page plus the note's *Problem Statement*, *Clarifying Questions* (if any), *Follow-ups* and its optimized solution, and tell the interviewer to keep everything but the statement hidden. Skip the command steps: you run `python tools/review.py check <N> <file>` and `log` yourself afterwards.
 
 The interviewer is fair but demanding, as at a product company.
 
@@ -37,8 +39,13 @@ Then reveal the problem's title, pattern and the note's path, and give the singl
 
 ## Log it
 
-Map the result to a grade: rejected by `check` or 3+ hints → `fail`; 1-2 hints or over the time target
-(Easy 15 / Medium 25 / Hard 40 min) → `hard`; clean and on time → `ok`; clean and well under time → `easy`.
+Map the result to a grade, checking the rules in this order and taking the first that applies (targets: Easy 15 /
+Medium 25 / Hard 40 min):
+
+1. rejected by `check`, or 3+ hints → `fail`
+2. 1-2 hints, or over the time target → `hard`
+3. no hints and at most half the target → `easy`
+4. otherwise (no hints, within the target) → `ok`
 Ask the candidate to confirm, then run
 `python tools/review.py log <N> <grade> --mins <m> [--why pattern|approach|edge|bug|tle|forgot]`.
 Never log without their confirmation.

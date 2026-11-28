@@ -2,6 +2,63 @@
 
 Recursion on left and right subtrees (DFS) or level by level (BFS); BST order gives sorted traversal and O(h) search. Cue: depth, paths, ancestors, level views, validating or building trees.
 
+## Recognise it
+
+* Anything on a binary tree: depth, diameter, paths, balanced, symmetric, lowest common ancestor.
+* "Level by level", "right side view", "zigzag": BFS.
+* BST: "k-th smallest", "validate", "inorder successor", range sums. Inorder traversal is sorted.
+* Many ancestor queries on a big tree: binary lifting.
+
+## Core idea
+
+Most tree problems are one recursive function: compute something for the left and right subtrees, combine them, and return it to the parent. Decide what each call returns versus what you record globally (e.g. return the height, record the best diameter).
+
+## Template
+
+```python
+from collections import deque
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val, self.left, self.right = val, left, right
+
+
+def diameter(root):
+    best = 0
+
+    def height(node):  # returns the height, records the best path through node
+        nonlocal best
+        if not node:
+            return 0
+        l, r = height(node.left), height(node.right)
+        best = max(best, l + r)
+        return 1 + max(l, r)
+
+    height(root)
+    return best
+
+
+def levels(root):
+    out, q = [], deque([root] if root else [])
+    while q:
+        out.append([node.val for node in q])
+        for _ in range(len(q)):
+            node = q.popleft()
+            q.extend(child for child in (node.left, node.right) if child)
+    return out
+
+
+t = TreeNode(1, TreeNode(2, TreeNode(4), TreeNode(5)), TreeNode(3))
+assert diameter(t) == 3 and levels(t) == [[1], [2, 3], [4, 5]]
+```
+
+## Pitfalls
+
+* Validating a BST needs bounds passed down, not just a parent–child comparison.
+* Deep skewed trees overflow Python's recursion limit: switch to an explicit stack.
+* Path problems: say whether a path must pass through the root or may start anywhere.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (48: Easy 17 · Medium 25 · Hard 6)

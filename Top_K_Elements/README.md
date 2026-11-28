@@ -2,6 +2,55 @@
 
 A heap of size k keeps the best k items in O(n log k); quickselect or bucket sort can beat sorting. Cue: "k largest/smallest/most frequent", merging k sorted lists, a running median (two heaps).
 
+## Recognise it
+
+* "k largest / smallest / most frequent / closest".
+* Merge k sorted lists or streams.
+* A running median, or "schedule the next most urgent thing" repeatedly.
+
+## Core idea
+
+A heap gives the min (or max) in O(1) and updates in O(log n). Keep a **min-heap of size k** for the k largest: anything smaller than the top can't be in the answer. Total O(n log k). Bucket sort by frequency or quickselect can reach O(n).
+
+## Template
+
+```python
+import heapq
+from collections import Counter
+
+
+def k_largest(nums, k):
+    heap = []
+    for x in nums:
+        heapq.heappush(heap, x)
+        if len(heap) > k:
+            heapq.heappop(heap)  # drop the smallest of the k + 1
+    return sorted(heap, reverse=True)
+
+
+def merge_sorted(lists):
+    heap = [(lst[0], i, 0) for i, lst in enumerate(lists) if lst]
+    heapq.heapify(heap)
+    out = []
+    while heap:
+        val, i, j = heapq.heappop(heap)
+        out.append(val)
+        if j + 1 < len(lists[i]):
+            heapq.heappush(heap, (lists[i][j + 1], i, j + 1))
+    return out
+
+
+assert k_largest([3, 1, 5, 12, 2, 11], 3) == [12, 11, 5]
+assert merge_sorted([[1, 4], [2, 3], []]) == [1, 2, 3, 4]
+assert [w for w, _ in Counter("aabbbc").most_common(2)] == ["b", "a"]
+```
+
+## Pitfalls
+
+* Python's `heapq` is a min-heap; push `-x` for a max-heap.
+* Put a tie-breaker (an index) in tuples so incomparable objects are never compared.
+* Two heaps for the median: keep their sizes within one and rebalance after every insert.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (13: Easy 2 · Medium 9 · Hard 2)

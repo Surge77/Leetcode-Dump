@@ -2,6 +2,61 @@
 
 Define a state, write the recurrence from smaller states, then fill a table bottom-up or memoize top-down. Cue: "number of ways", "min/max cost", choices at each step with overlapping subproblems.
 
+## Recognise it
+
+* "Number of ways", "minimum / maximum cost", "is it possible" with choices at every step.
+* The brute force recursion recomputes the same subproblems (draw the recursion tree: repeated nodes).
+* House robber, climbing stairs, decode ways, coin change, longest increasing subsequence, word break, Kadane.
+
+## Core idea
+
+Define the **state** (what you need to know to finish from here), the **transition** (how a state is built from smaller ones), the **base case**, and the **answer**. Then memoize top-down or fill a table bottom-up; keep only the last row or two when a transition looks only one step back.
+
+## Template
+
+```python
+from bisect import bisect_left
+from functools import lru_cache
+
+
+def rob(houses):  # dp[i] = best using the first i houses
+    take, skip = 0, 0
+    for x in houses:
+        take, skip = skip + x, max(take, skip)
+    return max(take, skip)
+
+
+def coin_change(coins, amount):
+    @lru_cache(maxsize=None)
+    def best(rest):  # fewest coins for `rest`
+        if rest == 0:
+            return 0
+        options = [best(rest - c) for c in coins if c <= rest]
+        return 1 + min(options) if options else float("inf")
+
+    answer = best(amount)
+    return -1 if answer == float("inf") else answer
+
+
+def lis_length(nums):  # O(n log n): tails[k] = smallest tail of an increasing run of length k + 1
+    tails = []
+    for x in nums:
+        i = bisect_left(tails, x)
+        tails[i:i + 1] = [x]
+    return len(tails)
+
+
+assert rob([2, 7, 9, 3, 1]) == 12
+assert coin_change([1, 2, 5], 11) == 3 and coin_change([2], 3) == -1
+assert lis_length([10, 9, 2, 5, 3, 7, 101, 18]) == 4
+```
+
+## Pitfalls
+
+* Write the recurrence in words before coding; most bugs are a wrong state definition.
+* Base cases and n + 1 sized tables: index 0 usually means "empty prefix".
+* `lru_cache` recursion on n = 10⁵ hits the recursion limit; go bottom-up.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (29: Easy 4 · Medium 18 · Hard 7)

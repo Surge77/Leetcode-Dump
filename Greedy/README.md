@@ -2,6 +2,41 @@
 
 Take the locally best choice when an exchange argument shows it never hurts. Cue: scheduling, jumps, gas stations, "minimum number of …" where sorting reveals the order to decide in.
 
+## Recognise it
+
+* "Minimum number of …", "can you reach …", "maximum profit" where a sort or a running best reveals the order to decide in.
+* Jump game, gas station, task scheduling, assigning cookies, candy distribution, stock buy/sell with unlimited trades.
+
+## Core idea
+
+Make the locally best choice and never revisit it. It is only correct if an **exchange argument** holds: any optimal solution can be changed to include your choice without getting worse. If you can't argue that, it's probably DP.
+
+## Template
+
+```python
+def can_jump(nums):
+    reach = 0
+    for i, step in enumerate(nums):
+        if i > reach:
+            return False  # stuck before index i
+        reach = max(reach, i + step)
+    return True
+
+
+def max_profit_unlimited(prices):
+    return sum(max(0, b - a) for a, b in zip(prices, prices[1:]))  # take every rise
+
+
+assert can_jump([2, 3, 1, 1, 4]) and not can_jump([3, 2, 1, 0, 4])
+assert max_profit_unlimited([7, 1, 5, 3, 6, 4]) == 7
+```
+
+## Pitfalls
+
+* Greedy that "looks right" often fails: test it against a brute force on small random inputs (that's what this repo's checks do).
+* Two-pass greedies (candy, trapping water) handle constraints from the left and from the right separately.
+* Interval scheduling: sort by end, not start.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (22: Easy 6 · Medium 13 · Hard 3)

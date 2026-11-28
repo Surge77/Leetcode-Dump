@@ -2,6 +2,50 @@
 
 Sort by start (or end), then merge, count overlaps or sweep through events. Cue: meetings, ranges, overlapping segments, "minimum rooms", inserting into a sorted range list.
 
+## Recognise it
+
+* Meetings, bookings, ranges, segments: merge, insert, count overlaps, "minimum rooms", "remove the fewest to make them disjoint".
+
+## Core idea
+
+Sort first. By **start** to merge or insert (only the last merged interval can overlap the next). By **end** to choose the most non-overlapping intervals (greedy: finishing early leaves the most room). For overlap counts, sweep over sorted start and end events, or keep a min-heap of end times.
+
+## Template
+
+```python
+import heapq
+
+
+def merge(intervals):
+    out = []
+    for start, end in sorted(intervals):
+        if out and start <= out[-1][1]:
+            out[-1][1] = max(out[-1][1], end)
+        else:
+            out.append([start, end])
+    return out
+
+
+def min_rooms(meetings):
+    ends = []  # min-heap of end times of meetings in progress
+    for start, end in sorted(meetings):
+        if ends and ends[0] <= start:
+            heapq.heapreplace(ends, end)  # reuse the room that frees up first
+        else:
+            heapq.heappush(ends, end)
+    return len(ends)
+
+
+assert merge([[1, 3], [2, 6], [8, 10], [9, 9]]) == [[1, 6], [8, 10]]
+assert min_rooms([[0, 30], [5, 10], [15, 20]]) == 2
+```
+
+## Pitfalls
+
+* Decide whether touching intervals (`[1,2]` and `[2,3]`) overlap; the problem statement says.
+* Merging needs `max(end)`: a later interval can sit entirely inside the current one.
+* Sorting by start for "maximum non-overlapping" is the classic wrong greedy; sort by end.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (10: Easy 2 · Medium 5 · Hard 3)

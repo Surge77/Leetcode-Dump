@@ -2,6 +2,64 @@
 
 Build a class whose operations meet stated complexity targets by combining structures (hash map + linked list for LRU, two stacks for a queue). Cue: "design / implement" with O(1) operations.
 
+## Recognise it
+
+* "Design / implement a class" with operations and a complexity target: LRU cache (O(1) get and put), min stack, hit counter, circular queue, file system, frequency stack.
+
+## Core idea
+
+Combine structures so each operation is cheap: a hash map for O(1) lookup plus an ordered structure (doubly linked list, deque, heap, stacks per frequency) for the ordering the operations need. State the invariant each structure maintains.
+
+## Template
+
+```python
+from collections import OrderedDict
+
+
+class LRUCache:
+    def __init__(self, capacity):
+        self.capacity, self.data = capacity, OrderedDict()
+
+    def get(self, key):
+        if key not in self.data:
+            return -1
+        self.data.move_to_end(key)  # most recently used goes last
+        return self.data[key]
+
+    def put(self, key, value):
+        self.data[key] = value
+        self.data.move_to_end(key)
+        if len(self.data) > self.capacity:
+            self.data.popitem(last=False)  # evict the least recently used
+
+
+class MinStack:
+    def __init__(self):
+        self.stack = []  # (value, min so far)
+
+    def push(self, x):
+        self.stack.append((x, min(x, self.stack[-1][1]) if self.stack else x))
+
+    def pop(self):
+        self.stack.pop()
+
+    def get_min(self):
+        return self.stack[-1][1]
+
+
+cache = LRUCache(2)
+cache.put(1, 1); cache.put(2, 2); cache.get(1); cache.put(3, 3)
+assert cache.get(2) == -1 and cache.get(1) == 1
+s = MinStack(); s.push(3); s.push(1); s.pop()
+assert s.get_min() == 3
+```
+
+## Pitfalls
+
+* Interviewers often want the LRU built by hand (hash map + doubly linked list with sentinels); know both versions.
+* Say the complexity of every operation and what the invariant is.
+* Clarify the API edge cases first: capacity 0, updating an existing key, popping from an empty structure.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (9: Easy 3 · Medium 4 · Hard 2)

@@ -2,6 +2,62 @@
 
 Pointer surgery with a dummy head, reversal in place, and fast/slow pointers for the middle or a cycle. Cue: "reverse", "merge", "reorder", "detect a cycle", O(1) extra space.
 
+## Recognise it
+
+* Reverse a list or a sub-range, reorder, merge sorted lists, remove the n-th node from the end.
+* Find the middle, detect a cycle or its start, check a palindrome in O(1) space.
+
+## Core idea
+
+Pointer surgery, one link at a time. A **dummy head** removes the special case for the first node. **Fast and slow** pointers find the middle (fast moves two steps) and cycles (they meet inside the loop).
+
+## Template
+
+```python
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val, self.next = val, next
+
+
+def reverse(head):
+    prev = None
+    while head:
+        head.next, prev, head = prev, head, head.next
+    return prev
+
+
+def middle(head):
+    slow = fast = head
+    while fast and fast.next:
+        slow, fast = slow.next, fast.next.next
+    return slow  # second middle for even lengths
+
+
+def build(vals):
+    dummy = tail = ListNode()
+    for v in vals:
+        tail.next = tail = ListNode(v)
+    return dummy.next
+
+
+def to_list(node):
+    out = []
+    while node:
+        out.append(node.val)
+        node = node.next
+    return out
+
+
+assert to_list(reverse(build([1, 2, 3]))) == [3, 2, 1]
+assert middle(build([1, 2, 3, 4])).val == 3
+```
+
+## Pitfalls
+
+* Save `next` before you overwrite it (or use simultaneous assignment, in the right order).
+* Removing the n-th from the end: start the fast pointer n steps ahead *from the dummy*.
+* Draw three boxes and the arrows before you code; interviewers like seeing it.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (16: Easy 3 · Medium 12 · Hard 1)

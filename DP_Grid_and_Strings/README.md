@@ -2,6 +2,49 @@
 
 Two-dimensional states: dp[i][j] over a grid or over prefixes of two strings, plus state machines such as buy/sell/cooldown. Cue: edit distance, LCS, unique paths, stock problems with limits.
 
+## Recognise it
+
+* Two strings and "edit distance / longest common subsequence / interleaving / distinct subsequences / wildcard match".
+* A grid and "number of paths / minimum path sum / largest square".
+* Buy and sell stock with a cooldown, fee or at most k transactions: a **state machine** DP.
+
+## Core idea
+
+`dp[i][j]` describes prefixes `a[:i]` and `b[:j]` (or the cell `(i, j)`). Each cell depends on its left, top and top-left neighbours, so fill row by row; one rolling row is usually enough. State machines keep one value per state (holding, not holding, cooling down) per day.
+
+## Template
+
+```python
+def edit_distance(a, b):
+    prev = list(range(len(b) + 1))  # converting "" into b[:j] costs j inserts
+    for i in range(1, len(a) + 1):
+        cur = [i] + [0] * len(b)
+        for j in range(1, len(b) + 1):
+            if a[i - 1] == b[j - 1]:
+                cur[j] = prev[j - 1]
+            else:
+                cur[j] = 1 + min(prev[j], cur[j - 1], prev[j - 1])  # delete, insert, replace
+        prev = cur
+    return prev[-1]
+
+
+def max_profit_cooldown(prices):
+    hold, sold, rest = float("-inf"), 0, 0
+    for p in prices:
+        hold, sold, rest = max(hold, rest - p), hold + p, max(rest, sold)
+    return max(sold, rest)
+
+
+assert edit_distance("horse", "ros") == 3
+assert max_profit_cooldown([1, 2, 3, 0, 2]) == 3
+```
+
+## Pitfalls
+
+* Off-by-one between string index `i - 1` and table row `i`.
+* Rolling arrays: a cell needing the top-left value must read it before it's overwritten (keep `prev`).
+* State machines: update all states from the *previous* day's values (simultaneous assignment).
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (13: Easy 0 · Medium 8 · Hard 5)

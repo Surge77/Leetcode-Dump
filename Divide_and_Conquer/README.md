@@ -2,6 +2,74 @@
 
 Split into halves, solve each recursively, combine; meet in the middle enumerates each half of a search space and joins them. Cue: merge sort, building trees from traversals, fast power, n ≈ 40 subset problems.
 
+## Recognise it
+
+* Sort, count inversions, merge k lists, build a tree from traversals, compute `x^n` quickly: split in half, solve each half, combine.
+* Subset problems with n ≈ 40 (2⁴⁰ is too many, 2²⁰ per half is fine): **meet in the middle**.
+
+## Core idea
+
+`T(n) = 2T(n/2) + O(n)` gives O(n log n). Meet in the middle enumerates all subset sums of each half, sorts one side, and binary-searches it for each sum of the other: O(2^(n/2) · n).
+
+## Template
+
+```python
+from bisect import bisect_left
+
+
+def merge_sort(xs):
+    if len(xs) <= 1:
+        return xs
+    mid = len(xs) // 2
+    left, right = merge_sort(xs[:mid]), merge_sort(xs[mid:])
+    out, i, j = [], 0, 0
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:  # <= keeps the sort stable
+            out.append(left[i]); i += 1
+        else:
+            out.append(right[j]); j += 1
+    return out + left[i:] + right[j:]
+
+
+def fast_pow(x, n):
+    if n < 0:
+        return 1 / fast_pow(x, -n)
+    result = 1
+    while n:
+        if n & 1:
+            result *= x
+        x, n = x * x, n >> 1
+    return result
+
+
+def closest_subset_sum(nums, goal):  # meet in the middle
+    def sums(part):
+        out = [0]
+        for x in part:
+            out += [s + x for s in out]
+        return out
+
+    left, right = sums(nums[:len(nums) // 2]), sorted(sums(nums[len(nums) // 2:]))
+    best = abs(goal)
+    for s in left:
+        i = bisect_left(right, goal - s)
+        for j in (i - 1, i):
+            if 0 <= j < len(right):
+                best = min(best, abs(s + right[j] - goal))
+    return best
+
+
+assert merge_sort([5, 2, 4, 1]) == [1, 2, 4, 5]
+assert fast_pow(2, 10) == 1024 and fast_pow(2, -2) == 0.25
+assert closest_subset_sum([5, -7, 3, 5], 6) == 0
+```
+
+## Pitfalls
+
+* Slicing copies (`xs[:mid]`) cost O(n) each level; fine for O(n log n), but pass indices in hot paths.
+* `fast_pow` with negative exponents and `n = -2³¹` (overflow in Java when negating).
+* Meet in the middle: include the empty subset on both sides.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (9: Easy 1 · Medium 5 · Hard 3)

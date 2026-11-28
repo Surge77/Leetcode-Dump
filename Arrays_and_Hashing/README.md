@@ -2,6 +2,49 @@
 
 Trade memory for time: a hash map or set answers "have I seen this / how many times?" in O(1), turning nested loops into one pass. Cue: pairs, duplicates, anagrams, frequencies, grouping.
 
+## Recognise it
+
+* "Have I seen this before?", "how many times?", "group the ones that match", "find a pair with sum k".
+* A nested loop that searches for something you could have remembered instead.
+* Anagrams, duplicates, frequencies, first unique element, longest consecutive run.
+
+## Core idea
+
+Spend O(n) memory to turn a search into an O(1) lookup. Pick the key carefully: the value itself, a canonical form (sorted string, character-count tuple), or a running quantity (complement `k - x`, prefix sum).
+
+## Template
+
+```python
+from collections import Counter, defaultdict
+
+
+def two_sum(nums, k):
+    seen = {}  # value -> index
+    for i, x in enumerate(nums):
+        if k - x in seen:
+            return [seen[k - x], i]
+        seen[x] = i
+    return []
+
+
+def group_anagrams(words):
+    groups = defaultdict(list)
+    for w in words:
+        groups[tuple(sorted(w))].append(w)  # canonical key
+    return list(groups.values())
+
+
+assert two_sum([2, 7, 11, 15], 9) == [0, 1]
+assert sorted(map(sorted, group_anagrams(["eat", "tea", "tan"]))) == [["eat", "tea"], ["tan"]]
+assert Counter("banana").most_common(1) == [("a", 3)]
+```
+
+## Pitfalls
+
+* Check before you insert (two-sum): inserting first lets an element pair with itself.
+* Lists aren't hashable; use tuples or `frozenset` as keys.
+* "O(1)" is average case; say so if asked about adversarial inputs.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (29: Easy 17 · Medium 11 · Hard 1)

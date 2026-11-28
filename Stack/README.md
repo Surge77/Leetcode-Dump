@@ -2,6 +2,49 @@
 
 Last-in-first-out for matching and nesting; a monotonic stack finds the next greater or smaller element for every index in O(n). Cue: parentheses, expression parsing, "next greater", histogram areas.
 
+## Recognise it
+
+* Matching or nesting: parentheses, tags, nested expressions, "decode string".
+* Evaluate expressions (RPN, calculators).
+* "Next greater / smaller element", "days until a warmer temperature", histogram rectangles, "sum of subarray minimums": a **monotonic stack**.
+
+## Core idea
+
+A stack remembers what's still waiting for its match. A monotonic stack keeps indices in increasing (or decreasing) order; when a new element breaks the order, everything it pops has just found its "next greater/smaller". Each index is pushed and popped once: O(n).
+
+## Template
+
+```python
+def next_greater(nums):
+    out, stack = [-1] * len(nums), []  # stack holds indices with decreasing values
+    for i, x in enumerate(nums):
+        while stack and nums[stack[-1]] < x:
+            out[stack.pop()] = x
+        stack.append(i)
+    return out
+
+
+def valid_parentheses(s):
+    pairs, stack = {")": "(", "]": "[", "}": "{"}, []
+    for ch in s:
+        if ch in pairs:
+            if not stack or stack.pop() != pairs[ch]:
+                return False
+        else:
+            stack.append(ch)
+    return not stack
+
+
+assert next_greater([2, 1, 2, 4, 3]) == [4, 2, 4, -1, -1]
+assert valid_parentheses("([]{})") and not valid_parentheses("(]")
+```
+
+## Pitfalls
+
+* Store indices, not values, when you need distances or widths.
+* Duplicates in contribution problems: use `<` on one side and `<=` on the other so equal values aren't counted twice.
+* A sentinel (push 0 height at the end) flushes the stack for histogram problems.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (21: Easy 2 · Medium 13 · Hard 6)

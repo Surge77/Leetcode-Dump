@@ -2,6 +2,45 @@
 
 Grow the right edge, shrink the left edge while the window breaks a rule, and update the answer as you go: O(n) for contiguous subarrays and substrings. Cue: "longest/shortest/count of contiguous …" with a constraint.
 
+## Recognise it
+
+* "Longest / shortest / number of **contiguous** subarrays or substrings" with a condition.
+* A fixed window size k ("max sum of k consecutive", "anagrams of p in s").
+* The condition is monotonic: if a window is invalid, every bigger window containing it is invalid too.
+
+## Core idea
+
+Grow the right edge one step at a time; while the window breaks the rule, shrink the left edge. Each index enters and leaves once, so it's O(n). Keep the window's state (counts, sum, distinct count) updated incrementally.
+
+## Template
+
+```python
+from collections import defaultdict
+
+
+def longest_with_at_most_k_distinct(s, k):
+    count, best, left = defaultdict(int), 0, 0
+    for right, ch in enumerate(s):
+        count[ch] += 1
+        while len(count) > k:  # invalid: shrink from the left
+            count[s[left]] -= 1
+            if count[s[left]] == 0:
+                del count[s[left]]
+            left += 1
+        best = max(best, right - left + 1)
+    return best
+
+
+assert longest_with_at_most_k_distinct("eceba", 2) == 3
+assert longest_with_at_most_k_distinct("aa", 1) == 2
+```
+
+## Pitfalls
+
+* Negative numbers break "shrink while sum > k" (the condition stops being monotonic): use prefix sums + a hash map instead.
+* "Exactly k" = atMost(k) − atMost(k − 1).
+* Window maximum needs a monotonic deque, not a heap of stale entries.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (24: Easy 3 · Medium 15 · Hard 6)

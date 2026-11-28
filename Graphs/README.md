@@ -2,6 +2,67 @@
 
 Explore nodes with BFS (shortest path in unweighted graphs) or DFS (components, cycles), on explicit edges or a grid; topological sort orders dependencies. Cue: islands, flood fill, prerequisites, word ladders.
 
+## Recognise it
+
+* Islands, regions, flood fill, "rotting oranges": a grid is a graph.
+* Connected components, cycle detection, bipartite checks, clone a graph.
+* Shortest path when every edge costs the same: BFS.
+* Prerequisites and build orders: **topological sort**.
+
+## Core idea
+
+BFS explores level by level (shortest paths in unweighted graphs; multi-source BFS starts from all sources at once). DFS goes deep (components, cycles). Kahn's algorithm repeatedly removes nodes with in-degree 0; if some remain, there's a cycle.
+
+## Template
+
+```python
+from collections import deque
+
+
+def num_islands(grid):
+    rows, cols, seen, count = len(grid), len(grid[0]), set(), 0
+    for r in range(rows):
+        for c in range(cols):
+            if grid[r][c] == "1" and (r, c) not in seen:
+                count += 1
+                q = deque([(r, c)])
+                seen.add((r, c))
+                while q:
+                    i, j = q.popleft()
+                    for ni, nj in ((i + 1, j), (i - 1, j), (i, j + 1), (i, j - 1)):
+                        if 0 <= ni < rows and 0 <= nj < cols and grid[ni][nj] == "1" and (ni, nj) not in seen:
+                            seen.add((ni, nj))  # mark when enqueued, not when dequeued
+                            q.append((ni, nj))
+    return count
+
+
+def topo_order(n, edges):  # Kahn's algorithm; [] if there is a cycle
+    adj, indegree = [[] for _ in range(n)], [0] * n
+    for a, b in edges:
+        adj[a].append(b)
+        indegree[b] += 1
+    q = deque(i for i in range(n) if indegree[i] == 0)
+    order = []
+    while q:
+        u = q.popleft()
+        order.append(u)
+        for v in adj[u]:
+            indegree[v] -= 1
+            if indegree[v] == 0:
+                q.append(v)
+    return order if len(order) == n else []
+
+
+assert num_islands(["110", "010", "001"]) == 2
+assert topo_order(3, [(0, 1), (1, 2)]) == [0, 1, 2] and topo_order(2, [(0, 1), (1, 0)]) == []
+```
+
+## Pitfalls
+
+* Mark visited when you **enqueue**; marking on dequeue lets a node enter the queue many times.
+* Recursive DFS on a 10⁵-cell grid overflows Python's stack: use BFS or an explicit stack.
+* Directed cycle detection needs three colours (unvisited, in progress, done), not just a visited set.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (30: Easy 1 · Medium 23 · Hard 6)

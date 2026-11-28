@@ -2,6 +2,56 @@
 
 A tree of characters for prefix queries over many words. Cue: autocomplete, "starts with", word search on a board, maximum XOR (binary trie).
 
+## Recognise it
+
+* Many words and prefix questions: autocomplete, "starts with", replace words by their shortest root.
+* Word search for a whole dictionary on a board (one trie walk instead of one search per word).
+* Maximum XOR of two numbers: a binary trie over the bits.
+
+## Core idea
+
+A tree whose edges are characters; each node marks whether a word ends there. Insert and lookup cost O(word length), independent of how many words are stored, and shared prefixes are stored once.
+
+## Template
+
+```python
+class Trie:
+    def __init__(self):
+        self.root = {}
+
+    def insert(self, word):
+        node = self.root
+        for ch in word:
+            node = node.setdefault(ch, {})
+        node["$"] = True  # end-of-word marker
+
+    def _walk(self, prefix):
+        node = self.root
+        for ch in prefix:
+            if ch not in node:
+                return None
+            node = node[ch]
+        return node
+
+    def search(self, word):
+        node = self._walk(word)
+        return node is not None and "$" in node
+
+    def starts_with(self, prefix):
+        return self._walk(prefix) is not None
+
+
+t = Trie()
+t.insert("apple")
+assert t.search("apple") and not t.search("app") and t.starts_with("app")
+```
+
+## Pitfalls
+
+* Mark word ends explicitly; "app" being a prefix of "apple" doesn't make it a word.
+* Word Search II: prune found words from the trie, or the search revisits dead branches.
+* Memory: dict-per-node is simple; an array of 26 children is faster but heavier.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (6: Easy 0 · Medium 4 · Hard 2)

@@ -2,6 +2,49 @@
 
 Work on the bits directly: XOR cancels pairs, `x & (x - 1)` drops the lowest set bit, masks enumerate subsets. Cue: "single number", powers of two, counting bits, no extra space.
 
+## Recognise it
+
+* "Every element appears twice except one", "missing number", "count set bits", "power of two / four".
+* Enumerate all subsets of a small set (n ≤ 20) as integers.
+* O(1) extra space demanded on a problem that "obviously" needs a set.
+
+## Core idea
+
+XOR cancels pairs (`x ^ x = 0`, `x ^ 0 = x`). `x & (x - 1)` clears the lowest set bit; `x & -x` isolates it. A mask `m` represents a subset: bit i is set when element i is in it.
+
+## Template
+
+```python
+def single_number(nums):
+    out = 0
+    for x in nums:
+        out ^= x  # pairs cancel
+    return out
+
+
+def count_bits(x):
+    count = 0
+    while x:
+        x &= x - 1  # drop the lowest set bit
+        count += 1
+    return count
+
+
+def all_subsets(items):
+    return [[items[i] for i in range(len(items)) if mask >> i & 1] for mask in range(1 << len(items))]
+
+
+assert single_number([4, 1, 2, 1, 2]) == 4
+assert count_bits(0b1011) == 3 and bin(11).count("1") == 3
+assert len(all_subsets("abc")) == 8 and (16 & 15) == 0  # 16 is a power of two
+```
+
+## Pitfalls
+
+* Operator precedence: `x & 1 == 0` parses as `x & (1 == 0)`; write `(x & 1) == 0`.
+* Python ints are unbounded: emulate 32-bit with `& 0xFFFFFFFF` and fix the sign for negatives.
+* `>>` on negatives is arithmetic (keeps the sign) in both Python and Java (`>>>` is logical in Java).
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (15: Easy 8 · Medium 7 · Hard 0)

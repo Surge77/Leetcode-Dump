@@ -1,0 +1,6 @@
+# Site build only (python tools/site/build_site.py && zensical build). Lock: requirements-docs.txt, regenerate with
+#   uv pip compile --generate-hashes --python-version 3.11 --python-platform linux requirements-docs.in -o requirements-docs.txt
+# Versions are held at releases at least two weeks old (supply-chain hygiene); Dependabot proposes updates.
+zensical==0.1.1
+markdown==3.11.3
+pyyaml==6.0.3

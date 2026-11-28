@@ -93,8 +93,12 @@ def case(key):
     return deco
 
 
+GENERATED_DIRS = {".git", "site", "site_src", "practice", "exports"}  # copies or scratch output, never notes
+
+
 def lc_path(num):
-    hits = [p for p in REPO.rglob(f"{num}.*.md") if ".git" not in p.parts]
+    hits = [p for p in REPO.rglob(f"{num}.*.md") if p.relative_to(REPO).parts[0] not in GENERATED_DIRS
+            and ".git" not in p.parts]
     if len(hits) != 1:
         raise FileNotFoundError(f"{num}: expected 1 file, found {hits}")
     return hits[0]

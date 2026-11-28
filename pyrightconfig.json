@@ -1,5 +1,12 @@
 {
-  "include": ["tools"],
-  "extraPaths": ["tools", "tools/verify", "tools/judge"],
+  "include": [
+    "tools"
+  ],
+  "extraPaths": [
+    "tools",
+    "tools/verify",
+    "tools/judge",
+    "tools/site"
+  ],
   "pythonVersion": "3.11"
 }

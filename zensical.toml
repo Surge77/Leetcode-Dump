@@ -1,0 +1,52 @@
+# Site for https://surge77.github.io/Leetcode-Dump/ (built by .github/workflows/site.yml).
+# Local preview: pip install --require-hashes -r requirements-docs.txt (Linux) or
+#   pip install -r requirements-docs.in, then
+#   python tools/site/build_site.py && zensical serve
+[project]
+site_name = "LeetCode-Dump"
+site_description = "Pattern notes with verified brute-force and optimized solutions, a spaced-repetition drill, and interview prep."
+site_url = "https://surge77.github.io/Leetcode-Dump/"
+repo_url = "https://github.com/Surge77/Leetcode-Dump"
+repo_name = "Surge77/Leetcode-Dump"
+docs_dir = "site_src"
+site_dir = "site"
+
+[project.theme]
+language = "en"
+features = [
+  "navigation.sections",
+  "navigation.indexes",
+  "navigation.top",
+  "navigation.tracking",
+  "navigation.path",
+  "search.highlight",
+  "content.code.copy",
+  "toc.follow",
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+[project.plugins.tags]
+
+[project.markdown_extensions]
+abbr = {}
+admonition = {}
+attr_list = {}
+md_in_html = {}
+tables = {}
+toc.permalink = true
+pymdownx.details = {}
+pymdownx.superfences = {}
+pymdownx.highlight.anchor_linenums = true
+pymdownx.inlinehilite = {}
+pymdownx.tasklist.custom_checkbox = true

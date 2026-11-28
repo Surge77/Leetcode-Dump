@@ -33,3 +33,7 @@ bin/
 
 ### Python ###
 __pycache__/
+
+### Practice drill scratch output ###
+practice/
+exports/

@@ -15,6 +15,9 @@ REPO = Path(__file__).resolve().parents[2]
 # Fences may be indented when they sit inside a Markdown list item.
 CODE_RE = re.compile(r"^([ \t]*)```python[ \t]*\n(.*?)^\1```", re.S | re.M)
 CASES = {}
+# Note number -> code that replaces the note's LAST python block, so a check can judge your own
+# attempt instead of the reference solution (tools/drill/attempt.py).
+OVERRIDES = {}
 
 
 class TreeNode:
@@ -99,7 +102,11 @@ def lc_path(num):
 
 def blocks_of(path):
     text = Path(path).read_text(encoding="utf-8")
-    return [textwrap.dedent(body) for _, body in CODE_RE.findall(text)]
+    blocks = [textwrap.dedent(body) for _, body in CODE_RE.findall(text)]
+    number = Path(path).name.split(".", 1)[0]
+    if blocks and number.isdigit() and int(number) in OVERRIDES:
+        blocks[-1] = OVERRIDES[int(number)]
+    return blocks
 
 
 def ns_from(code):

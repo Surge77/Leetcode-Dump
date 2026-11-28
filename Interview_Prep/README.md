@@ -2,7 +2,7 @@
 
 After the online test, shortlisted candidates face a technical interview and then HR. Public 2025–2026 reports describe the technical round as:
 
-* **2 DSA problems** (Easy–Medium), solved live on a shared screen → practise with the 🔄 notes in [INDEX.md](../INDEX.md), out loud.
+* **2 DSA problems** (Easy–Medium), solved live on a shared screen → practise with the 🔄 notes in [INDEX.md](../INDEX.md), out loud, using the [mock interview protocol](Mock_Interview.md).
 * **OOP** concepts with code → [OOP.md](OOP.md)
 * **DBMS + SQL queries** → [SQL.md](SQL.md) (every query verified) and [DBMS_and_OS.md](DBMS_and_OS.md)
 * **OS basics** (occasionally) → [DBMS_and_OS.md](DBMS_and_OS.md#-operating-systems)

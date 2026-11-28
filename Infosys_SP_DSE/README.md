@@ -36,9 +36,11 @@ Every problem reads **stdin** and prints to **stdout** and has constraints that 
 | **5** | [Coin Piles](Mock_Test_5/Q1_Easy_Coin_Piles.md) | [Price Spread](Mock_Test_5/Q2_Medium_Price_Spread.md) | [Critical Routers](Mock_Test_5/Q3_Hard_Critical_Routers.md) |
 | **6** | [Festival Lamps](Mock_Test_6/Q1_Easy_Festival_Lamps.md) | [Stair Climber](Mock_Test_6/Q2_Medium_Stair_Climber.md) | [Rising Streaks](Mock_Test_6/Q3_Hard_Rising_Streaks.md) |
 | **7** | [Signal Boost](Mock_Test_7/Q1_Easy_Signal_Boost.md) | [Price Volatility](Mock_Test_7/Q2_Medium_Price_Volatility.md) | [Lantern Paths](Mock_Test_7/Q3_Hard_Lantern_Paths.md) |
-| **8** | [Ferry Seats](Mock_Test_8/Q1_Easy_Ferry_Seats.md) | [Island Hopping](Mock_Test_8/Q2_Medium_Island_Hopping.md) | [Office Network](Mock_Test_8/Q3_Hard_Office_Network.md) |
-| **9** | [Even Streak](Mock_Test_9/Q1_Easy_Even_Streak.md) | [Exam Hall](Mock_Test_9/Q2_Medium_Exam_Hall.md) | [Gem Splitter](Mock_Test_9/Q3_Hard_Gem_Splitter.md) |
-| **10** | [Tray Stack](Mock_Test_10/Q1_Easy_Tray_Stack.md) | [Club Merge](Mock_Test_10/Q2_Medium_Club_Merge.md) | [Freight Limits](Mock_Test_10/Q3_Hard_Freight_Limits.md) |
+| **8** 🔒 | [Ferry Seats](Mock_Test_8/Q1_Easy_Ferry_Seats.md) | [Island Hopping](Mock_Test_8/Q2_Medium_Island_Hopping.md) | [Office Network](Mock_Test_8/Q3_Hard_Office_Network.md) |
+| **9** 🔒 | [Even Streak](Mock_Test_9/Q1_Easy_Even_Streak.md) | [Exam Hall](Mock_Test_9/Q2_Medium_Exam_Hall.md) | [Gem Splitter](Mock_Test_9/Q3_Hard_Gem_Splitter.md) |
+| **10** 🔒 | [Tray Stack](Mock_Test_10/Q1_Easy_Tray_Stack.md) | [Club Merge](Mock_Test_10/Q2_Medium_Club_Merge.md) | [Freight Limits](Mock_Test_10/Q3_Hard_Freight_Limits.md) |
+
+🔒 **Mocks 8–10 are held out.** Random papers never use them. Leave them unopened, including their separate spoiler block below, until the week before the exam. Then sit `python tools/judge/paper.py --final` once, under a 3-hour timer. It is the only paper that tells you how you would do on problems you have never seen.
 
 <details>
 <summary>Topic of each question (spoilers: spotting the pattern is part of the test)</summary>
@@ -52,6 +54,14 @@ Every problem reads **stdin** and prints to **stdout** and has constraints that 
 | 5 | Sprague–Grundy | sparse table | articulation points |
 | 6 | inclusion–exclusion | matrix exponentiation | DP + Fenwick tree |
 | 7 | difference array | monotonic stack, contribution technique | nCr mod p + DP over obstacles |
+
+</details>
+
+<details>
+<summary>🔒 Topics of the held-out mocks 8-10 (open only after sitting <code>paper.py --final</code>)</summary>
+
+| Mock | Q1 | Q2 | Q3 |
+|---|---|---|---|
 | 8 | greedy two pointers | 0-1 BFS | rerooting DP on a weighted tree |
 | 9 | sliding window | binary search on answer | meet-in-the-middle knapsack |
 | 10 | stack with running max | union-find with sizes | binary lifting, path maximum |
@@ -63,7 +73,8 @@ Every problem reads **stdin** and prints to **stdout** and has constraints that 
 ```bash
 python tools/judge/judge.py M1Q2 my_q2.py   # samples + 50 random tests + max-size tests, scored /100
 python tools/judge/judge.py --list          # every problem key
-python tools/judge/paper.py                 # random paper: one Easy, Medium, Hard from three different mocks
+python tools/judge/paper.py                 # random paper: one Easy, Medium, Hard from three different mocks 1-7
+python tools/judge/paper.py --final         # the held-out mocks 8-10: sit it once, in the last week
 ```
 
 The judge compares your program with the reference solution. Small tests (the samples plus random ones) are worth 50 points and the max-constraint tests 50, so a correct brute force scores about half, as in the real exam. The time limit on large tests is 3× the reference's own time on your machine (at least 2 s), so it adjusts to how fast your computer is. A failing small test prints its input, the expected output and your output. Every run prints its seed; rerun with `--seed N` to reproduce a failure.

@@ -4,32 +4,48 @@ on:
   push:
     branches: [master]
   pull_request:
+  schedule:
+    - cron: "17 4 * * 1" # weekly (Monday 04:17 UTC): surfaces runner or Python changes even when nothing is pushed
+  workflow_dispatch:
 
 permissions:
   contents: read
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+# Actions are pinned to full commit SHAs (tags can be moved); Dependabot proposes updates monthly.
 jobs:
   verify:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.14"] # oldest supported (pyright target) and newest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          python-version: "3.11"
-      - name: Note format + INDEX.md is up to date
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Note format + generated files are up to date
         run: python tools/build_index.py --check
       - name: Run every note's code against its checks
         run: python tools/verify/verify.py
-      - name: Unit tests for the judge and review tools
+      - name: Unit tests for the drill, judge and generators
         run: python -m unittest discover -s tools/tests -v
 
   judge-self-test:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: "3.11"
       - name: Every mock's reference solution scores 100 in the judge

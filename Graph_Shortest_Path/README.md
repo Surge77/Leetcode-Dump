@@ -2,6 +2,50 @@
 
 Dijkstra for non-negative weights, 0-1 BFS for weights of 0 or 1, Bellman-Ford with negative edges or a hop limit, Floyd-Warshall for all pairs on small graphs. Cue: "cheapest / fastest route".
 
+## Recognise it
+
+* Weighted edges and "cheapest / fastest / minimum cost route".
+* Edge weights only 0 or 1: 0-1 BFS with a deque.
+* "At most k stops" or negative edges: Bellman-Ford (k + 1 rounds of relaxation).
+* All pairs on a small graph (n ≤ ~400): Floyd-Warshall.
+
+## Core idea
+
+Dijkstra settles nodes in increasing distance using a min-heap; it is correct only for non-negative weights. A popped entry whose distance is stale is skipped. Complexity O((V + E) log V).
+
+## Template
+
+```python
+import heapq
+
+
+def dijkstra(n, edges, source):
+    adj = [[] for _ in range(n)]
+    for u, v, w in edges:
+        adj[u].append((v, w))
+    dist = [float("inf")] * n
+    dist[source] = 0
+    heap = [(0, source)]
+    while heap:
+        d, u = heapq.heappop(heap)
+        if d > dist[u]:
+            continue  # stale entry
+        for v, w in adj[u]:
+            if d + w < dist[v]:
+                dist[v] = d + w
+                heapq.heappush(heap, (dist[v], v))
+    return dist
+
+
+assert dijkstra(4, [(0, 1, 4), (0, 2, 1), (2, 1, 2), (1, 3, 1)], 0) == [0, 3, 1, 4]
+```
+
+## Pitfalls
+
+* Negative edges break Dijkstra silently; check the constraints.
+* "Minimise the maximum edge on the path" (minimax) is Dijkstra with `max` instead of `+`.
+* State-space Dijkstra (node, extra state) is common in hard problems: put the state in the heap tuple and in `dist`.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (7: Easy 0 · Medium 5 · Hard 2)

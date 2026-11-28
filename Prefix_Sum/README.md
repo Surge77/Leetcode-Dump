@@ -2,6 +2,51 @@
 
 Precompute running totals so any range sum is one subtraction; difference arrays do the reverse for range updates. Cue: many range-sum queries, "subarray sum equals k" (prefix sum + hash map).
 
+## Recognise it
+
+* Many "sum of range [l, r]" queries on a static array (or a 2-D grid).
+* "Number of subarrays with sum k / divisible by k": prefix sums + a hash map of counts.
+* Many range *updates* followed by reads: a **difference array**.
+
+## Core idea
+
+`prefix[i]` = sum of the first i elements, so `sum(l..r) = prefix[r + 1] - prefix[l]`. A subarray with sum k ends at i when some earlier prefix equals `prefix[i] - k`. A difference array records `+v at l, -v at r + 1` and recovers values with one prefix pass.
+
+## Template
+
+```python
+from collections import defaultdict
+from itertools import accumulate
+
+
+def subarrays_with_sum(nums, k):
+    seen, run, total = defaultdict(int), 0, 0
+    seen[0] = 1  # the empty prefix
+    for x in nums:
+        run += x
+        total += seen[run - k]
+        seen[run] += 1
+    return total
+
+
+def apply_range_adds(n, updates):  # (l, r, v): add v to every index in [l, r]
+    diff = [0] * (n + 1)
+    for l, r, v in updates:
+        diff[l] += v
+        diff[r + 1] -= v
+    return list(accumulate(diff))[:n]
+
+
+assert subarrays_with_sum([1, 1, 1], 2) == 2
+assert apply_range_adds(5, [(1, 3, 2), (2, 4, 1)]) == [0, 2, 3, 3, 1]
+```
+
+## Pitfalls
+
+* Forgetting `seen[0] = 1` misses subarrays that start at index 0.
+* Use n + 1 slots so `prefix[0] = 0`; off-by-one errors live here.
+* Modulo with negatives: Python's `%` is already non-negative; in Java add `k` and take `% k` again.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (10: Easy 3 · Medium 7 · Hard 0)

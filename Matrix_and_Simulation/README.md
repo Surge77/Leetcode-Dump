@@ -2,6 +2,53 @@
 
 Carefully implement a process exactly as described: spirals, rotations, in-place markers, text layout, numeral conversions. Cue: no clever algorithm needed, just index bookkeeping without off-by-one errors.
 
+## Recognise it
+
+* Spiral order, rotate an image, set matrix zeroes, game of life: index bookkeeping on a grid.
+* Integer ↔ Roman, zigzag conversion, text justification, count-and-say: follow the rules exactly.
+
+## Core idea
+
+No clever algorithm: be precise. Keep explicit boundaries (top, bottom, left, right) and shrink them; transform in place with a two-step trick (rotate = transpose + reverse each row); mark state changes in place with sentinel values or extra bits when O(1) space is required.
+
+## Template
+
+```python
+def spiral(matrix):
+    out = []
+    top, bottom, left, right = 0, len(matrix) - 1, 0, len(matrix[0]) - 1
+    while top <= bottom and left <= right:
+        out += matrix[top][left:right + 1]
+        out += [matrix[r][right] for r in range(top + 1, bottom + 1)]
+        if top < bottom:
+            out += matrix[bottom][left:right][::-1]
+        if left < right:
+            out += [matrix[r][left] for r in range(bottom - 1, top, -1)]
+        top, bottom, left, right = top + 1, bottom - 1, left + 1, right - 1
+    return out
+
+
+def rotate(matrix):  # 90° clockwise, in place
+    n = len(matrix)
+    for i in range(n):
+        for j in range(i + 1, n):
+            matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]  # transpose
+    for row in matrix:
+        row.reverse()
+
+
+assert spiral([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) == [1, 2, 3, 6, 9, 8, 7, 4, 5]
+m = [[1, 2], [3, 4]]
+rotate(m)
+assert m == [[3, 1], [4, 2]]
+```
+
+## Pitfalls
+
+* Single-row and single-column cases in spirals (the `top < bottom` / `left < right` guards).
+* Updating cells in place that later reads depend on: encode old and new state together (game of life uses 2 bits).
+* Write a tiny example on paper first; these problems are lost to off-by-one errors, not to the algorithm.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (9: Easy 1 · Medium 7 · Hard 1)

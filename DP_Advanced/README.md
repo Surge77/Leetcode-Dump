@@ -2,6 +2,64 @@
 
 DP over intervals (burst balloons), bitmasks (visit all nodes), digits (count numbers ≤ N), trees (rerooting) and matrix powers (linear recurrences with huge n). Cue: n ≤ 20 for bitmasks, "count integers in [L, R]".
 
+## Recognise it
+
+* **Interval DP**: the answer for `[i, j]` combines answers for smaller intervals: burst balloons, minimum cost to cut a stick, palindrome partitioning. n ≤ ~500.
+* **Bitmask DP**: "visit every node once" or assign tasks to people with n ≤ ~20; the state is a subset.
+* **Digit DP**: "count numbers in [L, R] whose digits satisfy …".
+* **Tree DP / rerooting**: an answer for every node as the root (sum of distances), or choose / skip nodes (cameras, house robber III).
+* **Matrix exponentiation**: a linear recurrence with n up to 10¹⁸.
+
+## Core idea
+
+Same recipe as all DP (state, transition, base, answer); only the state's shape changes. Interval DP loops over lengths, bitmask DP over masks, digit DP over positions with a "tight" flag, tree DP over children in post-order.
+
+## Template
+
+```python
+from functools import lru_cache
+
+
+def shortest_superpath(dist):  # bitmask DP (TSP-style): visit all nodes, start anywhere
+    n = len(dist)
+
+    @lru_cache(maxsize=None)
+    def best(mask, last):
+        if mask == (1 << n) - 1:
+            return 0
+        return min(dist[last][j] + best(mask | 1 << j, j) for j in range(n) if not mask >> j & 1)
+
+    return min(best(1 << i, i) for i in range(n))
+
+
+def count_without_digit(limit, banned):  # digit DP: numbers in [0, limit] avoiding a digit
+    digits = list(map(int, str(limit)))
+
+    @lru_cache(maxsize=None)
+    def go(pos, tight, started):
+        if pos == len(digits):
+            return 1
+        top = digits[pos] if tight else 9
+        total = 0
+        for d in range(top + 1):
+            if d == banned and (started or d != 0):
+                continue  # leading zeros are not real digits
+            total += go(pos + 1, tight and d == top, started or d != 0)
+        return total
+
+    return go(0, True, False)
+
+
+assert shortest_superpath([[0, 1, 9], [1, 0, 1], [9, 1, 0]]) == 2
+assert count_without_digit(20, 1) == 10  # 0, 2-9, 20
+```
+
+## Pitfalls
+
+* Interval DP must iterate by increasing length so smaller intervals are ready.
+* Bitmask DP is O(2ⁿ · n²): it only fits n ≤ ~20.
+* Digit DP: leading zeros and the `tight` flag are where the bugs are; test small limits against brute force.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (13: Easy 0 · Medium 5 · Hard 8)

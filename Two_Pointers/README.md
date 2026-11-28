@@ -2,6 +2,52 @@
 
 Two indices that move toward each other or at different speeds over a sorted array, a string or a linked list. Cue: sorted input, pairs or triplets with a target sum, in-place compaction, palindromes, cycle detection.
 
+## Recognise it
+
+* Sorted input (or you may sort) and you need pairs/triplets meeting a target.
+* In-place compaction: remove duplicates or a value, move zeros, merge sorted arrays from the back.
+* Palindrome checks, reversing, "container with most water".
+* Linked lists: middle node, cycle detection, k-th from the end (fast and slow pointers).
+
+## Core idea
+
+Two indices move monotonically, so each element is visited O(1) times: O(n) instead of O(n²). Opposite ends shrink toward each other when sorted order tells you which side to move. Same-direction pointers keep a "write" position behind a "read" position.
+
+## Template
+
+```python
+def pair_with_sum(sorted_nums, k):
+    lo, hi = 0, len(sorted_nums) - 1
+    while lo < hi:
+        s = sorted_nums[lo] + sorted_nums[hi]
+        if s == k:
+            return lo, hi
+        if s < k:
+            lo += 1  # need a bigger sum
+        else:
+            hi -= 1
+    return None
+
+
+def remove_duplicates(nums):
+    write = 0
+    for read in range(len(nums)):
+        if read == 0 or nums[read] != nums[read - 1]:
+            nums[write] = nums[read]
+            write += 1
+    return write  # nums[:write] is the answer
+
+
+assert pair_with_sum([1, 3, 4, 6, 9], 10) == (0, 4)
+assert remove_duplicates([1, 1, 2, 3, 3]) == 3
+```
+
+## Pitfalls
+
+* 3Sum: skip equal neighbours *after* recording a triplet, or you'll report duplicates.
+* `lo < hi` vs `lo <= hi`: a pair needs two distinct indices.
+* Floyd's cycle start: after the meet, reset one pointer to the head and move both one step at a time.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (29: Easy 16 · Medium 13 · Hard 0)

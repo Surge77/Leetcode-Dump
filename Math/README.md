@@ -2,6 +2,55 @@
 
 Number theory (gcd, sieve, modular inverse), combinatorics (nCr mod p), geometry, and game theory (Grundy numbers). Cue: answers "modulo 10⁹ + 7", divisibility, primes, "both players play optimally".
 
+## Recognise it
+
+* "Return the answer modulo 10⁹ + 7": counting with modular arithmetic, nCr, fast power.
+* Primes, divisors, gcd/lcm, "count numbers divisible by a or b" (inclusion–exclusion).
+* Points, lines, rectangles, angles: geometry. "Both players play optimally": game theory (Grundy numbers, or DP on the state).
+
+## Core idea
+
+Keep numbers small with mod after every multiplication. Divide with a **modular inverse**: `pow(a, MOD - 2, MOD)` when MOD is prime. Sieve primes once up to the bound. For games, a position is losing if every move leads to a winning position.
+
+## Template
+
+```python
+from math import gcd
+
+MOD = 10**9 + 7
+
+
+def sieve(n):
+    is_prime = [False, False] + [True] * (n - 1)
+    for i in range(2, int(n ** 0.5) + 1):
+        if is_prime[i]:
+            is_prime[i * i::i] = [False] * len(range(i * i, n + 1, i))
+    return [i for i, p in enumerate(is_prime) if p]
+
+
+def ncr_table(n):  # precompute factorials once, then O(1) per query
+    fact = [1] * (n + 1)
+    for i in range(1, n + 1):
+        fact[i] = fact[i - 1] * i % MOD
+    inv = [1] * (n + 1)
+    inv[n] = pow(fact[n], MOD - 2, MOD)  # Fermat: MOD is prime
+    for i in range(n, 0, -1):
+        inv[i - 1] = inv[i] * i % MOD
+    return lambda a, b: 0 if b < 0 or b > a else fact[a] * inv[b] % MOD * inv[a - b] % MOD
+
+
+ncr = ncr_table(1000)
+assert sieve(20) == [2, 3, 5, 7, 11, 13, 17, 19]
+assert ncr(5, 2) == 10 and ncr(1000, 500) == 159835829
+assert gcd(84, 36) == 12 and pow(2, 10**18, MOD) == pow(2, 10**18 % (MOD - 1), MOD)
+```
+
+## Pitfalls
+
+* Overflow in Java/C++: cast to `long` before multiplying two values below MOD.
+* Subtraction under mod: `(a - b) % MOD` is fine in Python, but needs `+ MOD` in Java.
+* Floating-point geometry: compare with a tolerance, or keep everything in integers (cross products).
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (19: Easy 6 · Medium 9 · Hard 4)

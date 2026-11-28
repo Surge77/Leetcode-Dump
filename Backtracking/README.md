@@ -2,6 +2,65 @@
 
 Build candidates one choice at a time and undo the choice on the way back, pruning dead branches early. Cue: "all subsets / permutations / combinations", constraint puzzles, n up to about 15-20.
 
+## Recognise it
+
+* "Return **all** subsets / permutations / combinations / partitions / boards".
+* Constraint puzzles: N-Queens, Sudoku, word search.
+* Small n (about 15–20), because the answer itself is exponential.
+
+## Core idea
+
+Build a candidate one choice at a time; recurse; undo the choice (backtrack). Prune as early as possible: a partial candidate that already breaks a rule is abandoned with its whole subtree.
+
+## Template
+
+```python
+def subsets(nums):
+    out, path = [], []
+
+    def dfs(start):
+        out.append(path[:])  # every node of the tree is a subset
+        for i in range(start, len(nums)):
+            if i > start and nums[i] == nums[i - 1]:
+                continue  # skip duplicate choices at the same depth
+            path.append(nums[i])
+            dfs(i + 1)
+            path.pop()  # undo
+
+    nums.sort()
+    dfs(0)
+    return out
+
+
+def permutations(nums):
+    out, path, used = [], [], [False] * len(nums)
+
+    def dfs():
+        if len(path) == len(nums):
+            out.append(path[:])
+            return
+        for i, x in enumerate(nums):
+            if not used[i]:
+                used[i] = True
+                path.append(x)
+                dfs()
+                path.pop()
+                used[i] = False
+
+    dfs()
+    return out
+
+
+assert subsets([1, 2, 2]) == [[], [1], [1, 2], [1, 2, 2], [2], [2, 2]]
+assert len(permutations([1, 2, 3])) == 6
+```
+
+## Pitfalls
+
+* Append a **copy** (`path[:]`), not `path`, or every answer ends up empty.
+* Duplicates: sort, then skip `nums[i] == nums[i - 1]` when `i > start`.
+* Combination sum with reuse recurses on `i`; without reuse on `i + 1`.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (15: Easy 0 · Medium 11 · Hard 4)

@@ -2,6 +2,47 @@
 
 Pick items under a capacity: 0/1 (each item once, iterate capacity downward) or unbounded (reuse items, iterate upward). Cue: subset sums, partitions, coin change, "target sum".
 
+## Recognise it
+
+* Choose a subset of items under a capacity: subset sum, partition equal subset, target sum, "ones and zeroes".
+* Coin change and combination sums where items can repeat: **unbounded** knapsack.
+
+## Core idea
+
+`dp[c]` = best value (or whether / how many ways) using capacity `c`. For **0/1** knapsack iterate capacity **downward** so each item is used once; for **unbounded** iterate **upward** so an item can be reused. Counting combinations puts the item loop outside; counting permutations puts it inside.
+
+## Template
+
+```python
+def can_partition(nums):  # 0/1: subset with half the total
+    total = sum(nums)
+    if total % 2:
+        return False
+    reachable = [True] + [False] * (total // 2)
+    for x in nums:
+        for c in range(total // 2, x - 1, -1):  # downward: x used at most once
+            reachable[c] = reachable[c] or reachable[c - x]
+    return reachable[total // 2]
+
+
+def coin_combinations(coins, amount):  # unbounded, order doesn't matter
+    ways = [1] + [0] * amount
+    for coin in coins:  # items outside: combinations, not permutations
+        for c in range(coin, amount + 1):  # upward: reuse allowed
+            ways[c] += ways[c - coin]
+    return ways[amount]
+
+
+assert can_partition([1, 5, 11, 5]) and not can_partition([1, 2, 3, 5])
+assert coin_combinations([1, 2, 5], 5) == 4
+```
+
+## Pitfalls
+
+* Loop direction decides 0/1 vs unbounded; getting it backwards still passes some tests.
+* Target sum: transform to "subset with sum (total + target) / 2" and check parity and bounds first.
+* Pseudo-polynomial: O(n · capacity) is fine for capacity ~10⁴, not 10⁹.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (6: Easy 0 · Medium 6 · Hard 0)

@@ -2,6 +2,73 @@
 
 Segment trees and Fenwick trees answer range queries and point (or range) updates in O(log n). Cue: many interleaved updates and range sum/min/max queries, counting inversions or smaller elements.
 
+## Recognise it
+
+* Many interleaved **updates** and **range queries** (sum, min, max, gcd) where a prefix sum would have to be rebuilt each time.
+* "Count smaller elements after self", inversions, "longest increasing subsequence II": process values in order and query a structure over indices (or vice versa).
+* Range updates with range queries: a segment tree with lazy propagation.
+
+## Core idea
+
+A **Fenwick tree** (binary indexed tree) stores partial sums so prefix sums and point updates both cost O(log n); short and fast, but only for invertible operations such as sum. A **segment tree** stores one value per segment, works for any associative operation (min, max, gcd), and supports lazy range updates.
+
+## Template
+
+```python
+class Fenwick:
+    def __init__(self, n):
+        self.tree = [0] * (n + 1)
+
+    def add(self, i, delta):  # 0-based index
+        i += 1
+        while i < len(self.tree):
+            self.tree[i] += delta
+            i += i & -i
+
+    def prefix(self, i):  # sum of [0, i)
+        total = 0
+        while i > 0:
+            total += self.tree[i]
+            i -= i & -i
+        return total
+
+    def range_sum(self, lo, hi):  # sum of [lo, hi]
+        return self.prefix(hi + 1) - self.prefix(lo)
+
+
+class MinSegmentTree:
+    def __init__(self, values):
+        self.n = len(values)
+        self.tree = [float("inf")] * (2 * self.n)
+        self.tree[self.n:] = values
+        for i in range(self.n - 1, 0, -1):
+            self.tree[i] = min(self.tree[2 * i], self.tree[2 * i + 1])
+
+    def query(self, lo, hi):  # min of [lo, hi)
+        best, lo, hi = float("inf"), lo + self.n, hi + self.n
+        while lo < hi:
+            if lo & 1:
+                best, lo = min(best, self.tree[lo]), lo + 1
+            if hi & 1:
+                hi -= 1
+                best = min(best, self.tree[hi])
+            lo, hi = lo // 2, hi // 2
+        return best
+
+
+f = Fenwick(5)
+for i, x in enumerate([5, 2, 9, 1, 7]):
+    f.add(i, x)
+assert f.range_sum(1, 3) == 12
+assert MinSegmentTree([5, 2, 9, 1, 7]).query(2, 5) == 1
+```
+
+## Pitfalls
+
+* Fenwick trees are 1-based inside; convert at the boundary only.
+* Coordinate-compress large values (up to 10⁹) to ranks before indexing a tree by value.
+* Iterative segment trees use half-open `[lo, hi)`; be consistent.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (7: Easy 0 · Medium 1 · Hard 6)

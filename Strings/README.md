@@ -2,6 +2,56 @@
 
 Parsing and comparing strings, plus linear-time matching: KMP and the Z-function, rolling hashes, Manacher for palindromes. Cue: find a pattern, repeated substrings, longest palindrome, string rotations.
 
+## Recognise it
+
+* Parsing and simulation: `atoi`, reverse words, longest common prefix, string compression.
+* Find a pattern in text, repeated substrings, rotations, shortest palindrome: **KMP / Z-function / rolling hash**.
+* Longest palindromic substring in O(n): Manacher (expand-around-centre is the O(n²) interview answer).
+
+## Core idea
+
+KMP's prefix function `pi[i]` = length of the longest proper prefix of `s[:i + 1]` that is also its suffix. Matching never moves backwards in the text, giving O(n + m). A rolling hash compares substrings in O(1) after O(n) preprocessing (verify on a match to rule out collisions).
+
+## Template
+
+```python
+def prefix_function(s):
+    pi = [0] * len(s)
+    for i in range(1, len(s)):
+        k = pi[i - 1]
+        while k and s[i] != s[k]:
+            k = pi[k - 1]  # fall back to the next shorter border
+        pi[i] = k + (s[i] == s[k])
+    return pi
+
+
+def find_all(text, pattern):
+    pi = prefix_function(pattern + "\x00" + text)  # separator never matches
+    m = len(pattern)
+    return [i - 2 * m for i, v in enumerate(pi) if v == m]
+
+
+def longest_palindrome(s):  # expand around each centre: O(n^2), easy to get right
+    best = ""
+    for centre in range(2 * len(s) - 1):
+        lo, hi = centre // 2, (centre + 1) // 2
+        while lo >= 0 and hi < len(s) and s[lo] == s[hi]:
+            lo, hi = lo - 1, hi + 1
+        best = max(best, s[lo + 1:hi], key=len)
+    return best
+
+
+assert prefix_function("aabaaab") == [0, 1, 0, 1, 2, 2, 3]
+assert find_all("abababa", "aba") == [0, 2, 4]
+assert longest_palindrome("babad") in ("bab", "aba")
+```
+
+## Pitfalls
+
+* Building strings with `+=` in a loop is O(n²) in Python; collect parts and `"".join`.
+* `atoi`-style parsing: whitespace, sign, overflow clamping and stopping at the first non-digit are each a test case.
+* Rolling hashes collide: use a large mod (or two) and confirm matches directly when it matters.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (17: Easy 7 · Medium 6 · Hard 4)

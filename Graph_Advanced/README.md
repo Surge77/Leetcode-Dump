@@ -2,6 +2,58 @@
 
 Union-Find for dynamic connectivity, Kruskal or Prim for minimum spanning trees, Tarjan for bridges and articulation points, Eulerian paths. Cue: "connect everything cheaply", "critical connection", merging groups.
 
+## Recognise it
+
+* Merging groups as edges arrive: "accounts merge", "redundant connection", "number of provinces": **Union-Find**.
+* "Connect all points with minimum total cost": a **minimum spanning tree** (Kruskal = sort edges + union-find).
+* "Critical connections" (bridges) and cut vertices: Tarjan's low-link.
+* "Use every edge once" (itinerary): an Eulerian path (Hierholzer).
+
+## Core idea
+
+Union-Find keeps a forest of sets; with path compression and union by size each operation is effectively O(1) (inverse Ackermann). Kruskal adds edges in increasing weight, skipping any that would close a cycle.
+
+## Template
+
+```python
+class DSU:
+    def __init__(self, n):
+        self.parent, self.size = list(range(n)), [1] * n
+
+    def find(self, x):
+        while self.parent[x] != x:
+            self.parent[x] = self.parent[self.parent[x]]  # path halving
+            x = self.parent[x]
+        return x
+
+    def union(self, a, b):
+        ra, rb = self.find(a), self.find(b)
+        if ra == rb:
+            return False  # already connected: this edge closes a cycle
+        if self.size[ra] < self.size[rb]:
+            ra, rb = rb, ra
+        self.parent[rb] = ra
+        self.size[ra] += self.size[rb]
+        return True
+
+
+def mst_cost(n, edges):  # Kruskal
+    dsu, total = DSU(n), 0
+    for w, u, v in sorted(edges):
+        if dsu.union(u, v):
+            total += w
+    return total
+
+
+assert mst_cost(4, [(1, 0, 1), (4, 1, 2), (3, 0, 2), (2, 2, 3), (5, 1, 3)]) == 6
+```
+
+## Pitfalls
+
+* Compare roots (`find`), never raw parents.
+* A graph is a tree iff it is connected with exactly n − 1 edges.
+* Tarjan: bridges use `low[v] > disc[u]`; articulation points use `>=` (plus the root special case).
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (10: Easy 0 · Medium 8 · Hard 2)

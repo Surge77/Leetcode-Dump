@@ -2,6 +2,44 @@
 
 Halve a sorted space each step, either an array or the range of possible answers. Cue: sorted or rotated input, "minimum X such that …", a monotonic yes/no check, n up to 10⁹.
 
+## Recognise it
+
+* Sorted or rotated array, or a matrix sorted by rows and columns.
+* "Minimum capacity / speed / days such that …": a yes/no check that flips once as the answer grows. That's **binary search on the answer**.
+* Constraints up to 10⁹ where O(n) per candidate is fine but trying every candidate isn't.
+
+## Core idea
+
+Keep an invariant on `[lo, hi]` and halve it every step. For the answer version, write `feasible(x)`, prove it's monotonic, and search for the first `x` where it's true: O(log range · cost of feasible).
+
+## Template
+
+```python
+def first_true(lo, hi, feasible):
+    """Smallest x in [lo, hi] with feasible(x) True (assumes False...False True...True)."""
+    while lo < hi:
+        mid = (lo + hi) // 2
+        if feasible(mid):
+            hi = mid  # mid might be the answer
+        else:
+            lo = mid + 1
+    return lo
+
+
+def min_eating_speed(piles, hours):  # Koko Eating Bananas
+    return first_true(1, max(piles), lambda k: sum((p + k - 1) // k for p in piles) <= hours)
+
+
+assert min_eating_speed([3, 6, 7, 11], 8) == 4
+assert first_true(0, 10, lambda x: x * x >= 50) == 8
+```
+
+## Pitfalls
+
+* Infinite loops come from `lo = mid` with `mid = (lo + hi) // 2`; pair `lo = mid + 1` with `hi = mid`.
+* Decide whether you want the first true or the last false, and stick to one template.
+* Rotated arrays: one half is always sorted; check which before comparing with the target.
+
 <!-- generated:ladder -->
 
 ### Problems, easiest first (27: Easy 6 · Medium 18 · Hard 3)

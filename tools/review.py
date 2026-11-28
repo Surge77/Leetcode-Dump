@@ -116,7 +116,8 @@ def log_review(notes, state, today, number, grade, mins=None, why=None, note_tex
 
 def cmd_check(notes, state, today, args):
     note = find(notes, args.number)
-    verdict = attempt.check(args.number, attempt.read_solution(args.file), timing=not args.no_timing)
+    verdict = attempt.check(args.number, attempt.read_solution(args.file), timing=not args.no_timing,
+                            deadline=args.deadline)
     print(verdict.report)
     print(f"\n#{note.number} {note.title}: {'ACCEPTED' if verdict.passed else 'REJECTED'}")
     if args.log:
@@ -146,8 +147,9 @@ def cmd_quiz(notes, state, today, args):
     cards = quiz.draw(quiz.candidates(notes), args.n, rng)
     results = quiz.run(cards, today, interactive=not args.no_input)
     if results:
-        state["quiz"] += results
-        save_state(state)
+        fresh = load_state()  # a `log` in another terminal during the quiz must not be lost
+        fresh["quiz"] += results
+        save_state(fresh)
         print(f"\n{sum(r['ok'] for r in results)}/{len(results)} named correctly")
 
 
@@ -196,6 +198,8 @@ def parser():
     ck.add_argument("--why", choices=REASONS, help="reason logged if rejected (default: bug, or tle)")
     ck.add_argument("--no-timing", action="store_true", help="do not enforce the max-size time limit")
     ck.add_argument("--note", help="what tripped you up; added to the note's My Attempts section")
+    ck.add_argument("--deadline", type=int, default=attempt.DEFAULT_DEADLINE,
+                    help="seconds before a run counts as an infinite loop (default %(default)s)")
     db = sub.add_parser("debug", help="find a planted bug in a verified solution")
     db.add_argument("number", type=int)
     db.add_argument("--reveal", action="store_true")

@@ -40,7 +40,7 @@ Every problem reads **stdin** and prints to **stdout** and has constraints that 
 | **9** 🔒 | [Even Streak](Mock_Test_9/Q1_Easy_Even_Streak.md) | [Exam Hall](Mock_Test_9/Q2_Medium_Exam_Hall.md) | [Gem Splitter](Mock_Test_9/Q3_Hard_Gem_Splitter.md) |
 | **10** 🔒 | [Tray Stack](Mock_Test_10/Q1_Easy_Tray_Stack.md) | [Club Merge](Mock_Test_10/Q2_Medium_Club_Merge.md) | [Freight Limits](Mock_Test_10/Q3_Hard_Freight_Limits.md) |
 
-🔒 **Mocks 8–10 are held out.** Random papers never use them. Leave them unopened, including their row in the spoiler table below, until the week before the exam. Then sit `python tools/judge/paper.py --final` once, under a 3-hour timer. It is the only paper that tells you how you would do on problems you have never seen.
+🔒 **Mocks 8–10 are held out.** Random papers never use them. Leave them unopened, including their separate spoiler block below, until the week before the exam. Then sit `python tools/judge/paper.py --final` once, under a 3-hour timer. It is the only paper that tells you how you would do on problems you have never seen.
 
 <details>
 <summary>Topic of each question (spoilers: spotting the pattern is part of the test)</summary>
@@ -54,6 +54,14 @@ Every problem reads **stdin** and prints to **stdout** and has constraints that 
 | 5 | Sprague–Grundy | sparse table | articulation points |
 | 6 | inclusion–exclusion | matrix exponentiation | DP + Fenwick tree |
 | 7 | difference array | monotonic stack, contribution technique | nCr mod p + DP over obstacles |
+
+</details>
+
+<details>
+<summary>🔒 Topics of the held-out mocks 8-10 (open only after sitting <code>paper.py --final</code>)</summary>
+
+| Mock | Q1 | Q2 | Q3 |
+|---|---|---|---|
 | 8 | greedy two pointers | 0-1 BFS | rerooting DP on a weighted tree |
 | 9 | sliding window | binary search on answer | meet-in-the-middle knapsack |
 | 10 | stack with running max | union-find with sizes | binary lifting, path maximum |

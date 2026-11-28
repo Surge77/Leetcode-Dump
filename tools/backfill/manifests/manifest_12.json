@@ -1,0 +1,367 @@
+[
+ {
+  "number": 1021,
+  "title": "Remove Outermost Parentheses",
+  "difficulty": "Easy",
+  "path": "Strings/1021.Remove_Outermost_Parentheses.md",
+  "folder": "Strings",
+  "tags": [
+   "strings",
+   "counting"
+  ]
+ },
+ {
+  "number": 1044,
+  "title": "Longest Duplicate Substring",
+  "difficulty": "Hard",
+  "path": "Strings/1044.Longest_Duplicate_Substring.md",
+  "folder": "Strings",
+  "tags": [
+   "string-matching",
+   "rolling-hash",
+   "binary-search",
+   "hashing"
+  ]
+ },
+ {
+  "number": 1392,
+  "title": "Longest Happy Prefix",
+  "difficulty": "Hard",
+  "path": "Strings/1392.Longest_Happy_Prefix.md",
+  "folder": "Strings",
+  "tags": [
+   "string-matching"
+  ]
+ },
+ {
+  "number": 1614,
+  "title": "Maximum Nesting Depth of the Parentheses",
+  "difficulty": "Easy",
+  "path": "Strings/1614.Maximum_Nesting_Depth_of_the_Parentheses.md",
+  "folder": "Strings",
+  "tags": [
+   "strings",
+   "counting"
+  ]
+ },
+ {
+  "number": 1781,
+  "title": "Sum of Beauty of All Substrings",
+  "difficulty": "Medium",
+  "path": "Strings/1781.Sum_of_Beauty_of_All_Substrings.md",
+  "folder": "Strings",
+  "tags": [
+   "strings",
+   "counting"
+  ]
+ },
+ {
+  "number": 1903,
+  "title": "Largest Odd Number in String",
+  "difficulty": "Easy",
+  "path": "Strings/1903.Largest_Odd_Number_in_String.md",
+  "folder": "Strings",
+  "tags": [
+   "strings",
+   "greedy"
+  ]
+ },
+ {
+  "number": 2223,
+  "title": "Sum of Scores of Built Strings",
+  "difficulty": "Hard",
+  "path": "Strings/2223.Sum_of_Scores_of_Built_Strings.md",
+  "folder": "Strings",
+  "tags": [
+   "string-matching"
+  ]
+ },
+ {
+  "number": 146,
+  "title": "LRU Cache",
+  "difficulty": "Medium",
+  "path": "Design/146.LRU_Cache.md",
+  "folder": "Design",
+  "tags": [
+   "design"
+  ]
+ },
+ {
+  "number": 155,
+  "title": "Min Stack",
+  "difficulty": "Medium",
+  "path": "Design/155.Min_Stack.md",
+  "folder": "Design",
+  "tags": [
+   "design"
+  ]
+ },
+ {
+  "number": 225,
+  "title": "Implement Stack using Queues",
+  "difficulty": "Easy",
+  "path": "Design/225.Implement_Stack_using_Queues.md",
+  "folder": "Design",
+  "tags": [
+   "design"
+  ]
+ },
+ {
+  "number": 232,
+  "title": "Implement Queue using Stacks",
+  "difficulty": "Easy",
+  "path": "Design/232.Implement_Queue_using_Stacks.md",
+  "folder": "Design",
+  "tags": [
+   "design",
+   "stack",
+   "queue"
+  ]
+ },
+ {
+  "number": 362,
+  "title": "Design Hit Counter",
+  "difficulty": "Medium",
+  "path": "Design/362.Design_Hit_Counter.md",
+  "folder": "Design",
+  "tags": [
+   "design",
+   "queue"
+  ]
+ },
+ {
+  "number": 588,
+  "title": "Design In-Memory File System",
+  "difficulty": "Hard",
+  "path": "Design/588.Design_In-Memory_File_System.md",
+  "folder": "Design",
+  "tags": [
+   "design",
+   "trie"
+  ]
+ },
+ {
+  "number": 622,
+  "title": "Design Circular Queue",
+  "difficulty": "Medium",
+  "path": "Design/622.Design_Circular_Queue.md",
+  "folder": "Design",
+  "tags": [
+   "design",
+   "queue"
+  ]
+ },
+ {
+  "number": 895,
+  "title": "Maximum Frequency Stack",
+  "difficulty": "Hard",
+  "path": "Design/895.Maximum_Frequency_Stack.md",
+  "folder": "Design",
+  "tags": [
+   "design",
+   "stack"
+  ]
+ },
+ {
+  "number": 933,
+  "title": "Number of Recent Calls",
+  "difficulty": "Easy",
+  "path": "Design/933.Number_of_Recent_Calls.md",
+  "folder": "Design",
+  "tags": [
+   "design",
+   "queue"
+  ]
+ },
+ {
+  "number": 23,
+  "title": "Merge k Sorted Lists",
+  "difficulty": "Hard",
+  "path": "Divide_and_Conquer/23.Merge_k_Sorted_Lists.md",
+  "folder": "Divide_and_Conquer",
+  "tags": [
+   "divide-and-conquer",
+   "linked-list"
+  ]
+ },
+ {
+  "number": 50,
+  "title": "Pow(x, n)",
+  "difficulty": "Medium",
+  "path": "Divide_and_Conquer/50.Powx_n.md",
+  "folder": "Divide_and_Conquer",
+  "tags": [
+   "divide-and-conquer",
+   "math"
+  ]
+ },
+ {
+  "number": 105,
+  "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+  "difficulty": "Medium",
+  "path": "Divide_and_Conquer/105.Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal.md",
+  "folder": "Divide_and_Conquer",
+  "tags": [
+   "divide-and-conquer"
+  ]
+ },
+ {
+  "number": 108,
+  "title": "Convert Sorted Array to Binary Search Tree",
+  "difficulty": "Easy",
+  "path": "Divide_and_Conquer/108.Convert_Sorted_Array_to_Binary_Search_Tree.md",
+  "folder": "Divide_and_Conquer",
+  "tags": [
+   "divide-and-conquer"
+  ]
+ },
+ {
+  "number": 148,
+  "title": "Sort List",
+  "difficulty": "Medium",
+  "path": "Divide_and_Conquer/148.Sort_List.md",
+  "folder": "Divide_and_Conquer",
+  "tags": [
+   "divide-and-conquer",
+   "merge-sort"
+  ]
+ },
+ {
+  "number": 427,
+  "title": "Construct Quad Tree",
+  "difficulty": "Medium",
+  "path": "Divide_and_Conquer/427.Construct_Quad_Tree.md",
+  "folder": "Divide_and_Conquer",
+  "tags": [
+   "divide-and-conquer"
+  ]
+ },
+ {
+  "number": 912,
+  "title": "Sort an Array",
+  "difficulty": "Medium",
+  "path": "Divide_and_Conquer/912.Sort_an_Array.md",
+  "folder": "Divide_and_Conquer",
+  "tags": [
+   "merge-sort"
+  ]
+ },
+ {
+  "number": 1755,
+  "title": "Closest Subsequence Sum",
+  "difficulty": "Hard",
+  "path": "Divide_and_Conquer/1755.Closest_Subsequence_Sum.md",
+  "folder": "Divide_and_Conquer",
+  "tags": [
+   "meet-in-the-middle"
+  ]
+ },
+ {
+  "number": 2035,
+  "title": "Partition Array Into Two Arrays to Minimize Sum Difference",
+  "difficulty": "Hard",
+  "path": "Divide_and_Conquer/2035.Partition_Array_Into_Two_Arrays_to_Minimize_Sum_Difference.md",
+  "folder": "Divide_and_Conquer",
+  "tags": [
+   "meet-in-the-middle"
+  ]
+ },
+ {
+  "number": 6,
+  "title": "Zigzag Conversion",
+  "difficulty": "Medium",
+  "path": "Matrix_and_Simulation/6.Zigzag_Conversion.md",
+  "folder": "Matrix_and_Simulation",
+  "tags": [
+   "simulation",
+   "strings"
+  ]
+ },
+ {
+  "number": 12,
+  "title": "Integer to Roman",
+  "difficulty": "Medium",
+  "path": "Matrix_and_Simulation/12.Integer_to_Roman.md",
+  "folder": "Matrix_and_Simulation",
+  "tags": [
+   "simulation",
+   "greedy"
+  ]
+ },
+ {
+  "number": 13,
+  "title": "Roman to Integer",
+  "difficulty": "Easy",
+  "path": "Matrix_and_Simulation/13.Roman_to_Integer.md",
+  "folder": "Matrix_and_Simulation",
+  "tags": [
+   "simulation",
+   "strings"
+  ]
+ },
+ {
+  "number": 38,
+  "title": "Count and Say",
+  "difficulty": "Medium",
+  "path": "Matrix_and_Simulation/38.Count_and_say.md",
+  "folder": "Matrix_and_Simulation",
+  "tags": [
+   "simulation",
+   "recursion"
+  ]
+ },
+ {
+  "number": 48,
+  "title": "Rotate Image",
+  "difficulty": "Medium",
+  "path": "Matrix_and_Simulation/48.Rotate_Image.md",
+  "folder": "Matrix_and_Simulation",
+  "tags": [
+   "matrix",
+   "arrays"
+  ]
+ },
+ {
+  "number": 54,
+  "title": "Spiral Matrix",
+  "difficulty": "Medium",
+  "path": "Matrix_and_Simulation/54.Spiral_Matrix.md",
+  "folder": "Matrix_and_Simulation",
+  "tags": [
+   "matrix",
+   "arrays"
+  ]
+ },
+ {
+  "number": 68,
+  "title": "Text Justification",
+  "difficulty": "Hard",
+  "path": "Matrix_and_Simulation/68.Text_Justification.md",
+  "folder": "Matrix_and_Simulation",
+  "tags": [
+   "simulation",
+   "strings"
+  ]
+ },
+ {
+  "number": 73,
+  "title": "Set Matrix Zeroes",
+  "difficulty": "Medium",
+  "path": "Matrix_and_Simulation/73.Set_Matrix_Zeroes.md",
+  "folder": "Matrix_and_Simulation",
+  "tags": [
+   "matrix",
+   "arrays"
+  ]
+ },
+ {
+  "number": 289,
+  "title": "Game of Life",
+  "difficulty": "Medium",
+  "path": "Matrix_and_Simulation/289.Game_of_Life.md",
+  "folder": "Matrix_and_Simulation",
+  "tags": [
+   "matrix"
+  ]
+ }
+]

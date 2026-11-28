@@ -1,0 +1,419 @@
+[
+ {
+  "number": 2381,
+  "title": "Shifting Letters II",
+  "difficulty": "Medium",
+  "path": "Prefix_Sum/2381.Shifting_Letters_II.md",
+  "folder": "Prefix_Sum",
+  "tags": [
+   "prefix-sum",
+   "difference-array",
+   "arrays"
+  ]
+ },
+ {
+  "number": 2894,
+  "title": "Divisible and Non-divisible Sums Difference",
+  "difficulty": "Easy",
+  "path": "Prefix_Sum/2894.divisible_and_non_divisible_sums_difference.md",
+  "folder": "Prefix_Sum",
+  "tags": [
+   "prefix-sum",
+   "math"
+  ]
+ },
+ {
+  "number": 20,
+  "title": "Valid Parentheses",
+  "difficulty": "Easy",
+  "path": "Stack/20.Valid_Parentheses.md",
+  "folder": "Stack",
+  "tags": [
+   "stack"
+  ]
+ },
+ {
+  "number": 32,
+  "title": "Longest Valid Parentheses",
+  "difficulty": "Hard",
+  "path": "Stack/32.Longest_Valid_Parentheses.md",
+  "folder": "Stack",
+  "tags": [
+   "stack"
+  ]
+ },
+ {
+  "number": 42,
+  "title": "Trapping Rain Water",
+  "difficulty": "Hard",
+  "path": "Stack/42.Trapping_Rain_Water.md",
+  "folder": "Stack",
+  "tags": [
+   "monotonic-stack",
+   "two-pointers"
+  ]
+ },
+ {
+  "number": 71,
+  "title": "Simplify Path",
+  "difficulty": "Medium",
+  "path": "Stack/71.Simplify_Path.md",
+  "folder": "Stack",
+  "tags": [
+   "stack"
+  ]
+ },
+ {
+  "number": 84,
+  "title": "Largest Rectangle in Histogram",
+  "difficulty": "Hard",
+  "path": "Stack/84.Largest_Rectangle_in_Histogram.md",
+  "folder": "Stack",
+  "tags": [
+   "monotonic-stack",
+   "stack"
+  ]
+ },
+ {
+  "number": 85,
+  "title": "Maximal Rectangle",
+  "difficulty": "Hard",
+  "path": "Stack/85.Maximal_Rectangle.md",
+  "folder": "Stack",
+  "tags": [
+   "stack",
+   "monotonic-stack"
+  ]
+ },
+ {
+  "number": 150,
+  "title": "Evaluate Reverse Polish Notation",
+  "difficulty": "Medium",
+  "path": "Stack/150.Evaluate_Reverse_Polish_Notation.md",
+  "folder": "Stack",
+  "tags": [
+   "stack"
+  ]
+ },
+ {
+  "number": 224,
+  "title": "Basic Calculator",
+  "difficulty": "Hard",
+  "path": "Stack/224.Basic_Calculator.md",
+  "folder": "Stack",
+  "tags": [
+   "stack"
+  ]
+ },
+ {
+  "number": 227,
+  "title": "Basic Calculator II",
+  "difficulty": "Medium",
+  "path": "Stack/227.Basic_Calculator_II.md",
+  "folder": "Stack",
+  "tags": [
+   "stack"
+  ]
+ },
+ {
+  "number": 394,
+  "title": "Decode String",
+  "difficulty": "Medium",
+  "path": "Stack/394.Decode_String.md",
+  "folder": "Stack",
+  "tags": [
+   "stack"
+  ]
+ },
+ {
+  "number": 402,
+  "title": "Remove K Digits",
+  "difficulty": "Medium",
+  "path": "Stack/402.Remove_K_Digits.md",
+  "folder": "Stack",
+  "tags": [
+   "stack",
+   "monotonic-stack"
+  ]
+ },
+ {
+  "number": 460,
+  "title": "LFU Cache",
+  "difficulty": "Hard",
+  "path": "Stack/460.LFU_Cache.md",
+  "folder": "Stack",
+  "tags": [
+   "stack",
+   "hashing",
+   "design"
+  ]
+ },
+ {
+  "number": 496,
+  "title": "Next Greater Element I",
+  "difficulty": "Easy",
+  "path": "Stack/496.Next_Greater_Element_I.md",
+  "folder": "Stack",
+  "tags": [
+   "stack",
+   "monotonic-stack"
+  ]
+ },
+ {
+  "number": 503,
+  "title": "Next Greater Element II",
+  "difficulty": "Medium",
+  "path": "Stack/503.Next_Greater_Element_II.md",
+  "folder": "Stack",
+  "tags": [
+   "stack",
+   "monotonic-stack"
+  ]
+ },
+ {
+  "number": 735,
+  "title": "Asteroid Collision",
+  "difficulty": "Medium",
+  "path": "Stack/735.Asteroid_Collision.md",
+  "folder": "Stack",
+  "tags": [
+   "monotonic-stack",
+   "stack",
+   "simulation"
+  ]
+ },
+ {
+  "number": 739,
+  "title": "Daily Temperatures",
+  "difficulty": "Medium",
+  "path": "Stack/739.Daily_Temperatures.md",
+  "folder": "Stack",
+  "tags": [
+   "monotonic-stack",
+   "stack",
+   "arrays"
+  ]
+ },
+ {
+  "number": 853,
+  "title": "Car Fleet",
+  "difficulty": "Medium",
+  "path": "Stack/853.Car_Fleet.md",
+  "folder": "Stack",
+  "tags": [
+   "stack",
+   "monotonic-stack"
+  ]
+ },
+ {
+  "number": 901,
+  "title": "Online Stock Span",
+  "difficulty": "Medium",
+  "path": "Stack/901.Online_Stock_Span.md",
+  "folder": "Stack",
+  "tags": [
+   "stack",
+   "monotonic-stack"
+  ]
+ },
+ {
+  "number": 907,
+  "title": "Sum of Subarray Minimums",
+  "difficulty": "Medium",
+  "path": "Stack/907.Sum_of_Subarray_Minimums.md",
+  "folder": "Stack",
+  "tags": [
+   "monotonic-stack",
+   "stack"
+  ]
+ },
+ {
+  "number": 2104,
+  "title": "Sum of Subarray Ranges",
+  "difficulty": "Medium",
+  "path": "Stack/2104.Sum_of_Subarray_Ranges.md",
+  "folder": "Stack",
+  "tags": [
+   "stack",
+   "monotonic-stack"
+  ]
+ },
+ {
+  "number": 2390,
+  "title": "Removing Stars From a String",
+  "difficulty": "Medium",
+  "path": "Stack/2390.Removing_Stars_From_a_String.md",
+  "folder": "Stack",
+  "tags": [
+   "stack"
+  ]
+ },
+ {
+  "number": 2,
+  "title": "Add Two Numbers",
+  "difficulty": "Medium",
+  "path": "Linked_List/2.Add_Two_Numbers.md",
+  "folder": "Linked_List",
+  "tags": [
+   "linked-list",
+   "simulation"
+  ]
+ },
+ {
+  "number": 24,
+  "title": "Swap Nodes in Pairs",
+  "difficulty": "Medium",
+  "path": "Linked_List/24.Swap_Nodes_in_Pairs.md",
+  "folder": "Linked_List",
+  "tags": [
+   "linked-list"
+  ]
+ },
+ {
+  "number": 25,
+  "title": "Reverse Nodes in k-Group",
+  "difficulty": "Hard",
+  "path": "Linked_List/25.Reverse_Nodes_in_k-Group.md",
+  "folder": "Linked_List",
+  "tags": [
+   "linked-list"
+  ]
+ },
+ {
+  "number": 61,
+  "title": "Rotate List",
+  "difficulty": "Medium",
+  "path": "Linked_List/61.Rotate_List.md",
+  "folder": "Linked_List",
+  "tags": [
+   "linked-list"
+  ]
+ },
+ {
+  "number": 82,
+  "title": "Remove Duplicates from Sorted List II",
+  "difficulty": "Medium",
+  "path": "Linked_List/82.Remove_Duplicates_from_Sorted_List_II.md",
+  "folder": "Linked_List",
+  "tags": [
+   "linked-list"
+  ]
+ },
+ {
+  "number": 86,
+  "title": "Partition List",
+  "difficulty": "Medium",
+  "path": "Linked_List/86.Partition_List.md",
+  "folder": "Linked_List",
+  "tags": [
+   "linked-list"
+  ]
+ },
+ {
+  "number": 92,
+  "title": "Reverse Linked List II",
+  "difficulty": "Medium",
+  "path": "Linked_List/92.Reverse_Linked_List_II.md",
+  "folder": "Linked_List",
+  "tags": [
+   "linked-list"
+  ]
+ },
+ {
+  "number": 138,
+  "title": "Copy List with Random Pointer",
+  "difficulty": "Medium",
+  "path": "Linked_List/138.Copy_List_with_Random_Pointer.md",
+  "folder": "Linked_List",
+  "tags": [
+   "linked-list"
+  ]
+ },
+ {
+  "number": 142,
+  "title": "Linked List Cycle II",
+  "difficulty": "Medium",
+  "path": "Linked_List/142.Linked_List_Cycle_II.md",
+  "folder": "Linked_List",
+  "tags": [
+   "linked-list",
+   "fast-slow-pointers"
+  ]
+ },
+ {
+  "number": 160,
+  "title": "Intersection of Two Linked Lists",
+  "difficulty": "Easy",
+  "path": "Linked_List/160.Intersection_of_Two_Linked_Lists.md",
+  "folder": "Linked_List",
+  "tags": [
+   "linked-list",
+   "two-pointers"
+  ]
+ },
+ {
+  "number": 234,
+  "title": "Palindrome Linked List",
+  "difficulty": "Easy",
+  "path": "Linked_List/234.Palindrome_Linked_List.md",
+  "folder": "Linked_List",
+  "tags": [
+   "linked-list",
+   "fast-slow-pointers"
+  ]
+ },
+ {
+  "number": 287,
+  "title": "Find the Duplicate Number",
+  "difficulty": "Medium",
+  "path": "Linked_List/287.Find_the_Duplicate_Number.md",
+  "folder": "Linked_List",
+  "tags": [
+   "linked-list",
+   "fast-slow-pointers"
+  ]
+ },
+ {
+  "number": 328,
+  "title": "Odd Even Linked List",
+  "difficulty": "Medium",
+  "path": "Linked_List/328.Odd_Even_Linked_List.md",
+  "folder": "Linked_List",
+  "tags": [
+   "linked-list"
+  ]
+ },
+ {
+  "number": 876,
+  "title": "Middle of the Linked List",
+  "difficulty": "Easy",
+  "path": "Linked_List/876.Middle_of_the_Linked_List.md",
+  "folder": "Linked_List",
+  "tags": [
+   "linked-list",
+   "fast-slow-pointers"
+  ]
+ },
+ {
+  "number": 2095,
+  "title": "Delete the Middle Node of a Linked List",
+  "difficulty": "Medium",
+  "path": "Linked_List/2095.Delete_the_Middle_Node_of_a_Linked_List.md",
+  "folder": "Linked_List",
+  "tags": [
+   "linked-list",
+   "fast-slow-pointers"
+  ]
+ },
+ {
+  "number": 2130,
+  "title": "Maximum Twin Sum of a Linked List",
+  "difficulty": "Medium",
+  "path": "Linked_List/2130.Maximum_Twin_Sum_of_a_Linked_List.md",
+  "folder": "Linked_List",
+  "tags": [
+   "linked-list",
+   "fast-slow-pointers"
+  ]
+ }
+]

@@ -1,0 +1,413 @@
+[
+ {
+  "number": 1,
+  "title": "Two Sum",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/1.Two_Sum.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing",
+   "arrays"
+  ]
+ },
+ {
+  "number": 31,
+  "title": "Next Permutation",
+  "difficulty": "Medium",
+  "path": "Arrays_and_Hashing/31.Next_Permutation.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "arrays"
+  ]
+ },
+ {
+  "number": 36,
+  "title": "Valid Sudoku",
+  "difficulty": "Medium",
+  "path": "Arrays_and_Hashing/36.Valid_Sudoku.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing",
+   "matrix"
+  ]
+ },
+ {
+  "number": 41,
+  "title": "First Missing Positive",
+  "difficulty": "Hard",
+  "path": "Arrays_and_Hashing/41.First_Missing_Positive.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "arrays",
+   "cyclic-sort"
+  ]
+ },
+ {
+  "number": 49,
+  "title": "Group Anagrams",
+  "difficulty": "Medium",
+  "path": "Arrays_and_Hashing/49.Group_Anagrams.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing",
+   "strings"
+  ]
+ },
+ {
+  "number": 128,
+  "title": "Longest Consecutive Sequence",
+  "difficulty": "Medium",
+  "path": "Arrays_and_Hashing/128.Longest_Consecutive_Sequence.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing"
+  ]
+ },
+ {
+  "number": 169,
+  "title": "Majority Element",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/169.Majority_Element.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "arrays"
+  ]
+ },
+ {
+  "number": 205,
+  "title": "Isomorphic Strings",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/205.Isomorphic_Strings.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing"
+  ]
+ },
+ {
+  "number": 217,
+  "title": "Contains Duplicate",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/217.Contains_Duplicate.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing",
+   "arrays"
+  ]
+ },
+ {
+  "number": 219,
+  "title": "Contains Duplicate II",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/219.Contains_Duplicate_II.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing"
+  ]
+ },
+ {
+  "number": 229,
+  "title": "Majority Element II",
+  "difficulty": "Medium",
+  "path": "Arrays_and_Hashing/229.Majority_Element_II.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "arrays",
+   "boyer-moore"
+  ]
+ },
+ {
+  "number": 242,
+  "title": "Valid Anagram",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/242.Valid_Anagram.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing"
+  ]
+ },
+ {
+  "number": 271,
+  "title": "Encode and Decode Strings",
+  "difficulty": "Medium",
+  "path": "Arrays_and_Hashing/271.Encode_and_Decode_Strings.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing",
+   "strings"
+  ]
+ },
+ {
+  "number": 274,
+  "title": "H-Index",
+  "difficulty": "Medium",
+  "path": "Arrays_and_Hashing/274.H-Index.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "counting",
+   "sorting"
+  ]
+ },
+ {
+  "number": 290,
+  "title": "Word Pattern",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/290.Word_Pattern.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing"
+  ]
+ },
+ {
+  "number": 380,
+  "title": "Insert Delete GetRandom O(1)",
+  "difficulty": "Medium",
+  "path": "Arrays_and_Hashing/380.Insert_Delete_GetRandom_O(1).md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing",
+   "arrays"
+  ]
+ },
+ {
+  "number": 383,
+  "title": "Ransom Note",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/383.Ransom_Note.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "counting",
+   "hashing"
+  ]
+ },
+ {
+  "number": 409,
+  "title": "Longest Palindrome",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/409.Longest_Palindrome.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing",
+   "counting"
+  ]
+ },
+ {
+  "number": 485,
+  "title": "Max Consecutive Ones",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/485.Max_Consecutive_Ones.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "arrays"
+  ]
+ },
+ {
+  "number": 1207,
+  "title": "Unique Number of Occurrences",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/1207.Unique_Number_of_Occurrences.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing",
+   "counting"
+  ]
+ },
+ {
+  "number": 1394,
+  "title": "Find Lucky Integer in an Array",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/1394.Find_Lucky_Integer_in_an_Array.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "counting",
+   "arrays"
+  ]
+ },
+ {
+  "number": 1399,
+  "title": "Count Largest Group",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/1399.Count_the_largest_group.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing",
+   "simulation"
+  ]
+ },
+ {
+  "number": 1431,
+  "title": "Kids With the Greatest Number of Candies",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/1431.Kids_With_the_Greatest_Number_of_Candies.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "arrays"
+  ]
+ },
+ {
+  "number": 1657,
+  "title": "Determine if Two Strings Are Close",
+  "difficulty": "Medium",
+  "path": "Arrays_and_Hashing/1657.Determine_if_Two_Strings_Are_Close.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing",
+   "counting"
+  ]
+ },
+ {
+  "number": 1752,
+  "title": "Check if Array Is Sorted and Rotated",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/1752.Check_if_Array_Is_Sorted_and_Rotated.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "arrays"
+  ]
+ },
+ {
+  "number": 2149,
+  "title": "Rearrange Array Elements by Sign",
+  "difficulty": "Medium",
+  "path": "Arrays_and_Hashing/2149.Rearrange_Array_Elements_by_Sign.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "arrays",
+   "two-pointers"
+  ]
+ },
+ {
+  "number": 2176,
+  "title": "Count Equal and Divisible Pairs in an Array",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/2176.Count_Equal_and_Divisible_Pairs_in_an_Array.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing",
+   "number-theory"
+  ]
+ },
+ {
+  "number": 2215,
+  "title": "Find the Difference of Two Arrays",
+  "difficulty": "Easy",
+  "path": "Arrays_and_Hashing/2215.Find_the_Difference_of_Two_Arrays.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing"
+  ]
+ },
+ {
+  "number": 2352,
+  "title": "Equal Row and Column Pairs",
+  "difficulty": "Medium",
+  "path": "Arrays_and_Hashing/2352.Equal_Row_and_Column_Pairs.md",
+  "folder": "Arrays_and_Hashing",
+  "tags": [
+   "hashing"
+  ]
+ },
+ {
+  "number": 5,
+  "title": "Longest Palindromic Substring",
+  "difficulty": "Medium",
+  "path": "Two_Pointers/5.Longest_palindrome_substrings.md",
+  "folder": "Two_Pointers",
+  "tags": [
+   "two-pointers",
+   "strings"
+  ]
+ },
+ {
+  "number": 9,
+  "title": "Palindrome Number",
+  "difficulty": "Easy",
+  "path": "Two_Pointers/9.Palindrome_Number.md",
+  "folder": "Two_Pointers",
+  "tags": [
+   "two-pointers",
+   "math"
+  ]
+ },
+ {
+  "number": 11,
+  "title": "Container With Most Water",
+  "difficulty": "Medium",
+  "path": "Two_Pointers/11.Container_with_most_water.md",
+  "folder": "Two_Pointers",
+  "tags": [
+   "two-pointers"
+  ]
+ },
+ {
+  "number": 15,
+  "title": "3Sum",
+  "difficulty": "Medium",
+  "path": "Two_Pointers/15.3Sum.md",
+  "folder": "Two_Pointers",
+  "tags": [
+   "two-pointers"
+  ]
+ },
+ {
+  "number": 16,
+  "title": "3Sum Closest",
+  "difficulty": "Medium",
+  "path": "Two_Pointers/16.3Sum_Closest.md",
+  "folder": "Two_Pointers",
+  "tags": [
+   "two-pointers"
+  ]
+ },
+ {
+  "number": 18,
+  "title": "4Sum",
+  "difficulty": "Medium",
+  "path": "Two_Pointers/18.4Sum.md",
+  "folder": "Two_Pointers",
+  "tags": [
+   "two-pointers"
+  ]
+ },
+ {
+  "number": 19,
+  "title": "Remove Nth Node From End of List",
+  "difficulty": "Medium",
+  "path": "Two_Pointers/19.Remove_Nth_Node_From_End_of_List.md",
+  "folder": "Two_Pointers",
+  "tags": [
+   "two-pointers",
+   "linked-list"
+  ]
+ },
+ {
+  "number": 21,
+  "title": "Merge Two Sorted Lists",
+  "difficulty": "Easy",
+  "path": "Two_Pointers/21.Merge_Two_Sorted_Lists.md",
+  "folder": "Two_Pointers",
+  "tags": [
+   "two-pointers",
+   "linked-list"
+  ]
+ },
+ {
+  "number": 26,
+  "title": "Remove Duplicates from Sorted Array",
+  "difficulty": "Easy",
+  "path": "Two_Pointers/26.Remove_Duplicates_from_Sorted_Array.md",
+  "folder": "Two_Pointers",
+  "tags": [
+   "two-pointers"
+  ]
+ },
+ {
+  "number": 27,
+  "title": "Remove Element",
+  "difficulty": "Easy",
+  "path": "Two_Pointers/27.Remove_Element.md",
+  "folder": "Two_Pointers",
+  "tags": [
+   "two-pointers"
+  ]
+ }
+]

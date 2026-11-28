@@ -1,0 +1,407 @@
+[
+ {
+  "number": 55,
+  "title": "Jump Game",
+  "difficulty": "Medium",
+  "path": "Greedy/55.Jump_Game.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy"
+  ]
+ },
+ {
+  "number": 121,
+  "title": "Best Time to Buy and Sell Stock",
+  "difficulty": "Easy",
+  "path": "Greedy/121.Best_Time_to_Buy_and_Sell_Stock.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy",
+   "arrays"
+  ]
+ },
+ {
+  "number": 122,
+  "title": "Best Time to Buy and Sell Stock II",
+  "difficulty": "Medium",
+  "path": "Greedy/122.Best_Time_to_Buy_and_Sell_Stock_II.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy"
+  ]
+ },
+ {
+  "number": 134,
+  "title": "Gas Station",
+  "difficulty": "Medium",
+  "path": "Greedy/134.Gas_Station.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy"
+  ]
+ },
+ {
+  "number": 135,
+  "title": "Candy",
+  "difficulty": "Hard",
+  "path": "Greedy/135.Candy.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy"
+  ]
+ },
+ {
+  "number": 179,
+  "title": "Largest Number",
+  "difficulty": "Medium",
+  "path": "Greedy/179.Largest_Number.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy",
+   "sorting"
+  ]
+ },
+ {
+  "number": 334,
+  "title": "Increasing Triplet Subsequence",
+  "difficulty": "Medium",
+  "path": "Greedy/334.Increasing_Triplet_Subsequence.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy"
+  ]
+ },
+ {
+  "number": 455,
+  "title": "Assign Cookies",
+  "difficulty": "Easy",
+  "path": "Greedy/455.Assign_Cookies.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy",
+   "two-pointers"
+  ]
+ },
+ {
+  "number": 502,
+  "title": "IPO",
+  "difficulty": "Hard",
+  "path": "Greedy/502.IPO.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy",
+   "heap"
+  ]
+ },
+ {
+  "number": 605,
+  "title": "Can Place Flowers",
+  "difficulty": "Easy",
+  "path": "Greedy/605.Can_Place_Flowers.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy"
+  ]
+ },
+ {
+  "number": 621,
+  "title": "Task Scheduler",
+  "difficulty": "Medium",
+  "path": "Greedy/621.Task_Scheduler.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy",
+   "counting"
+  ]
+ },
+ {
+  "number": 630,
+  "title": "Course Schedule III",
+  "difficulty": "Hard",
+  "path": "Greedy/630.Course_Schedule_III.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy",
+   "heap"
+  ]
+ },
+ {
+  "number": 649,
+  "title": "Dota2 Senate",
+  "difficulty": "Medium",
+  "path": "Greedy/649.Dota2_Senate.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy",
+   "queue"
+  ]
+ },
+ {
+  "number": 678,
+  "title": "Valid Parenthesis String",
+  "difficulty": "Medium",
+  "path": "Greedy/678.Valid_Parenthesis_String.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy"
+  ]
+ },
+ {
+  "number": 763,
+  "title": "Partition Labels",
+  "difficulty": "Medium",
+  "path": "Greedy/763.Partition_Labels.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy",
+   "intervals"
+  ]
+ },
+ {
+  "number": 846,
+  "title": "Hand of Straights",
+  "difficulty": "Medium",
+  "path": "Greedy/846.Hand_of_Straights.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy",
+   "hashing"
+  ]
+ },
+ {
+  "number": 860,
+  "title": "Lemonade Change",
+  "difficulty": "Easy",
+  "path": "Greedy/860.Lemonade_Change.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy",
+   "simulation"
+  ]
+ },
+ {
+  "number": 1899,
+  "title": "Merge Triplets to Form Target Triplet",
+  "difficulty": "Medium",
+  "path": "Greedy/1899.Merge_Triplets_to_Form_Target_Triplet.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy"
+  ]
+ },
+ {
+  "number": 1920,
+  "title": "Build Array from Permutation",
+  "difficulty": "Easy",
+  "path": "Greedy/1920.Build_Array_From_Permutation.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy",
+   "simulation",
+   "arrays"
+  ]
+ },
+ {
+  "number": 2094,
+  "title": "Finding 3-Digit Even Numbers",
+  "difficulty": "Easy",
+  "path": "Greedy/2094.Finding_3-Digit_Even_Numbers.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy",
+   "arrays"
+  ]
+ },
+ {
+  "number": 2918,
+  "title": "Minimum Equal Sum of Two Arrays After Replacing Zeros",
+  "difficulty": "Medium",
+  "path": "Greedy/2918.Minimum_Equal_Sum_of_Two_Arrays_After_Replacing_Zeros.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy"
+  ]
+ },
+ {
+  "number": 17,
+  "title": "Letter Combinations of a Phone Number",
+  "difficulty": "Medium",
+  "path": "Backtracking/17.Letter_Combinations_of_Phone_Number.md",
+  "folder": "Backtracking",
+  "tags": [
+   "backtracking"
+  ]
+ },
+ {
+  "number": 22,
+  "title": "Generate Parentheses",
+  "difficulty": "Medium",
+  "path": "Backtracking/22.Generate_Parentheses.md",
+  "folder": "Backtracking",
+  "tags": [
+   "backtracking"
+  ]
+ },
+ {
+  "number": 37,
+  "title": "Sudoku Solver",
+  "difficulty": "Hard",
+  "path": "Backtracking/37.Sudoku_Solver.md",
+  "folder": "Backtracking",
+  "tags": [
+   "backtracking"
+  ]
+ },
+ {
+  "number": 39,
+  "title": "Combination Sum",
+  "difficulty": "Medium",
+  "path": "Backtracking/39.Combination_Sum.md",
+  "folder": "Backtracking",
+  "tags": [
+   "backtracking"
+  ]
+ },
+ {
+  "number": 40,
+  "title": "Combination Sum II",
+  "difficulty": "Medium",
+  "path": "Backtracking/40.Combination_Sum_II.md",
+  "folder": "Backtracking",
+  "tags": [
+   "backtracking"
+  ]
+ },
+ {
+  "number": 46,
+  "title": "Permutations",
+  "difficulty": "Medium",
+  "path": "Backtracking/46.Permutations.md",
+  "folder": "Backtracking",
+  "tags": [
+   "backtracking"
+  ]
+ },
+ {
+  "number": 51,
+  "title": "N-Queens",
+  "difficulty": "Hard",
+  "path": "Backtracking/51.N-Queens.md",
+  "folder": "Backtracking",
+  "tags": [
+   "backtracking"
+  ]
+ },
+ {
+  "number": 52,
+  "title": "N-Queens II",
+  "difficulty": "Hard",
+  "path": "Backtracking/52.N-Queens_II.md",
+  "folder": "Backtracking",
+  "tags": [
+   "backtracking",
+   "bit-manipulation"
+  ]
+ },
+ {
+  "number": 77,
+  "title": "Combinations",
+  "difficulty": "Medium",
+  "path": "Backtracking/77.Combinations.md",
+  "folder": "Backtracking",
+  "tags": [
+   "backtracking"
+  ]
+ },
+ {
+  "number": 78,
+  "title": "Subsets",
+  "difficulty": "Medium",
+  "path": "Backtracking/78.Subsets.md",
+  "folder": "Backtracking",
+  "tags": [
+   "backtracking"
+  ]
+ },
+ {
+  "number": 79,
+  "title": "Word Search",
+  "difficulty": "Medium",
+  "path": "Backtracking/79.Word_Search.md",
+  "folder": "Backtracking",
+  "tags": [
+   "backtracking"
+  ]
+ },
+ {
+  "number": 90,
+  "title": "Subsets II",
+  "difficulty": "Medium",
+  "path": "Backtracking/90.Subsets_II.md",
+  "folder": "Backtracking",
+  "tags": [
+   "backtracking"
+  ]
+ },
+ {
+  "number": 131,
+  "title": "Palindrome Partitioning",
+  "difficulty": "Medium",
+  "path": "Backtracking/131.Palindrome_Partitioning.md",
+  "folder": "Backtracking",
+  "tags": [
+   "backtracking"
+  ]
+ },
+ {
+  "number": 216,
+  "title": "Combination Sum III",
+  "difficulty": "Medium",
+  "path": "Backtracking/216.Combination_Sum_III.md",
+  "folder": "Backtracking",
+  "tags": [
+   "backtracking"
+  ]
+ },
+ {
+  "number": 282,
+  "title": "Expression Add Operators",
+  "difficulty": "Hard",
+  "path": "Backtracking/282.Expression_Add_Operators.md",
+  "folder": "Backtracking",
+  "tags": [
+   "backtracking"
+  ]
+ },
+ {
+  "number": 126,
+  "title": "Word Ladder II",
+  "difficulty": "Hard",
+  "path": "Graphs/126.Word_Ladder_II.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-bfs",
+   "backtracking"
+  ]
+ },
+ {
+  "number": 127,
+  "title": "Word Ladder",
+  "difficulty": "Hard",
+  "path": "Graphs/127.Word_Ladder.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-bfs"
+  ]
+ },
+ {
+  "number": 130,
+  "title": "Surrounded Regions",
+  "difficulty": "Medium",
+  "path": "Graphs/130.Surrounded_Regions.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-dfs"
+  ]
+ }
+]

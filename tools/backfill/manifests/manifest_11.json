@@ -1,0 +1,422 @@
+[
+ {
+  "number": 371,
+  "title": "Sum of Two Integers",
+  "difficulty": "Medium",
+  "path": "Bit_Manipulation/371.Sum_of_Two_Integers.md",
+  "folder": "Bit_Manipulation",
+  "tags": [
+   "bit-manipulation"
+  ]
+ },
+ {
+  "number": 1318,
+  "title": "Minimum Flips to Make a OR b Equal to c",
+  "difficulty": "Medium",
+  "path": "Bit_Manipulation/1318.Minimum_Flips_to_Make_a_OR_b_Equal_to_c.md",
+  "folder": "Bit_Manipulation",
+  "tags": [
+   "bit-manipulation"
+  ]
+ },
+ {
+  "number": 2220,
+  "title": "Minimum Bit Flips to Convert Number",
+  "difficulty": "Easy",
+  "path": "Bit_Manipulation/2220.Minimum_Bit_Flips_to_Convert_Number.md",
+  "folder": "Bit_Manipulation",
+  "tags": [
+   "bit-manipulation"
+  ]
+ },
+ {
+  "number": 43,
+  "title": "Multiply Strings",
+  "difficulty": "Medium",
+  "path": "Math/43.Multiply_Strings.md",
+  "folder": "Math",
+  "tags": [
+   "math"
+  ]
+ },
+ {
+  "number": 66,
+  "title": "Plus One",
+  "difficulty": "Easy",
+  "path": "Math/66.Plus_One.md",
+  "folder": "Math",
+  "tags": [
+   "math"
+  ]
+ },
+ {
+  "number": 96,
+  "title": "Unique Binary Search Trees",
+  "difficulty": "Medium",
+  "path": "Math/96.Unique_Binary_Search_Trees.md",
+  "folder": "Math",
+  "tags": [
+   "math",
+   "combinatorics"
+  ]
+ },
+ {
+  "number": 149,
+  "title": "Max Points on a Line",
+  "difficulty": "Hard",
+  "path": "Math/149.Max_Points_on_a_Line.md",
+  "folder": "Math",
+  "tags": [
+   "math",
+   "geometry",
+   "hashing"
+  ]
+ },
+ {
+  "number": 172,
+  "title": "Factorial Trailing Zeroes",
+  "difficulty": "Medium",
+  "path": "Math/172.Factorial_Trailing_Zeroes.md",
+  "folder": "Math",
+  "tags": [
+   "math",
+   "number-theory"
+  ]
+ },
+ {
+  "number": 202,
+  "title": "Happy Number",
+  "difficulty": "Easy",
+  "path": "Math/202.Happy_Number.md",
+  "folder": "Math",
+  "tags": [
+   "math",
+   "fast-slow-pointers"
+  ]
+ },
+ {
+  "number": 204,
+  "title": "Count Primes",
+  "difficulty": "Medium",
+  "path": "Math/204.Count_Primes.md",
+  "folder": "Math",
+  "tags": [
+   "math",
+   "number-theory"
+  ]
+ },
+ {
+  "number": 292,
+  "title": "Nim Game",
+  "difficulty": "Easy",
+  "path": "Math/292.Nim_Game.md",
+  "folder": "Math",
+  "tags": [
+   "game-theory"
+  ]
+ },
+ {
+  "number": 372,
+  "title": "Super Pow",
+  "difficulty": "Medium",
+  "path": "Math/372.Super_Pow.md",
+  "folder": "Math",
+  "tags": [
+   "math",
+   "modular-arithmetic"
+  ]
+ },
+ {
+  "number": 509,
+  "title": "Fibonacci Number",
+  "difficulty": "Easy",
+  "path": "Math/509.Fibonacci_Number.md",
+  "folder": "Math",
+  "tags": [
+   "math",
+   "dp-1d"
+  ]
+ },
+ {
+  "number": 836,
+  "title": "Rectangle Overlap",
+  "difficulty": "Easy",
+  "path": "Math/836.Rectangle_Overlap.md",
+  "folder": "Math",
+  "tags": [
+   "geometry"
+  ]
+ },
+ {
+  "number": 1071,
+  "title": "Greatest Common Divisor of Strings",
+  "difficulty": "Easy",
+  "path": "Math/1071.Greatest_Common_Divisor_of_Strings.md",
+  "folder": "Math",
+  "tags": [
+   "math",
+   "number-theory"
+  ]
+ },
+ {
+  "number": 1359,
+  "title": "Count All Valid Pickup and Delivery Options",
+  "difficulty": "Hard",
+  "path": "Math/1359.Count_All_Valid_Pickup_and_Delivery_Options.md",
+  "folder": "Math",
+  "tags": [
+   "math",
+   "combinatorics"
+  ]
+ },
+ {
+  "number": 1406,
+  "title": "Stone Game III",
+  "difficulty": "Hard",
+  "path": "Math/1406.Stone_Game_III.md",
+  "folder": "Math",
+  "tags": [
+   "game-theory",
+   "dp-1d"
+  ]
+ },
+ {
+  "number": 1569,
+  "title": "Number of Ways to Reorder Array to Get Same BST",
+  "difficulty": "Hard",
+  "path": "Math/1569.Number_of_Ways_to_Reorder_Array_to_Get_Same_BST.md",
+  "folder": "Math",
+  "tags": [
+   "math",
+   "combinatorics",
+   "dp-tree"
+  ]
+ },
+ {
+  "number": 1922,
+  "title": "Count Good Numbers",
+  "difficulty": "Medium",
+  "path": "Math/1922.Count_Good_Numbers.md",
+  "folder": "Math",
+  "tags": [
+   "math",
+   "combinatorics"
+  ]
+ },
+ {
+  "number": 2013,
+  "title": "Detect Squares",
+  "difficulty": "Medium",
+  "path": "Math/2013.Detect_Squares.md",
+  "folder": "Math",
+  "tags": [
+   "math",
+   "hashing",
+   "counting"
+  ]
+ },
+ {
+  "number": 2400,
+  "title": "Number of Ways to Reach a Position After Exactly k Steps",
+  "difficulty": "Medium",
+  "path": "Math/2400.Number_of_Ways_to_Reach_a_Position_After_Exactly_k_Steps.md",
+  "folder": "Math",
+  "tags": [
+   "math",
+   "combinatorics",
+   "modular-arithmetic"
+  ]
+ },
+ {
+  "number": 2521,
+  "title": "Distinct Prime Factors of Product of Array",
+  "difficulty": "Medium",
+  "path": "Math/2521.Distinct_Prime_Factors_of_Product_of_Array.md",
+  "folder": "Math",
+  "tags": [
+   "math",
+   "number-theory"
+  ]
+ },
+ {
+  "number": 307,
+  "title": "Range Sum Query - Mutable",
+  "difficulty": "Medium",
+  "path": "Range_Queries/307.Range_Sum_Query_Mutable.md",
+  "folder": "Range_Queries",
+  "tags": [
+   "segment-tree"
+  ]
+ },
+ {
+  "number": 315,
+  "title": "Count of Smaller Numbers After Self",
+  "difficulty": "Hard",
+  "path": "Range_Queries/315.Count_of_Smaller_Numbers_After_Self.md",
+  "folder": "Range_Queries",
+  "tags": [
+   "fenwick-tree"
+  ]
+ },
+ {
+  "number": 327,
+  "title": "Count of Range Sum",
+  "difficulty": "Hard",
+  "path": "Range_Queries/327.Count_of_Range_Sum.md",
+  "folder": "Range_Queries",
+  "tags": [
+   "fenwick-tree",
+   "prefix-sum"
+  ]
+ },
+ {
+  "number": 493,
+  "title": "Reverse Pairs",
+  "difficulty": "Hard",
+  "path": "Range_Queries/493.Reverse_Pairs.md",
+  "folder": "Range_Queries",
+  "tags": [
+   "fenwick-tree"
+  ]
+ },
+ {
+  "number": 699,
+  "title": "Falling Squares",
+  "difficulty": "Hard",
+  "path": "Range_Queries/699.Falling_Squares.md",
+  "folder": "Range_Queries",
+  "tags": [
+   "segment-tree"
+  ]
+ },
+ {
+  "number": 1649,
+  "title": "Create Sorted Array through Instructions",
+  "difficulty": "Hard",
+  "path": "Range_Queries/1649.Create_Sorted_Array_through_Instructions.md",
+  "folder": "Range_Queries",
+  "tags": [
+   "fenwick-tree"
+  ]
+ },
+ {
+  "number": 2407,
+  "title": "Longest Increasing Subsequence II",
+  "difficulty": "Hard",
+  "path": "Range_Queries/2407.Longest_Increasing_Subsequence_II.md",
+  "folder": "Range_Queries",
+  "tags": [
+   "segment-tree",
+   "dp-lis"
+  ]
+ },
+ {
+  "number": 8,
+  "title": "String to Integer (atoi)",
+  "difficulty": "Medium",
+  "path": "Strings/8.String_to_Integer_atoi.md",
+  "folder": "Strings",
+  "tags": [
+   "strings"
+  ]
+ },
+ {
+  "number": 14,
+  "title": "Longest Common Prefix",
+  "difficulty": "Easy",
+  "path": "Strings/14.Longest_Common_Prefix.md",
+  "folder": "Strings",
+  "tags": [
+   "strings",
+   "arrays"
+  ]
+ },
+ {
+  "number": 28,
+  "title": "Find the Index of the First Occurrence in a String",
+  "difficulty": "Easy",
+  "path": "Strings/28.Find_the_Index_of_the_First_Occurrence_in_a_String.md",
+  "folder": "Strings",
+  "tags": [
+   "string-matching"
+  ]
+ },
+ {
+  "number": 58,
+  "title": "Length of Last Word",
+  "difficulty": "Easy",
+  "path": "Strings/58.Length_of_Last_Word.md",
+  "folder": "Strings",
+  "tags": [
+   "strings",
+   "arrays"
+  ]
+ },
+ {
+  "number": 151,
+  "title": "Reverse Words in a String",
+  "difficulty": "Medium",
+  "path": "Strings/151.Reverse_Words_in_a_String.md",
+  "folder": "Strings",
+  "tags": [
+   "strings",
+   "two-pointers"
+  ]
+ },
+ {
+  "number": 187,
+  "title": "Repeated DNA Sequences",
+  "difficulty": "Medium",
+  "path": "Strings/187.Repeated_DNA_Sequences.md",
+  "folder": "Strings",
+  "tags": [
+   "string-matching",
+   "rolling-hash",
+   "bit-manipulation",
+   "hashing"
+  ]
+ },
+ {
+  "number": 214,
+  "title": "Shortest Palindrome",
+  "difficulty": "Hard",
+  "path": "Strings/214.Shortest_Palindrome.md",
+  "folder": "Strings",
+  "tags": [
+   "string-matching"
+  ]
+ },
+ {
+  "number": 451,
+  "title": "Sort Characters By Frequency",
+  "difficulty": "Medium",
+  "path": "Strings/451.Sort_Characters_By_Frequency.md",
+  "folder": "Strings",
+  "tags": [
+   "strings",
+   "bucket-sort"
+  ]
+ },
+ {
+  "number": 647,
+  "title": "Palindromic Substrings",
+  "difficulty": "Medium",
+  "path": "Strings/647.Palindromic_Substrings.md",
+  "folder": "Strings",
+  "tags": [
+   "string-matching",
+   "palindromes"
+  ]
+ },
+ {
+  "number": 796,
+  "title": "Rotate String",
+  "difficulty": "Easy",
+  "path": "Strings/796.Rotate_String.md",
+  "folder": "Strings",
+  "tags": [
+   "strings",
+   "string-matching"
+  ]
+ }
+]

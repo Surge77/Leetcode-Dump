@@ -6,7 +6,8 @@
     "tools",
     "tools/verify",
     "tools/judge",
-    "tools/site"
+    "tools/site",
+    "tools/backfill"
   ],
   "pythonVersion": "3.11"
 }

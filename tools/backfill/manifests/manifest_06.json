@@ -1,0 +1,419 @@
+[
+ {
+  "number": 872,
+  "title": "Leaf-Similar Trees",
+  "difficulty": "Easy",
+  "path": "Trees/872.Leaf-Similar_Trees.md",
+  "folder": "Trees",
+  "tags": [
+   "tree-dfs"
+  ]
+ },
+ {
+  "number": 987,
+  "title": "Vertical Order Traversal of a Binary Tree",
+  "difficulty": "Hard",
+  "path": "Trees/987.Vertical_Order_Traversal_of_a_Binary_Tree.md",
+  "folder": "Trees",
+  "tags": [
+   "tree-dfs",
+   "sorting"
+  ]
+ },
+ {
+  "number": 1008,
+  "title": "Construct Binary Search Tree from Preorder Traversal",
+  "difficulty": "Medium",
+  "path": "Trees/1008.Construct_Binary_Search_Tree_from_Preorder_Traversal.md",
+  "folder": "Trees",
+  "tags": [
+   "bst"
+  ]
+ },
+ {
+  "number": 1161,
+  "title": "Maximum Level Sum of a Binary Tree",
+  "difficulty": "Medium",
+  "path": "Trees/1161.Maximum_Level_Sum_of_a_Binary_Tree.md",
+  "folder": "Trees",
+  "tags": [
+   "tree-bfs"
+  ]
+ },
+ {
+  "number": 1372,
+  "title": "Longest ZigZag Path in a Binary Tree",
+  "difficulty": "Medium",
+  "path": "Trees/1372.Longest_ZigZag_Path_in_a_Binary_Tree.md",
+  "folder": "Trees",
+  "tags": [
+   "tree-dfs",
+   "dp-tree"
+  ]
+ },
+ {
+  "number": 1448,
+  "title": "Count Good Nodes in Binary Tree",
+  "difficulty": "Medium",
+  "path": "Trees/1448.Count_Good_Nodes_in_Binary_Tree.md",
+  "folder": "Trees",
+  "tags": [
+   "tree-dfs"
+  ]
+ },
+ {
+  "number": 1483,
+  "title": "Kth Ancestor of a Tree Node",
+  "difficulty": "Hard",
+  "path": "Trees/1483.Kth_Ancestor_of_a_Tree_Node.md",
+  "folder": "Trees",
+  "tags": [
+   "binary-lifting"
+  ]
+ },
+ {
+  "number": 2836,
+  "title": "Maximize Value of Function in a Ball Passing Game",
+  "difficulty": "Hard",
+  "path": "Trees/2836.Maximize_Value_of_Function_in_a_Ball_Passing_Game.md",
+  "folder": "Trees",
+  "tags": [
+   "binary-lifting"
+  ]
+ },
+ {
+  "number": 2846,
+  "title": "Minimum Edge Weight Equilibrium Queries in a Tree",
+  "difficulty": "Hard",
+  "path": "Trees/2846.Minimum_Edge_Weight_Equilibrium_Queries_in_a_Tree.md",
+  "folder": "Trees",
+  "tags": [
+   "binary-lifting",
+   "prefix-sum"
+  ]
+ },
+ {
+  "number": 208,
+  "title": "Implement Trie (Prefix Tree)",
+  "difficulty": "Medium",
+  "path": "Trie/208.Implement_Trie_Prefix_Tree.md",
+  "folder": "Trie",
+  "tags": [
+   "trie"
+  ]
+ },
+ {
+  "number": 211,
+  "title": "Design Add and Search Words Data Structure",
+  "difficulty": "Medium",
+  "path": "Trie/211.Design_Add_and_Search_Words_Data_Structure.md",
+  "folder": "Trie",
+  "tags": [
+   "trie"
+  ]
+ },
+ {
+  "number": 212,
+  "title": "Word Search II",
+  "difficulty": "Hard",
+  "path": "Trie/212.Word_Search_II.md",
+  "folder": "Trie",
+  "tags": [
+   "trie",
+   "backtracking"
+  ]
+ },
+ {
+  "number": 336,
+  "title": "Palindrome Pairs",
+  "difficulty": "Hard",
+  "path": "Trie/336.Palindrome_Pairs.md",
+  "folder": "Trie",
+  "tags": [
+   "trie",
+   "hashing"
+  ]
+ },
+ {
+  "number": 421,
+  "title": "Maximum XOR of Two Numbers in an Array",
+  "difficulty": "Medium",
+  "path": "Trie/421.Maximum_XOR_of_Two_Numbers_in_an_Array.md",
+  "folder": "Trie",
+  "tags": [
+   "trie"
+  ]
+ },
+ {
+  "number": 1268,
+  "title": "Search Suggestions System",
+  "difficulty": "Medium",
+  "path": "Trie/1268.Search_Suggestions_System.md",
+  "folder": "Trie",
+  "tags": [
+   "trie",
+   "binary-search"
+  ]
+ },
+ {
+  "number": 215,
+  "title": "Kth Largest Element in an Array",
+  "difficulty": "Medium",
+  "path": "Top_K_Elements/215.Kth_Largest_Element_in_an_Array.md",
+  "folder": "Top_K_Elements",
+  "tags": [
+   "heap"
+  ]
+ },
+ {
+  "number": 295,
+  "title": "Find Median from Data Stream",
+  "difficulty": "Hard",
+  "path": "Top_K_Elements/295.Find_Median_from_Data_Stream.md",
+  "folder": "Top_K_Elements",
+  "tags": [
+   "heap"
+  ]
+ },
+ {
+  "number": 347,
+  "title": "Top K Frequent Elements",
+  "difficulty": "Medium",
+  "path": "Top_K_Elements/347.Top_K_Frequent_Elements.md",
+  "folder": "Top_K_Elements",
+  "tags": [
+   "heap",
+   "bucket-sort",
+   "hashing"
+  ]
+ },
+ {
+  "number": 355,
+  "title": "Design Twitter",
+  "difficulty": "Medium",
+  "path": "Top_K_Elements/355.Design_Twitter.md",
+  "folder": "Top_K_Elements",
+  "tags": [
+   "heap"
+  ]
+ },
+ {
+  "number": 373,
+  "title": "Find K Pairs with Smallest Sums",
+  "difficulty": "Medium",
+  "path": "Top_K_Elements/373.Find_K_Pairs_with_Smallest_Sums.md",
+  "folder": "Top_K_Elements",
+  "tags": [
+   "heap"
+  ]
+ },
+ {
+  "number": 632,
+  "title": "Smallest Range Covering Elements from K Lists",
+  "difficulty": "Hard",
+  "path": "Top_K_Elements/632.Smallest_Range_Covering_Elements_from_K_Lists.md",
+  "folder": "Top_K_Elements",
+  "tags": [
+   "heap"
+  ]
+ },
+ {
+  "number": 692,
+  "title": "Top K Frequent Words",
+  "difficulty": "Medium",
+  "path": "Top_K_Elements/692.Top_K_Frequent_Words.md",
+  "folder": "Top_K_Elements",
+  "tags": [
+   "heap"
+  ]
+ },
+ {
+  "number": 703,
+  "title": "Kth Largest Element in a Stream",
+  "difficulty": "Easy",
+  "path": "Top_K_Elements/703.Kth_Largest_Element_in_a_Stream.md",
+  "folder": "Top_K_Elements",
+  "tags": [
+   "heap"
+  ]
+ },
+ {
+  "number": 973,
+  "title": "K Closest Points to Origin",
+  "difficulty": "Medium",
+  "path": "Top_K_Elements/973.K_Closest_Points_to_Origin.md",
+  "folder": "Top_K_Elements",
+  "tags": [
+   "heap"
+  ]
+ },
+ {
+  "number": 1046,
+  "title": "Last Stone Weight",
+  "difficulty": "Easy",
+  "path": "Top_K_Elements/1046.Last_Stone_Weight.md",
+  "folder": "Top_K_Elements",
+  "tags": [
+   "heap",
+   "simulation"
+  ]
+ },
+ {
+  "number": 2336,
+  "title": "Smallest Number in Infinite Set",
+  "difficulty": "Medium",
+  "path": "Top_K_Elements/2336.Smallest_Number_in_Infinite_Set.md",
+  "folder": "Top_K_Elements",
+  "tags": [
+   "heap",
+   "design"
+  ]
+ },
+ {
+  "number": 2462,
+  "title": "Total Cost to Hire K Workers",
+  "difficulty": "Medium",
+  "path": "Top_K_Elements/2462.Total_Cost_to_Hire_K_Workers.md",
+  "folder": "Top_K_Elements",
+  "tags": [
+   "heap"
+  ]
+ },
+ {
+  "number": 2542,
+  "title": "Maximum Subsequence Score",
+  "difficulty": "Medium",
+  "path": "Top_K_Elements/2542.Maximum_Subsequence_Score.md",
+  "folder": "Top_K_Elements",
+  "tags": [
+   "heap",
+   "sorting"
+  ]
+ },
+ {
+  "number": 56,
+  "title": "Merge Intervals",
+  "difficulty": "Medium",
+  "path": "Intervals/56.Merge_Intervals.md",
+  "folder": "Intervals",
+  "tags": [
+   "intervals",
+   "greedy",
+   "sorting",
+   "arrays"
+  ]
+ },
+ {
+  "number": 57,
+  "title": "Insert Interval",
+  "difficulty": "Medium",
+  "path": "Intervals/57.Insert_Interval.md",
+  "folder": "Intervals",
+  "tags": [
+   "intervals",
+   "greedy"
+  ]
+ },
+ {
+  "number": 228,
+  "title": "Summary Ranges",
+  "difficulty": "Easy",
+  "path": "Intervals/228.Summary_Ranges.md",
+  "folder": "Intervals",
+  "tags": [
+   "intervals",
+   "arrays"
+  ]
+ },
+ {
+  "number": 252,
+  "title": "Meeting Rooms",
+  "difficulty": "Easy",
+  "path": "Intervals/252.Meeting_Rooms.md",
+  "folder": "Intervals",
+  "tags": [
+   "intervals",
+   "sorting"
+  ]
+ },
+ {
+  "number": 253,
+  "title": "Meeting Rooms II",
+  "difficulty": "Medium",
+  "path": "Intervals/253.Meeting_Rooms_II.md",
+  "folder": "Intervals",
+  "tags": [
+   "intervals",
+   "line-sweep",
+   "heap"
+  ]
+ },
+ {
+  "number": 435,
+  "title": "Non-overlapping Intervals",
+  "difficulty": "Medium",
+  "path": "Intervals/435.Non-overlapping_Intervals.md",
+  "folder": "Intervals",
+  "tags": [
+   "intervals",
+   "greedy"
+  ]
+ },
+ {
+  "number": 452,
+  "title": "Minimum Number of Arrows to Burst Balloons",
+  "difficulty": "Medium",
+  "path": "Intervals/452.Minimum_Number_of_Arrows_to_Burst_Balloons.md",
+  "folder": "Intervals",
+  "tags": [
+   "intervals",
+   "greedy"
+  ]
+ },
+ {
+  "number": 759,
+  "title": "Employee Free Time",
+  "difficulty": "Hard",
+  "path": "Intervals/759.Employee_Free_Time.md",
+  "folder": "Intervals",
+  "tags": [
+   "intervals",
+   "line-sweep"
+  ]
+ },
+ {
+  "number": 1851,
+  "title": "Minimum Interval to Include Each Query",
+  "difficulty": "Hard",
+  "path": "Intervals/1851.Minimum_Interval_to_Include_Each_Query.md",
+  "folder": "Intervals",
+  "tags": [
+   "intervals",
+   "line-sweep",
+   "heap"
+  ]
+ },
+ {
+  "number": 2251,
+  "title": "Number of Flowers in Full Bloom",
+  "difficulty": "Hard",
+  "path": "Intervals/2251.Number_of_Flowers_in_Full_Bloom.md",
+  "folder": "Intervals",
+  "tags": [
+   "intervals",
+   "line-sweep",
+   "binary-search"
+  ]
+ },
+ {
+  "number": 45,
+  "title": "Jump Game II",
+  "difficulty": "Medium",
+  "path": "Greedy/45.Jump_Game_II.md",
+  "folder": "Greedy",
+  "tags": [
+   "greedy",
+   "graph-bfs"
+  ]
+ }
+]

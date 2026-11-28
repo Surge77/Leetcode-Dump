@@ -1,0 +1,397 @@
+[
+ {
+  "number": 133,
+  "title": "Clone Graph",
+  "difficulty": "Medium",
+  "path": "Graphs/133.Clone_Graph.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-bfs",
+   "hashing"
+  ]
+ },
+ {
+  "number": 200,
+  "title": "Number of Islands",
+  "difficulty": "Medium",
+  "path": "Graphs/200.Number_of_Islands.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-dfs"
+  ]
+ },
+ {
+  "number": 207,
+  "title": "Course Schedule",
+  "difficulty": "Medium",
+  "path": "Graphs/207.Course_Schedule.md",
+  "folder": "Graphs",
+  "tags": [
+   "topological-sort"
+  ]
+ },
+ {
+  "number": 210,
+  "title": "Course Schedule II",
+  "difficulty": "Medium",
+  "path": "Graphs/210.Course_Schedule_II.md",
+  "folder": "Graphs",
+  "tags": [
+   "topological-sort"
+  ]
+ },
+ {
+  "number": 269,
+  "title": "Alien Dictionary",
+  "difficulty": "Hard",
+  "path": "Graphs/269.Alien_Dictionary.md",
+  "folder": "Graphs",
+  "tags": [
+   "topological-sort"
+  ]
+ },
+ {
+  "number": 286,
+  "title": "Walls and Gates",
+  "difficulty": "Medium",
+  "path": "Graphs/286.Walls_and_Gates.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-bfs"
+  ]
+ },
+ {
+  "number": 310,
+  "title": "Minimum Height Trees",
+  "difficulty": "Medium",
+  "path": "Graphs/310.Minimum_Height_Trees.md",
+  "folder": "Graphs",
+  "tags": [
+   "topological-sort"
+  ]
+ },
+ {
+  "number": 417,
+  "title": "Pacific Atlantic Water Flow",
+  "difficulty": "Medium",
+  "path": "Graphs/417.Pacific_Atlantic_Water_Flow.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-dfs"
+  ]
+ },
+ {
+  "number": 433,
+  "title": "Minimum Genetic Mutation",
+  "difficulty": "Medium",
+  "path": "Graphs/433.Minimum_Genetic_Mutation.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-bfs"
+  ]
+ },
+ {
+  "number": 542,
+  "title": "01 Matrix",
+  "difficulty": "Medium",
+  "path": "Graphs/542.01_Matrix.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-bfs"
+  ]
+ },
+ {
+  "number": 547,
+  "title": "Number of Provinces",
+  "difficulty": "Medium",
+  "path": "Graphs/547.Number_of_Provinces.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-dfs"
+  ]
+ },
+ {
+  "number": 695,
+  "title": "Max Area of Island",
+  "difficulty": "Medium",
+  "path": "Graphs/695.Max_Area_of_Island.md",
+  "folder": "Graphs",
+  "tags": [
+   "grid-graph"
+  ]
+ },
+ {
+  "number": 733,
+  "title": "Flood Fill",
+  "difficulty": "Easy",
+  "path": "Graphs/733.Flood_Fill.md",
+  "folder": "Graphs",
+  "tags": [
+   "grid-graph"
+  ]
+ },
+ {
+  "number": 785,
+  "title": "Is Graph Bipartite?",
+  "difficulty": "Medium",
+  "path": "Graphs/785.Is_Graph_Bipartite.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-dfs"
+  ]
+ },
+ {
+  "number": 802,
+  "title": "Find Eventual Safe States",
+  "difficulty": "Medium",
+  "path": "Graphs/802.Find_Eventual_Safe_States.md",
+  "folder": "Graphs",
+  "tags": [
+   "topological-sort"
+  ]
+ },
+ {
+  "number": 815,
+  "title": "Bus Routes",
+  "difficulty": "Hard",
+  "path": "Graphs/815.Bus_Routes.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-bfs"
+  ]
+ },
+ {
+  "number": 827,
+  "title": "Making A Large Island",
+  "difficulty": "Hard",
+  "path": "Graphs/827.Making_A_Large_Island.md",
+  "folder": "Graphs",
+  "tags": [
+   "grid-graph"
+  ]
+ },
+ {
+  "number": 841,
+  "title": "Keys and Rooms",
+  "difficulty": "Medium",
+  "path": "Graphs/841.Keys_and_Rooms.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-dfs"
+  ]
+ },
+ {
+  "number": 886,
+  "title": "Possible Bipartition",
+  "difficulty": "Medium",
+  "path": "Graphs/886.Possible_Bipartition.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-dfs"
+  ]
+ },
+ {
+  "number": 909,
+  "title": "Snakes and Ladders",
+  "difficulty": "Medium",
+  "path": "Graphs/909.Snakes_and_Ladders.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-bfs"
+  ]
+ },
+ {
+  "number": 994,
+  "title": "Rotting Oranges",
+  "difficulty": "Medium",
+  "path": "Graphs/994.Rotting_Oranges.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-bfs"
+  ]
+ },
+ {
+  "number": 1020,
+  "title": "Number of Enclaves",
+  "difficulty": "Medium",
+  "path": "Graphs/1020.Number_of_Enclaves.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-dfs"
+  ]
+ },
+ {
+  "number": 1197,
+  "title": "Minimum Knight Moves",
+  "difficulty": "Medium",
+  "path": "Graphs/1197.Minimum_Knight_Moves.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-bfs"
+  ]
+ },
+ {
+  "number": 1466,
+  "title": "Reorder Routes to Make All Paths Lead to the City Zero",
+  "difficulty": "Medium",
+  "path": "Graphs/1466.Reorder_Routes_to_Make_All_Paths_Lead_to_the_City_Zero.md",
+  "folder": "Graphs",
+  "tags": [
+   "graph-bfs"
+  ]
+ },
+ {
+  "number": 1730,
+  "title": "Shortest Path to Get Food",
+  "difficulty": "Medium",
+  "path": "Graphs/1730.Shortest_Path_to_Get_Food.md",
+  "folder": "Graphs",
+  "tags": [
+   "grid-graph"
+  ]
+ },
+ {
+  "number": 1857,
+  "title": "Largest Color Value in a Directed Graph",
+  "difficulty": "Hard",
+  "path": "Graphs/1857.Largest_Color_Value_in_a_Directed_Graph.md",
+  "folder": "Graphs",
+  "tags": [
+   "topological-sort",
+   "sorting",
+   "dp-1d"
+  ]
+ },
+ {
+  "number": 1926,
+  "title": "Nearest Exit from Entrance in Maze",
+  "difficulty": "Medium",
+  "path": "Graphs/1926.Nearest_Exit_from_Entrance_in_Maze.md",
+  "folder": "Graphs",
+  "tags": [
+   "grid-graph"
+  ]
+ },
+ {
+  "number": 743,
+  "title": "Network Delay Time",
+  "difficulty": "Medium",
+  "path": "Graph_Shortest_Path/743.Network_Delay_Time.md",
+  "folder": "Graph_Shortest_Path",
+  "tags": [
+   "shortest-path"
+  ]
+ },
+ {
+  "number": 778,
+  "title": "Swim in Rising Water",
+  "difficulty": "Hard",
+  "path": "Graph_Shortest_Path/778.Swim_in_Rising_Water.md",
+  "folder": "Graph_Shortest_Path",
+  "tags": [
+   "shortest-path"
+  ]
+ },
+ {
+  "number": 787,
+  "title": "Cheapest Flights Within K Stops",
+  "difficulty": "Medium",
+  "path": "Graph_Shortest_Path/787.Cheapest_Flights_Within_K_Stops.md",
+  "folder": "Graph_Shortest_Path",
+  "tags": [
+   "shortest-path"
+  ]
+ },
+ {
+  "number": 1334,
+  "title": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+  "difficulty": "Medium",
+  "path": "Graph_Shortest_Path/1334.Find_the_City_With_the_Smallest_Number_of_Neighbors_at_a_Threshold_Distance.md",
+  "folder": "Graph_Shortest_Path",
+  "tags": [
+   "shortest-path"
+  ]
+ },
+ {
+  "number": 1368,
+  "title": "Minimum Cost to Make at Least One Valid Path in a Grid",
+  "difficulty": "Hard",
+  "path": "Graph_Shortest_Path/1368.Minimum_Cost_to_Make_at_Least_One_Valid_Path_in_a_Grid.md",
+  "folder": "Graph_Shortest_Path",
+  "tags": [
+   "shortest-path",
+   "graph-bfs"
+  ]
+ },
+ {
+  "number": 1631,
+  "title": "Path With Minimum Effort",
+  "difficulty": "Medium",
+  "path": "Graph_Shortest_Path/1631.Path_With_Minimum_Effort.md",
+  "folder": "Graph_Shortest_Path",
+  "tags": [
+   "shortest-path",
+   "game-theory"
+  ]
+ },
+ {
+  "number": 1976,
+  "title": "Number of Ways to Arrive at Destination",
+  "difficulty": "Medium",
+  "path": "Graph_Shortest_Path/1976.Number_of_Ways_to_Arrive_at_Destination.md",
+  "folder": "Graph_Shortest_Path",
+  "tags": [
+   "shortest-path"
+  ]
+ },
+ {
+  "number": 261,
+  "title": "Graph Valid Tree",
+  "difficulty": "Medium",
+  "path": "Graph_Advanced/261.Graph_Valid_Tree.md",
+  "folder": "Graph_Advanced",
+  "tags": [
+   "union-find"
+  ]
+ },
+ {
+  "number": 323,
+  "title": "Number of Connected Components in an Undirected Graph",
+  "difficulty": "Medium",
+  "path": "Graph_Advanced/323.Number_of_Connected_Components_in_an_Undirected_Graph.md",
+  "folder": "Graph_Advanced",
+  "tags": [
+   "union-find"
+  ]
+ },
+ {
+  "number": 332,
+  "title": "Reconstruct Itinerary",
+  "difficulty": "Hard",
+  "path": "Graph_Advanced/332.Reconstruct_Itinerary.md",
+  "folder": "Graph_Advanced",
+  "tags": [
+   "graph-advanced"
+  ]
+ },
+ {
+  "number": 399,
+  "title": "Evaluate Division",
+  "difficulty": "Medium",
+  "path": "Graph_Advanced/399.Evaluate_Division.md",
+  "folder": "Graph_Advanced",
+  "tags": [
+   "union-find"
+  ]
+ },
+ {
+  "number": 684,
+  "title": "Redundant Connection",
+  "difficulty": "Medium",
+  "path": "Graph_Advanced/684.Redundant_Connection.md",
+  "folder": "Graph_Advanced",
+  "tags": [
+   "union-find"
+  ]
+ }
+]

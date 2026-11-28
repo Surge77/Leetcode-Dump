@@ -13,6 +13,8 @@ My **personal DSA notebook and practice system**. Every problem from the major i
 
 **Interview round:** SQL (verified on SQLite), OOP, DBMS / OS → [Interview_Prep](Interview_Prep/README.md)
 
+**Read it as a site** (search, tags, dark mode, phone-friendly): <https://surge77.github.io/Leetcode-Dump/>, rebuilt from `master` on every merge.
+
 ---
 
 ### **Start Here** 🎯
@@ -75,7 +77,8 @@ Each note follows [the template](LeetcodeTemplates/ActiveTemplate.md):
 | `python tools/refresh_companies.py <clone>` | Rebuilds `tools/companies.json` from a fresh clone of the company-frequency source (instructions inside). |
 | `python tools/judge/judge.py MxQy file.py` | Offline judge for the mock problems. Scores out of 100: small tests are worth 50 and max-size tests 50. |
 | `python tools/judge/paper.py [--final]` | Random Easy/Medium/Hard paper drawn from three different mocks; `--final` uses the held-out mocks 8–10. |
-| `python -m unittest discover -s tools/tests` | Unit tests for the drill, judge and generators. |
+| `python tools/site/build_site.py && zensical build` | Builds the site locally into `site/` (install once with `pip install -r requirements-docs.in`; config: `zensical.toml`). CI builds every PR in strict mode and publishes `master`. |
+| `python -m unittest discover -s tools/tests` | Unit tests for the drill, judge, generators and site staging. |
 
 **One-time setup per clone:** run `git config core.hooksPath .githooks`. This enables a pre-commit hook that runs the format/index check on the staged files in under a second.
 

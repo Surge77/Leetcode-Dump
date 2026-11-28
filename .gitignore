@@ -37,3 +37,7 @@ __pycache__/
 ### Practice drill scratch output ###
 practice/
 exports/
+
+### Site build output ###
+site/
+site_src/

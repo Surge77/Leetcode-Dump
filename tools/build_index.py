@@ -1,7 +1,7 @@
-"""Generate INDEX.md and enforce the note format.
+"""Generate INDEX.md, SHEETS.md and the README's numbers, and enforce the note format.
 
-    python tools/build_index.py           # check note format, rewrite INDEX.md
-    python tools/build_index.py --check   # exit 1 on a format error or a stale INDEX.md (CI, pre-commit)
+    python tools/build_index.py           # check note format, rewrite the generated files
+    python tools/build_index.py --check   # exit 1 on a format error or a stale generated file (CI, pre-commit)
 
 Every LeetCode note must start with
 
@@ -10,6 +10,7 @@ Every LeetCode note must start with
 and contain exactly one `**🟢 Status:** ✅ Solved` or `**🟢 Status:** 🔄 Need Review`
 line and a `**🔗 Link:**` line pointing at leetcode.com/problems/.
 """
+import importlib
 import json
 import re
 import sys
@@ -23,6 +24,8 @@ HEADER_RE = re.compile(r"^# 🔹 Problem Name: (\d+)\. (.+) \(([^()]+), (Easy|Me
 STATUS_RE = re.compile(r"^\*\*🟢 Status:\*\* (.*)$", re.M)
 LINK_RE = re.compile(r"^\*\*🔗 Link:\*\* .*https://leetcode\.com/problems/", re.M)
 SHEETS_FILE = REPO / "tools" / "sheets.json"
+README = REPO / "README.md"
+STATS_START, STATS_END = "<!-- generated:stats -->", "<!-- /generated:stats -->"
 STATUSES = {"✅ Solved": "✅", "🔄 Need Review": "🔄"}
 DIFFICULTIES = ("Easy", "Medium", "Hard")
 
@@ -128,6 +131,51 @@ def render_sheets(notes):
     return "\n".join(lines).rstrip("\n") + "\n"
 
 
+def check_count():
+    """Number of registered checks in tools/verify (imports the test modules; ~0.3 s)."""
+    verify = REPO / "tools" / "verify"
+    if str(verify) not in sys.path:
+        sys.path.insert(0, str(verify))
+    harness = importlib.import_module("harness")
+    for f in sorted(verify.glob("tests_*.py")):
+        importlib.import_module(f.stem)
+    return len(harness.CASES)
+
+
+def render_stats(notes):
+    """The README's numbers table, so they can never drift from the repo."""
+    counts = {d: sum(1 for n in notes if n.difficulty == d) for d in DIFFICULTIES}
+    solved = sum(1 for n in notes if n.status == "✅")
+    folders = len({n.path.relative_to(REPO).parts[0] for n in notes})
+    by_number = {n.number for n in notes}
+    sheets = json.loads(SHEETS_FILE.read_text(encoding="utf-8"))
+    coverage = []
+    for name, sheet in sheets.items():
+        numbers = {num for topic in sheet["topics"] for num in topic["problems"]}
+        coverage.append(f"{name} {len(numbers & by_number)}/{len(numbers)}")
+    mocks = sorted((REPO / "Infosys_SP_DSE").glob("Mock_Test_*/Q*.md"))
+    tests = len({p.parent for p in mocks})
+    return "\n".join([
+        STATS_START,
+        "| | |",
+        "|---|---|",
+        f"| **LeetCode notes** | **{len(notes)}** (Easy {counts['Easy']} · Medium {counts['Medium']} · Hard "
+        f"{counts['Hard']}) in {folders} pattern folders · ✅ {solved} · 🔄 {len(notes) - solved} → [INDEX.md](INDEX.md) |",
+        f"| **Sheets** | {' · '.join(coverage)} → [SHEETS.md](SHEETS.md) |",
+        f"| **Infosys mock problems** | {len(mocks)} original stdin/stdout problems ({tests} mock tests) with an "
+        "offline judge → [Infosys_SP_DSE](Infosys_SP_DSE/README.md) |",
+        f"| **Checks** | {check_count()} automated checks, run in CI on every push, every pull request and weekly |",
+        STATS_END,
+    ])
+
+
+def with_stats(readme, notes):
+    start, end = readme.find(STATS_START), readme.find(STATS_END)
+    if start == -1 or end == -1:
+        sys.exit(f"README.md must contain {STATS_START} … {STATS_END}")
+    return readme[:start] + render_stats(notes) + readme[end + len(STATS_END):]
+
+
 def checked_notes():
     """All notes, or SystemExit listing every format error."""
     notes, errors = load_notes()
@@ -138,7 +186,9 @@ def checked_notes():
 
 def generated(notes):
     """{output file: expected content} for every generated document."""
-    return {REPO / "INDEX.md": render(notes), REPO / "SHEETS.md": render_sheets(notes)}
+    readme = README.read_text(encoding="utf-8").replace("\r\n", "\n")
+    return {REPO / "INDEX.md": render(notes), REPO / "SHEETS.md": render_sheets(notes),
+            README: with_stats(readme, notes)}
 
 
 def write_index():
@@ -151,14 +201,14 @@ def write_index():
 
 def main():
     if "--check" not in sys.argv:
-        print(f"{write_index()} notes well-formed; wrote INDEX.md and SHEETS.md")
+        print(f"{write_index()} notes well-formed; wrote INDEX.md, SHEETS.md and the README numbers")
         return
     notes = checked_notes()
     for target, content in generated(notes).items():
         current = target.read_text(encoding="utf-8") if target.exists() else ""
         if current.replace("\r\n", "\n") != content:
             sys.exit(f"{target.name} is stale: run `python tools/build_index.py`")
-    print(f"{len(notes)} notes well-formed; INDEX.md and SHEETS.md are up to date")
+    print(f"{len(notes)} notes well-formed; INDEX.md, SHEETS.md and the README numbers are up to date")
 
 
 if __name__ == "__main__":

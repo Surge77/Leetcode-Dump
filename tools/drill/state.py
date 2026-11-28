@@ -24,11 +24,26 @@ def load_state(path=STATE_FILE):
     except json.JSONDecodeError as err:
         raise SystemExit(f"{path} is not valid JSON ({err}). Fix it by hand (a git merge conflict?) "
                          "or restore it with `git checkout -- tools/review_state.json`.")
+    if isinstance(data, dict) and "version" not in data and all(k.isdigit() for k in data):
+        data = migrate_v1(data)
     if not isinstance(data, dict) or data.get("version") != VERSION:
-        raise SystemExit(f"{path}: expected a version {VERSION} state file")
+        raise SystemExit(f"{path}: expected a version {VERSION} state file, got version {data.get('version')!r}")
     state = empty()
     state.update(data)
     return state
+
+
+def migrate_v1(notes):
+    """v1 was {number: {streak, due, history: ["2026-11-26:pass", ...]}}: keep streaks and due dates."""
+    migrated = {}
+    for number, entry in notes.items():
+        history = []
+        for item in entry.get("history", []):
+            day, _, outcome = item.partition(":")
+            history.append({"date": day, "grade": "ok" if outcome == "pass" else "fail"})
+        streak = int(entry.get("streak", 0))
+        migrated[number] = {"step": streak, "streak": streak, "due": entry["due"], "history": history}
+    return {**empty(), "notes": migrated}
 
 
 def dumps(state):

@@ -140,6 +140,21 @@ class StateFileTest(unittest.TestCase):
                 st.load_state(path)
             self.assertIn("not valid JSON", str(raised.exception))
 
+    def test_a_v1_file_is_migrated_not_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "state.json"
+            path.write_text('{"322": {"streak": 2, "due": "2026-12-03", "history": ["2026-11-25:pass", '
+                            '"2026-11-26:pass"]}, "7": {"streak": 0, "due": "2026-11-27", "history": '
+                            '["2026-11-26:fail"]}}', encoding="utf-8")
+            state = st.load_state(path)
+            self.assertEqual(state["version"], st.VERSION)
+            self.assertEqual(state["notes"]["322"], {"step": 2, "streak": 2, "due": "2026-12-03", "history": [
+                {"date": "2026-11-25", "grade": "ok"}, {"date": "2026-11-26", "grade": "ok"}]})
+            self.assertEqual(state["notes"]["7"]["history"], [{"date": "2026-11-26", "grade": "fail"}])
+            path.write_text('{"version": 99, "notes": {}}', encoding="utf-8")
+            with self.assertRaises(SystemExit):
+                st.load_state(path)
+
     def test_an_empty_state_still_serialises_to_valid_json(self):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "state.json"

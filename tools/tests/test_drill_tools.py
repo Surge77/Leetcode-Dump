@@ -83,6 +83,11 @@ class PlanTest(unittest.TestCase):
         self.assertEqual(p["need_per_day"], 3, "20 starts over the 9 days before the 2-day lead")
         self.assertIn("behind", plan.render(p, date(2026, 12, 6)))
 
+    def test_pace_counts_only_notes_in_scope(self):
+        entries = {"500": sched.schedule(None, "ok", date(2026, 11, 25))}  # started, but outside the scope
+        p = plan.plan([note(1), note(2)], entries, TODAY, date(2026, 12, 6))
+        self.assertEqual(p["pace"], 0)
+
     def test_deadline_too_close_is_an_error(self):
         with self.assertRaises(SystemExit):
             plan.plan([note(1)], {}, TODAY, date(2026, 11, 27))
@@ -125,12 +130,36 @@ class AttemptTest(unittest.TestCase):
         self.assertIn("expected True, got False", verdict.report)
 
     def test_the_override_is_removed_afterwards(self):
-        attempt.check(139, "class Solution: pass")
+        attempt.check_here(139, "class Solution:\n    def wordBreak(self, s, words):\n        return True\n")
         self.assertEqual(attempt.load_harness().OVERRIDES, {})
 
     def test_a_note_without_checks_is_an_error(self):
         with self.assertRaises(SystemExit):
             attempt.check(10**7, self.code)
+
+    def test_an_infinite_loop_is_a_time_limit_not_a_hang(self):
+        looping = "class Solution:\n    def wordBreak(self, s, words):\n        while True:\n            pass\n"
+        verdict = attempt.check(139, looping, deadline=5)
+        self.assertFalse(verdict.passed)
+        self.assertTrue(verdict.tle)
+        self.assertIn("TIME LIMIT", verdict.report)
+
+    def test_a_missing_class_gets_a_clear_message(self):
+        verdict = attempt.check_here(139, "def wordBreak(s, words):\n    return True\n")
+        self.assertFalse(verdict.passed)
+        self.assertIn("must define class Solution", verdict.report)
+
+    def test_reference_only_helpers_are_lent_but_the_public_method_never_is(self):
+        note_416 = next(p for p in build_index.note_paths() if p.name.startswith("416."))
+        reference = attempt.load_harness().blocks_of(note_416)[-1]
+        only_public = ("class Solution:\n    def canPartition(self, nums):\n        total = sum(nums)\n"
+                       "        if total % 2:\n            return False\n        reach = {0}\n"
+                       "        for x in nums:\n            reach |= {r + x for r in reach}\n"
+                       "        return total // 2 in reach\n")
+        self.assertIn("can_partition_bitset", reference)
+        self.assertTrue(attempt.check_here(416, only_public).passed)
+        no_public = "class Solution:\n    def can_partition_bitset(self, nums):\n        return False\n"
+        self.assertFalse(attempt.check_here(416, no_public).passed)
 
 
 class MutateTest(unittest.TestCase):

@@ -32,7 +32,7 @@
 
 * **Belongs To:** DP — Bitmask (TSP) + BFS
 * **Common Problems Using This:**
-  * 847. Shortest Path Visiting All Nodes (in this repo)
+  * [847. Shortest Path Visiting All Nodes](../../../DP_Advanced/847.Shortest_Path_Visiting_All_Nodes.md)
   * 864. Shortest Path to Get All Keys
   * 943. Find the Shortest Superstring
 

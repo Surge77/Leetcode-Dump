@@ -30,8 +30,8 @@
 
 * **Belongs To:** Math — Inclusion–Exclusion
 * **Common Problems Using This:**
-  * 1201. Ugly Number III (in this repo)
-  * 878. Nth Magical Number (in this repo)
+  * [1201. Ugly Number III](../../../Binary_Search/1201.Ugly_Number_III.md)
+  * [878. Nth Magical Number](../../../Binary_Search/878.Nth_Magical_Number.md)
 
 ## 🔹 Tricks & Patterns Used
 

@@ -7,9 +7,10 @@ from drill.schedule import logged_on
 REPO = Path(__file__).resolve().parents[2]
 SHEETS_FILE = REPO / "tools" / "sheets.json"
 EXAM_WEIGHT = 3  # new problems from exam-heavy topics are drawn this many times as often
-EXAM_FOLDERS = ("DP", "Graph", "Math_Number_Theory", "Segment_Tree", "Fenwick_Tree", "Union_Find",
-                "Prefix_Sum", "Modified_Binary_search", "Greedy", "Tree_Binary_Lifting", "Meet_in_the_Middle",
-                "String_Matching", "Game_Theory", "Intervals_Problems")
+EXAM_FOLDERS = ("DP", "Graph", "Math", "Range_Queries", "Prefix_Sum", "Binary_Search", "Greedy", "Intervals")
+EXAM_TAGS = {"binary-lifting", "meet-in-the-middle", "string-matching", "rolling-hash", "game-theory", "union-find",
+             "segment-tree", "fenwick-tree", "number-theory", "combinatorics", "modular-arithmetic", "dp-tree",
+             "dp-bitmask", "dp-digit", "matrix-exponentiation", "binary-search-on-answer", "difference-array"}
 
 
 def folder_of(note):
@@ -17,7 +18,8 @@ def folder_of(note):
 
 
 def weight(note):
-    return EXAM_WEIGHT if folder_of(note).startswith(EXAM_FOLDERS) else 1
+    exam = folder_of(note).startswith(EXAM_FOLDERS) or bool(EXAM_TAGS & set(getattr(note, "tags", ())))
+    return EXAM_WEIGHT if exam else 1
 
 
 def sheet_numbers(name, sheets_file=SHEETS_FILE):
@@ -29,15 +31,21 @@ def sheet_numbers(name, sheets_file=SHEETS_FILE):
     return {num for topic in sheets[hits[0]]["topics"] for num in topic["problems"]}
 
 
-def scope(notes, sheet=None, topic=None, sheets_file=SHEETS_FILE):
-    """Notes in the chosen sheet and/or whose folder contains `topic` (case-insensitive)."""
+def scope(notes, sheet=None, topic=None, sheets_file=SHEETS_FILE, company=None, company_slugs=None):
+    """Notes in the chosen sheet, whose folder or a tag contains `topic`, and/or asked at `company`."""
     if sheet:
         wanted = sheet_numbers(sheet, sheets_file)
         notes = [n for n in notes if n.number in wanted]
     if topic:
-        notes = [n for n in notes if topic.lower() in folder_of(n).lower()]
+        t = topic.lower()
+        notes = [n for n in notes if t in folder_of(n).lower() or any(t in tag for tag in getattr(n, "tags", ()))]
         if not notes:
-            raise SystemExit(f"--topic {topic!r} matches no folder")
+            raise SystemExit(f"--topic {topic!r} matches no folder or tag")
+    if company:
+        if company_slugs is None:
+            from notebook.pages import company_slugs as lookup  # local: only --company needs tools/companies.json
+            company_slugs = lookup(company)
+        notes = [n for n in notes if getattr(n, "slug", "") in company_slugs]
     return notes
 
 

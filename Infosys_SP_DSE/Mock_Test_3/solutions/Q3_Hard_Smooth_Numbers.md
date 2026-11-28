@@ -32,8 +32,8 @@
 
 * **Belongs To:** DP — Digit DP
 * **Common Problems Using This:**
-  * 233. Number of Digit One (in this repo)
-  * 902. Numbers At Most N Given Digit Set (in this repo)
+  * [233. Number of Digit One](../../../DP_Advanced/233.Number_of_Digit_One.md)
+  * [902. Numbers At Most N Given Digit Set](../../../DP_Advanced/902.Numbers_At_Most_N_Given_Digit_Set.md)
   * 2719. Count of Integers
 
 ## 🔹 Tricks & Patterns Used

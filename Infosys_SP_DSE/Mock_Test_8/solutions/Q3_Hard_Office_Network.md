@@ -31,7 +31,7 @@
 * **Belongs To:** DP on Trees — rerooting
 * **Common Problems Using This:**
   * 834. Sum of Distances in Tree (in this repo — unweighted version)
-  * 2581. Count Number of Possible Root Nodes (in this repo)
+  * [2581. Count Number of Possible Root Nodes](../../../DP_Advanced/2581.Count_Number_of_Possible_Root_Nodes.md)
   * Tree "median" / facility-location problems
 
 ## 🔹 Tricks & Patterns Used

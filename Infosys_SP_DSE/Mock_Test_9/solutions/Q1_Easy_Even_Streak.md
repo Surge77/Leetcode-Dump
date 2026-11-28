@@ -30,8 +30,8 @@
 * **Belongs To:** Sliding Window
 * **Common Problems Using This:**
   * 1004. Max Consecutive Ones III
-  * 424. Longest Repeating Character Replacement (in this repo)
-  * 209. Minimum Size Subarray Sum (in this repo)
+  * [424. Longest Repeating Character Replacement](../../../Sliding_Window/424.Longest_Repeating_Character_Replacement.md)
+  * [209. Minimum Size Subarray Sum](../../../Sliding_Window/209.Minimum_size_subarray_sum.md)
 
 ## 🔹 Tricks & Patterns Used
 

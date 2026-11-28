@@ -32,8 +32,8 @@
 
 * **Belongs To:** DP — 0/1 Knapsack (counting, mod)
 * **Common Problems Using This:**
-  * 494. Target Sum (in this repo)
-  * 1155. Number of Dice Rolls With Target Sum (in this repo)
+  * [494. Target Sum](../../../DP_Knapsack/494.Target_Sum.md)
+  * [1155. Number of Dice Rolls With Target Sum](../../../DP_Knapsack/1155.Number_of_Dice_Rolls_With_Target_Sum.md)
   * 1262. Greatest Sum Divisible by Three
 
 ## 🔹 Tricks & Patterns Used

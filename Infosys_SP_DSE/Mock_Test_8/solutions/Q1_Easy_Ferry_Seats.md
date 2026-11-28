@@ -31,7 +31,7 @@
 * **Common Problems Using This:**
   * 881. Boats to Save People
   * 11. Container With Most Water (in this repo — two pointers from both ends)
-  * 2563. Count the Number of Fair Pairs (in this repo)
+  * [2563. Count the Number of Fair Pairs](../../../Binary_Search/2563.Count_the_number_of_fair_pairs.md)
 
 ## 🔹 Tricks & Patterns Used
 

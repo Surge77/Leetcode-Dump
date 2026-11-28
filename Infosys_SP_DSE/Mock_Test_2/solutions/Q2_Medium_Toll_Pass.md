@@ -31,7 +31,7 @@
 
 * **Belongs To:** Graph — Shortest Path (state expansion)
 * **Common Problems Using This:**
-  * 787. Cheapest Flights Within K Stops (in this repo)
+  * [787. Cheapest Flights Within K Stops](../../../Graph_Shortest_Path/787.Cheapest_Flights_Within_K_Stops.md)
   * 1293. Shortest Path in a Grid with Obstacles Elimination
   * 2093. Minimum Cost to Reach City With Discounts
 

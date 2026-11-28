@@ -37,7 +37,7 @@
 
 * **Belongs To:** Segment Tree
 * **Common Problems Using This:**
-  * 307. Range Sum Query - Mutable (in this repo)
+  * [307. Range Sum Query - Mutable](../../../Range_Queries/307.Range_Sum_Query_Mutable.md)
   * 53. Maximum Subarray (in this repo — the single-query version)
   * SPOJ GSS1 / GSS3 (classic)
 

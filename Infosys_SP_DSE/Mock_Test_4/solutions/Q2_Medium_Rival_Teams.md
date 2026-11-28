@@ -30,7 +30,7 @@
 
 * **Belongs To:** Graph Colouring + DP (0/1 knapsack)
 * **Common Problems Using This:**
-  * 886. Possible Bipartition (in this repo)
+  * [886. Possible Bipartition](../../../Graphs/886.Possible_Bipartition.md)
   * 416. Partition Equal Subset Sum (in this repo — the bitset trick)
 
 ## 🔹 Tricks & Patterns Used

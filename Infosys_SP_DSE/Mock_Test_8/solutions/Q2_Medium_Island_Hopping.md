@@ -30,7 +30,7 @@
 
 * **Belongs To:** Graph — Shortest Path (0-1 BFS)
 * **Common Problems Using This:**
-  * 1368. Minimum Cost to Make at Least One Valid Path in a Grid (in this repo)
+  * [1368. Minimum Cost to Make at Least One Valid Path in a Grid](../../../Graph_Shortest_Path/1368.Minimum_Cost_to_Make_at_Least_One_Valid_Path_in_a_Grid.md)
   * 2290. Minimum Obstacle Removal to Reach Corner
   * 1631. Path With Minimum Effort (in this repo — Dijkstra variant)
 

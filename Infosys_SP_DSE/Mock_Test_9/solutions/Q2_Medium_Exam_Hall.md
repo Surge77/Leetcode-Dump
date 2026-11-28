@@ -30,8 +30,8 @@
 * **Belongs To:** Modified Binary Search — binary search on the answer
 * **Common Problems Using This:**
   * 1552. Magnetic Force Between Two Balls
-  * 875. Koko Eating Bananas (in this repo)
-  * 410. Split Array Largest Sum (in this repo)
+  * [875. Koko Eating Bananas](../../../Binary_Search/875.Koko_Eating_Bananas.md)
+  * [410. Split Array Largest Sum](../../../Binary_Search/410.Split_Array_Largest_Sum.md)
 
 ## 🔹 Tricks & Patterns Used
 

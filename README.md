@@ -5,7 +5,7 @@ My **personal DSA notebook and practice system**. Every problem from the major i
 <!-- generated:stats -->
 | | |
 |---|---|
-| **LeetCode notes** | **463** (Easy 108 · Medium 268 · Hard 87) in 50 pattern folders · ✅ 89 · 🔄 374 → [INDEX.md](INDEX.md) |
+| **LeetCode notes** | **463** (Easy 108 · Medium 268 · Hard 87) in 27 pattern folders · ✅ 89 · 🔄 374 → [INDEX.md](INDEX.md) |
 | **Sheets** | NeetCode 150 150/150 · LeetCode Top Interview 150 150/150 · Striver A2Z DSA Sheet (LeetCode problems) 232/232 · Grind 169 169/169 · LeetCode 75 75/75 → [SHEETS.md](SHEETS.md) |
 | **Infosys mock problems** | 30 original stdin/stdout problems (10 mock tests) with an offline judge → [Infosys_SP_DSE](Infosys_SP_DSE/README.md) |
 | **Checks** | 1122 automated checks, run in CI on every push, every pull request and weekly |
@@ -21,6 +21,8 @@ My **personal DSA notebook and practice system**. Every problem from the major i
 |---|---|
 | Practise today | `python tools/review.py` → solve each pick in your own file → `python tools/review.py check <#> my.py --log --mins <m>` |
 | Follow one sheet | `python tools/review.py today --sheet neetcode` (or `grind`, `"top interview"`, `striver`, `"leetcode 75"`) |
+| Prepare for one company | `python tools/review.py today --company google` (any company in [COMPANIES.md](COMPANIES.md)) |
+| Drill one pattern | `python tools/review.py today --topic monotonic-stack` (a folder or a tag) |
 | Train pattern recognition | `python tools/review.py quiz -n 10`: statement only, name the pattern |
 | Train debugging | `python tools/review.py debug <#>`: find the bug planted in a verified solution |
 | Revise on my phone | `python tools/export_anki.py` → import `exports/leetcode-dump-anki.tsv` into Anki |
@@ -41,16 +43,22 @@ Reviews are spaced 1 → 3 → 7 → 16 → 35 → 75 → 150 → 300 days, so a
 
 ---
 
-### **What Every Note Contains** 📂
+### **How It's Organised** 📂
+
+* **27 pattern folders**, each with a page (its `README.md`) that lists its problems easiest first and the same-pattern problems filed elsewhere. Start from [INDEX.md](INDEX.md).
+* **Tags:** every note carries 1–4 tags in its front matter (e.g. `dp-1d`, `trie`), so a problem that mixes patterns shows up under each of them → [TAGS.md](TAGS.md).
+* **Companies:** which problems each of 53 companies asks most, and which of them have a note here → [COMPANIES.md](COMPANIES.md).
+
+### **What Every Note Contains** 📝
 
 Each note follows [the template](LeetcodeTemplates/ActiveTemplate.md):
 
-* **Header:** `N. Title (Category, Difficulty)`, the LeetCode link, and the status: **✅ Solved** or **🔄 Need Review**.
+* **Front matter** (`difficulty`, `tags`), then `# N. Title`, the LeetCode link and the status: **✅ Solved** or **🔄 Need Review**.
 * **Problem Statement:** a paraphrase with one example and the constraints.
-* **Quick Breakdown, Optimization Path, Solution Breakdown:** the main idea, when to use the pattern, the mistakes to avoid, and *why* the approach works.
-* **Pattern Recognition:** related problems; "(in this repo)" marks the ones that have a note here.
-* **Complexity Analysis** for both approaches.
+* **Breakdown, approach, complexity, edge cases, related problems** (linked when they have a note here).
+* **Say It Out Loud:** yours to write once you've solved it, i.e. your 30-second explanation.
 * **Code Snippet (Brute Force)** and **Code Snippet (Optimized)**, both in Python. Some older notes also keep their original Java.
+* **My Attempts:** one line per attempt. `review.py log … --note "…"` appends it for you.
 * LeetCode Premium problems carry a 🔒 line pointing to a free copy (neetcode.io / LintCode).
 
 ---
@@ -62,7 +70,9 @@ Each note follows [the template](LeetcodeTemplates/ActiveTemplate.md):
 | `python tools/review.py [today\|log\|check\|show\|quiz\|debug\|cold\|plan\|stats]` | The practice drill (above). `--help` on any command lists its options. |
 | `python tools/export_anki.py [--status review]` | Anki deck (TSV) of every note. Re-importing updates cards instead of duplicating them. |
 | `python tools/verify/verify.py [N …]` | Runs every note's code (or only the notes you list) against its checks. `--where N` prints which file holds a check. `VERIFY_TIMING=1` also enforces the time limits. |
-| `python tools/build_index.py [--check]` | Lints note format and regenerates `INDEX.md`, `SHEETS.md` and this README's numbers. `--check` fails on drift (used by CI and the hook). |
+| `python tools/build_index.py [--check]` | Lints note format, keeps links between notes pointing at the right paths, and regenerates `INDEX.md`, `SHEETS.md`, `TAGS.md`, `COMPANIES.md`, the pattern pages and this README's numbers. `--check` fails on drift (used by CI and the hook). |
+| `python tools/new_note.py N "Title" --difficulty … --folder … --tags …` | Creates a note from the template plus a check stub that fails until you write the real checks. |
+| `python tools/refresh_companies.py <clone>` | Rebuilds `tools/companies.json` from a fresh clone of the company-frequency source (instructions inside). |
 | `python tools/judge/judge.py MxQy file.py` | Offline judge for the mock problems. Scores out of 100: small tests are worth 50 and max-size tests 50. |
 | `python tools/judge/paper.py [--final]` | Random Easy/Medium/Hard paper drawn from three different mocks; `--final` uses the held-out mocks 8–10. |
 | `python -m unittest discover -s tools/tests` | Unit tests for the drill, judge and generators. |
@@ -70,9 +80,9 @@ Each note follows [the template](LeetcodeTemplates/ActiveTemplate.md):
 **One-time setup per clone:** run `git config core.hooksPath .githooks`. This enables a pre-commit hook that runs the format/index check on the staged files in under a second.
 
 **Adding a note:**
-1. Copy the template into the right pattern folder as `N.Title_With_Underscores.md`.
-2. Write the brute-force and optimized Python blocks. The optimized one must be the **last** Python block.
-3. Add a `@case(N)` in a `tools/verify/tests_*.py` file.
+1. `python tools/new_note.py N "Title" --difficulty Medium --folder DP --tags dp-1d` (folders and tags: `tools/taxonomy.json`).
+2. Fill in the note. Write the brute-force and optimized Python blocks; the optimized one must be the **last** Python block.
+3. Replace the generated `@case(N)` stub in `tools/verify/tests_<folder>.py` with real checks.
 4. Run `verify.py N`, then `build_index.py`, and commit.
 
 ---

@@ -47,12 +47,13 @@ def card(note):
     url = link(text)
     back = [f"<b>{note.number}. {html.escape(note.title)}</b> ({note.difficulty})"
             + (f' · <a href="{url}">LeetCode</a>' if url else "")]
-    for label, value in (("Pattern", folder_of(note).replace("_", " ")), ("Signal", signal(text)),
+    pattern = folder_of(note).replace("_", " ") + (f" ({', '.join(note.tags)})" if note.tags else "")
+    for label, value in (("Pattern", pattern), ("Signal", signal(text)),
                          ("Approach", approach(text)), ("Complexity", complexity(text))):
         if value:
             back.append(f"<b>{label}:</b> {to_html(value)}")
-    tags = f"leetcode-dump pattern::{folder_of(note)} difficulty::{note.difficulty} " \
-           f"status::{'solved' if note.status == '✅' else 'review'}"
+    tags = " ".join([f"leetcode-dump pattern::{folder_of(note)} difficulty::{note.difficulty}",
+                     f"status::{'solved' if note.status == '✅' else 'review'}"] + [f"tag::{t}" for t in note.tags])
     return [f"leetcode-dump-{note.number}", front, "<br>".join(back), tags]
 
 

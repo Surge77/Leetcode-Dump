@@ -22,7 +22,8 @@ def plan(notes, entries, today, deadline):
     start_window = days - LEAD_DAYS + 1
     need = math.ceil(len(not_started) / start_window) if not_started else 0
     since = (today - timedelta(days=PACE_DAYS)).isoformat()
-    recent_starts = sum(1 for e in entries.values() if (started_on(e) or "") >= since)
+    in_scope = {str(n.number) for n in notes}
+    recent_starts = sum(1 for k, e in entries.items() if k in in_scope and (started_on(e) or "") >= since)
     pace = recent_starts / PACE_DAYS
     finish = None
     if not_started and pace > 0:
